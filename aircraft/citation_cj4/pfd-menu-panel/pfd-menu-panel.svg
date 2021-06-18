@@ -12,20 +12,10 @@
    viewBox="0 0 150.25051 51.825044"
    version="1.1"
    id="svg14672"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="pfd-menu-panel.svg">
   <defs
      id="defs14666">
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect7356"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect7354"
-       is_visible="true"
-       lpeversion="1" />
     <inkscape:path-effect
        effect="spiro"
        id="path-effect7290"
@@ -34,81 +24,6 @@
     <inkscape:path-effect
        effect="spiro"
        id="path-effect7288"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect20362"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect17146"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect17142"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect17138"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect17064"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect17056"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect7130"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect7126"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect7122"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect2044"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect2040"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect2036"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect2032"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect12445"
-       is_visible="true"
-       lpeversion="1" />
-    <inkscape:path-effect
-       effect="spiro"
-       id="path-effect12441"
        is_visible="true"
        lpeversion="1" />
     <inkscape:path-effect
@@ -129,11 +44,11 @@
      borderopacity="0.32156863"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0000001"
-     inkscape:cx="301.91456"
-     inkscape:cy="123.05834"
+     inkscape:zoom="2.8284273"
+     inkscape:cx="370.6943"
+     inkscape:cy="78.893617"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer12"
+     inkscape:current-layer="layer6"
      inkscape:document-rotation="0"
      showgrid="false"
      fit-margin-top="2"
@@ -152,10 +67,10 @@
      inkscape:snap-smooth-nodes="true"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-center="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1136"
-     inkscape:window-x="1920"
-     inkscape:window-y="27"
+     inkscape:window-width="1918"
+     inkscape:window-height="1128"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:snap-global="true"
      inkscape:snap-others="true"
@@ -437,7 +352,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Lower panel tape mask"
-     style="display:none"
+     style="display:inline"
      transform="translate(6.989252,-83.624813)">
     <path
        id="path18217-1"
@@ -451,10 +366,6 @@
      inkscape:label="Upper panel "
      transform="translate(-2136.2893,-559.08991)"
      style="display:inline;opacity:1">
-    <path
-       id="path18217"
-       style="font-variation-settings:'wdth' 95, 'wght' 600;display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;shape-rendering:crispEdges;stop-color:#000000"
-       d="m 2149.753,561.9775 c -0.9067,0.31115 -1.5596,1.16897 -1.5596,2.18126 v 1.79473 c -2e-4,1.35154 -0.5558,2.5744 -1.449,3.45921 -0.8853,0.89617 -2.1101,1.45405 -3.4644,1.45418 h -1.8061 c -1.2703,0.006 -2.297,1.03753 -2.297,2.30787 v 23.6554 c 0,1.27034 1.0267,2.30184 2.297,2.30787 h 1.8061 c 1.3543,1.3e-4 2.5791,0.55802 3.4644,1.45418 0.8932,0.88482 1.4488,2.10767 1.449,3.45922 v 1.79472 c 0,1.01229 0.6529,1.87011 1.5596,2.18126 h 123.3232 c 0.9066,-0.31124 1.5591,-1.16909 1.5591,-2.18126 v -1.79472 c 2e-4,-1.35155 0.5558,-2.5744 1.449,-3.45922 0.8853,-0.89616 2.1101,-1.45405 3.4644,-1.45418 h 1.8061 c 1.2703,-0.006 2.297,-1.03753 2.297,-2.30787 v -23.6554 0 c 0,-1.27034 -1.0267,-2.30184 -2.297,-2.30787 h -1.8061 c -1.3543,-1.3e-4 -2.5791,-0.55801 -3.4644,-1.45418 -0.8932,-0.88482 -1.4488,-2.10767 -1.449,-3.45921 v -1.79473 c 0,-1.01229 -0.6524,-1.87011 -1.5591,-2.18126 z" />
     <circle
        style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
        id="circle18211-9"
@@ -734,6 +645,11 @@
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:0.95;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=600,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 90, 'wght' 600;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">BARO</tspan></text>
       </g>
     </g>
+    <path
+       id="path5490"
+       style="font-variation-settings:'wdth' 95, 'wght' 600;display:inline;opacity:1;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;shape-rendering:crispEdges;stop-color:#000000"
+       d="m 2150.5056,561.97749 c -1.3956,0 -2.312,1.16484 -2.312,2.31355 v 1.66243 c -2e-4,1.35154 -0.5558,2.57441 -1.449,3.45922 -0.8853,0.89617 -2.1101,1.45405 -3.4644,1.45417 h -1.8061 c -1.2703,0.006 -2.297,1.03753 -2.297,2.30788 v 17.5984 2.77813 3.27887 c 0,1.27034 1.0267,2.30187 2.297,2.30787 h 1.8061 c 1.3543,1.3e-4 2.5791,0.558 3.4644,1.45417 0.8932,0.88481 1.4488,2.10768 1.449,3.45922 v 1.66243 c 0,1.14871 0.9164,2.31356 2.312,2.31356 h 121.8283 c 1.3508,0 2.3016,-1.11948 2.3016,-2.29547 v -1.68052 c 2e-4,-1.35154 0.5558,-2.5744 1.449,-3.45922 0.8853,-0.89617 2.1101,-1.45404 3.4644,-1.45417 h 1.8061 c 1.2703,-0.006 2.297,-1.03753 2.297,-2.30787 v -3.27887 -2.77813 -17.5984 c 0,-1.27035 -1.0267,-2.30185 -2.297,-2.30788 h -1.8061 c -1.3543,-1.2e-4 -2.5791,-0.558 -3.4644,-1.45417 -0.8932,-0.88482 -1.4488,-2.10768 -1.449,-3.45922 v -1.68052 c 0,-1.17599 -0.9507,-2.29546 -2.3016,-2.29546 z"
+       sodipodi:nodetypes="ssccccsccsccccssssccccsccsccccsss" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -744,18 +660,6 @@
     <g
        id="g6339"
        transform="translate(1287.8311,343.64655)" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.82749px;line-height:1;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       x="-200.41916"
-       y="361.59109"
-       id="text100050-7"
-       transform="translate(2416.8849,275.69293)"><tspan
-         sodipodi:role="line"
-         x="-200.41916"
-         y="361.59109"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.82749px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.264583"
-         id="tspan100048-5">NAV</tspan></text>
     <path
        id="path20976"
        style="font-variation-settings:normal;display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;shape-rendering:crispEdges;stop-color:#000000"
@@ -961,6 +865,27 @@
          y="365.61169"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.293166"
          id="tspan7140">MENU</tspan></text>
+    <g
+       id="g5475"
+       transform="translate(-0.13636717,-0.01101292)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.82749px;line-height:1;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="-200.41916"
+         y="361.59109"
+         id="text100050-7"
+         transform="translate(2415.496,275.69293)"><tspan
+           sodipodi:role="line"
+           x="-200.41916"
+           y="361.59109"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.82749px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.264583"
+           id="tspan100048-5">NAV</tspan></text>
+      <path
+         id="path100678-2"
+         style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.64568;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:crispEdges;text-rendering:auto;enable-background:accumulate;stop-color:#000000"
+         d="m 104.39648,30.259766 a 0.84116462,0.84116462 0 0 0 -0.61914,0.269531 l -2.94726,3.271484 -0.5625,0.625 1.24804,1.126953 0.5625,-0.625 1.50782,-1.671875 v 4.640625 0.490235 0.349609 0.490234 9.640626 l -1.50782,-1.671876 -0.5625,-0.623046 -1.24804,1.126953 0.5625,0.623047 2.94726,3.271484 c 0.3326,0.359433 0.9014,0.359433 1.23438,0 l 3.06445,-3.271484 0.57227,-0.605469 -1.22852,-1.144531 -0.57226,0.609375 -1.57813,1.685547 v -9.640626 -0.490234 -0.839844 -4.640625 l 1.57813,1.685547 0.57226,0.611328 1.22852,-1.146484 -0.57227,-0.605469 -3.06445,-3.271484 a 0.84116462,0.84116462 0 0 0 -0.61524,-0.269531 z"
+         transform="matrix(0.26458333,0,0,0.26458333,2192.2663,624.71715)" />
+    </g>
   </g>
   <style
      type="text/css"
