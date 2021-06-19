@@ -1,6 +1,7 @@
 # Flight Simulator Panels
 
-## [Mobiflight Panel Template](https://github.com/Mobiflight/mobiflight-templates)
+See the [Mobiflight Panel Template](https://github.com/Mobiflight/mobiflight-templates) for the SVG design asset
+library that was used to create these.
 
 These panels are intended for flight simulation, they utilize Arduino hardware, and generally will feature a circuit board
 that is mounted behind the panel with 10mm nylon spacers. The finished panels can be connected to Microsoft Flight Simulator 
