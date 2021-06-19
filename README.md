@@ -1,10 +1,13 @@
 # Flight Simulator Panels
 
-These panels are intended for flight simulation, they utilize Arduino hardware on the pcboards, and can be
-connected to MSFS2020 or other flight simulator software using the MobiFlight open source software.
-See www.mobiflight.com for more information, and join our Discord server at https://discord.gg/99vHbK7
+## [Mobiflight Panel Template](https://github.com/Mobiflight/mobiflight-templates)
 
-These are work in progress, contributions are welcome.
+These panels are intended for flight simulation, they utilize Arduino hardware, and generally will feature a circuit board
+that is mounted behind the panel with 10mm nylon spacers. The finished panels can be connected to Microsoft Flight Simulator 
+2020 (msfs2020) or other flight simulator software using Mobiflight open source software. See the 
+[MobiFlight website](http://www.mobiflight.com) for more information, and join our Discord server at https://discord.gg/99vHbK7
+
+These are work in progress, contributions are welcome via github pull requests, or if you want to coordinate or have questions, please file an issue.
 
 ## How to edit / view the files
 
