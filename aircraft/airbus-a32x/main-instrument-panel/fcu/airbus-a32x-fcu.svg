@@ -193,10 +193,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="513.71306"
+     inkscape:cx="513.35951"
      inkscape:cy="303.70235"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer4"
      showgrid="false"
      showguides="true"
      inkscape:window-width="2469"
@@ -236,7 +236,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -255,51 +254,51 @@
        transform="translate(-4.1159507,0.74835468)"><tspan
          x="-96.297104"
          y="242.03133"
-         id="tspan31597"><tspan
+         id="tspan1384"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31595">Since the 100/1000 selector + push/pull rotary </tspan></tspan><tspan
+           id="tspan1382">Since the 100/1000 selector + push/pull rotary </tspan></tspan><tspan
          x="-96.297104"
          y="247.351"
-         id="tspan31601"><tspan
+         id="tspan1388"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31599">encoder can be a difficult one to construct, there </tspan></tspan><tspan
+           id="tspan1386">encoder can be a difficult one to construct, there </tspan></tspan><tspan
          x="-96.297104"
          y="252.67067"
-         id="tspan31605"><tspan
+         id="tspan1392"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31603">is an alternative pushbutton below the &quot;metric alt&quot; </tspan></tspan><tspan
+           id="tspan1390">is an alternative pushbutton below the &quot;metric alt&quot; </tspan></tspan><tspan
          x="-96.297104"
          y="257.99034"
-         id="tspan31609"><tspan
+         id="tspan1396"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31607">button. 
+           id="tspan1394">button. 
 </tspan></tspan><tspan
          x="-96.297104"
          y="263.31"
-         id="tspan31613"><tspan
+         id="tspan1400"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31611">
+           id="tspan1398">
 </tspan></tspan><tspan
          x="-96.297104"
          y="268.62967"
-         id="tspan31617"><tspan
+         id="tspan1404"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31615">So, either delete the 100/1000 markings from the </tspan></tspan><tspan
+           id="tspan1402">So, either delete the 100/1000 markings from the </tspan></tspan><tspan
          x="-96.297104"
          y="273.94934"
-         id="tspan31621"><tspan
+         id="tspan1408"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31619">altitude rotary encoder backlight ring, or remove </tspan></tspan><tspan
+           id="tspan1406">altitude rotary encoder backlight ring, or remove </tspan></tspan><tspan
          x="-96.297104"
          y="279.26901"
-         id="tspan31625"><tspan
+         id="tspan1412"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31623">the separate 100/1000 selector, depending on how </tspan></tspan><tspan
+           id="tspan1410">the separate 100/1000 selector, depending on how </tspan></tspan><tspan
          x="-96.297104"
          y="284.58868"
-         id="tspan31629"><tspan
+         id="tspan1416"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31627">you intend to build your panel.</tspan></tspan></text>
+           id="tspan1414">you intend to build your panel.</tspan></tspan></text>
     <path
        style="display:inline;opacity:1;fill:none;stroke:#0000ff;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
        d="m -68.607979,203.39751 v 32.36636"
@@ -323,64 +322,64 @@
        transform="translate(-157.52866,0.74835468)"><tspan
          x="-96.297104"
          y="242.03133"
-         id="tspan31633"><tspan
+         id="tspan1420"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31631">TODO: 
+           id="tspan1418">TODO: 
 </tspan></tspan><tspan
          x="-96.297104"
          y="247.351"
-         id="tspan31637"><tspan
+         id="tspan1424"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31635">- need to check the display layout with actual 7-</tspan></tspan><tspan
+           id="tspan1422">- need to check the display layout with actual 7-</tspan></tspan><tspan
          x="-96.297104"
          y="252.67067"
-         id="tspan31641"><tspan
+         id="tspan1428"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31639">segment digits dimensions. 
+           id="tspan1426">segment digits dimensions. 
 </tspan></tspan><tspan
          x="-96.297104"
          y="257.99034"
-         id="tspan31645"><tspan
+         id="tspan1432"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31643">
+           id="tspan1430">
 </tspan></tspan><tspan
          x="-96.297104"
          y="263.31"
-         id="tspan31649"><tspan
+         id="tspan1436"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31647">- need to finish the 3d model design for push-pull </tspan></tspan><tspan
+           id="tspan1434">- need to finish the 3d model design for push-pull </tspan></tspan><tspan
          x="-96.297104"
          y="268.62967"
-         id="tspan31653"><tspan
+         id="tspan1440"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31651">encoder mechanics
+           id="tspan1438">encoder mechanics
 </tspan></tspan><tspan
          x="-96.297104"
          y="273.94934"
-         id="tspan31657"><tspan
+         id="tspan1444"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31655">
+           id="tspan1442">
 </tspan></tspan><tspan
          x="-96.297104"
          y="279.26901"
-         id="tspan31661"><tspan
+         id="tspan1448"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31659">- need to document those thin lines between the </tspan></tspan><tspan
+           id="tspan1446">- need to document those thin lines between the </tspan></tspan><tspan
          x="-96.297104"
          y="284.58868"
-         id="tspan31665"><tspan
+         id="tspan1452"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31663">SPD/MACH etc texts (they are laser cuts to create </tspan></tspan><tspan
+           id="tspan1450">SPD/MACH etc texts (they are laser cuts to create </tspan></tspan><tspan
          x="-96.297104"
          y="289.90836"
-         id="tspan31669"><tspan
+         id="tspan1456"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31667">a narrow separation between those texts to avoid </tspan></tspan><tspan
+           id="tspan1454">a narrow separation between those texts to avoid </tspan></tspan><tspan
          x="-96.297104"
          y="295.22803"
-         id="tspan31673"><tspan
+         id="tspan1460"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan31671">light leakage </tspan></tspan></text>
+           id="tspan1458">light leakage </tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -846,6 +845,12 @@
        d="m -65.616924,190.07374 c 0,-1.71276 -1.38847,-3.10053 -3.10033,-3.10053 -1.71196,0 -3.09967,1.38777 -3.09967,3.10001 0,1.71197 1.38771,3.09999 3.09967,3.09999 1.71186,0 3.09957,-1.38802 3.09957,-3.09999 z"
        style="font-variation-settings:'wght' 776;display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.89091;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
        id="path28640" />
+    <circle
+       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="circle1104"
+       cx="-207.08678"
+       cy="144.80067"
+       r="1.984375" />
   </g>
   <g
      inkscape:groupmode="layer"
