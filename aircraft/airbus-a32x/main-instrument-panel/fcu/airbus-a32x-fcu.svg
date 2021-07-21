@@ -184,6 +184,26 @@
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path13021-0" />
     </marker>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient62717"
+       id="linearGradient1107"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.52412324,0,0,0.99500427,-53.227557,-74.905891)"
+       x1="-164.08841"
+       y1="217.44962"
+       x2="63.911591"
+       y2="217.44962" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient62717"
+       id="linearGradient1108"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.46271977,0,0,0.99500472,-171.77318,-74.894471)"
+       x1="-164.08841"
+       y1="217.44962"
+       x2="63.911591"
+       y2="217.44962" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -192,16 +212,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="513.35951"
-     inkscape:cy="303.70235"
+     inkscape:zoom="1"
+     inkscape:cx="510.99999"
+     inkscape:cy="151.5"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer6"
      showgrid="false"
      showguides="true"
      inkscape:window-width="2469"
      inkscape:window-height="1137"
-     inkscape:window-x="1355"
+     inkscape:window-x="268"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:document-rotation="0"
@@ -254,51 +274,51 @@
        transform="translate(-4.1159507,0.74835468)"><tspan
          x="-96.297104"
          y="242.03133"
-         id="tspan1384"><tspan
+         id="tspan1752"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1382">Since the 100/1000 selector + push/pull rotary </tspan></tspan><tspan
+           id="tspan1750">Since the 100/1000 selector + push/pull rotary </tspan></tspan><tspan
          x="-96.297104"
          y="247.351"
-         id="tspan1388"><tspan
+         id="tspan1756"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1386">encoder can be a difficult one to construct, there </tspan></tspan><tspan
+           id="tspan1754">encoder can be a difficult one to construct, there </tspan></tspan><tspan
          x="-96.297104"
          y="252.67067"
-         id="tspan1392"><tspan
+         id="tspan1760"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1390">is an alternative pushbutton below the &quot;metric alt&quot; </tspan></tspan><tspan
+           id="tspan1758">is an alternative pushbutton below the &quot;metric alt&quot; </tspan></tspan><tspan
          x="-96.297104"
          y="257.99034"
-         id="tspan1396"><tspan
+         id="tspan1764"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1394">button. 
+           id="tspan1762">button. 
 </tspan></tspan><tspan
          x="-96.297104"
          y="263.31"
-         id="tspan1400"><tspan
+         id="tspan1768"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1398">
+           id="tspan1766">
 </tspan></tspan><tspan
          x="-96.297104"
          y="268.62967"
-         id="tspan1404"><tspan
+         id="tspan1772"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1402">So, either delete the 100/1000 markings from the </tspan></tspan><tspan
+           id="tspan1770">So, either delete the 100/1000 markings from the </tspan></tspan><tspan
          x="-96.297104"
          y="273.94934"
-         id="tspan1408"><tspan
+         id="tspan1776"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1406">altitude rotary encoder backlight ring, or remove </tspan></tspan><tspan
+           id="tspan1774">altitude rotary encoder backlight ring, or remove </tspan></tspan><tspan
          x="-96.297104"
          y="279.26901"
-         id="tspan1412"><tspan
+         id="tspan1780"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1410">the separate 100/1000 selector, depending on how </tspan></tspan><tspan
+           id="tspan1778">the separate 100/1000 selector, depending on how </tspan></tspan><tspan
          x="-96.297104"
          y="284.58868"
-         id="tspan1416"><tspan
+         id="tspan1784"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1414">you intend to build your panel.</tspan></tspan></text>
+           id="tspan1782">you intend to build your panel.</tspan></tspan></text>
     <path
        style="display:inline;opacity:1;fill:none;stroke:#0000ff;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
        d="m -68.607979,203.39751 v 32.36636"
@@ -322,64 +342,64 @@
        transform="translate(-157.52866,0.74835468)"><tspan
          x="-96.297104"
          y="242.03133"
-         id="tspan1420"><tspan
+         id="tspan1788"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1418">TODO: 
+           id="tspan1786">TODO: 
 </tspan></tspan><tspan
          x="-96.297104"
          y="247.351"
-         id="tspan1424"><tspan
+         id="tspan1792"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1422">- need to check the display layout with actual 7-</tspan></tspan><tspan
+           id="tspan1790">- need to check the display layout with actual 7-</tspan></tspan><tspan
          x="-96.297104"
          y="252.67067"
-         id="tspan1428"><tspan
+         id="tspan1796"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1426">segment digits dimensions. 
+           id="tspan1794">segment digits dimensions. 
 </tspan></tspan><tspan
          x="-96.297104"
          y="257.99034"
-         id="tspan1432"><tspan
+         id="tspan1800"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1430">
+           id="tspan1798">
 </tspan></tspan><tspan
          x="-96.297104"
          y="263.31"
-         id="tspan1436"><tspan
+         id="tspan1804"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1434">- need to finish the 3d model design for push-pull </tspan></tspan><tspan
+           id="tspan1802">- need to finish the 3d model design for push-pull </tspan></tspan><tspan
          x="-96.297104"
          y="268.62967"
-         id="tspan1440"><tspan
+         id="tspan1808"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1438">encoder mechanics
+           id="tspan1806">encoder mechanics
 </tspan></tspan><tspan
          x="-96.297104"
          y="273.94934"
-         id="tspan1444"><tspan
+         id="tspan1812"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1442">
+           id="tspan1810">
 </tspan></tspan><tspan
          x="-96.297104"
          y="279.26901"
-         id="tspan1448"><tspan
+         id="tspan1816"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1446">- need to document those thin lines between the </tspan></tspan><tspan
+           id="tspan1814">- need to document those thin lines between the </tspan></tspan><tspan
          x="-96.297104"
          y="284.58868"
-         id="tspan1452"><tspan
+         id="tspan1820"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1450">SPD/MACH etc texts (they are laser cuts to create </tspan></tspan><tspan
+           id="tspan1818">SPD/MACH etc texts (they are laser cuts to create </tspan></tspan><tspan
          x="-96.297104"
          y="289.90836"
-         id="tspan1456"><tspan
+         id="tspan1824"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1454">a narrow separation between those texts to avoid </tspan></tspan><tspan
+           id="tspan1822">a narrow separation between those texts to avoid </tspan></tspan><tspan
          x="-96.297104"
          y="295.22803"
-         id="tspan1460"><tspan
+         id="tspan1828"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan1458">light leakage </tspan></tspan></text>
+           id="tspan1826">light leakage </tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -893,6 +913,24 @@
        cx="-68.716927"
        cy="190.07321"
        r="5.3343596" />
+    <path
+       id="rect1117"
+       style="display:inline;fill:url(#linearGradient1108);fill-opacity:1;stroke:#0000ff;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:label="Left Display Mask Hole"
+       sodipodi:type="inkscape:offset"
+       inkscape:radius="0.69999999"
+       inkscape:original="M -246.96875 131.51953 C -247.3739 131.51953 -247.69922 131.84485 -247.69922 132.25 L -247.69922 150.6875 C -247.69922 151.09265 -247.3739 151.41992 -246.96875 151.41992 L -142.93164 151.41992 C -142.52649 151.41992 -142.19922 151.09265 -142.19922 150.6875 L -142.19922 132.25 C -142.19922 131.84485 -142.52649 131.51953 -142.93164 131.51953 L -246.96875 131.51953 z "
+       d="m -246.96875,130.82031 c -0.77987,0 -1.42969,0.64982 -1.42969,1.42969 v 18.4375 c 0,0.77987 0.64758,1.43164 1.42969,1.43164 h 104.03711 c 0.78211,0 1.43164,-0.64953 1.43164,-1.43164 V 132.25 c 0,-0.78211 -0.65178,-1.42969 -1.43164,-1.42969 z"
+       transform="translate(-1.3125e-5)" />
+    <path
+       id="rect1477"
+       style="display:inline;fill:url(#linearGradient1107);fill-opacity:1;stroke:#0000ff;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="inkscape:offset"
+       inkscape:radius="0.69999999"
+       inkscape:original="M -138.49805 131.50781 C -138.9032 131.50781 -139.23047 131.83313 -139.23047 132.23828 L -139.23047 150.67578 C -139.23047 151.08093 -138.9032 151.4082 -138.49805 151.4082 L -20.460938 151.4082 C -20.055787 151.4082 -19.730469 151.08093 -19.730469 150.67578 L -19.730469 132.23828 C -19.730469 131.83313 -20.055787 131.50781 -20.460938 131.50781 L -138.49805 131.50781 z "
+       d="m -138.49805,130.80859 c -0.77986,0 -1.43164,0.64758 -1.43164,1.42969 v 18.4375 c 0,0.78211 0.64953,1.43164 1.43164,1.43164 h 118.037112 c 0.782112,0 1.429688,-0.65178 1.429688,-1.43164 v -18.4375 c 0,-0.77986 -0.649822,-1.42969 -1.429688,-1.42969 z"
+       transform="translate(-1.3125e-5)"
+       inkscape:label="Right Display Mask Hole" />
   </g>
   <g
      inkscape:groupmode="layer"
