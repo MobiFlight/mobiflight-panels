@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>MobiFlight Micro</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Dim" Pin="9" />
+  <Button Name="Brt" Pin="8" />
+  <Output Name="MCDU LED" Pin="7" />
+  <Output Name="Menu LED" Pin="6" />
+  <Output Name="Dash LED" Pin="3" />
+  <Output Name="FM2 LED" Pin="2" />
+  <Output Name="Rdy LED" Pin="21" />
+  <Output Name="IND LED" Pin="20" />
+  <Output Name="FM1 LED" Pin="19" />
+  <Output Name="FM LED" Pin="18" />
+  <Output Name="Fail LED" Pin="15" />
+  <Button Name="Airport" Pin="14" />
+  <Button Name="Sec FPLN" Pin="16" />
+  <Button Name="OVFY" Pin="10" />
+</Config>

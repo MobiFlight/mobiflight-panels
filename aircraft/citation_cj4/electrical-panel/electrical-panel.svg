@@ -12,7 +12,7 @@
    viewBox="0 0 150.25001 99.449985"
    version="1.1"
    id="svg14672"
-   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
    sodipodi:docname="electrical-panel.svg"
    inkscape:export-filename="C:\Users\Tuomas\Pictures\elec-panel.png"
    inkscape:export-xdpi="96"
@@ -27,8 +27,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.8101934"
-     inkscape:cx="286.33549"
-     inkscape:cy="202.14479"
+     inkscape:cx="288.77812"
+     inkscape:cy="213.60985"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
@@ -50,9 +50,9 @@
      inkscape:snap-object-midpoints="true"
      inkscape:snap-center="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1137"
-     inkscape:window-x="1240"
-     inkscape:window-y="0"
+     inkscape:window-height="1136"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
      inkscape:window-maximized="0"
      inkscape:snap-global="true"
      inkscape:snap-others="true"
@@ -61,7 +61,8 @@
      inkscape:object-nodes="true"
      units="mm"
      inkscape:showpageshadow="false"
-     borderlayer="true">
+     borderlayer="true"
+     inkscape:pagecheckerboard="0">
     <inkscape:grid
        type="xygrid"
        id="grid2104"
@@ -81,7 +82,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -143,7 +144,8 @@
      id="layer9"
      inkscape:label="Lower panel mounting plate"
      style="display:inline;opacity:1"
-     transform="translate(-2192.2667,-548.51774)">
+     transform="translate(-2192.2667,-548.51774)"
+     sodipodi:insensitive="true">
     <circle
        style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#ff0000;stroke-width:0.299998;stroke-linejoin:round;shape-rendering:crispEdges;stop-color:#000000"
        id="circle11891"
@@ -267,23 +269,23 @@
        id="circle11917-4"
        cx="24.678289"
        cy="44.158081"
-       r="11.035981" />
+       r="9.4405804" />
     <circle
        style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#0000ff;stroke-width:0.3;stroke-linejoin:round;shape-rendering:crispEdges;stop-color:#000000"
        id="circle11935-3"
        cx="68.06842"
        cy="44.158081"
-       r="11.035981" />
+       r="9.4405804" />
     <circle
        style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#0000ff;stroke-width:0.3;stroke-linejoin:round;shape-rendering:crispEdges;stop-color:#000000"
        id="circle11943-8"
        cx="111.45856"
        cy="44.158081"
-       r="11.035981" />
+       r="9.4405804" />
     <path
        id="path11991-5"
        style="display:inline;fill:none;stroke:#0000ff;stroke-width:0.755906;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
-       d="m 547.50195,355.48347 v -13.55183 h -6.05273 c -15.36945,-0.001 -27.92578,-12.71044 -27.92578,-28.02148 0,-15.31106 12.55633,-28.02035 27.92578,-28.02149 h 6.05273 V 277.9082 89.935547 h -6.06054 c -15.37032,0 -27.91797,-12.714987 -27.91797,-28.021485 0,-15.306499 12.54387,-28.028272 27.91797,-28.029296 h 6.06054 V 28.289062 20.341418 H 15.410156 v 7.947644 5.595704 h 6.060547 c 15.374098,10e-4 27.917969,12.722796 27.917969,28.029296 0,15.306498 -12.547651,28.021485 -27.917969,28.021485 h -6.060547 v 187.972653 7.98047 h 6.052735 c 15.369447,0.001 27.925781,12.71044 27.925781,28.02149 0,15.31105 -12.556334,28.02034 -27.925781,28.02148 h -6.052735 v 13.55183 z"
+       d="m 547.50195,355.48347 v -13.55183 h -6.05273 c -15.36945,-0.001 -27.92578,-12.71044 -27.92578,-28.02148 0,-15.31106 12.55633,-28.02035 27.92578,-28.02149 h 6.05273 V 277.9082 89.935547 h -6.06054 c -15.37032,0 -27.91797,-12.714987 -27.91797,-28.021485 0,-15.306499 12.54387,-28.028272 27.91797,-28.029296 h 6.06054 V 28.289062 20.341418 H 20.382001 v 7.947644 5.595704 h 6.060547 c 15.374098,10e-4 27.917969,12.722796 27.917969,28.029296 0,15.306498 -12.547651,28.021485 -27.917969,28.021485 h -6.060547 v 187.972653 7.98047 h 6.052735 c 15.369447,0.001 27.925781,12.71044 27.925781,28.02149 0,15.31105 -12.556334,28.02034 -27.925781,28.02148 h -6.052735 v 13.55183 z"
        transform="matrix(0.26458333,0,0,0.26458333,-6.9889879,7.4251543)"
        sodipodi:nodetypes="cccsccccssccccccccssccccscccc" />
     <circle
@@ -291,26 +293,27 @@
        id="circle12107-5"
        cx="24.678289"
        cy="83.754768"
-       r="11.035981" />
+       r="9.4405804" />
     <circle
        style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#0000ff;stroke-width:0.3;stroke-linejoin:round;shape-rendering:crispEdges;stop-color:#000000"
        id="circle12115-2"
        cx="68.06842"
        cy="83.754768"
-       r="11.035981" />
+       r="9.4405804" />
     <circle
        style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#0000ff;stroke-width:0.3;stroke-linejoin:round;shape-rendering:crispEdges;stop-color:#000000"
        id="circle12123-8"
        cx="111.45856"
        cy="83.754768"
-       r="11.035981" />
+       r="9.4405804" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="Upper panel "
      transform="translate(-2136.2895,-482.89025)"
-     style="display:inline;opacity:1">
+     style="display:inline;opacity:1"
+     sodipodi:insensitive="true">
     <circle
        style="display:inline;opacity:1;fill:#ffffff;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;stroke-linejoin:round;shape-rendering:crispEdges;stop-color:#000000"
        id="circle11917"
@@ -524,24 +527,24 @@
        r="10.363153" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:0.95;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=499,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:'wdth' 90, 'wght' 499;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:0.95;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=600,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:'wdth' 90, 'wght' 600;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
        x="2211.2864"
        y="492.42557"
        id="text11967"
-       transform="translate(4.8194846e-4,4.2333436)"><tspan
+       transform="translate(4.8194846e-4,3.0640396)"><tspan
          sodipodi:role="line"
          id="tspan11965"
          x="2211.2864"
          y="492.42557"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:0.95;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=499,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:'wdth' 90, 'wght' 499;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1">ELECTRICAL POWER</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:0.95;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=600,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:'wdth' 90, 'wght' 600;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1">ELECTRICAL POWER</tspan></text>
     <path
        style="display:inline;opacity:1;fill:none;stroke:#000000;stroke-width:0.750001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
-       d="m 2157.5481,495.46787 v -1.87069 c 0,0 14.5044,-7e-5 18.402,-2e-4"
+       d="m 2157.5481,495.32171 v -1.87069 c 0,0 24.0294,-7e-5 27.927,-2e-4"
        id="path11969"
        sodipodi:nodetypes="ccc" />
     <path
        style="display:inline;opacity:1;fill:none;stroke:#000000;stroke-width:0.750001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
-       d="m 2265.2778,495.46787 v -1.87069 c 0,0 -14.5044,-7e-5 -18.402,-2e-4"
+       d="m 2265.2778,495.32171 v -1.87069 c 0,0 -24.0294,-7e-5 -27.927,-2e-4"
        id="path11971"
        sodipodi:nodetypes="ccc" />
     <g
