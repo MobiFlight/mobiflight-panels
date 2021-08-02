@@ -119,16 +119,6 @@
          offset="0"
          id="stop62703" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient62717"
-       id="linearGradient62719"
-       x1="-164.08841"
-       y1="217.44962"
-       x2="63.911591"
-       y2="217.44962"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.99925801,0,0,0.98804151,-83.663907,-73.380323)" />
     <inkscape:path-effect
        effect="spiro"
        id="path-effect5632"
@@ -184,6 +174,26 @@
        y1="217.44962"
        x2="63.911591"
        y2="217.44962" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient62717"
+       id="linearGradient62719-0"
+       x1="-164.08841"
+       y1="217.44962"
+       x2="63.911591"
+       y2="217.44962"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.46271977,0,0,0.99500472,-171.70355,-74.964101)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient62717"
+       id="linearGradient62719-3"
+       x1="-164.08841"
+       y1="217.44962"
+       x2="63.911591"
+       y2="217.44962"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.52412324,0,0,0.99500427,-53.297178,-74.96398)" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -192,16 +202,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="445.47727"
-     inkscape:cy="172.1805"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="306.99999"
+     inkscape:cy="130.75"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer2"
      showgrid="false"
      showguides="true"
      inkscape:window-width="2775"
      inkscape:window-height="1037"
-     inkscape:window-x="292"
+     inkscape:window-x="596"
      inkscape:window-y="5"
      inkscape:window-maximized="0"
      inkscape:document-rotation="0"
@@ -243,7 +253,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Extra information"
-     style="display:none"
+     style="display:inline"
      transform="translate(264.86399,-122.29458)">
     <text
        xml:space="preserve"
@@ -254,51 +264,51 @@
        transform="translate(-4.1159507,0.74835468)"><tspan
          x="-96.297104"
          y="242.03133"
-         id="tspan3662"><tspan
+         id="tspan1487"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3660">Since the 100/1000 selector + push/pull rotary </tspan></tspan><tspan
+           id="tspan1485">Since the 100/1000 selector + push/pull rotary </tspan></tspan><tspan
          x="-96.297104"
          y="247.351"
-         id="tspan3666"><tspan
+         id="tspan1491"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3664">encoder can be a difficult one to construct, there </tspan></tspan><tspan
+           id="tspan1489">encoder can be a difficult one to construct, there </tspan></tspan><tspan
          x="-96.297104"
          y="252.67067"
-         id="tspan3670"><tspan
+         id="tspan1495"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3668">is an alternative pushbutton below the &quot;metric alt&quot; </tspan></tspan><tspan
+           id="tspan1493">is an alternative pushbutton below the &quot;metric alt&quot; </tspan></tspan><tspan
          x="-96.297104"
          y="257.99034"
-         id="tspan3674"><tspan
+         id="tspan1499"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3672">button. 
+           id="tspan1497">button. 
 </tspan></tspan><tspan
          x="-96.297104"
          y="263.31"
-         id="tspan3678"><tspan
+         id="tspan1503"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3676">
+           id="tspan1501">
 </tspan></tspan><tspan
          x="-96.297104"
          y="268.62967"
-         id="tspan3682"><tspan
+         id="tspan1507"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3680">So, either delete the 100/1000 markings from the </tspan></tspan><tspan
+           id="tspan1505">So, either delete the 100/1000 markings from the </tspan></tspan><tspan
          x="-96.297104"
          y="273.94934"
-         id="tspan3686"><tspan
+         id="tspan1511"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3684">altitude rotary encoder backlight ring, or remove </tspan></tspan><tspan
+           id="tspan1509">altitude rotary encoder backlight ring, or remove </tspan></tspan><tspan
          x="-96.297104"
          y="279.26901"
-         id="tspan3690"><tspan
+         id="tspan1515"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3688">the separate 100/1000 selector, depending on how </tspan></tspan><tspan
+           id="tspan1513">the separate 100/1000 selector, depending on how </tspan></tspan><tspan
          x="-96.297104"
          y="284.58868"
-         id="tspan3694"><tspan
+         id="tspan1519"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3692">you intend to build your panel.</tspan></tspan></text>
+           id="tspan1517">you intend to build your panel.</tspan></tspan></text>
     <path
        style="display:inline;opacity:1;fill:none;stroke:#0000ff;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
        d="m -68.607979,203.39751 v 32.36636"
@@ -322,64 +332,64 @@
        transform="translate(-157.52866,0.74835468)"><tspan
          x="-96.297104"
          y="242.03133"
-         id="tspan3698"><tspan
+         id="tspan1523"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3696">TODO: 
+           id="tspan1521">TODO: 
 </tspan></tspan><tspan
          x="-96.297104"
          y="247.351"
-         id="tspan3702"><tspan
+         id="tspan1527"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3700">- need to check the display layout with actual 7-</tspan></tspan><tspan
+           id="tspan1525">- need to check the display layout with actual 7-</tspan></tspan><tspan
          x="-96.297104"
          y="252.67067"
-         id="tspan3706"><tspan
+         id="tspan1531"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3704">segment digits dimensions. 
+           id="tspan1529">segment digits dimensions. 
 </tspan></tspan><tspan
          x="-96.297104"
          y="257.99034"
-         id="tspan3710"><tspan
+         id="tspan1535"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3708">
+           id="tspan1533">
 </tspan></tspan><tspan
          x="-96.297104"
          y="263.31"
-         id="tspan3714"><tspan
+         id="tspan1539"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3712">- need to finish the 3d model design for push-pull </tspan></tspan><tspan
+           id="tspan1537">- need to finish the 3d model design for push-pull </tspan></tspan><tspan
          x="-96.297104"
          y="268.62967"
-         id="tspan3718"><tspan
+         id="tspan1543"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3716">encoder mechanics
+           id="tspan1541">encoder mechanics
 </tspan></tspan><tspan
          x="-96.297104"
          y="273.94934"
-         id="tspan3722"><tspan
+         id="tspan1547"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3720">
+           id="tspan1545">
 </tspan></tspan><tspan
          x="-96.297104"
          y="279.26901"
-         id="tspan3726"><tspan
+         id="tspan1551"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3724">- need to document those thin lines between the </tspan></tspan><tspan
+           id="tspan1549">- need to document those thin lines between the </tspan></tspan><tspan
          x="-96.297104"
          y="284.58868"
-         id="tspan3730"><tspan
+         id="tspan1555"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3728">SPD/MACH etc texts (they are laser cuts to create </tspan></tspan><tspan
+           id="tspan1553">SPD/MACH etc texts (they are laser cuts to create </tspan></tspan><tspan
          x="-96.297104"
          y="289.90836"
-         id="tspan3734"><tspan
+         id="tspan1559"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3732">a narrow separation between those texts to avoid </tspan></tspan><tspan
+           id="tspan1557">a narrow separation between those texts to avoid </tspan></tspan><tspan
          x="-96.297104"
          y="295.22803"
-         id="tspan3738"><tspan
+         id="tspan1563"><tspan
            style="font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift"
-           id="tspan3736">light leakage </tspan></tspan></text>
+           id="tspan1561">light leakage </tspan></tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -947,18 +957,6 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       id="rect58187"
-       width="227.83083"
-       height="19.760843"
-       x="-247.63045"
-       y="131.5885"
-       style="fill:url(#linearGradient62719);fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       rx="0.74835467"
-       ry="0.74835467"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96"
-       inkscape:label="Top Display Cutout" />
-    <rect
        style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.261485;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="rect11526"
        width="16.403517"
@@ -1288,6 +1286,28 @@
        d="m -63.875569,190.07405 c 0,-2.67965 -2.17228,-4.85083 -4.85052,-4.85083 -2.67838,0 -4.84948,2.17118 -4.84948,4.85001 0,2.6784 2.1711,4.84999 4.84948,4.84999 2.67824,0 4.84933,-2.17159 4.84933,-4.84999 z"
        style="font-variation-settings:'wght' 776;display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.89091;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
        id="path2296" />
+    <rect
+       id="rect58187-7"
+       width="105.50011"
+       height="19.900108"
+       x="-247.63045"
+       y="131.44925"
+       style="display:inline;fill:url(#linearGradient62719-0);fill-opacity:1;stroke:#ff0000;stroke-width:0.299891;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       ry="0.73131984"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       rx="0.73131984" />
+    <rect
+       id="rect58187-0"
+       width="119.5001"
+       height="19.900099"
+       x="-139.29971"
+       y="131.44925"
+       style="display:inline;fill:url(#linearGradient62719-3);fill-opacity:1;stroke:#ff0000;stroke-width:0.299901;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       ry="0.73131943"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       rx="0.73131943" />
   </g>
   <g
      inkscape:groupmode="layer"
