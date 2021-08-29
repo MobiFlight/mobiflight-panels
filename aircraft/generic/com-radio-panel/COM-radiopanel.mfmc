@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Airliner COM</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="Backlight" Pin="13" />
+  <Output Name="Annunciators" Pin="11" />
+  <LedModule Name="Radio Displays" DinPin="2" ClsPin="4" ClkPin="3" Brightness="15" NumModules="2" />
+  <Encoder Name="Com MHz" PinLeft="8" PinRight="6" EncoderType="2" />
+  <Encoder Name="Com kHz" PinLeft="12" PinRight="14" EncoderType="2" />
+  <Output Name="COM1 receive" Pin="9" />
+  <Output Name="COM2 receive" Pin="7" />
+  <Output Name="BOTH receive" Pin="5" />
+  <Button Name="Swap" Pin="21" />
+  <Button Name="Com1 Select" Pin="19" />
+  <Button Name="Com2 Select" Pin="17" />
+  <Button Name="Both Select" Pin="15" />
+</Config>

@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="16b4e70f-d37c-4e36-830e-2a6dfe0fe643">
+      <active>true</active>
+      <description>Backlight</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT BACKLIGHT INTENSITY,Percent) (L:LIGHTING_Knob_Master) max (A:LIGHT POTENTIOMETER:3, Percent) max" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Airliner COM/ SN-deb-218" trigger="normal" pin="Backlight" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="if($=100, 10, $*2.45+10) * A * B" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="?" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="!" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="#" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="?" />
+          <configref active="True" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="B" />
+          <configref active="True" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6051d402-dc80-4b94-9578-361e0b586030">
+      <active>true</active>
+      <description>Annunciator brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_Knob_Master)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Airliner COM/ SN-deb-218" trigger="normal" pin="Annunciators" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="$*1+5" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="?" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="!" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="#" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="46962462-480b-4664-b0c2-af8263e727b6">
+      <active>false</active>
+      <description>Annunciator ON (test)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_Knob_Master)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Airliner COM/ SN-deb-218" trigger="normal" pin="Annunciators" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="200" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="?" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="!" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="#" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="1f972241-3898-4074-a75e-5621e375c7f5">
+      <active>true</active>
+      <description>Panel is powered</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="-" trigger="normal" pin="Annunciators" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="?" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="!" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="#" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="22c96ffb-7c04-4bdb-8d50-2e45c0b44166">
+      <active>true</active>
+      <description>Avionics Master Switch</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AVIONICS MASTER SWITCH,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="?" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="!" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="#" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d1a79b71-1eb7-4c0d-a91d-e4df50904257">
+      <active>true</active>
+      <description>digits brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_Knob_Master)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="True" expression="($/100)*6+1" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="?" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="A" />
+          <configref active="False" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="?" />
+          <configref active="False" ref="6051d402-dc80-4b94-9578-361e0b586030" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f8856e73-7284-4de4-ad73-35e05bde04c3">
+      <active>true</active>
+      <description>COM1 frequency</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:1, Number)" />
+        <comparison active="False" value="0" operand="=" ifValue="------" elseValue="$" />
+        <display type="Display Module" serial="Airliner COM/ SN-deb-218" trigger="normal" ledAddress="Radio Displays" ledConnector="2" ledModuleSize="6" ledPadding="False" ledBrightnessRef="d1a79b71-1eb7-4c0d-a91d-e4df50904257" ledPaddingChar=" " ledDigits="0,1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="6b4e7b22-efb8-477b-bf35-31420277334a" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <transformation active="True" expression="$*A*B" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="6051d402-dc80-4b94-9578-361e0b586030" placeholder="!" />
+          <configref active="True" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="B" />
+          <configref active="True" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e2f8e9bf-9f24-49f9-9aa2-c9f3d7405b41">
+      <active>true</active>
+      <description>ACTIVE BLANK</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <comparison active="True" value="0" operand="=" ifValue="      " elseValue="$" />
+        <display type="Display Module" serial="Airliner COM/ SN-deb-218" trigger="normal" ledAddress="Radio Displays" ledConnector="2" ledModuleSize="6" ledPadding="False" ledBrightnessRef="d1a79b71-1eb7-4c0d-a91d-e4df50904257" ledPaddingChar=" " ledDigits="0,1,2,3,4,5" />
+        <preconditions>
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="0" logic="or" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="0" logic="or" />
+        </preconditions>
+        <transformation active="True" expression="0" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="6051d402-dc80-4b94-9578-361e0b586030" placeholder="!" />
+          <configref active="True" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="B" />
+          <configref active="True" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="bcb6187b-1265-46d7-8a6d-873cddfaeb17">
+      <active>true</active>
+      <description>COM2 frequency</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM ACTIVE FREQUENCY:2, Number)" />
+        <comparison active="False" value="0" operand="=" ifValue="      " elseValue="$" />
+        <display type="Display Module" serial="Airliner COM/ SN-deb-218" trigger="normal" ledAddress="Radio Displays" ledConnector="2" ledModuleSize="6" ledPadding="False" ledBrightnessRef="d1a79b71-1eb7-4c0d-a91d-e4df50904257" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="6b4e7b22-efb8-477b-bf35-31420277334a" operand="=" value="2" logic="and" />
+        </preconditions>
+        <transformation active="False" expression="$*A*B" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="6051d402-dc80-4b94-9578-361e0b586030" placeholder="!" />
+          <configref active="False" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="B" />
+          <configref active="False" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="199e9dd8-907f-42dc-a378-583faae60921">
+      <active>true</active>
+      <description>COM1 standby frequency</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:1,Number)" />
+        <comparison active="False" value="0" operand="=" ifValue="      " elseValue="$" />
+        <display type="Display Module" serial="Airliner COM/ SN-deb-218" trigger="normal" ledAddress="Radio Displays" ledConnector="1" ledModuleSize="6" ledPadding="True" ledBrightnessRef="d1a79b71-1eb7-4c0d-a91d-e4df50904257" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="6b4e7b22-efb8-477b-bf35-31420277334a" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="46962462-480b-4664-b0c2-af8263e727b6" placeholder="?" />
+          <configref active="True" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" placeholder="B" />
+          <configref active="True" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c11baaab-f7a3-4581-a066-8b9efa9f6a70">
+      <active>true</active>
+      <description>STANDBY BLANK</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:1,Number)" />
+        <comparison active="True" value="0" operand="=" ifValue="      " elseValue="$" />
+        <display type="Display Module" serial="Airliner COM/ SN-deb-218" trigger="normal" ledAddress="Radio Displays" ledConnector="1" ledModuleSize="6" ledPadding="True" ledBrightnessRef="d1a79b71-1eb7-4c0d-a91d-e4df50904257" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" />
+        <preconditions>
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="0" logic="or" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="0" logic="or" />
+        </preconditions>
+        <transformation active="True" expression="$*A*B" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="46962462-480b-4664-b0c2-af8263e727b6" placeholder="?" />
+          <configref active="True" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" placeholder="B" />
+          <configref active="True" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="12713bbc-e015-443f-9bdf-0bf3a96f3c37">
+      <active>true</active>
+      <description>COM2 standby frequency</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM STANDBY FREQUENCY:2,Number)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Display Module" serial="Airliner COM/ SN-deb-218" trigger="normal" ledAddress="Radio Displays" ledConnector="1" ledModuleSize="6" ledPadding="True" ledBrightnessRef="d1a79b71-1eb7-4c0d-a91d-e4df50904257" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" ledDecimalPoints="3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="6b4e7b22-efb8-477b-bf35-31420277334a" operand="=" value="2" logic="and" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="46962462-480b-4664-b0c2-af8263e727b6" placeholder="?" />
+          <configref active="True" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" placeholder="B" />
+          <configref active="True" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="94aa8bf6-4f8b-420e-b7dc-355aa070d40e">
+      <active>true</active>
+      <description>com1 receive</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM TRANSMIT:1,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Airliner COM/ SN-deb-218" trigger="normal" pin="COM1 receive" pinBrightness="255" />
+        <preconditions />
+        <transformation active="True" expression="$*A*B" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="@" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="?" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="True" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" placeholder="B" />
+          <configref active="True" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="5bec3ffd-8c03-49fc-9b46-ad503aea8677">
+      <active>true</active>
+      <description>com2 receive</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM TRANSMIT:2,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Airliner COM/ SN-deb-218" trigger="normal" pin="COM2 receive" pinBrightness="255" />
+        <preconditions />
+        <transformation active="True" expression="$*A*B" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="@" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="?" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="True" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" placeholder="B" />
+          <configref active="True" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c7aa7672-8989-4d46-9773-f1d6a49d2bda">
+      <active>true</active>
+      <description>com receive both</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM RECEIVE ALL,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Airliner COM/ SN-deb-218" trigger="normal" pin="BOTH receive" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="@" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="?" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6b4e7b22-efb8-477b-bf35-31420277334a">
+      <active>true</active>
+      <description>Com Radio Selected</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ComSelected" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="True" expression="if($=0, 1, $)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="B" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="A" />
+          <configref active="False" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="@" />
+          <configref active="False" ref="46962462-480b-4664-b0c2-af8263e727b6" placeholder="?" />
+          <configref active="False" ref="6051d402-dc80-4b94-9578-361e0b586030" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="de6a9a04-214b-4149-9688-97626c5660e1">
+      <active>true</active>
+      <description>COM1 swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Swap" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="COM_STBY_RADIO_SWAP" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b4e7b22-efb8-477b-bf35-31420277334a" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a9e0e133-bed8-46b0-b493-7a9737beb204">
+      <active>true</active>
+      <description>COM2 swap</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Swap" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="COM2_RADIO_SWAP" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b4e7b22-efb8-477b-bf35-31420277334a" operand="=" value="2" logic="and" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1f714252-7d99-4024-ae69-458573c80b32">
+      <active>true</active>
+      <description>com1 transmit</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Com1 Select" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="COM1_TRANSMIT_SELECT" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8bbee6a0-8b2c-49fe-a01d-038efb8ed4ca">
+      <active>true</active>
+      <description>com1 radio select</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Com1 Select" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ComSelected" varExpression="1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="@" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="?" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="6051d402-dc80-4b94-9578-361e0b586030" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="85a53dd2-70c8-4e53-9a7b-38517cead0a2">
+      <active>true</active>
+      <description>com2 transmit</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Com2 Select" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="COM2_TRANSMIT_SELECT" />
+          <onRelease />
+        </button>
+        <preconditions>
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d490be63-c2c7-45ee-b40b-448abcc005cd">
+      <active>true</active>
+      <description>com2 radio select</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Com2 Select" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="ComSelected" varExpression="2" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="199e9dd8-907f-42dc-a378-583faae60921" placeholder="@" />
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="?" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+          <configref active="False" ref="6051d402-dc80-4b94-9578-361e0b586030" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d68a9120-d318-466b-bc82-a9144c5c7d02">
+      <active>true</active>
+      <description>both select</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Both Select" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="COM_RECEIVE_ALL_TOGGLE" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="f8856e73-7284-4de4-ad73-35e05bde04c3" placeholder="B" />
+          <configref active="False" ref="d1a79b71-1eb7-4c0d-a91d-e4df50904257" placeholder="A" />
+          <configref active="False" ref="1f972241-3898-4074-a75e-5621e375c7f5" placeholder="@" />
+          <configref active="False" ref="46962462-480b-4664-b0c2-af8263e727b6" placeholder="?" />
+          <configref active="False" ref="6051d402-dc80-4b94-9578-361e0b586030" placeholder="!" />
+          <configref active="False" ref="16b4e70f-d37c-4e36-830e-2a6dfe0fe643" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="73cb3045-bd5e-49d4-8d89-e0a5602ac640">
+      <active>true</active>
+      <description>COM1 MHz tuning</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Com MHz" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="COM_RADIO_WHOLE_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="COM_RADIO_WHOLE_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b4e7b22-efb8-477b-bf35-31420277334a" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cb5b3bca-b4b5-4eaf-827d-9b11a784db8f">
+      <active>true</active>
+      <description>COM2 MHz tuning</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Com MHz" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="COM2_RADIO_WHOLE_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="COM2_RADIO_WHOLE_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b4e7b22-efb8-477b-bf35-31420277334a" operand="=" value="2" logic="and" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cad23f3e-1a4e-4b5b-928f-19cad2e6525b">
+      <active>true</active>
+      <description>COM1 kHz tuning</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Com kHz" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="COM_RADIO_FRACT_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="COM_RADIO_FRACT_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b4e7b22-efb8-477b-bf35-31420277334a" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e3691d24-1877-4959-90a6-1eaeb95871bd">
+      <active>true</active>
+      <description>COM2 kHz tuning</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="Airliner COM/ SN-deb-218" name="Com kHz" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="COM2_RADIO_FRACT_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="COM2_RADIO_FRACT_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions>
+          <precondition type="config" active="true" ref="6b4e7b22-efb8-477b-bf35-31420277334a" operand="=" value="2" logic="and" />
+          <precondition type="config" active="true" ref="1f972241-3898-4074-a75e-5621e375c7f5" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="22c96ffb-7c04-4bdb-8d50-2e45c0b44166" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
