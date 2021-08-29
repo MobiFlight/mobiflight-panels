@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="150.25mm"
-   height="61.35006mm"
-   viewBox="0 0 150.25001 61.350052"
+   width="146.25mm"
+   height="57.35006mm"
+   viewBox="0 0 146.25001 57.350052"
    version="1.1"
    id="svg14672"
    inkscape:version="1.2-dev (da2df6f, 2021-07-26)"
@@ -27,18 +27,18 @@
      borderopacity="0.32156863"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="256.5"
-     inkscape:cy="121.5"
+     inkscape:zoom="4"
+     inkscape:cx="173"
+     inkscape:cy="135.5"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
      showgrid="false"
-     fit-margin-top="2"
+     fit-margin-top="0"
      lock-margins="true"
-     fit-margin-left="2"
-     fit-margin-right="2"
-     fit-margin-bottom="2"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
      inkscape:bbox-paths="true"
@@ -55,7 +55,7 @@
      inkscape:window-x="1906"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:snap-global="false"
+     inkscape:snap-global="true"
      inkscape:snap-others="true"
      showguides="true"
      inkscape:snap-nodes="true"
@@ -72,8 +72,8 @@
        spacingy="4.7624998"
        dotted="false"
        empspacing="10"
-       originx="-3.9465481"
-       originy="-220.30872" />
+       originx="-5.9465483"
+       originy="-222.30869" />
   </sodipodi:namedview>
   <metadata
      id="metadata14669">
@@ -91,7 +91,7 @@
      id="layer3"
      inkscape:label="pcb"
      style="display:none;opacity:1"
-     transform="translate(-10.9358,-136.68404)">
+     transform="translate(-12.9358,-138.68404)">
     <g
        id="g7494"
        transform="translate(-1.0822595,2.3659516)"
@@ -160,16 +160,6 @@
        inkscape:export-ydpi="96" />
     <circle
        style="display:inline;fill:none;stroke:#008000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
-       id="circle10978-3"
-       cx="-138.67065"
-       cy="-185.17188"
-       r="1.4988565"
-       transform="scale(-1)"
-       inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <circle
-       style="display:inline;fill:none;stroke:#008000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
        id="circle10980-6"
        cx="-27.449953"
        cy="-191.17181"
@@ -198,23 +188,33 @@
        inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
+    <circle
+       style="display:inline;fill:none;stroke:#008000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       id="circle16410"
+       cx="-144.67085"
+       cy="-191.17181"
+       r="1.4988565"
+       transform="scale(-1)"
+       inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="Lower panel mounting plate"
      style="display:inline;opacity:1"
-     transform="translate(-2203.2023,-761.40144)">
+     transform="translate(-2205.2023,-763.40144)">
     <path
        id="path2766"
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;shape-rendering:crispEdges;stop-color:#000000"
        d="m 2205.3023,763.50144 v 4.7625 9.525 0 9.525 19.05 0 4.76251 9.52505 h 146.05 v -9.52505 -4.76251 0 -19.05 -9.525 0 -9.525 -4.7625 z"
        sodipodi:nodetypes="ccccccccccccccccccc"
        inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <circle
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="circle2770"
        cx="-2210.1914"
        cy="-777.78912"
@@ -224,7 +224,7 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <circle
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="circle2772"
        cx="-2210.1914"
        cy="-806.3642"
@@ -234,7 +234,7 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <circle
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="circle2774"
        cx="-2346.4624"
        cy="-806.3642"
@@ -244,7 +244,7 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <circle
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="circle2776"
        cx="2346.4624"
        cy="-777.78912"
@@ -254,7 +254,7 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <circle
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="circle10974"
        cx="-2219.7166"
        cy="-768.2641"
@@ -264,7 +264,7 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <circle
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="circle10976"
        cx="2336.9375"
        cy="-768.2641"
@@ -274,17 +274,7 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <circle
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
-       id="circle10978"
-       cx="-2330.9373"
-       cy="-809.88928"
-       r="1.4988565"
-       transform="scale(-1)"
-       inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <circle
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="circle10980"
        cx="-2219.7166"
        cy="-815.88922"
@@ -349,7 +339,7 @@
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <circle
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="circle7578"
        cx="-2210.1914"
        cy="-777.78912"
@@ -360,45 +350,66 @@
        inkscape:export-ydpi="96" />
     <path
        id="path3080-5"
-       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
+       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        d="m 2232.6153,795.806 a 2.3635455,2.3635455 0 0 1 2.3634,-2.36356 2.3635455,2.3635455 0 0 1 2.3635,2.36356 2.3635455,2.3635455 0 0 1 -2.3635,2.36355 2.3635455,2.3635455 0 0 1 -2.3634,-2.36355 z"
        inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        id="path8231-1"
-       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
+       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        d="m 2270.7149,795.806 a 2.3635455,2.3635455 0 0 1 2.3634,-2.36356 2.3635455,2.3635455 0 0 1 2.3635,2.36356 2.3635455,2.3635455 0 0 1 -2.3635,2.36355 2.3635455,2.3635455 0 0 1 -2.3634,-2.36355 z"
        inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        id="path8304-5"
-       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
+       style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke fill markers;shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        d="m 2251.6651,795.806 a 2.3635455,2.3635455 0 0 1 2.3634,-2.36356 2.3635455,2.3635455 0 0 1 2.3635,2.36356 2.3635455,2.3635455 0 0 1 -2.3635,2.36355 2.3635455,2.3635455 0 0 1 -2.3634,-2.36355 z"
        inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        id="path5359"
-       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;shape-rendering:crispEdges;stop-color:#000000"
        d="m 2243.3636,794.02328 a 1.4988565,1.4988565 0 0 1 1.4989,-1.49886 1.4988565,1.4988565 0 0 1 1.4988,1.49886 1.4988565,1.4988565 0 0 1 -1.4988,1.49886 1.4988565,1.4988565 0 0 1 -1.4989,-1.49886 z" />
     <path
        id="path5363"
-       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;shape-rendering:crispEdges;stop-color:#000000"
        d="m 2303.1598,794.02328 a 1.4988565,1.4988565 0 0 1 1.4989,-1.49886 1.4988565,1.4988565 0 0 1 1.4988,1.49886 1.4988565,1.4988565 0 0 1 -1.4988,1.49886 1.4988565,1.4988565 0 0 1 -1.4989,-1.49886 z" />
+    <circle
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
+       id="circle16412"
+       cx="-2336.9375"
+       cy="-815.88922"
+       r="1.4988565"
+       transform="scale(-1)"
+       inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Lower panel tape mask"
      style="display:inline"
-     transform="translate(-3.946548,-220.30885)" />
+     transform="translate(-5.946548,-222.30885)">
+    <path
+       id="path11991-5"
+       style="display:inline;fill:none;stroke:#0000ff;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;shape-rendering:crispEdges;stop-color:#000000"
+       d="m 149.46286,278.27066 v -5.58578 h -1.60145 c -4.0665,-2.7e-4 -7.38869,-3.36297 -7.38869,-7.41402 0,-4.05105 3.32219,-7.41372 7.38869,-7.41402 h 1.60145 v -2.1115 -11.63443 h -1.60351 c -4.06673,0 -7.38663,-3.36417 -7.38663,-7.41402 0,-4.04984 3.31889,-7.41581 7.38663,-7.41608 h 1.60351 v -1.48053 -4.10323 m -140.7826215,0 v 4.10323 1.48053 h 1.6035205 c 4.06773,2.6e-4 7.386629,3.36624 7.386629,7.41608 0,4.04985 -3.319899,7.41402 -7.386629,7.41402 H 8.6802385 v 11.63443 2.1115 h 1.6014535 c 4.066499,2.7e-4 7.388696,3.36297 7.388696,7.41402 0,4.05105 -3.322197,7.41372 -7.388696,7.41402 H 8.6802385 v 5.58578"
+       sodipodi:nodetypes="cccsccccssccccccccssccccsccc" />
+    <path
+       id="path959"
+       style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#0000ff;stroke-width:0.755906;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:stroke markers fill;stop-color:#000000;stop-opacity:1"
+       d="M 184.54102 103.47461 A 19 19 0 0 0 165.54297 122.39648 L 131.49805 122.39648 A 19 19 0 0 0 112.5 103.5 A 19 19 0 0 0 93.503906 122.39648 L 76.496094 122.39648 C 73.058023 122.39648 70.291016 125.16544 70.291016 128.60352 L 70.291016 186.94141 C 70.291016 190.37948 73.058023 193.14648 76.496094 193.14648 L 292.58594 193.14648 C 296.02401 193.14648 298.79102 190.37948 298.79102 186.94141 L 298.79102 128.60352 C 298.79102 125.16544 296.02401 122.39648 292.58594 122.39648 L 275.53906 122.39648 A 19 19 0 0 0 256.53906 103.47461 A 19 19 0 0 0 237.54102 122.39648 L 203.53906 122.39648 A 19 19 0 0 0 184.54102 103.47461 z "
+       transform="matrix(0.26458333,0,0,0.26458333,5.946548,222.30885)" />
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="Upper panel "
-     transform="translate(-2147.2251,-695.77395)"
+     transform="translate(-2149.2251,-697.77395)"
      style="display:inline;opacity:1">
     <circle
        style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
@@ -417,16 +428,6 @@
        cy="-702.6366"
        r="1.4988565"
        transform="scale(1,-1)"
-       inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-    <circle
-       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
-       id="circle10978-0"
-       cx="-2274.96"
-       cy="-744.26178"
-       r="1.4988565"
-       transform="scale(-1)"
        inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
@@ -577,12 +578,23 @@
        id="path5363-1"
        style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
        d="m 2247.1826,728.39579 a 1.4988565,1.4988565 0 0 1 1.4989,-1.49886 1.4988565,1.4988565 0 0 1 1.4988,1.49886 1.4988565,1.4988565 0 0 1 -1.4988,1.49886 1.4988565,1.4988565 0 0 1 -1.4989,-1.49886 z" />
+    <circle
+       style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       id="circle16414"
+       cx="-2280.9602"
+       cy="-750.26172"
+       r="1.4988565"
+       transform="scale(-1)"
+       inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Upper Panel COM"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-2,-2)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:0.95;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=600,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 90, 'wght' 600;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
@@ -612,7 +624,8 @@
      inkscape:groupmode="layer"
      id="g6332"
      inkscape:label="Upper Panel NAV"
-     style="display:none">
+     style="display:none"
+     transform="translate(-2,-2)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:0.95;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=600,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 90, 'wght' 600;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
@@ -643,7 +656,7 @@
      id="layer12"
      inkscape:label="Button labels and engraving sheet cutout"
      style="display:inline"
-     transform="translate(-2203.2021,-761.40119)">
+     transform="translate(-2205.2021,-763.40119)">
     <g
        id="g6339"
        transform="translate(1287.8311,343.64655)" />
@@ -728,6 +741,14 @@
        id="path100678-2-2"
        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.700004;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:crispEdges;text-rendering:auto;enable-background:accumulate;stop-color:#000000"
        d="m 2282.8691,781.66521 a 0.35367767,0.35367767 0 0 0 -0.1129,-0.2603 l -1.3755,-1.23922 -0.2629,-0.23646 -0.4739,0.52474 0.2629,0.23646 0.703,0.63407 h -1.9513 -0.2061 -0.1478 -0.2061 -4.0535 l 0.7029,-0.63407 0.2621,-0.23646 -0.4739,-0.52474 -0.2621,0.23646 -1.3754,1.23922 c -0.1509,0.13985 -0.1509,0.37901 0,0.51902 l 1.3754,1.28848 0.2546,0.2406 0.4814,-0.51648 -0.2564,-0.24059 -0.7086,-0.66363 h 4.0535 0.2061 0.3531 1.9513 l -0.7087,0.66363 -0.2572,0.24059 0.4822,0.51648 0.2546,-0.2406 1.3755,-1.28848 a 0.35367767,0.35367767 0 0 0 0.1129,-0.25872 z"
+       inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       id="path2768-9"
+       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
+       d="m 2208.3862,764.28879 c -1.2573,0.006 -2.2784,1.01756 -2.2965,2.27478 v 2.33011 1.67274 c 0,0.077 0,0.15331 0.011,0.22842 v 0.0155 c 0.01,0.0721 0.019,0.14296 0.033,0.21291 v 0.004 0.0103 c 0.014,0.0675 0.031,0.13375 0.051,0.19894 0,0.009 0.01,0.0186 0.01,0.0279 0.02,0.0632 0.043,0.12483 0.068,0.18554 0,0.009 0.01,0.0186 0.012,0.0279 0.025,0.0593 0.053,0.11756 0.084,0.17414 0,0.01 0.01,0.0194 0.015,0.029 0.032,0.0575 0.066,0.11358 0.1023,0.16796 0,0.004 0.01,0.008 0.01,0.0124 v 0.004 c 0.039,0.0568 0.08,0.11184 0.1236,0.16484 0,0.004 0.01,0.007 0.01,0.0103 0.044,0.0527 0.09,0.10335 0.138,0.15193 0,0.004 0.01,0.007 0.011,0.0108 0.05,0.0494 0.1015,0.0964 0.1555,0.14108 v 0.004 10e-4 c 0.055,0.0453 0.1124,0.088 0.1716,0.12816 0,0.002 0.01,0.004 0.01,0.006 0.056,0.0378 0.1145,0.0726 0.1742,0.10541 0.01,0.004 0.015,0.009 0.023,0.0129 0,10e-4 0.01,0.002 0.01,0.003 0.055,0.0291 0.1108,0.0559 0.1679,0.0806 0.012,0.005 0.024,0.0101 0.036,0.015 0.058,0.0239 0.1167,0.0454 0.1767,0.0646 0.011,0.003 0.021,0.007 0.032,0.01 0.064,0.0193 0.1284,0.0363 0.1943,0.0501 0.01,0.002 0.017,0.003 0.026,0.005 0.069,0.0136 0.1381,0.0247 0.2088,0.032 0,8e-4 0.01,0.001 0.012,0.002 0.076,0.007 0.1524,0.0114 0.2299,0.0114 h 1.7948 c 2.6997,2.5e-4 4.8881,2.21525 4.888,4.91495 1e-4,2.6997 -2.1883,4.91363 -4.888,4.91388 h -1.8061 c -1.2704,0.006 -2.297,1.03754 -2.2971,2.30789 v 11.82769 2.30269 0 c 0,1.27459 1.0333,2.30782 2.3078,2.30791 h 1.7948 c 2.6997,2.4e-4 4.8881,2.21524 4.888,4.91495 10e-5,2.6997 -2.1883,4.9136 -4.888,4.9139 h -1.8061 c -1.2669,0.006 -2.2908,1.03198 -2.2965,2.29753 v 3.9796 c 1e-4,1.27456 1.0333,2.30777 2.3078,2.30789 v 0 h 139.8954 v 0 c 1.2746,-1.2e-4 2.2716,-1.03286 2.2717,-2.30736 v -3.97092 0 c -1e-4,-1.27033 -1.0267,-2.30188 -2.297,-2.30787 h -1.8061 c -2.6997,-2.7e-4 -4.888,-2.2142 -4.888,-4.91391 0,-2.6997 2.1883,-4.91471 4.888,-4.91497 h 1.7948 c 1.2746,-6e-5 2.3077,-1.0333 2.3078,-2.30788 v 0 -2.30269 -11.8277 c -1e-4,-1.27035 -1.0267,-2.30185 -2.297,-2.30789 h -1.8061 c -2.6997,-2.5e-4 -4.888,-2.21419 -4.888,-4.91388 0,-2.6997 2.1883,-4.9147 4.888,-4.91496 h 1.7948 c 1.2746,-7e-5 2.3077,-1.03331 2.3078,-2.30789 v 0 -1.67274 -2.29704 c -10e-5,-1.27457 -0.9971,-2.3073 -2.2717,-2.30735 v -5.2e-4 h -139.8959 z"
+       sodipodi:nodetypes="sccsccccccccccccscccccccccccccscscccccsccccccccccccccccccccccccsccccccccsccsccccccs"
        inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\generic\com-radio-panel\com-radio-panel.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
