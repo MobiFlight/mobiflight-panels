@@ -15,8 +15,13 @@ this panel with the WT CJ4, as well as SCH and PCB files for EasyEda circuit boa
 
 ![image](https://user-images.githubusercontent.com/2587818/131340632-c589d045-22eb-49ba-a85d-4bf7b6fd52b6.png)
 
+## Parts 
+
 The PCB uses an Arduino Pro Micro, and 12V input for the backlight, dimming is done with a BS170 N-channel FET, which
 has a rather tiny footprint on the PCB, making it slightly trickier than usual to solder. I only realized this after
 ordering my pcb's. Something to be aware of - though I don't consider myself a super soldering expert, and I managed to solder 
 the legs without connecting them together with a blob of solder, so I guess it'll be fine if you just work carefully and have
 thin solder and iron tip.
+
+Switches are the "T80" toggle switches from Aliexpress, those that have a large handle but a micro-sized switch body
+and solderable feet for pcb. The main power switch has a piece of red heatshrink on the lever. 
