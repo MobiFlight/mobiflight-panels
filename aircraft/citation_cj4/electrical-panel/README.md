@@ -23,5 +23,7 @@ ordering my pcb's. Something to be aware of - though I don't consider myself a s
 the legs without connecting them together with a blob of solder, so I guess it'll be fine if you just work carefully and have
 thin solder and iron tip.
 
-Switches are the "T80" toggle switches from Aliexpress, those that have a large handle but a micro-sized switch body
-and solderable feet for pcb. The main power switch has a piece of red heatshrink on the lever. 
+Switches are the "SH T80-T Z1 Series" toggle switches from Aliexpress, which have a large metal handle but a micro-sized switch body
+and solderable feet for pcb. The main power switch has a piece of red heatshrink on the lever. Three switches are ON-OFF-ON type,
+and three (generators and the standby artificial horizon) are ON-OFF-MOM, meaning a three position switch where one side
+returns to center with a spring.
