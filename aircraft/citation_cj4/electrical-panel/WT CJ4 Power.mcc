@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="fd3cf385-a20f-45c0-894d-a7c23771ec7a">
+      <active>true</active>
+      <description>Backlight intensity</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_Knob_Master)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="WT CJ4 Power/ SN-72a-0f2" trigger="normal" pin="Backlight" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="( if ( ($ = 100), 0, ($*2.50*A) + 5 ) ) /1" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="True" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="168724b9-fcb6-47e9-a495-8b96850fbbf7">
+      <active>true</active>
+      <description>Panel is powered</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="7150f72c-7015-41ee-8364-ce14844dfdcb">
+      <active>true</active>
+      <description>Battery ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Battery ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_MASTER_BATTERY_ON" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_MASTER_BATTERY_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c257180f-e7f5-4e78-81ff-21b0f469a5ca">
+      <active>true</active>
+      <description>Battery EMER</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Battery EMER" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_MASTER_BATTERY_EMER" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_MASTER_BATTERY_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cd241bed-f210-4aeb-a528-d7cb8e0f71a7">
+      <active>true</active>
+      <description>L GEN ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Gen L ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_GENERATOR_L_ON" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_GENERATOR_L_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="8d5d2f4d-e740-477b-9f7e-16d4c5bd1248">
+      <active>true</active>
+      <description>L GEN Reset</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Gen L RESET" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_GENERATOR_L_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="7b8f33a0-8fdc-4fe0-8905-3d48b1a9b1c6">
+      <active>true</active>
+      <description>R GEN ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Gen R ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_GENERATOR_R_ON" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_GENERATOR_R_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2718cce7-1cf0-4f46-ada8-190865e9703d">
+      <active>true</active>
+      <description>R GEN Reset</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Gen R RESET" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_GENERATOR_R_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4e439795-f2ef-4c4a-ba58-6399b0f8b0a6">
+      <active>true</active>
+      <description>Emer Lights ARMED</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Emer LT Armed" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_EMER_LIGHT_ARM" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_EMER_LIGHT_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e52f60e1-b0b1-46f8-820d-8c7afb52621f">
+      <active>true</active>
+      <description>Emer Lights ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Emer LT ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_EMER_LIGHT_OFF" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_EMER_LIGHT_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="21af1f8d-8588-4b85-86b5-885d1a9d5af0">
+      <active>true</active>
+      <description>Stby FLT Display  ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Stby FLTD ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_STBY_FTL_ON" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_STBY_FTL_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e3ed820b-b35e-416b-90bc-d365ca6b7343">
+      <active>true</active>
+      <description>Stby FLT Display  TEST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Stby FLTD Test" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_STBY_FTL_ON" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_STBY_FTL_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e30fe7c8-6161-4ed9-bbad-4984b5622080">
+      <active>true</active>
+      <description>Avionics Master ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Avionics ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AVIONICS_MASTER_ON" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AVIONICS_MASTER_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c3537b6d-aa3e-49cd-bb2a-cfdabc68d92e">
+      <active>true</active>
+      <description>Avionics Master Dispatch</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="WT CJ4 Power/ SN-72a-0f2" name="Avionics DPATCH" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AVIONICS_MASTER_DSP" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="WT_CJ4_AVIONICS_MASTER_OFF" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
