@@ -13,6 +13,8 @@ so it turns off when the switch is released.
 Included are the Mobiflight Arduino configuration file, and a Mobiflgiht Connector configuration file to use 
 this panel with the WT CJ4, as well as SCH and PCB files for EasyEda circuit board design tool.
 
+![image](https://user-images.githubusercontent.com/2587818/131340632-c589d045-22eb-49ba-a85d-4bf7b6fd52b6.png)
+
 The PCB uses an Arduino Pro Micro, and 12V input for the backlight, dimming is done with a BS170 N-channel FET, which
 has a rather tiny footprint on the PCB, making it slightly trickier than usual to solder. I only realized this after
 ordering my pcb's. Something to be aware of - though I don't consider myself a super soldering expert, and I managed to solder 
