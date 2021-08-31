@@ -21,5 +21,10 @@ The PCB design JSON files can be opened with EasyEDA PCB design suite, accessibl
 On the EasyEDA editor, select "Document" > "Open" > "EasyEDA Source" to import both JSON files into the editor.
 One of them is the wiring schema, and the other one is the pcboard itself.
 
+## Mind the gap!
+
+Note, that as this is a pretty monumental work in progress, and the idea is to do this together as a community, we try to share designs earlier rather than later. For this reason, designs might not be final, complete or even fully functional, although we try to have functional stuff in the repository. When some
+designs depend on certain 3D-printed button gaps or other hardware, that should be ideally noted in the README file.
+
 
 
