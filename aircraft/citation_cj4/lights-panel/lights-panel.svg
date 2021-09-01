@@ -5,7 +5,7 @@
    viewBox="0 0 146.25001 95.449985"
    version="1.1"
    id="svg14672"
-   inkscape:version="1.2-dev (da2df6f, 2021-07-26)"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    sodipodi:docname="lights-panel.svg"
    inkscape:export-filename="C:\MSFS-git\mobiflight-panels\aircraft\citation_cj4\lights-panel\lights-panel.png"
    inkscape:export-xdpi="96"
@@ -839,17 +839,8 @@
        r="1.4988564"
        transform="scale(1,-1)" />
     <path
-       d="m 2215.6392,514.68088 c 0,-2.34809 -1.904,-4.25062 -4.251,-4.25062 -2.3474,0 -4.2503,1.90253 -4.2503,4.24992 0,2.34703 1.9029,4.24991 4.2503,4.24991 2.347,0 4.2499,-1.90288 4.2499,-4.24991 z"
-       style="font-variation-settings:'wght' 776;display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.89091;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
-       id="path2009" />
-    <path
-       id="path11991-8"
-       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
-       d="m 2141.4736,485.77792 c -1.2573,0.01 -2.2784,1.01751 -2.2965,2.27481 v 2.3301 1.6727 c 0,0.077 0,0.1533 0.011,0.22839 v 0.0161 c 0.01,0.072 0.019,0.14301 0.033,0.21291 v 0 0.01 c 0.014,0.068 0.031,0.1338 0.051,0.199 0,0.01 0.01,0.019 0.01,0.028 0.02,0.063 0.043,0.1248 0.068,0.1855 0,0.01 0.01,0.019 0.012,0.028 0.025,0.059 0.053,0.11761 0.084,0.1742 0,0.0101 0.01,0.019 0.015,0.029 0.032,0.058 0.066,0.11351 0.1023,0.16791 0,0 0.01,0.01 0.01,0.013 v 0 c 0.039,0.057 0.08,0.11189 0.1236,0.16489 l 0.01,0.01 c 0.044,0.053 0.09,0.1033 0.138,0.1519 0,0 0.01,0.0101 0.011,0.0111 0.05,0.049 0.1015,0.096 0.1555,0.141 v 0 0 c 0.055,0.045 0.1124,0.088 0.1716,0.12808 0,0 0.01,0 0.01,0.0101 0.056,0.038 0.1145,0.073 0.1742,0.10541 0.01,0 0.015,0.01 0.023,0.013 h 0.01 c 0.055,0.029 0.1108,0.056 0.1679,0.081 0.012,0 0.024,0.0101 0.036,0.0151 0.058,0.0241 0.1167,0.045 0.1767,0.065 0.011,0 0.021,0.0101 0.032,0.0101 0.064,0.019 0.1284,0.036 0.1943,0.05 0.01,0 0.017,0 0.026,0.0101 0.069,0.013 0.1381,0.0249 0.2088,0.032 h 0.012 c 0.076,0.0101 0.1524,0.0111 0.2299,0.0111 h 1.7948 c 2.6997,0 4.8881,2.21531 4.888,4.91501 10e-5,2.6997 -2.1883,4.9136 -4.888,4.91379 h -1.8061 c -1.2704,0.01 -2.297,1.03761 -2.2971,2.3079 v 49.92772 2.3027 0 c 0,1.2746 1.0333,2.3078 2.3078,2.3079 h 1.7948 c 2.6997,0 4.8881,2.2153 4.888,4.915 1e-4,2.6997 -2.1883,4.9136 -4.888,4.9139 h -1.8061 c -1.2669,0.01 -2.2908,1.0319 -2.2965,2.2975 v 3.9796 c 1e-4,1.2745 1.0333,2.3078 2.3078,2.3079 v 0 h 139.8954 v 0 c 1.2746,-10e-5 2.2716,-1.0329 2.2717,-2.3074 v -3.9709 0 c -1e-4,-1.2703 -1.0267,-2.3019 -2.297,-2.3079 h -1.8061 c -2.6997,-2e-4 -4.888,-2.2142 -4.888,-4.9139 0,-2.6997 2.1883,-4.9147 4.888,-4.9149 h 1.7948 c 1.2746,-10e-5 2.3077,-1.0333 2.3078,-2.3079 v 0 -2.3027 -49.9277 c -10e-5,-1.2704 -1.0267,-2.3019 -2.297,-2.30791 h -1.8061 c -2.6997,0 -4.888,-2.21419 -4.888,-4.91389 0,-2.6997 2.1883,-4.91472 4.888,-4.9149 h 1.7948 c 1.2746,-1.1e-4 2.3077,-1.03331 2.3078,-2.30791 v 0 -1.6728 -2.29701 c -10e-5,-1.2746 -0.9971,-2.3073 -2.2717,-2.3074 v 0 h -139.8959 z"
-       sodipodi:nodetypes="sccsccccccccccccscccccccccccccscscccccsccccccccccccccccccccccccsccccccccsccsccccccs" />
-    <path
-       d="m 2219.2096,514.68148 c 0,-4.32049 -3.5033,-7.82116 -7.8218,-7.82116 -4.3191,0 -7.8203,3.50067 -7.8203,7.81986 0,4.31851 3.5012,7.81981 7.8203,7.81981 4.3185,0 7.8199,-3.5013 7.8199,-7.81981 z"
-       style="font-variation-settings:'wght' 776;display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.89091015;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
+       d="m 2220.3681,514.68172 c 0,-4.96047 -4.0219,-8.9797 -8.9803,-8.9797 -4.9589,0 -8.9785,4.01923 -8.9785,8.9782 0,4.95818 4.0196,8.9781 8.9785,8.9781 4.9584,0 8.9784,-4.01992 8.9784,-8.9781 z"
+       style="font-variation-settings:'wght' 776;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.89091;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        id="path39731" />
   </g>
   <g
