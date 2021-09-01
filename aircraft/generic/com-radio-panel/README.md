@@ -9,3 +9,12 @@ the buttons and leds, and remove the cutouts from the panels.
 
 The included configuration file makes it work as a combined COM1+2 radio for MSFS2020, but naturally this
 can be changed with MobiFlight if you wish.
+
+## Parts
+
+The encoder used is the ALPS EC11EBB24C03 that I found from Aliexpress. The pushbuttons are 
+[Multimec 3FTH9](https://octopart.com/3fth9-mec+switches-49180836).
+
+The pcb has 2 through-hole MAX7219 chips, 1206 size SMD leds, BS170 FETs to dim the leds from one pin, 
+some 1206 surface mount resistors and two capacitors for each MAX chip as recommended by its datasheet. 
+The yellow 7-segment displays are common cathode 0.28 inch tall units of 3 digits each.

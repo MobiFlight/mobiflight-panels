@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>WT CJ4 Power</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="Backlight" Pin="9" />
+  <Button Name="Gen L RESET" Pin="2" />
+  <Button Name="Gen L ON" Pin="3" />
+  <Button Name="Battery EMER" Pin="4" />
+  <Button Name="Battery ON" Pin="5" />
+  <Button Name="Gen R RESET" Pin="6" />
+  <Button Name="Gen R ON" Pin="7" />
+  <Button Name="Emer LT Armed" Pin="15" />
+  <Button Name="Emer LT ON" Pin="14" />
+  <Button Name="Stby FLTD Test" Pin="18" />
+  <Button Name="Stby FLTD ON" Pin="19" />
+  <Button Name="Avionics DPATCH" Pin="20" />
+  <Button Name="Avionics ON" Pin="21" />
+</Config>
