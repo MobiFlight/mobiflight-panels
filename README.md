@@ -1,8 +1,8 @@
 # Open Hardware Flight Simulator Panels
 
-MobiFlight uses openly designed Arduino modules to connect buttons and switches and lights to most commonly used flight simulator software. These panels are openly licensed, meaning you can use, share and build them, even for others, but are required to share your improvements back to others, if you choose to build upon them.
+MobiFlight uses openly designed Arduino modules to connect buttons and switches and lights to most commonly used flight simulator software. These panels are openly licensed, meaning you can use, improve, share and build them, even for others if you have the skills and tools, but we kindly ask that you share your improvements back to others, if you choose to build upon them. This is a work in progress.
 
-Also, you can configure them using Mobiflight, without depending on closed and proprietary drivers or connecting software that might or might not support the simulator software and simulated aircraft of your choice.
+You can configure the panels using Mobiflight, without depending on closed and proprietary drivers and software that might or might not support the simulator software and simulated aircraft of your choice.
 
 ## Based on a template system
 
