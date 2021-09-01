@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="fd3cf385-a20f-45c0-894d-a7c23771ec7a">
+      <active>true</active>
+      <description>Backlight intensity</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_Knob_Master)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="CJ4 audio panel/ SN-abf-b35" trigger="normal" pin="Backlight" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="if ( ($ &gt; 98) | ($ &gt; 100), 10, $*2.5 + 10 ) /2 " substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="True" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="A" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="#" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="#" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="#" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="60c2d906-363f-4387-957c-8738c5fdedca">
+      <active>true</active>
+      <description>Annunciator intensity</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_Knob_Master)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="CJ4 audio panel/ SN-abf-b35" trigger="normal" pin="Annunciator PWM" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="if( ($ &gt; 98) | ($ &gt; 100), 255, ($*2.5) + 10 ) * A * C /2" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="E" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="#" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="True" ref="cec1fc63-72b8-431e-8e6f-74dd7876dab0" placeholder="C" />
+          <configref active="True" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="B" />
+          <configref active="True" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="168724b9-fcb6-47e9-a495-8b96850fbbf7">
+      <active>true</active>
+      <description>Panel is powered</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cec1fc63-72b8-431e-8e6f-74dd7876dab0">
+      <active>true</active>
+      <description>Avionics Master Switch</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AVIONICS MASTER SWITCH,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="1ff80252-e416-44b4-87f2-13c7b2ba9f5d">
+      <active>true</active>
+      <description>COM1 led</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM TRANSMIT:1, bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="CJ4 audio panel/ SN-abf-b35" trigger="normal" pin="LED Com1" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b6f1f161-4e70-4e83-a6a6-fb7a0c86c1e0">
+      <active>true</active>
+      <description>COM2 led</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:COM TRANSMIT:2, bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="CJ4 audio panel/ SN-abf-b35" trigger="normal" pin="LED Com2" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="8dd4f099-60e9-45e5-969f-aeaf0fe0df81">
+      <active>true</active>
+      <description>COM1 Transmit</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 audio panel/ SN-abf-b35" name="Com1 MIC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_COM1_ACTIVE_PUSH" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="b6f1f161-4e70-4e83-a6a6-fb7a0c86c1e0" placeholder="B" />
+          <configref active="False" ref="1ff80252-e416-44b4-87f2-13c7b2ba9f5d" placeholder="A" />
+          <configref active="False" ref="cec1fc63-72b8-431e-8e6f-74dd7876dab0" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="62ea7bb0-afce-4e2d-a1ae-db187459f968">
+      <active>true</active>
+      <description>COM2 Transmit</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 audio panel/ SN-abf-b35" name="Com2 MIC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_COM2_ACTIVE_PUSH" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="b6f1f161-4e70-4e83-a6a6-fb7a0c86c1e0" placeholder="B" />
+          <configref active="False" ref="1ff80252-e416-44b4-87f2-13c7b2ba9f5d" placeholder="A" />
+          <configref active="False" ref="cec1fc63-72b8-431e-8e6f-74dd7876dab0" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="bea5222c-9563-4335-b13a-50f333f4140e">
+      <active>true</active>
+      <description>COM1 Volume</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 audio panel/ SN-abf-b35" name="Com1 Audio" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="1023 @ - 10.23 / (&gt;K:COM1_VOLUME_SET)" />
+        </analog>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="b6f1f161-4e70-4e83-a6a6-fb7a0c86c1e0" placeholder="B" />
+          <configref active="False" ref="1ff80252-e416-44b4-87f2-13c7b2ba9f5d" placeholder="A" />
+          <configref active="False" ref="cec1fc63-72b8-431e-8e6f-74dd7876dab0" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="5c39db6a-2d13-4a6e-91ac-c911795135d2">
+      <active>true</active>
+      <description>COM2 Volume</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 audio panel/ SN-abf-b35" name="Com2 Audio" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="1023 @ - 10.23 / (&gt;K:COM2_VOLUME_SET)" />
+        </analog>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="b6f1f161-4e70-4e83-a6a6-fb7a0c86c1e0" placeholder="B" />
+          <configref active="False" ref="1ff80252-e416-44b4-87f2-13c7b2ba9f5d" placeholder="A" />
+          <configref active="False" ref="cec1fc63-72b8-431e-8e6f-74dd7876dab0" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

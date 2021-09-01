@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>CJ4 audio panel</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="Backlight" Pin="13" />
+  <Output Name="Annunciator PWM" Pin="12" />
+  <Output Name="LED Com1" Pin="2" />
+  <Output Name="LED Com2" Pin="3" />
+  <Output Name="LED HF" Pin="4" />
+  <Output Name="LED PA" Pin="5" />
+  <AnalogInput Name="Com1 Audio" Pin="54" Sensitivity="5" />
+  <AnalogInput Name="Com2 Audio" Pin="55" Sensitivity="5" />
+  <Button Name="Dme 2 Audio tog" Pin="59" />
+  <Button Name="MKR Audio tog" Pin="60" />
+  <Button Name="ADF Audio tog" Pin="61" />
+  <Button Name="HF Audio tog" Pin="62" />
+  <Button Name="PA Audio tog" Pin="63" />
+  <Button Name="INPH Audio tog" Pin="64" />
+  <Button Name="ST Audio tog" Pin="65" />
+  <Button Name="VOX Audio tog" Pin="66" />
+  <Button Name="SPKR Audio tog" Pin="67" />
+  <Button Name="Com1 MIC" Pin="32" />
+  <Button Name="Com2 MIC" Pin="33" />
+  <Button Name="HF MIC" Pin="34" />
+  <Button Name="PA MIC" Pin="35" />
+  <Button Name="MKR Mute" Pin="36" />
+  <Button Name="IDENT-ID-INOP" Pin="37" />
+  <Button Name="IDENT VOICE" Pin="38" />
+  <Button Name="IDENT-Both" Pin="39" />
+  <Button Name="HDPH Audio Tog" Pin="68" />
+  <Button Name="Nav1 Audio Tog" Pin="56" />
+  <Button Name="Nav2 Audio Tog" Pin="57" />
+  <Button Name="Dme1 Audio Tog" Pin="58" />
+</Config>
