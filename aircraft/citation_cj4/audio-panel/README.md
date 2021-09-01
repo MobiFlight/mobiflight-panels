@@ -20,7 +20,8 @@ only anyway.
 The indicators are 3mm leds, you should use black nail polish to mask the sides of the leds dark, so that they will not get diffused light from the panel backlight, as they will be embedded in the white acrylic.
 
 
-The "SR16 3 position rotary switch" from aliexpress had a mismatch with the pinout, it seems to connect pins 2-3-4 on positions 1-2-3, this is corrected on the pcb but my own variant does not do this. The switch itself is pretty much non-functional on the sim anyway, so it does not really matter much in practice, b
+The "SR16 3 position rotary switch" used for the Ident / Voice toggle on nav radios seems to connect pins 2-3-4 instead of pins 1-2-3. I have since corrected this on the pcb, but check yours and adjust this if needed. In any case, the switch itself is not functional on the simulator anyway, so it does not really matter much in practice, but of course you might use this for some other logic with the power of MobiFlight. I assume the V / BOTH / ID selector adjusts the sound equalizer in the real avionics to make it easier to distinquish radio beacon morse identifier beeps.
+
 ## Configuration
 
 Configuration is not finished yet, there is a .mcc file that defines volume knobs for COM1 and COM2, and the transmit led + buttons, but not much else yet. Also included is a pin configuration file for flashing the arduino. It uses an arduino Mega Pro Mini and has 12V input for backlighting leds.
