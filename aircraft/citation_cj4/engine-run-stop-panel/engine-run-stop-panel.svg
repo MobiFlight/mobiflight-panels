@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="150.2505mm"
-   height="42.300049mm"
-   viewBox="0 0 150.25051 42.300044"
+   width="146.2505mm"
+   height="38.300049mm"
+   viewBox="0 0 146.25051 38.300044"
    version="1.1"
    id="svg14672"
-   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   inkscape:version="1.2-dev (da2df6f, 2021-07-26)"
    sodipodi:docname="engine-run-stop-panel.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,18 +23,18 @@
      borderopacity="0.32156863"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.8101934"
-     inkscape:cx="203.84563"
-     inkscape:cy="172.08106"
+     inkscape:zoom="4"
+     inkscape:cx="276.25"
+     inkscape:cy="67.625"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer9"
      inkscape:document-rotation="0"
      showgrid="false"
-     fit-margin-top="2"
+     fit-margin-top="0"
      lock-margins="true"
-     fit-margin-left="2"
-     fit-margin-right="2"
-     fit-margin-bottom="2"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
      inkscape:snap-bbox="true"
      inkscape:bbox-nodes="true"
      inkscape:bbox-paths="true"
@@ -68,8 +68,8 @@
        spacingy="4.7624998"
        dotted="false"
        empspacing="10"
-       originx="6.9887884"
-       originy="-7.4249924" />
+       originx="4.9887886"
+       originy="-9.4249913" />
   </sodipodi:namedview>
   <metadata
      id="metadata14669">
@@ -86,7 +86,8 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="pcb"
-     style="display:inline">
+     style="display:inline"
+     transform="translate(-2,-2)">
     <rect
        style="fill:none;fill-rule:evenodd;stroke:#008000;stroke-width:0.296851"
        id="rect552"
@@ -99,15 +100,15 @@
     <circle
        style="display:inline;fill:none;stroke:#008000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
        id="circle28327-8-4"
-       cx="-75.125237"
-       cy="-6.8625445"
+       cx="-51.471085"
+       cy="-14.560495"
        r="1.4988563"
        transform="scale(-1)" />
     <circle
        style="display:inline;fill:none;stroke:#008000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
        id="circle28329-6-7"
-       cx="-75.125237"
-       cy="-35.437618"
+       cx="-98.843987"
+       cy="-14.706733"
        r="1.4988563"
        transform="scale(-1)" />
     <circle
@@ -144,7 +145,7 @@
      id="layer9"
      inkscape:label="Lower panel mounting plate"
      style="display:inline;opacity:1"
-     transform="translate(-2192.2669,-548.51758)">
+     transform="translate(-2194.2669,-550.51758)">
     <rect
        style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="rect2794"
@@ -229,15 +230,15 @@
     <circle
        style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
        id="circle28327"
-       cx="-2267.3921"
-       cy="-555.38013"
+       cx="-2243.7429"
+       cy="-563.07861"
        r="1.4988563"
        transform="scale(-1)" />
     <circle
        style="display:inline;opacity:1;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
        id="circle28329"
-       cx="-2267.3921"
-       cy="-583.9552"
+       cx="-2291.1055"
+       cy="-563.22479"
        r="1.4988563"
        transform="scale(-1)" />
   </g>
@@ -245,11 +246,11 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="Upper panel "
-     transform="translate(-2136.2897,-482.89009)"
+     transform="translate(-2138.2897,-484.89009)"
      style="display:inline;opacity:1">
     <g
        id="g2749"
-       transform="translate(-2.2346149,-53.649976)">
+       transform="translate(-2.2347566,-53.649976)">
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;line-height:0.95;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=499,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 90, 'wght' 499;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;display:inline;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
@@ -321,15 +322,15 @@
     <circle
        style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
        id="circle28327-8"
-       cx="-2211.415"
-       cy="-489.75262"
+       cx="-2187.7659"
+       cy="-497.45041"
        r="1.4988563"
        transform="scale(-1)" />
     <circle
        style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000"
        id="circle28329-6"
-       cx="-2211.415"
-       cy="-518.3277"
+       cx="-2235.1284"
+       cy="-497.59665"
        r="1.4988563"
        transform="scale(-1)" />
     <path
@@ -370,7 +371,7 @@
      id="layer12"
      inkscape:label="Button labels and engraving sheet cutout"
      style="display:inline"
-     transform="translate(-2192.2667,-548.51733)">
+     transform="translate(-2194.2667,-550.51733)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:4.5861px;line-height:1.6;font-family:sans-serif;display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
