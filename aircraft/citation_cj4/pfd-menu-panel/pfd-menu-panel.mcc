@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="fd3cf385-a20f-45c0-894d-a7c23771ec7a">
+      <active>true</active>
+      <description>Backlight intensity</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_Knob_Master)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" trigger="normal" pin="BACKLIGHT" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="( if ( ($ = 100), 0, ($*2.50*A)/5 + 5 ) ) /1" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="True" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="A" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="168724b9-fcb6-47e9-a495-8b96850fbbf7">
+      <active>true</active>
+      <description>Panel is powered</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="abf2a0e0-f8ff-40e8-940e-98d3bcac4805">
+      <active>true</active>
+      <description>NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Push_NAV" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d29dc314-51d8-4ee4-ba92-e4dc201e821e">
+      <active>true</active>
+      <description>PFD Menu</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="PFD Menu" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Push_PFD_MENU" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b7a349fb-c396-4eb0-a753-6833f7733503">
+      <active>true</active>
+      <description>ESC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="ESC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Push_ESC" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9c1b7f8b-1f2e-4e83-932c-046613bd3d1a">
+      <active>true</active>
+      <description>ET</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="ET" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Push_ET" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b5822df2-e4b1-40fa-b722-471dba3fe54e">
+      <active>true</active>
+      <description>FRMT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="FRMT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Push_FRMT" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b99d2dc4-2849-4798-b65b-e771e28079c5">
+      <active>true</active>
+      <description>TERR / WX</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="Terr-WX" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Push_TERR_WX" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="bdc87a44-b41c-44f1-9850-3af5ffbbb721">
+      <active>true</active>
+      <description>TFC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="TFC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Push_TFC" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b13f8cea-4212-4b56-b4bb-eadd4acfa08e">
+      <active>true</active>
+      <description>CCP Menu (INOP)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="CCP Menu" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="935ef732-411e-4862-bac9-0a33f0f2f695">
+      <active>true</active>
+      <description>REFS Menu</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="REFS Menu" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Push_REFS_MENU" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="fe9d7d97-99c7-4968-abc1-80d22eb4d550">
+      <active>true</active>
+      <description>RADAR Menu (INOP)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="RADAR Menu" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="46587faa-4d8a-4908-b639-a31f2e432666">
+      <active>true</active>
+      <description>TAWS Menu (INOP)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="TAWS Menu" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a02dbc55-6580-493f-b839-383f274a1a1a">
+      <active>true</active>
+      <description>BARO Rotary</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="Baro" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="CJ4_Baro_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="CJ4_Baro_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4d2226ed-90f5-4a31-836e-b15c34d68893">
+      <active>true</active>
+      <description>Baro Push STD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="Baro Push STD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="CJ4_Baro_Push_Std" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="0263ef76-1f91-470d-9f71-af07e01a6aa6">
+      <active>true</active>
+      <description>Menu ADV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="Menu ADV" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Upr_MENU_ADV_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="Generic_Upr_MENU_ADV_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9f492327-7ea2-42ac-bdb3-25f77818dfc6">
+      <active>true</active>
+      <description>Data</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="Data" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Data_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Data_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="1dc0a6ff-e98c-4b9c-a654-b0b850a271df">
+      <active>true</active>
+      <description>Push Select</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="Push Select" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Upr_Data_PUSH" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="51d1c951-9586-42f9-9b6f-d94270a51d30">
+      <active>true</active>
+      <description>Tilt (INOP for now)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="" name="" type="" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cc9aad8c-7ba2-4fc6-9d3e-d798c311007e">
+      <active>true</active>
+      <description>Range</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=8.2.0.2, Culture=neutral, PublicKeyToken=null" serial="TF-CJ4-PFD-Ctrl/ SN-6a5-d97" name="Range" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Upr_RANGE_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="Generic_Upr_RANGE_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
