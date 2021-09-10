@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>CJ4-lights</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="Backlight" Pin="13" />
+  <Output Name="Annunciator PWM" Pin="12" />
+  <Output Name="Led Beacon" Pin="2" />
+  <Output Name="Led Nav" Pin="3" />
+  <Output Name="Led Strobe" Pin="4" />
+  <Output Name="Led Taxi" Pin="5" />
+  <Output Name="Led Landing" Pin="6" />
+  <Output Name="Led Logo" Pin="7" />
+  <Output Name="Led TCAS" Pin="8" />
+  <Output Name="Led Belt" Pin="9" />
+  <Output Name="Led Safety" Pin="10" />
+  <Output Name="Led Pulse" Pin="11" />
+  <Button Name="Beacon" Pin="14" />
+  <Button Name="Taxi" Pin="15" />
+  <Button Name="Landing" Pin="16" />
+  <Button Name="Nav" Pin="17" />
+  <Button Name="Logo" Pin="18" />
+  <Button Name="Strobe" Pin="19" />
+  <Button Name="TCAS" Pin="20" />
+  <Button Name="Belt" Pin="21" />
+  <Button Name="Pulse" Pin="22" />
+  <Button Name="Safety" Pin="23" />
+  <AnalogInput Name="Lighting Knob" Pin="54" Sensitivity="5" />
+  <Encoder Name="PFD1 Dimmer" PinLeft="55" PinRight="57" EncoderType="2" />
+  <Encoder Name="MFD1 Dimmer" PinLeft="56" PinRight="64" EncoderType="2" />
+  <Encoder Name="MFD2 Dimmer" PinLeft="59" PinRight="60" EncoderType="2" />
+  <Encoder Name="PFD2 Dimmer" PinLeft="61" PinRight="62" EncoderType="2" />
+</Config>

@@ -1,4 +1,10 @@
-# Flight Simulator Panels
+# Open Hardware Flight Simulator Panels
+
+MobiFlight uses openly designed Arduino modules to connect buttons and switches and lights to most commonly used flight simulator software. These panels are openly licensed, meaning you can use, improve, share and build them, even for others if you have the skills and tools, but we kindly ask that you share your improvements back to others, if you choose to build upon them. This is a work in progress.
+
+You can configure the panels using Mobiflight, without depending on closed and proprietary drivers and software that might or might not support the simulator software and simulated aircraft of your choice.
+
+## Based on a template system
 
 See the [Mobiflight Panel Template](https://github.com/Mobiflight/mobiflight-templates) for the SVG design asset
 library that was used to create these.
@@ -9,6 +15,11 @@ that is mounted behind the panel with 10mm nylon spacers. The finished panels ca
 [MobiFlight website](http://www.mobiflight.com) for more information, and join our Discord server at https://discord.gg/99vHbK7
 
 These are work in progress, contributions are welcome via github pull requests, or if you want to coordinate or have questions, please file an issue.
+
+The design philosophy is to replicate the functionality of real aircraft panels, with realistic looking elements and labeling, but not intending to be a 1:1 accurate replica to the millimeter dimensions. The result look convincing and have the feel of a real airplane cockpits, while enabling you to do 
+layouts quickly, and using commonly available hardware as much as possible. 
+
+The panel sizes use the "dzus" mounting standard used in many airplane cockpits, so that different panels can be stacked together and share the same width as much as possible. Some panels naturally might be different like certain panels on A320 center pedestal and overhead panels, but the intention is to adapt the standard as much as practically possible.
 
 ## How to edit / view the files
 

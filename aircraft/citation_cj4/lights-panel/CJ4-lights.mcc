@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="fd3cf385-a20f-45c0-894d-a7c23771ec7a">
+      <active>true</active>
+      <description>Backlight intensity</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_Knob_Master)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Backlight" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="if( ($ &gt; 98) | ($ &gt; 100), 10, ($*2.5) + 10 )/4*A" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="True" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="A" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="#" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="?" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="#" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="60c2d906-363f-4387-957c-8738c5fdedca">
+      <active>true</active>
+      <description>Annunciator intensity</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:LIGHTING_Knob_Master)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Annunciator PWM" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="if ( ($ &gt; 98), 255, ($*1.85) + 70 )*A" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="True" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="A" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="#" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="168724b9-fcb6-47e9-a495-8b96850fbbf7">
+      <active>true</active>
+      <description>Panel is powered</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="40ec6c88-d970-4d29-b615-5a41a6832587">
+      <active>true</active>
+      <description>Led Beacon</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT BEACON ON,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Led Beacon" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="424f9e3e-ae5e-485a-9688-75578dca79f6">
+      <active>true</active>
+      <description>Led Nav</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT NAV ON,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Led Nav" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="fa94bfa4-8609-4873-99c2-5ff8f755ada2">
+      <active>true</active>
+      <description>Led Strobe</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT STROBE ON,Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Led Strobe" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="1" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="0855eca1-7dbc-4471-9cf2-a75ada5f57cf">
+      <active>true</active>
+      <description>Led Taxi</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT TAXI, Bool)" />
+        <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Led Taxi" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d1005a98-e278-46fe-aac2-d5d3efa12979">
+      <active>true</active>
+      <description>Led Landing</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT LANDING, Bool)" />
+        <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Led Landing" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c86e6ea7-a781-4bdb-858e-a883ffd0d02d">
+      <active>true</active>
+      <description>Led Logo</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT LOGO ON,Bool)" />
+        <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Led Logo" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="598c22e6-b0cb-47c3-bd27-da591b839c08">
+      <active>true</active>
+      <description>Led Belt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:SEATBELT_LIGHT_ON)" />
+        <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Led Belt" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="605153a6-7384-4ce4-81fc-766cea6d08cd">
+      <active>true</active>
+      <description>Led Safety</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:SAFETY_LIGHT_ON)" />
+        <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Led Safety" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="63bf9107-71dc-4be5-9575-0152043a8911">
+      <active>true</active>
+      <description>Led TCAS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="CJ4-Light-TCAS" varExpression="$" />
+        <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Led TCAS" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="94de3517-bb05-4751-bc41-cf5e757d525f">
+      <active>true</active>
+      <description>Led Pulse</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT RECOGNITION ON,Bool)" />
+        <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        <display type="Pin" serial="CJ4-lights/ SN-046-7c0" trigger="normal" pin="Led Pulse" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="9aa662e8-e38f-4553-bb42-ac7df18bdb2e">
+      <active>true</active>
+      <description>Lighting Knob Master</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="MSFS2020CustomInputAction" command="100 @ 14 - 0.1 * - ceil (&gt;L:LIGHTING_Knob_Master, number)" />
+        </analog>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="65a382e6-c2a0-45d7-b8f8-b4e0061fc3b5">
+      <active>true</active>
+      <description>Lights TCAS (FAKE)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="TCAS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="CJ4-Light-TCAS" varExpression="if($, 0, 1)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="0d645347-5b07-482f-8c41-af5197324ac1">
+      <active>true</active>
+      <description>Lights Beacon</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Beacon" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TOGGLE_BEACON_LIGHTS" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="8e5907bd-d740-48ff-9abb-149e7e31b0a4">
+      <active>true</active>
+      <description>Lights Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Nav" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TOGGLE_NAV_LIGHTS" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="81266b9c-5226-4543-bbf5-4ad1e59f613f">
+      <active>true</active>
+      <description>Lights Strobe</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Strobe" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="STROBES_TOGGLE" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6fbb9826-dc6c-4e2e-a571-e22e369bb688">
+      <active>true</active>
+      <description>Lights Belt</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Belt" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_SEATBELT_LIGHT_TOGGLE" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="57c4cf7e-2d61-4651-b6d0-134398283b6c">
+      <active>true</active>
+      <description>Lights Safety</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Safety" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_SAFETY_LIGHT_TOGGLE" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a8b1d7ff-f7ee-42ef-8e0c-631fb39b5be6">
+      <active>true</active>
+      <description>Lights Taxi</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Taxi" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_TAXI_LIGHTS_TOGGLE" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b7870326-039a-4c38-aae1-03e27debc01a">
+      <active>true</active>
+      <description>Lights Landing</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Landing" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_LANDING_LIGHTS_TOGGLE" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="303b8e50-0a2a-464a-aeed-819176eb9b29">
+      <active>true</active>
+      <description>Lights Logo</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Logo" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TOGGLE_LOGO_LIGHTS" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9867051f-1826-40aa-9edd-5946f5f558dc">
+      <active>true</active>
+      <description>Lights Pulse lights</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Pulse" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="WT_CJ4_RECOGNITION_LIGHTS_TOGGLE" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="af54cab7-b1ec-4fe9-b3d3-9394061b7e03">
+      <active>true</active>
+      <description>PFD1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="PFD1 Dimmer" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="WT_CJ4_PFD1_LIGHT_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="WT_CJ4_PFD1_LIGHT_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f4559e67-a8f1-40b9-89af-71a78a89d4cd">
+      <active>true</active>
+      <description>PFD2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="PFD2 Dimmer" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="WT_CJ4_PFD2_LIGHT_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="WT_CJ4_PFD2_LIGHT_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4be197fc-89cf-43b9-89ef-85006a73bf32">
+      <active>true</active>
+      <description>MFD1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="MFD1 Dimmer" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="WT_CJ4_MFD1_LIGHT_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="WT_CJ4_MFD1_LIGHT_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="8fac73cf-8e2c-43e0-a4c3-1da6021d7443">
+      <active>true</active>
+      <description>MFD2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.0.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="MFD2 Dimmer" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020EventIdInputAction" eventId="WT_CJ4_MFD2_LIGHT_DEC" />
+          <onLeftFast />
+          <onRight type="MSFS2020EventIdInputAction" eventId="WT_CJ4_MFD2_LIGHT_INC" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="fa94bfa4-8609-4873-99c2-5ff8f755ada2" placeholder="B" />
+          <configref active="False" ref="424f9e3e-ae5e-485a-9688-75578dca79f6" placeholder="A" />
+          <configref active="False" ref="40ec6c88-d970-4d29-b615-5a41a6832587" placeholder="@" />
+          <configref active="False" ref="168724b9-fcb6-47e9-a495-8b96850fbbf7" placeholder="?" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="fd3cf385-a20f-45c0-894d-a7c23771ec7a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
