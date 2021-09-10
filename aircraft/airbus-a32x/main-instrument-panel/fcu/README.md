@@ -1,5 +1,7 @@
 # A320 FCU (Flight Control Unit)
 
+### Status: **Untested** - The PCB (v1.0.2) is functionally complete, but untested. Version 1.0 was used to produce the following FCU, but it requires a bodge that is corrected in v1.0.2.
+
 ![FCU Picture](https://user-images.githubusercontent.com/2242776/132795702-47a3354e-0c7d-40a7-af49-7301dd092763.jpg)
 
 The current design forgoes the 100/1000 rotary switch selector nested in the ALT push-pull encoder to simplify the internal implementation. Instead, a 100/1000 pushbutton has been placed below the METRIC ALT button.
