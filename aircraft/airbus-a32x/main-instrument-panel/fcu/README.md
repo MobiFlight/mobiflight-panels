@@ -2,7 +2,7 @@
 
 ### Status: **Untested** - The PCB (v1.0.2) is functionally complete, but untested. Version 1.0 was used to produce the following FCU, but it requires a bodge that is corrected in v1.0.2.
 
-![FCU Picture](https://user-images.githubusercontent.com/2242776/132795702-47a3354e-0c7d-40a7-af49-7301dd092763.jpg)
+![FCU Front](https://user-images.githubusercontent.com/2242776/133118930-89cbbde2-fbe4-4aab-bdd7-f9aa332fe413.jpg)
 
 The current design forgoes the 100/1000 rotary switch selector nested in the ALT push-pull encoder to simplify the internal implementation. Instead, a 100/1000 pushbutton has been placed below the METRIC ALT button.
 
@@ -12,7 +12,15 @@ The panel is comprised of three layers, starting with the frontmost (user-facing
  - PCB
 
 ## Electronic Component Listing
-[Electronic Component Listing forthcoming]
+The electronic component listing for the circuit can be found within the EasyEDA schematic standard BOM listing.
+
+The additional components are required for the Push-Pull Encoder mechanism (described below)
+
+| Component | Manufacturer | Part Number | Quantity | Comments
+| - |- | - | - | -
+| Tactile Button | 	Omron Electronics | B3F-105X | 8 | The X in the part number can be replaced with the appropriate number to signifiy the force required to press the button of your own preference
+| Rotary Encoder | Bourns | PEC11R-4220F-N0024 | 4 | You do *not* want an encoder with an integral switch (button) feature, as the Push-Pull Encoder Mechanism handles this
+| Perfboard |||| Must be cut into sizes that fit the 3D printed push-pull encoders (shown below)
 
 ## Push-Pull Encoder Mechanism
 The three rotary encoders provide a push-pull feature, similar to the real Airbus A320. This implementation uses tactile buttons that provide a click feedback when using the feature.
@@ -50,6 +58,7 @@ Each of these four sets have the following lettering for the first character of 
  The bottom pin on all of these sets are GND.
 
  This example of the PCB (as viewed from the *back*), shows the pin indicating to the push-pull encoder mechanism's PUSH feature for the SPEED knob in the top-right position:
+ 
  ![PCB Header Closeup](https://user-images.githubusercontent.com/2242776/132797899-5f7ce723-6485-41d5-84f1-227561c238dd.jpg)
 
  Keep in mind the speed knob is the leftmost knob when viewing the PCB from the *front*.
