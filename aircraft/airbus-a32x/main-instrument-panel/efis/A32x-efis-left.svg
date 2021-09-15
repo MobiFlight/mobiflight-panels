@@ -8,7 +8,7 @@
    version="1.1"
    id="svg23888"
    sodipodi:docname="A32x-efis-left.svg"
-   inkscape:version="1.2-dev (da2df6f, 2021-07-26)"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -18,6 +18,23 @@
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs23882">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect4321"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,1,0,1 @ F,0,0,1,0,1,0,1 @ F,0,0,1,0,1,0,1 @ F,0,0,1,0,1,0,1 @ F,0,0,1,0,1,0,1 @ F,0,0,1,0,1,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="1"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
     <inkscape:path-effect
        effect="spiro"
        id="path-effect12967"
@@ -102,8 +119,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="284.96403"
-     inkscape:cy="200.11122"
+     inkscape:cx="292.38865"
+     inkscape:cy="161.22035"
      inkscape:document-units="mm"
      inkscape:current-layer="layer5"
      showgrid="false"
@@ -143,6 +160,18 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="PCB Outline"
+     style="display:inline">
+    <path
+       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3"
+       d="M 66.864035,4.0040359 C 45.954106,7.06135 25.04677,10.137782 4.1378641,13.202634 c -0.5464445,0.0801 -0.9894266,0.592737 -0.9894266,1.145022 v 75.501953 a 1,1 45 0 0 1,1 H 154.87695 a 1,1 135 0 0 1,-1 V 4.8496094 c 0,-0.5522847 -0.44772,-0.9998997 -1,-0.9997881 -28.67442,0.00579 -57.349292,-0.012544 -86.02344,0.0088 -0.552281,4.111e-4 -0.999994,7.585e-4 -0.999994,7.561e-4 z"
+       id="path1003"
+       inkscape:path-effect="#path-effect4321"
+       inkscape:original-d="m 67.853516,3.859375 c -21.569665,3.153134 -43.136502,6.327126 -64.7050785,9.488281 0,25.833985 0,51.667969 0,77.501953 50.9095055,0 101.8190125,0 152.7285125,0 0,-29 0,-58 0,-86.9999996 -29.34108,0.00651 -58.682642,-0.013021 -88.023434,0.00977 z" />
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"
@@ -239,32 +268,27 @@
        y="120.26379"
        ry="1.8878405"
        rx="1.8878405" />
-    <g
-       id="g3401"
-       transform="translate(2.5015879,0.69871817)"
-       style="display:inline">
-      <path
-         id="rect62721"
-         style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3"
-         d="m 26.186192,111.73681 64.571667,-9.47238 c 0.198782,-0.0351 0.420607,-0.0526 0.619732,-0.0526 h 88.039559 c 0.41459,0 0.74835,0.33376 0.74835,0.74835 v 87.50386 c 0,0.41459 -0.33376,0.74835 -0.74835,0.74835 H 26.186192 c -0.414589,0 -0.748355,-0.33376 -0.748355,-0.74835 v -77.97886 c 0,-0.41459 0.338173,-0.68806 0.748355,-0.74835 z"
-         sodipodi:nodetypes="sccssssssss" />
-      <circle
-         style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path62735-8-9"
-         cx="176.12634"
-         cy="187.24585"
-         r="1.6101347"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96" />
-      <circle
-         style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="path62735-8-9-9"
-         cx="176.12634"
-         cy="106.13615"
-         r="1.6101347"
-         inkscape:export-xdpi="96"
-         inkscape:export-ydpi="96" />
-    </g>
+    <path
+       id="rect62721"
+       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3"
+       d="m 28.68778,112.43553 64.571667,-9.47238 c 0.198782,-0.0351 0.420607,-0.0526 0.619732,-0.0526 h 88.039561 c 0.41459,0 0.74835,0.33376 0.74835,0.74835 v 87.50386 c 0,0.41459 -0.33376,0.74835 -0.74835,0.74835 H 28.68778 c -0.414589,0 -0.748355,-0.33376 -0.748355,-0.74835 V 113.1839 c 0,-0.41459 0.338173,-0.68806 0.748355,-0.74835 z"
+       sodipodi:nodetypes="sccssssssss" />
+    <circle
+       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path62735-8-9"
+       cx="178.62793"
+       cy="187.94456"
+       r="1.6101347"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <circle
+       style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path62735-8-9-9"
+       cx="178.62793"
+       cy="106.83486"
+       r="1.6101347"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <circle
        style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path62735-3-6-9-72"
@@ -297,7 +321,7 @@
          x="46.655472"
          y="126.48425"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.6;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=640,wdth=85.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:'wdth' 85, 'wght' 640;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-         id="tspan30446">BARO</tspan></text>
+         id="tspan30446">QFE</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.3;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 90, 'wght' 700;text-indent:0;text-align:end;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:end;white-space:normal;shape-padding:0;shape-margin:0;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
