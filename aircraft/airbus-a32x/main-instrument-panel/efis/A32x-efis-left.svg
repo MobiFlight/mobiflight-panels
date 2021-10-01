@@ -178,12 +178,12 @@
      inkscape:cx="318.4446"
      inkscape:cy="209.68133"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="2738"
      inkscape:window-height="1020"
      inkscape:window-x="1005"
-     inkscape:window-y="101"
+     inkscape:window-y="135"
      inkscape:window-maximized="0"
      inkscape:pagecheckerboard="0"
      inkscape:snap-object-midpoints="true"
@@ -371,17 +371,17 @@
        rx="1.0268555"
        ry="1.0268555" />
     <circle
-       style="display:inline;fill:#000000;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;fill:#000000;fill-opacity:0;stroke:#ff0000;stroke-width:0.299998;stroke-linejoin:round;shape-rendering:crispEdges;stop-color:#000000"
        id="circle78611"
        cx="106.53237"
        cy="153.85823"
-       r="8" />
+       r="5.9500003" />
     <circle
-       style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#ff0000;stroke-width:0.299998;stroke-linejoin:round;shape-rendering:crispEdges;stop-color:#000000"
        id="circle109024"
        cx="156.59906"
        cy="153.85823"
-       r="8" />
+       r="5.9500003" />
     <path
        id="rect62721"
        style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.3"
@@ -473,7 +473,7 @@
        r="3.175" />
     <path
        d="m 36.9093,58.685247 c 0,-3.50763 -2.84375,-6.34967 -6.34914,-6.34967 -3.50598,0 -6.34808,2.84204 -6.34808,6.34862 0,3.50603 2.8421,6.3486 6.34808,6.3486 3.50539,0 6.34747,-2.84257 6.34747,-6.3486 z"
-       style="font-variation-settings:'wght' 776;display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.89091;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
+       style="font-variation-settings:'wght' 776;display:inline;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.302779;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.89091;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
        id="path4768"
        transform="translate(25.790596,100.06181)" />
   </g>
