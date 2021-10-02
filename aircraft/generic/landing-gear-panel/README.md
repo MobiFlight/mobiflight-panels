@@ -15,11 +15,17 @@ The included is a 3d STL files can be printed without supports and contain every
 
 There are also STL files for a very simple gear handle and wheel shaped knob that you might want to print in white for example for contrast.
 
+## Parts you need
+
 I used 2mm carbon fiber rod for the pins, and locked the tiny "mouse button micro switch" in place with two wooden toothpicks that happened
-to have a good friction fit. I would guess toothpicks might work ok in place of those carbon rods too, in the handle. You need two rubber bands that you 
-need to wrap around the rod ends to keep it in, and to give some resistnace when pulled out to operate the handle. But do not make them too tight, or you need to bolt
-your gear panel to the table. Just a bit of resistance is enough. Twisting the bands a few times when wrapping might help to keep them jumping loose. 
-Mine stay in place just fine around ~1cm long stick ends, so I did not give that too much thought. Springs migth be longer lasting solution instead of rubber bands as well.
+to have a good friction fit. I would guess toothpicks might work ok in place of those carbon rods too, in the handle. You also need two rubber bands that you 
+need to wrap around the rod ends to pull the handle in when you let go, and to give some resistnace when pulled out to operate the handle. 
+But do not make them too tight, or you need to bolt your gear panel to the table. Just a bit of resistance is enough. 
+Twisting the bands a few times when wrapping might help to keep them jumping loose. Mine stay in place just fine around ~1cm long stick ends, 
+so I did not give that too much thought. Springs migth be longer lasting solution instead of rubber bands as well.
+
+You also need a small microswitch, I got mine from [Aliexpress](https://www.aliexpress.com/item/32851450839.html) but this seems a common part used on mouse buttons
+for example. The size abd placement of the holes in the switch body of course are important in the placement.
 
 Note that the mechanism photo above does not yet feature a cutout for the circuit board, thats why it looks different. And I included two variants of the mechanism, one if someone wants to adapt this to a different panel, without a circuit board, so it does not have that huge cutout on the edge.
 
