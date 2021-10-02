@@ -9,7 +9,7 @@ This is a simple landing gear panel that has "Korry" switches and a slot for a g
 
 ![image](https://user-images.githubusercontent.com/2587818/127450635-e6e66c2a-bf45-45b7-a285-9cd85cc8bd8a.png)
 
-![image](https://user-images.githubusercontent.com/2587818/135715543-042c1e4e-a351-4d39-9379-781a8f6fccc8.png)
+![image](https://user-images.githubusercontent.com/2587818/135715792-d75e825a-9c3c-4b75-8d41-3e7878f8c1f3.png)
 
 Included is a 3d STL file that can be printed without supports. Print **two, but mirrored** so they can be placed the flat side
 against each other, using 10mm M3 nylon standoffs. Assemble with M3 screws. There are also STL files for a very simple gear handle and wheel shaped knob.
