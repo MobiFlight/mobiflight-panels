@@ -1,6 +1,6 @@
 # A320 FCU (Flight Control Unit)
 
-### Status: **Untested** - The PCB (v1.0.2) is functionally complete, but untested. Version 1.0 was used to produce the following FCU, but it required a bodge that is corrected in v1.0.2.
+### Status: **Untested** - The current PCB (v1.0.3) is functionally complete, but untested. Version 1.0 was used to produce the following FCU, but it required a bodge that was corrected in v1.0.2.
 
 ![FCU Front](https://user-images.githubusercontent.com/2242776/133118930-89cbbde2-fbe4-4aab-bdd7-f9aa332fe413.jpg)
 
@@ -57,7 +57,7 @@ Each of these four sets have the following lettering for the first character of 
 
  The bottom pin on all of these sets are GND.
 
- This example of the PCB (as viewed from the *back*), shows the pin indicating to the push-pull encoder mechanism's PUSH feature for the SPEED knob in the top-right position:
+ This example of the PCB (as viewed from the *back*), shows the pin indicating to the push-pull encoder mechanism's PULL feature for the SPEED knob in the top-right position:
  
  ![PCB Header Closeup](https://user-images.githubusercontent.com/2242776/132797899-5f7ce723-6485-41d5-84f1-227561c238dd.jpg)
 
