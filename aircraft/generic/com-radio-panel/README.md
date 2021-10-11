@@ -15,8 +15,9 @@ can be changed with MobiFlight if you wish.
 The encoder used is the ALPS EC11EBB24C03 that I found from Aliexpress. The pushbuttons are 
 [Multimec 3FTH9](https://octopart.com/3fth9-mec+switches-49180836). Not the cheapest switch, but
 very high quality and they can accommondate a regular 3mm LED in the center of the switch. They
-also are available with a pre-inserted led for a crazy price, it's very easy to just bend the legs
-yourself.
+also are available with a pre-inserted led for a crazy price. But it's very easy to just bend the led legs
+yourself and insert it in place. 3mm leds work for buttons, and pick less bright ones, they shine bright 
+through the button caps.
 
 The pcb has 2 through-hole MAX7219 chips, 1206 size SMD leds, BS170 FETs to dim the leds from one pin, 
 some 1206 surface mount resistors and two capacitors for each MAX chip as recommended by its datasheet. 
