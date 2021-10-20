@@ -65,3 +65,10 @@ Each of these four sets have the following lettering for the first character of 
 
 ## Attachment of the Push-Pull Encoder Mechanism
 Each push-pull encoder mechanism is attached to the back of the clear acrylic layer using two countersunk M3 screws with a corresponding bolt to hold them in place from the back. Due to the proximity of the countersunk holes to the larger hole rotary encoder hole, great care should be taken to not apply excessive pressure when creating them with a countersink tool.
+
+## 7-Segment Display Windows
+The "windows" that appear at the top of the FCU are acrylic of the same depth as the frontmost (user-facing) panel cut to the same size as the openings. Using a "K40 Laser" yielded a window that could easily be press-fit into the openings without any adhesive due to the inherent imperfections in the cut edge.
+
+You can use colored acrylic to provide a nice tint to the LEDs in the event you used white 7-segment modules. If you chose to use colored 7-segment modules, the light emitted is often a narrow band, so colored acrylic has little to no effect.
+
+Before cutting the acrylic windows, you can apply a tinted adhesive sheet that will increase the contrast of the LEDs. The cutting action will also weld the outer edge of the tint to the acrylic itself, which prevents peeling. Try to avoid a tint film that has "air-release" designed for air bubble prevention, as its texture is often visible when the LEDs are lit from behind. It's recommended that you mount the windows, tint facing inwards, to minimize blur, which gives the window surface a nice clean appearance.
