@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>FCU</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="AP1 LED" Pin="47" />
+  <Button Name="AP1" Pin="46" />
+  <Output Name="AP2 LED" Pin="49" />
+  <Output Name="ATHR LED" Pin="51" />
+  <Button Name="ATHR" Pin="50" />
+  <Output Name="Annunciators Brt" Pin="6" />
+  <LedModule Name="LED Display" DinPin="2" ClsPin="3" ClkPin="4" Brightness="15" NumModules="3" />
+  <Output Name="Display Brt" Pin="7" />
+  <Output Name="SPD Dot" Pin="8" />
+  <Output Name="HDG Dot" Pin="9" />
+  <Output Name="VS Dot" Pin="10" />
+  <Output Name="LED SPD" Pin="11" />
+  <Output Name="LED MACH" Pin="12" />
+  <Button Name="SPD MACH" Pin="40" />
+  <Button Name="HDG TRK" Pin="41" />
+  <Button Name="METRIC ALT" Pin="42" />
+  <Button Name="100-1000 TOG" Pin="43" />
+  <Output Name="LED HDG" Pin="14" />
+  <Output Name="LED TRK" Pin="15" />
+  <Output Name="LED LAT" Pin="16" />
+  <Output Name="LED MID HDG" Pin="17" />
+  <Output Name="LED MID TRK" Pin="18" />
+  <Output Name="LED MID VS" Pin="19" />
+  <Output Name="LED MID FPA" Pin="20" />
+  <Output Name="Backlight Brt" Pin="5" />
+  <Encoder Name="SPD Encoder" PinLeft="24" PinRight="25" EncoderType="1" />
+  <Button Name="SPD Push" Pin="26" />
+  <Button Name="SPD Pull" Pin="27" />
+  <Encoder Name="HDG Encoder" PinLeft="28" PinRight="29" EncoderType="1" />
+  <Button Name="HDG Push" Pin="30" />
+  <Button Name="HDG Pull" Pin="31" />
+  <Encoder Name="ALT Encoder" PinLeft="32" PinRight="33" EncoderType="1" />
+  <Button Name="ALT Push" Pin="34" />
+  <Button Name="ALT Pull" Pin="35" />
+  <Encoder Name="VS Encoder" PinLeft="36" PinRight="37" EncoderType="1" />
+  <Button Name="VS Push" Pin="38" />
+  <Button Name="VS Pull" Pin="39" />
+  <Output Name="LED VS" Pin="22" />
+  <Output Name="LED FPA" Pin="23" />
+  <Button Name="AP2" Pin="48" />
+  <Button Name="LOC" Pin="44" />
+  <Output Name="LED LOC" Pin="45" />
+  <Button Name="EXPED" Pin="52" />
+  <Output Name="LED EXPED" Pin="53" />
+  <Button Name="APPR" Pin="54" />
+  <Output Name="LED APPR" Pin="55" />
+</Config>
