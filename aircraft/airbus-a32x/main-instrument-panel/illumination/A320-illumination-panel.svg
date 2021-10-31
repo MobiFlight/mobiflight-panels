@@ -23,15 +23,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.1802616"
-     inkscape:cx="235.96463"
-     inkscape:cy="246.97914"
+     inkscape:zoom="9.4420928"
+     inkscape:cx="359.61307"
+     inkscape:cy="41.780992"
      inkscape:window-width="1940"
      inkscape:window-height="1012"
-     inkscape:window-x="331"
-     inkscape:window-y="30"
+     inkscape:window-x="1415"
+     inkscape:window-y="185"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      fit-margin-top="2"
      fit-margin-left="2"
      fit-margin-right="2"
@@ -39,7 +39,7 @@
      inkscape:snap-bbox="true"
      inkscape:object-paths="true"
      inkscape:snap-object-midpoints="true"
-     inkscape:snap-global="false"
+     inkscape:snap-global="true"
      showguides="false" />
   <defs
      id="defs2">
@@ -290,28 +290,26 @@
     <circle
        style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="circle5853"
-       cx="34.506416"
-       cy="16.09189"
-       r="1.5"
-       transform="translate(20.256803,26.407693)" />
+       cx="54.763218"
+       cy="41.499584"
+       r="1.5" />
     <circle
        style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="circle5855"
-       cx="92.506416"
-       cy="4.0918903"
-       r="1.5"
-       transform="translate(20.256803,26.407693)" />
+       cx="112.76322"
+       cy="29.499584"
+       r="1.5" />
     <circle
        style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="circle5859"
        cx="44.76984"
-       cy="142.49959"
+       cy="143.49959"
        r="1.5" />
     <circle
        style="display:inline;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="circle5861"
        cx="119.39288"
-       cy="142.49959"
+       cy="143.49959"
        r="1.5" />
     <path
        id="path76973"
