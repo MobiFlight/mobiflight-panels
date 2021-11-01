@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
-   sodipodi:docname="A320 TERR ON ND.svg"
+   sodipodi:docname="A320-terr-on-nd.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,14 +24,14 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2"
-     inkscape:cx="20.5"
-     inkscape:cy="164.25"
+     inkscape:cx="58"
+     inkscape:cy="126.75"
      inkscape:window-width="1699"
      inkscape:window-height="992"
      inkscape:window-x="1395"
      inkscape:window-y="112"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer1"
      showguides="false"
      inkscape:snap-bbox="true"
      inkscape:bbox-paths="true"
@@ -134,18 +134,6 @@
        y="79.328072"
        rx="1.0252787"
        ry="1.0252788" />
-    <circle
-       style="fill:#008000;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;paint-order:stroke fill markers"
-       id="path8901"
-       cx="50.692001"
-       cy="59.039944"
-       r="2" />
-    <circle
-       style="fill:#008000;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;paint-order:stroke fill markers"
-       id="circle8983"
-       cx="85.692001"
-       cy="119.03995"
-       r="2" />
     <path
        style="fill:none;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 45.692001,57.039944 v 64.000006 a 3,3 45 0 0 3,3 H 87.692 a 3,3 135 0 0 3,-3 V 57.039944 a 3,3 45 0 0 -3,-3 H 48.692001 a 3,3 135 0 0 -3,3 z"
@@ -154,16 +142,18 @@
        inkscape:original-d="M 45.692001,54.039944 V 124.03995 H 90.692 V 54.039944 Z" />
     <circle
        style="display:inline;fill:#008000;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;paint-order:stroke fill markers"
-       id="circle1767"
-       cx="85.692001"
+       id="circle1169"
+       cx="50.692001"
        cy="59.039944"
-       r="2" />
+       r="1.5"
+       transform="translate(1.1666667e-6)" />
     <circle
        style="display:inline;fill:#008000;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;paint-order:stroke fill markers"
-       id="circle1769"
-       cx="50.692001"
+       id="circle1172"
+       cx="85.692001"
        cy="119.03995"
-       r="2" />
+       r="1.5"
+       transform="translate(1.1666667e-6)" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -183,13 +173,13 @@
        id="circle9065"
        cx="50.692001"
        cy="59.039944"
-       r="2" />
+       r="1.5" />
     <circle
        style="display:inline;fill:#008000;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;paint-order:stroke fill markers"
        id="circle9067"
        cx="85.692001"
        cy="119.03995"
-       r="2" />
+       r="1.5" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;line-height:0.95;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=600,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 90, 'wght' 600;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;display:inline;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264584;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000"
@@ -219,6 +209,18 @@
        y="80.895706"
        rx="1.0252787"
        ry="1.0252788" />
+    <circle
+       style="display:inline;fill:#008000;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;paint-order:stroke fill markers"
+       id="circle845"
+       cx="85.692001"
+       cy="59.039944"
+       r="1.5" />
+    <circle
+       style="display:inline;fill:#008000;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;paint-order:stroke fill markers"
+       id="circle847"
+       cx="50.692001"
+       cy="119.03995"
+       r="1.5" />
   </g>
   <g
      inkscape:groupmode="layer"
