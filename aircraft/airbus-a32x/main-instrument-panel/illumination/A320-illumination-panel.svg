@@ -23,15 +23,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="9.4420928"
-     inkscape:cx="359.61307"
-     inkscape:cy="41.780992"
-     inkscape:window-width="1940"
-     inkscape:window-height="1012"
-     inkscape:window-x="1415"
-     inkscape:window-y="185"
+     inkscape:zoom="0.84551748"
+     inkscape:cx="108.8091"
+     inkscape:cy="212.29603"
+     inkscape:window-width="1504"
+     inkscape:window-height="780"
+     inkscape:window-x="1913"
+     inkscape:window-y="165"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer5"
      fit-margin-top="2"
      fit-margin-left="2"
      fit-margin-right="2"
@@ -39,10 +39,27 @@
      inkscape:snap-bbox="true"
      inkscape:object-paths="true"
      inkscape:snap-object-midpoints="true"
-     inkscape:snap-global="true"
+     inkscape:snap-global="false"
      showguides="false" />
   <defs
      id="defs2">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect26719"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,3,0,1 @ F,0,0,1,0,3,0,1 @ F,0,0,1,0,17.741855,0,1 @ F,0,0,1,0,3,0,1 @ F,0,0,1,0,3,0,1"
+       unit="mm"
+       method="auto"
+       mode="F"
+       radius="3"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
     <inkscape:path-effect
        effect="fillet_chamfer"
        id="path-effect6250"
@@ -220,6 +237,37 @@
     </marker>
   </defs>
   <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="PCB"
+     style="display:none">
+    <path
+       id="path26715"
+       style="display:inline;fill:none;stroke:#008000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 106.03711,13.134766 c -3.11188,0.313967 -6.13348,1.170054 -9.210229,1.70131 -23.488506,4.716455 -46.985915,9.391367 -70.465553,14.150252 -1.993138,0.507028 -3.303468,2.199626 -4.458338,3.776081 -4.895658,6.259835 -9.851886,12.474409 -14.6913527,18.776844 -1.4368752,2.194382 -0.9512167,4.918907 -1.0319498,7.390044 0.00855,18.703827 -0.020128,37.408301 0.021484,56.111723 0.1269824,0.86563 1.148118,0.96882 1.8472656,0.87304 36.7383809,-0.004 73.4770079,0.008 110.2152329,-0.006 0.84651,-0.10107 1.02537,-1.0655 0.91603,-1.76328 -0.004,-29.762695 0.0176,-59.526169 -0.0249,-89.288378 -0.26594,-5.307716 -4.29919,-10.176906 -9.49238,-11.362411 -1.18209,-0.297784 -2.40799,-0.41108 -3.62526,-0.359365 z" />
+    <circle
+       style="display:inline;fill:none;fill-opacity:1;stroke:#008000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle26761"
+       cx="74.506416"
+       cy="22.09189"
+       r="1.5"
+       transform="translate(1.5017158,5.235371)" />
+    <circle
+       style="display:inline;fill:none;fill-opacity:1;stroke:#008000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle26764"
+       cx="114.45209"
+       cy="106.10461"
+       r="1.5"
+       transform="translate(1.5017158,5.235371)" />
+    <circle
+       style="display:inline;fill:none;fill-opacity:1;stroke:#008000;stroke-width:0.3;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="circle26767"
+       cx="7.6132669"
+       cy="75.590553"
+       r="1.5"
+       transform="translate(1.5017158,5.235371)" />
+  </g>
+  <g
      inkscape:label="Bottom Panel"
      inkscape:groupmode="layer"
      id="layer1"
@@ -322,7 +370,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Bottom Panel Tape Mask"
-     style="display:inline">
+     style="display:none">
     <path
        id="path6246"
        style="display:inline;fill:none;stroke:#0000ff;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -493,7 +541,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=90.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 90, 'wght' 700;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
          id="tspan27417">BRT</tspan></text>
     <circle
-       style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#ff0000;stroke-width:0.299998;stroke-linejoin:round;shape-rendering:crispEdges;stop-color:#000000"
+       style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#ff0000;stroke-width:0.3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;shape-rendering:crispEdges;stop-color:#000000"
        id="circle27421"
        cx="99.13607"
        cy="57.708588"
@@ -645,7 +693,7 @@
        r="1.5" />
     <path
        style="display:inline;fill:none;stroke:#ff0000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 25.93597,139.08685 h 111 a 3,3 135 0 0 3,-3 V 46.828716 A 14.538745,14.538745 39.333256 0 0 122.54008,32.573477 L 45.191792,48.076208 a 8.1263465,8.1263465 148.4039 0 0 -4.794308,2.949029 L 24.788778,70.902241 a 8.6778601,8.6778601 109.07064 0 0 -1.852808,5.359471 v 59.825138 a 3,3 45 0 0 3,3 z"
+       d="m 25.93597,139.08685 111,0 a 3,3 135 0 0 3,-3 l 0,-89.258134 A 14.538745,14.538745 39.333256 0 0 122.54008,32.573477 L 45.191792,48.076208 a 8.1263465,8.1263465 148.4039 0 0 -4.794308,2.949029 L 24.788778,70.902241 a 8.6778601,8.6778601 109.07064 0 0 -1.852808,5.359471 v 59.825138 a 3,3 45 0 0 3,3 z"
        id="path3827"
        inkscape:path-effect="#path-effect3831"
        inkscape:original-d="m 22.93597,139.08685 h 117 V 29.086861 L 42.250292,48.665766 22.93597,73.261712 Z"
@@ -683,5 +731,24 @@
        y="16.042555"
        rx="0.46400255"
        ry="0.46400255" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Black Disc (for button light bleed prevention)"
+     style="display:none">
+    <circle
+       style="fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path958"
+       cx="63.326271"
+       cy="62.943958"
+       r="6.6500001" />
+    <ellipse
+       style="fill:none;stroke:#ff0000;stroke-width:0.299999;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="circle1173"
+       cx="63.326271"
+       cy="62.943958"
+       rx="11.249999"
+       ry="11.25" />
   </g>
 </svg>
