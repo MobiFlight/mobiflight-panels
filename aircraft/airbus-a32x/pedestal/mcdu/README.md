@@ -12,7 +12,7 @@ to be fully functional.
 **LED Backlighting** - 12V supply powers the led backlight, 
 pin13 on the arduino controls the brightness of them via 
 a FET, if you prefer to control the brightness by varying 
-the voltage instead, this is possible by bridging pins 2 
+the voltage instead, this is possible by bridging pins 1 
 and 3 of the FET pads on the PCB.
 
 **LED indicators** - all LEDs and resistors are able to be 
