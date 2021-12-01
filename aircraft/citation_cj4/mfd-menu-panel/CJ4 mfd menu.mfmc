@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>CJ4 mfd menu</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="BACKLIGHT" Pin="13" />
+  <Button Name="upr menu" Pin="3" />
+  <Encoder Name="menu adv" PinLeft="2" PinRight="4" EncoderType="2" />
+  <Button Name="nav data" Pin="5" />
+  <Encoder Name="data" PinLeft="6" PinRight="8" EncoderType="2" />
+  <Button Name="lwr menu" Pin="7" />
+  <Button Name="crsr" Pin="9" />
+  <Button Name="data push" Pin="10" />
+  <Button Name="esc" Pin="11" />
+  <Button Name="joy_up" Pin="12" />
+  <Button Name="joy_right" Pin="14" />
+  <Button Name="chart" Pin="15" />
+  <Button Name="joy_down" Pin="16" />
+  <Button Name="mem_1" Pin="17" />
+  <Button Name="joy_left" Pin="18" />
+  <Button Name="mem_2" Pin="19" />
+  <Button Name="terr wx" Pin="20" />
+  <Button Name="mem_3" Pin="21" />
+  <Button Name="zoom minus" Pin="22" />
+  <Button Name="cas page" Pin="23" />
+  <Button Name="zoom plus" Pin="24" />
+  <Button Name="radar menu" Pin="25" />
+  <Button Name="sys" Pin="26" />
+  <Button Name="eng" Pin="27" />
+  <Button Name="database" Pin="28" />
+  <Button Name="cklist" Pin="29" />
+  <Button Name="tfc" Pin="30" />
+  <Button Name="pass brief" Pin="31" />
+</Config>
