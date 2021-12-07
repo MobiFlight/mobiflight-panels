@@ -24,14 +24,14 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.84551748"
-     inkscape:cx="109.40046"
-     inkscape:cy="212.29602"
+     inkscape:cx="234.76747"
+     inkscape:cy="247.77725"
      inkscape:window-width="1504"
      inkscape:window-height="780"
      inkscape:window-x="1913"
      inkscape:window-y="165"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer6"
      fit-margin-top="2"
      fit-margin-left="2"
      fit-margin-right="2"
@@ -240,7 +240,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="PCB"
-     style="display:none">
+     style="display:inline">
     <path
        id="path26715"
        style="display:inline;fill:none;stroke:#008000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -380,6 +380,12 @@
        id="circle20729"
        cx="63.326271"
        cy="99.982841"
+       r="10.754221" />
+    <circle
+       style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#0000ff;stroke-width:0.3;stroke-linejoin:round;shape-rendering:crispEdges;stop-color:#000000"
+       id="circle943"
+       cx="63.326271"
+       cy="62.943958"
        r="10.754221" />
   </g>
   <g
@@ -742,7 +748,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Black Disc (for button light bleed prevention)"
-     style="display:inline">
+     style="display:none">
     <circle
        style="fill:none;stroke:#ff0000;stroke-width:0.3;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path958"
