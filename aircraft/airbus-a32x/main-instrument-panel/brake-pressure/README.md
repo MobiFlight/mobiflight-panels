@@ -1,9 +1,10 @@
 # A320 Brake Pressure Gauge
 
-Flush mount example, without color transparency layer
 ![Brake Pressure Gauge](https://user-images.githubusercontent.com/2242776/145629269-c75f62d5-ccfd-46e7-94d3-89705cca52d4.png)
 
-This panel design doesn't include a PCB and the servos are driven by the [Autobrake Panel](https://github.com/MobiFlight/mobiflight-panels/tree/main/aircraft/airbus-a32x/main-instrument-panel/autobrake).
+Flush mount example shown above, without color transparency layer
+
+This panel design doesn't include a PCB design as the servos are driven by the [Autobrake Panel](https://github.com/MobiFlight/mobiflight-panels/tree/main/aircraft/airbus-a32x/main-instrument-panel/autobrake).
 Currently, these are more rough notes than a comprehensive how-to.
 
 ## Overview
