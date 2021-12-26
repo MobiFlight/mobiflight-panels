@@ -4,7 +4,7 @@
     <config guid="0d9bcca2-2370-4d12-b6a4-0132db983614">
       <active>true</active>
       <description>cj4-mfd-menu backlight</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(L:MF-backlight)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Pin" serial="CJ4 mfd menu/ SN-eaf-59f" trigger="normal" pin="BACKLIGHT" pinBrightness="255" pinPwm="True" />
@@ -18,7 +18,7 @@
     <config guid="e730f95b-2194-4394-aea2-c41fb2c0f5b7">
       <active>true</active>
       <description>cj4-mfd upr menu</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="upr menu" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="upr menu" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_UPR_MENU" />
           <onRelease />
@@ -32,7 +32,7 @@
     <config guid="d0541f60-9556-451a-b59d-281d4a6ccf47">
       <active>true</active>
       <description>cj4-mfd esc</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="esc" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="esc" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_ESC" />
           <onRelease />
@@ -46,7 +46,7 @@
     <config guid="4609d75b-f840-46af-977e-c69990350d5e">
       <active>true</active>
       <description>cj4-mfd navdata</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="nav data" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="nav data" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_NAV_DATA" />
           <onRelease />
@@ -60,7 +60,7 @@
     <config guid="804a3f9c-5b4a-4467-8aa4-2e308f3705fb">
       <active>true</active>
       <description>cj4-mfd database (dummy)</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="database" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="database" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress />
           <onRelease />
@@ -74,7 +74,7 @@
     <config guid="00c19cdb-d82e-4d8e-9835-52c8115503c1">
       <active>true</active>
       <description>cj4-mfd chart</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="chart" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="chart" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_Chart_1" />
           <onRelease />
@@ -88,7 +88,7 @@
     <config guid="ba8fccf3-01a3-4cfe-9661-66692b522545">
       <active>true</active>
       <description>cj4-mfd cas page</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="cas page" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="cas page" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_CAS_PAGE" />
           <onRelease />
@@ -102,7 +102,7 @@
     <config guid="858ca858-498b-43dd-81fd-4719286f4463">
       <active>true</active>
       <description>cj4-mfd lwr menu</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="lwr menu" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="lwr menu" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_LWR_MENU" />
           <onRelease />
@@ -116,7 +116,7 @@
     <config guid="be4aeb8c-4363-47f7-a853-6520c944d855">
       <active>true</active>
       <description>cj4-mfd menu adv ROTARY</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="menu adv" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="menu adv" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_MENU_ADV_DEC" />
           <onLeftFast />
@@ -132,7 +132,7 @@
     <config guid="80d2b308-b862-4198-9727-f45fbd3e7294">
       <active>true</active>
       <description>cj4-mfd data ROTARY</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="data" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="data" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <encoder>
           <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_DATA_DEC" />
           <onLeftFast />
@@ -148,10 +148,10 @@
     <config guid="722cd985-4412-4425-b095-7c47157bad50">
       <active>true</active>
       <description>cj4-mfd data PUSH</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="data push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="data push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
-          <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_DATA_PUSH" />
-          <onRelease />
+          <onPress type="MSFS2020CustomInputAction" command="(E:SIMULATION TIME, second) 0.25 + (&gt;L:MF_timer)" />
+          <onRelease type="MSFS2020CustomInputAction" command="(E:SIMULATION TIME, second) (L:MF_timer) &lt; if{ (&gt;H:Generic_Lwr_DATA_PUSH) }&#xD;&#xA;els{ (&gt;H:Generic_Lwr_DATA_PUSH_LONG) }" />
         </button>
         <encoder>
           <onLeft type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_DATA_DEC" />
@@ -168,7 +168,7 @@
     <config guid="e6c899d7-b3f5-4392-808e-e012a44cb343">
       <active>true</active>
       <description>cj4-mfd mem 1</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="mem_1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="mem_1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_MEM1_1" />
           <onRelease />
@@ -188,7 +188,7 @@
     <config guid="6c3d8e01-a9bd-42a6-8bd8-9d23fca01ced">
       <active>true</active>
       <description>cj4-mfd mem 2</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="mem_2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="mem_2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_MEM2_1" />
           <onRelease />
@@ -208,7 +208,7 @@
     <config guid="cd809373-8c3f-4135-b98f-e69f18a5ac24">
       <active>true</active>
       <description>cj4-mfd mem 3</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="mem_3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="mem_3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_MEM3_1" />
           <onRelease />
@@ -228,7 +228,7 @@
     <config guid="4a018966-b4f2-4b3d-b201-21a4ef7e26bc">
       <active>true</active>
       <description>cj4-mfd zoom minus</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="zoom minus" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="zoom minus" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_ZOOM_DEC" />
           <onRelease />
@@ -248,7 +248,7 @@
     <config guid="c6985539-458b-4bb4-9d93-eb1d5346527f">
       <active>true</active>
       <description>cj4-mfd zoom plus</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="zoom plus" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="zoom plus" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_ZOOM_INC" />
           <onRelease />
@@ -268,7 +268,7 @@
     <config guid="3dc9d969-ca00-4a7e-bd70-5ee507a2ed17">
       <active>true</active>
       <description>cj4-mfd joy-up</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="joy_up" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="joy_up" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_JOYSTICK_UP" />
           <onRelease />
@@ -288,7 +288,7 @@
     <config guid="98c50a24-010d-40a8-a18f-d67ff7bf1372">
       <active>true</active>
       <description>cj4-mfd joy-right</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="joy_right" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="joy_right" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_JOYSTICK_RIGHT" />
           <onRelease />
@@ -308,7 +308,7 @@
     <config guid="720fe73e-c74a-4026-a20c-c52bad0626b0">
       <active>true</active>
       <description>cj4-mfd joy-down</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="joy_down" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="joy_down" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_JOYSTICK_DOWN" />
           <onRelease />
@@ -328,7 +328,7 @@
     <config guid="feefecef-8c1b-45dc-9b8e-eb1f27744d53">
       <active>true</active>
       <description>cj4-mfd joy-left</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="joy_left" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="joy_left" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_JOYSTICK_LEFT" />
           <onRelease />
@@ -348,7 +348,7 @@
     <config guid="1098b4a3-148e-4e06-9bea-ddc1393c200a">
       <active>true</active>
       <description>cj4-mfd eng</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="eng" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="eng" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_ENG" />
           <onRelease />
@@ -368,7 +368,7 @@
     <config guid="cdfaa29e-f8b3-4ac3-8fbc-c98d70a30a9e">
       <active>true</active>
       <description>cj4-mfd terr/wx</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="terr wx" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="terr wx" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_TERR_WX" />
           <onRelease />
@@ -388,7 +388,7 @@
     <config guid="420b63c8-d2c5-40f3-b2d4-5dc73ee14e18">
       <active>true</active>
       <description>cj4-mfd tfc</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="tfc" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="tfc" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_TFC" />
           <onRelease />
@@ -408,7 +408,7 @@
     <config guid="5b530bae-b62c-49c4-a8a5-e757d22e460c">
       <active>true</active>
       <description>cj4-mfd cklist</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="cklist" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="cklist" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_CKLST_1" />
           <onRelease />
@@ -428,7 +428,7 @@
     <config guid="7104b7b2-d5df-4818-87fe-56f10ee90c46">
       <active>true</active>
       <description>cj4-mfd sys</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="sys" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="sys" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_SYS" />
           <onRelease />
@@ -448,7 +448,7 @@
     <config guid="203271d5-1990-4830-8181-35f85ce23eac">
       <active>true</active>
       <description>cj4-mfd pass brief</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.4, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="pass brief" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="CJ4 mfd menu/ SN-eaf-59f" name="pass brief" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="Generic_Lwr_Push_PASSBRIEF_1" />
           <onRelease />
