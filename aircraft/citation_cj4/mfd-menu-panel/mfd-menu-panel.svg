@@ -34,11 +34,11 @@
      borderopacity="0.32156863"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="263.25"
-     inkscape:cy="162.5"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="105.00536"
+     inkscape:cy="261.62951"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer12"
      inkscape:document-rotation="0"
      showgrid="false"
      fit-margin-top="0"
@@ -59,7 +59,7 @@
      inkscape:snap-center="true"
      inkscape:window-width="2715"
      inkscape:window-height="1128"
-     inkscape:window-x="1116"
+     inkscape:window-x="1109"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:snap-global="true"
@@ -224,8 +224,8 @@
      style="display:inline;opacity:1"
      transform="translate(-2194.3668,-626.7174)">
     <path
-       d="m 2319.1421,660.37476 c 0,-2.34809 -1.904,-4.25062 -4.251,-4.25062 -2.3474,0 -4.2503,1.90253 -4.2503,4.24992 0,2.34703 1.9029,4.24991 4.2503,4.24991 2.347,0 4.2499,-1.90288 4.2499,-4.24991 z"
-       style="font-variation-settings:'wght' 776;display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.89091;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
+       d="m 2321.3875,660.37512 c 0,-3.5885 -2.9098,-6.49606 -6.4966,-6.49606 -3.5874,0 -6.4956,2.90756 -6.4956,6.49499 0,3.58687 2.9082,6.49497 6.4956,6.49497 3.5868,0 6.495,-2.9081 6.495,-6.49497 z"
+       style="font-variation-settings:'wght' 776;display:inline;opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.300001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:6.89091;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
        id="path3824" />
     <path
        d="m 2246.1878,660.37476 c 0,-2.34809 -1.904,-4.25062 -4.251,-4.25062 -2.3474,0 -4.2503,1.90253 -4.2503,4.24992 0,2.34703 1.9029,4.24991 4.2503,4.24991 2.347,0 4.2499,-1.90288 4.2499,-4.24991 z"
@@ -488,6 +488,15 @@
        d="m 2335.5273,-643.74414 c -1.4552,0 -2.6386,1.18343 -2.6386,2.63867 0,1.45524 1.1834,2.63867 2.6386,2.63867 1.4553,0 2.6368,-1.18343 2.6368,-2.63867 0,-1.45524 -1.1815,-2.63867 -2.6368,-2.63867 z m 0,0.30078 c 1.2932,0 2.3379,1.04478 2.3379,2.33789 0,1.29311 -1.0447,2.33789 -2.3379,2.33789 -1.2931,0 -2.3378,-1.04478 -2.3378,-2.33789 0,-1.29311 1.0447,-2.33789 2.3378,-2.33789 z"
        id="circle2776"
        transform="scale(1,-1)" />
+    <rect
+       style="font-variation-settings:'wdth' 95, 'wght' 600;display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:normal;shape-rendering:crispEdges;stop-color:#000000"
+       id="rect34066"
+       width="146.05051"
+       height="66.674988"
+       x="2194.3667"
+       y="626.81744"
+       rx="0.99822789"
+       ry="1.0050952" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -826,15 +835,6 @@
      inkscape:label="Button labels and engraving sheet cutout"
      style="display:inline"
      transform="translate(-2194.3666,-626.71715)">
-    <rect
-       style="font-variation-settings:'wdth' 95, 'wght' 600;display:inline;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.3;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:normal;shape-rendering:crispEdges;stop-color:#000000"
-       id="rect34066"
-       width="146.05051"
-       height="66.674988"
-       x="2194.3665"
-       y="626.8172"
-       rx="0.99822789"
-       ry="1.0050952" />
     <g
        id="g6339"
        transform="translate(1287.8311,343.64655)" />
@@ -1032,23 +1032,26 @@
          id="tspan51889">MENU</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:0.95;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.293166;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.293166;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        x="-384.45087"
        y="361.59003"
        id="text51899"
-       transform="matrix(0.90249999,0,0,0.90249999,2634.6903,341.38994)"><tspan
+       transform="matrix(0.90249999,0,0,0.90249999,2634.5341,343.20536)"><tspan
          sodipodi:role="line"
          x="-384.45087"
          y="361.59003"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.293166"
-         id="tspan51897">ZOOM</tspan><tspan
-         sodipodi:role="line"
-         x="-384.45087"
-         y="366.41422"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.27701px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.293166"
-         id="tspan16279"
-         dy="-2.9022057 2.0211799"
-         dx="0.10365023 -0.051825114">_          +</tspan></text>
+         id="tspan16279"><tspan
+           style="font-size:7.03601px"
+           id="tspan49225"
+           dy="0.3109507">-</tspan><tspan
+           id="tspan29203"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-align:center;text-anchor:middle;fill:#000000;stroke-width:0.293166"
+           dy="-0.3109507"
+           dx="0 0.20730048 0 0 0 0.20730045"> ZOOM </tspan><tspan
+           style="font-size:7.03601px"
+           id="tspan44597"
+           dy="0.72555161">+</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.82749px;line-height:1;font-family:Bahnschrift;-inkscape-font-specification:'Bahnschrift, @wght=700,wdth=80.0';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-variation-settings:'wdth' 80, 'wght' 700;text-indent:0;text-align:center;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
