@@ -9,3 +9,5 @@ and for example short standoffs or M3 nuts to lock the pieces together.
 
 Alternatively you could cut the panel without the screw holes and glue the pieces
 together before painting I guess.
+
+![image](https://user-images.githubusercontent.com/2587818/147455589-261127a1-291d-44d4-86db-c8108e1d0f82.png)
