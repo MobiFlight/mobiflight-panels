@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="60c2d906-363f-4387-957c-8738c5fdedca">
+      <active>true</active>
+      <description>01 Light logic - 1 L:MF-annunciators</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool) if{ (A:LIGHT POTENTIOMETER:3, Percent) 2.55 * 60 + 255 min (&gt;L:MF-annunciators) } els{ 0 (&gt;L:MF-annunciators) } (L:MF-annunciators)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="222bd7f4-cd59-4f50-a22d-bd337a0bc966" placeholder="B" />
+          <configref active="False" ref="222bd7f4-cd59-4f50-a22d-bd337a0bc966" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="222bd7f4-cd59-4f50-a22d-bd337a0bc966">
+      <active>true</active>
+      <description>01 Light logic - 0 L:MF--backllight</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:CIRCUIT GENERAL PANEL ON,Bool) (A:LIGHT PANEL ON, Bool) and if{ (A:LIGHT POTENTIOMETER:3, Percent) 2.55 * (&gt;L:MF-backlight) } els{ 0 (&gt;L:MF-backlight) } (L:MF-backlight)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="!" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="#" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="460b63ce-b423-4167-9ed5-165f9d401a8a">
+      <active>true</active>
+      <description>Lights Test Button</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" serial="CJ4 autopilot/ SN-ff8-c01" name="Button APXFR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:MF-light-test)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:MF-light-test)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="222bd7f4-cd59-4f50-a22d-bd337a0bc966" placeholder="!" />
+          <configref active="False" ref="60c2d906-363f-4387-957c-8738c5fdedca" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
