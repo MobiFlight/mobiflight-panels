@@ -13,8 +13,8 @@ The panel is comprised of three layers, starting with the frontmost (user-facing
 
  ## 3D Objects Used
  The following files are included for 3D Printing
-  - [Korry 389](https://github.com/MobiFlight/mobiflight-panels/blob/common/korry/Korry%20Switch%20389%20(3mm%20lens%2C%20B3F-105X%20Switch).stl)
-  - [Korry 307-like](https://github.com/MobiFlight/mobiflight-panels/blob/common/korry/airbus-a32x/glareshield/fcu/Korry%20Switch%20307-like%20(3mm%20lens%2C%20B3F-105X%20Switch).stl)
+  - [Korry 389](https://github.com/MobiFlight/mobiflight-panels/blob/main/common/korry/Korry%20Switch%20389%20(3mm%20lens%2C%20B3F-105X%20Switch).stl)
+  - [Korry 307-like](https://github.com/MobiFlight/mobiflight-panels/blob/main/common/korry/Korry%20Switch%20307-like%20(3mm%20lens%2C%20B3F-105X%20Switch).stl)
   - [Push-Pull Frame](https://github.com/MobiFlight/mobiflight-panels/blob/main/aircraft/airbus-a32x/glareshield/fcu/Push-Pull%20Frame%20(B3F-105X%20Series).stl)
   - [Push-Pull Slider](https://github.com/MobiFlight/mobiflight-panels/blob/main/aircraft/airbus-a32x/glareshield/fcu/Push-Pull%20Slider%20(B3F-105X%20Series).stl)
   - [ALT Knob](https://github.com/MobiFlight/mobiflight-panels/blob/main/aircraft/airbus-a32x/glareshield/fcu/FCU%20Knob%20(ALT%2C%2014mm%20Skirt%2C%206.7mm%20Hole).stl)
