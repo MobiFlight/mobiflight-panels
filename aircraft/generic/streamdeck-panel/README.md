@@ -1,12 +1,12 @@
-# Streamdeck panel
+## _NOTE: This design needs work_
 
-_## NOTE: This design needs work
-_
 _The front panel of StreamDeck v1 is held in place
 by double sided tape, and if you hang it by the front panel like this,
 the tape will give in over time (yeah, wonder why I know? :-)) So this needs
 some kind of bracket that keeps it from falling down when the buttons are 
 pressed._
+
+# Streamdeck panel
 
 This panel fits the Elgato StreamDeck 5x3 button version, which just drops in.
 It stays in place by gravity and the properly sized hole, so naturally the panel
