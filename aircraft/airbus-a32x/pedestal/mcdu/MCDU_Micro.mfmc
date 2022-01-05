@@ -2,18 +2,20 @@
 <Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ModuleName>MobiFlight Micro</ModuleName>
   <PowerSavingTime>600</PowerSavingTime>
-  <Button Name="Dim" Pin="9" />
-  <Button Name="Brt" Pin="8" />
-  <Output Name="MCDU LED" Pin="7" />
-  <Output Name="Menu LED" Pin="6" />
-  <Output Name="Dash LED" Pin="3" />
-  <Output Name="FM2 LED" Pin="2" />
-  <Output Name="Rdy LED" Pin="21" />
-  <Output Name="IND LED" Pin="20" />
-  <Output Name="FM1 LED" Pin="19" />
-  <Output Name="FM LED" Pin="18" />
-  <Output Name="Fail LED" Pin="15" />
-  <Button Name="Airport" Pin="14" />
-  <Button Name="Sec FPLN" Pin="16" />
+  <Output Name="INDICATOR3" Pin="21" />
+  <Output Name="INDICATOR2" Pin="20" />
+  <Output Name="INDICATOR1" Pin="19" />
+  <Output Name="INDICATOR7" Pin="18" />
+  <Output Name="INDICATOR6" Pin="15" />
+  <Output Name="INDICATOR5" Pin="2" />
+  <Output Name="INDICATOR4" Pin="3" />
+  <Output Name="INDICATOR9" Pin="6" />
+  <Output Name="INDICATOR8" Pin="7" />
+  <Button Name="AIRPORT" Pin="14" />
+  <Button Name="SECFPLN" Pin="16" />
   <Button Name="OVFY" Pin="10" />
+  <Button Name="BLANK1" Pin="4" />
+  <Button Name="BLANK2" Pin="5" />
+  <Button Name="BRT" Pin="8" />
+  <Button Name="DIM" Pin="9" />
 </Config>
