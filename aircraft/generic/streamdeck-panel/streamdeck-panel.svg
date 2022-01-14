@@ -5,7 +5,7 @@
    viewBox="0 0 572.75595 416.75593"
    version="1.1"
    sodipodi:docname="streamdeck-panel.svg"
-   inkscape:version="1.2-dev (da2df6f, 2021-07-26)"
+   inkscape:version="1.2-dev (076f9ed7, 2022-01-06)"
    width="151.54167mm"
    height="110.26667mm"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -36,11 +36,11 @@
      inkscape:pagecheckerboard="false"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="267"
-     inkscape:cy="226"
+     inkscape:cx="226"
+     inkscape:cy="225.5"
      inkscape:window-width="1918"
      inkscape:window-height="1128"
-     inkscape:window-x="1913"
+     inkscape:window-x="1906"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
@@ -67,7 +67,8 @@
      inkscape:snap-nodes="true"
      inkscape:object-nodes="true"
      units="mm"
-     inkscape:document-units="mm" />
+     inkscape:document-units="mm"
+     inkscape:blackoutopacity="0.0" />
   <defs
      id="defs4">
     <style
@@ -145,28 +146,28 @@
     <circle
        style="font-variation-settings:'wdth' 95, 'wght' 600;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.13386;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:normal;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        id="circle11983-0-2"
-       cx="1014.5206"
+       cx="1003.1833"
        cy="32.000019"
        r="5.664969"
        transform="scale(-1)" />
     <circle
        style="font-variation-settings:'wdth' 95, 'wght' 600;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.13386;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:normal;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        id="circle11985-3-7"
-       cx="-571.47937"
+       cx="-582.81665"
        cy="32.000019"
        r="5.664969"
        transform="scale(1,-1)" />
     <circle
        style="font-variation-settings:'wdth' 95, 'wght' 600;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.13386;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:normal;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        id="circle82197-7"
-       cx="1014.5206"
+       cx="1003.1833"
        cy="-319.99997"
        r="5.664969"
        transform="scale(-1)" />
     <circle
        style="font-variation-settings:'wdth' 95, 'wght' 600;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.13386;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;paint-order:normal;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        id="circle82199-1"
-       cx="-571.47937"
+       cx="-582.81665"
        cy="-319.99997"
        r="5.664969"
        transform="scale(1,-1)" />
@@ -190,28 +191,28 @@
     <circle
        style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.755906;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        id="circle11983-0"
-       cx="1014.5206"
+       cx="1003.1833"
        cy="32.000019"
        r="5.664969"
        transform="scale(-1)" />
     <circle
        style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.755906;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        id="circle11985-3"
-       cx="-571.47937"
+       cx="-582.81665"
        cy="32.000019"
        r="5.664969"
        transform="scale(1,-1)" />
     <circle
        style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.755906;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        id="circle82197"
-       cx="1014.5206"
+       cx="1003.1833"
        cy="-319.99997"
        r="5.664969"
        transform="scale(-1)" />
     <circle
        style="font-variation-settings:normal;display:inline;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.755906;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;filter:url(#filter15798);shape-rendering:crispEdges;stop-color:#000000;stop-opacity:1"
        id="circle82199"
-       cx="-571.47937"
+       cx="-582.81665"
        cy="-319.99997"
        r="5.664969"
        transform="scale(1,-1)" />
