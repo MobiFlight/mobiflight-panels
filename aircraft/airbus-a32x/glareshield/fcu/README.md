@@ -6,10 +6,21 @@
 
 The current design forgoes the 100/1000 rotary switch selector nested in the ALT push-pull encoder to simplify the internal implementation. Instead, a 100/1000 pushbutton has been placed below the METRIC ALT button.
 
-The panel is comprised of three layers, starting with the frontmost (user-facing) layer and moving backward
+The panel is comprised of three layers, starting with the frontmost (user-facing) layer and moving backward as defined in the [A320 FCU SVG File for Laser Cutting](https://github.com/MobiFlight/mobiflight-panels/blob/main/aircraft/airbus-a32x/glareshield/fcu/airbus-a32x-fcu.svg)
  - 3mm white acrylic, laser cut, painted Pigeon Blue, then laser etched
  - 3mm clear acrylic, painted black in non-masked areas, then laser etched
  - PCB
+
+ ## 3D Objects Used
+ The following files are included for 3D Printing
+  - [Korry 389](https://github.com/MobiFlight/mobiflight-panels/blob/main/common/korry/Korry%20Switch%20389%20(3mm%20lens%2C%20B3F-105X%20Switch).stl)
+  - [Korry 307-like](https://github.com/MobiFlight/mobiflight-panels/blob/main/common/korry/Korry%20Switch%20307-like%20(3mm%20lens%2C%20B3F-105X%20Switch).stl)
+  - [Push-Pull Frame](https://github.com/MobiFlight/mobiflight-panels/blob/main/aircraft/airbus-a32x/glareshield/fcu/Push-Pull%20Frame%20(B3F-105X%20Series).stl)
+  - [Push-Pull Slider](https://github.com/MobiFlight/mobiflight-panels/blob/main/aircraft/airbus-a32x/glareshield/fcu/Push-Pull%20Slider%20(B3F-105X%20Series).stl)
+  - [ALT Knob](https://github.com/MobiFlight/mobiflight-panels/blob/main/aircraft/airbus-a32x/glareshield/fcu/FCU%20Knob%20(ALT%2C%2014mm%20Skirt%2C%206.7mm%20Hole).stl)
+  - [HDG Knob](https://github.com/MobiFlight/mobiflight-panels/blob/main/aircraft/airbus-a32x/glareshield/fcu/FCU%20Knob%20(HDG%2C%2014mm%20Skirt%2C%206.7mm%20Hole).stl)
+  - [SPD Knob](https://github.com/MobiFlight/mobiflight-panels/blob/main/aircraft/airbus-a32x/glareshield/fcu/FCU%20Knob%20(SPD%20%26%20VS%2C%2014mm%20Skirt%2C%206.7mm%20Hole).stl)
+  - [V/S Knob](https://github.com/MobiFlight/mobiflight-panels/blob/main/aircraft/airbus-a32x/glareshield/fcu/FCU%20Knob%20(SPD%20%26%20VS%2C%2014mm%20Skirt%2C%206.7mm%20Hole).stl) (Currently same as the SPD)
 
 ## Electronic Component Listing
 The electronic component listing for the circuit can be found within the EasyEDA schematic standard BOM listing.
