@@ -13,3 +13,5 @@ design simply assumes that gravity keeps the StreamDeck in place.
 The design now includes 3D-printable support pieces for the StreamDeeck. It turns out the
 Streamdeck base falls down over time if you support it from the front faceplate only, 
 as it is fixed in place with adhesive tape.
+
+![image](https://user-images.githubusercontent.com/2587818/149595971-fc242c68-8ec6-430c-adb7-879b28ac5422.png)
