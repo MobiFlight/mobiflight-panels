@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Landing gear</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="Backlight" Pin="9" />
+  <Button Name="Button Nose" Pin="3" />
+  <Button Name="Button Left" Pin="4" />
+  <Button Name="Button Right" Pin="5" />
+  <Button Name="Button GearDown" Pin="21" />
+  <Output Name="LedR R" Pin="20" />
+  <Output Name="LedR G" Pin="19" />
+  <Output Name="LedN R" Pin="18" />
+  <Output Name="LedN G" Pin="15" />
+  <Output Name="LedL R" Pin="14" />
+  <Output Name="LedL G" Pin="16" />
+</Config>
