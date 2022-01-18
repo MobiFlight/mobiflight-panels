@@ -1,0 +1,929 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="0a8d7036-8b99-42fa-af62-3927e48cfb22">
+      <active>true</active>
+      <description>A32NX EFIS L - 01 - FD</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:AUTOPILOT FLIGHT DIRECTOR ACTIVE:1, Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="EFIS/ SN-0a8-f79" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 5" />
+        <preconditions />
+        <transformation active="True" expression="if(#==1, if(A==0, 1, $), 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="5e5fddfe-cc3d-4850-8f89-465429ab06fa" placeholder="B" />
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="A" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="@" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="?" />
+          <configref active="True" ref="268a429b-93d8-48e9-887c-4f091b9b113e" placeholder="A" />
+          <configref active="True" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2d77ca2d-ec67-4c53-81e6-acb0ad894523">
+      <active>true</active>
+      <description>A32NX EFIS L - 02 - LS</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:BTN_LS_1_FILTER_ACTIVE)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="EFIS/ SN-0a8-f79" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 6" />
+        <preconditions />
+        <transformation active="True" expression="if(#==1, if(A==0, 1, $), 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="A" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="@" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="?" />
+          <configref active="True" ref="268a429b-93d8-48e9-887c-4f091b9b113e" placeholder="A" />
+          <configref active="True" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="49e97101-4ba9-46ec-986f-ddcc1109f2b0">
+      <active>true</active>
+      <description>A32NX EFIS L - 03 - CSTR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_EFIS_L_OPTION)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="EFIS/ SN-0a8-f79" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 0" />
+        <preconditions />
+        <transformation active="True" expression="if(#==1, if(A==0, 1, if($==1, 1, 0)), 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="@" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="?" />
+          <configref active="True" ref="268a429b-93d8-48e9-887c-4f091b9b113e" placeholder="A" />
+          <configref active="True" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="03224cce-13b1-4d6a-8d13-e78c38937dba">
+      <active>true</active>
+      <description>A32NX EFIS L - 04 - WPT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_EFIS_L_OPTION)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="EFIS/ SN-0a8-f79" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 1" />
+        <preconditions />
+        <transformation active="True" expression="if(#==1, if(A==0, 1, if($==3, 1, 0)), 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="True" ref="268a429b-93d8-48e9-887c-4f091b9b113e" placeholder="A" />
+          <configref active="True" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="530f66fe-1584-4f58-bc26-6752fecdf1a1">
+      <active>true</active>
+      <description>A32NX EFIS L - 05 - VOR D</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_EFIS_L_OPTION)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="EFIS/ SN-0a8-f79" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 2" />
+        <preconditions />
+        <transformation active="True" expression="if(#==1, if(A==0, 1, if($==2, 1, 0)), 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="True" ref="268a429b-93d8-48e9-887c-4f091b9b113e" placeholder="A" />
+          <configref active="True" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="188e7251-2265-4a04-98a8-e27f509db2c9">
+      <active>true</active>
+      <description>A32NX EFIS L - 06 - NDB</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_EFIS_L_OPTION)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="EFIS/ SN-0a8-f79" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 3" />
+        <preconditions />
+        <transformation active="True" expression="if(#==1, if(A==0, 1, if($==4, 1, 0)), 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="True" ref="268a429b-93d8-48e9-887c-4f091b9b113e" placeholder="A" />
+          <configref active="True" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="5e5fddfe-cc3d-4850-8f89-465429ab06fa">
+      <active>true</active>
+      <description>A32NX EFIS L - 07 - ARPT</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_EFIS_L_OPTION)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="EFIS/ SN-0a8-f79" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 7" />
+        <preconditions />
+        <transformation active="True" expression="if(#==1, if(A==0, 1, if($==5, 1, 0)), 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="True" ref="268a429b-93d8-48e9-887c-4f091b9b113e" placeholder="A" />
+          <configref active="True" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="67e77c45-173e-492c-9739-e9b4b527c8b1">
+      <active>true</active>
+      <description>A32NX EFIS L - 08 - BARO QFE</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_Baro1_Mode)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="EFIS/ SN-0a8-f79" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 8" />
+        <preconditions />
+        <transformation active="True" expression="if(($==0 || B==0) &amp;&amp; #==1 &amp;&amp; A!=0, 1, 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="True" ref="268a429b-93d8-48e9-887c-4f091b9b113e" placeholder="B" />
+          <configref active="True" ref="38ab7baf-f6a6-45ef-a88c-68cfe1282128" placeholder="A" />
+          <configref active="True" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cda33a2a-99a8-4a84-8f6a-081e30e53b86">
+      <active>true</active>
+      <description>A32NX EFIS L - 08 - BARO QNH</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_Baro1_Mode)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="EFIS/ SN-0a8-f79" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 9" />
+        <preconditions />
+        <transformation active="True" expression="if(($==1 || B==0) &amp;&amp; #==1  &amp;&amp; A!=0, 1, 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="True" ref="268a429b-93d8-48e9-887c-4f091b9b113e" placeholder="B" />
+          <configref active="True" ref="38ab7baf-f6a6-45ef-a88c-68cfe1282128" placeholder="A" />
+          <configref active="True" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="51601891-da9f-49f7-95de-daad8c70f10c">
+      <active>true</active>
+      <description>A32NX EFIS L - 09 - BARO Display</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:KOHLSMAN SETTING HG, Number) 33.866 / near" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Display Module" serial="EFIS/ SN-0a8-f79" trigger="normal" ledAddress="BARODisplay" ledConnector="1" ledModuleSize="8" ledPadding="False" ledBrightnessRef="b6b44fe6-6317-4610-959e-ad3c09ae16c5" ledPaddingChar="0" ledDigits="0,1,2,3" ledDecimalPoints="2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="f4fe95d3-cd1c-4946-8516-bbbb3f768211" operand="!=" value="2" logic="and" />
+          <precondition type="config" active="true" ref="38ab7baf-f6a6-45ef-a88c-68cfe1282128" operand="!=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="268a429b-93d8-48e9-887c-4f091b9b113e" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="51ac0fb1-3b7c-4752-af96-d19b18660937">
+      <active>true</active>
+      <description>A32NX EFIS L - 09 - BARO Display (Blank)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <comparison active="True" value="0" operand="=" ifValue="    " elseValue="" />
+        <display type="Display Module" serial="EFIS/ SN-0a8-f79" trigger="normal" ledAddress="BARODisplay" ledConnector="1" ledModuleSize="8" ledPadding="False" ledBrightnessRef="b6b44fe6-6317-4610-959e-ad3c09ae16c5" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" operand="=" value="0" logic="or" />
+          <precondition type="config" active="true" ref="38ab7baf-f6a6-45ef-a88c-68cfe1282128" operand="=" value="0" logic="and" />
+        </preconditions>
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="1383c6c5-ba06-4226-b8ba-60d089ecb343">
+      <active>true</active>
+      <description>A32NX EFIS L - 09 - BARO Display (Test)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <comparison active="True" value="0" operand="=" ifValue="8888" elseValue="" />
+        <display type="Display Module" serial="EFIS/ SN-0a8-f79" trigger="normal" ledAddress="BARODisplay" ledConnector="1" ledModuleSize="8" ledPadding="False" ledBrightnessRef="b6b44fe6-6317-4610-959e-ad3c09ae16c5" ledPaddingChar="0" ledDigits="0,1,2,3" ledDecimalPoints="2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" operand="=" value="1" logic="and" />
+          <precondition type="config" active="true" ref="38ab7baf-f6a6-45ef-a88c-68cfe1282128" operand="!=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="268a429b-93d8-48e9-887c-4f091b9b113e" operand="=" value="0" logic="and" />
+        </preconditions>
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="920c3049-db2c-48b8-96f3-9b1038852b75">
+      <active>true</active>
+      <description>A32NX EFIS L - 10 - Integral Lighting</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="EFIS/ SN-0a8-f79" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 16|Output 17|Output 18|Output 19|Output 20|Output 21|Output 22|Output 23" />
+        <preconditions />
+        <transformation active="True" expression="1" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4675b410-f722-4908-99db-9ce1bdee5c7f">
+      <active>true</active>
+      <description>A32NX EFIS L - 10 - Integral Lighting Brightness (Backlight LEDs)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="EFIS/ SN-0a8-f79" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <interpolation active="True">
+          <value x="0" y="180" />
+          <value x="255" y="255" />
+        </interpolation>
+        <preconditions />
+        <transformation active="True" expression="if(@==0, 255, (100-#)/100*255)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="True" ref="6bb1a14a-c6cb-4263-a031-f9869ece8a93" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="True" ref="d479293c-49e4-4e1d-9032-5f97c5f99b8e" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d479293c-49e4-4e1d-9032-5f97c5f99b8e">
+      <active>true</active>
+      <description>A32NX EFIS L - 10 - Integral Lighting Brightness (Raw)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:84, PERCENT)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="38ab7baf-f6a6-45ef-a88c-68cfe1282128">
+      <active>true</active>
+      <description>A32NX EFIS L - 11 - Display Brightness (Raw)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:87, PERCENT)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a7b2dd2b-eb5f-4d8d-bba6-90bb42446cb6">
+      <active>true</active>
+      <description>A32NX EFIS L - 11 - Display Brightness (LEDs)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="EFIS/ SN-0a8-f79" trigger="normal" pin="Display Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="(100-#)/100*255" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="True" ref="38ab7baf-f6a6-45ef-a88c-68cfe1282128" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="268a429b-93d8-48e9-887c-4f091b9b113e">
+      <active>true</active>
+      <description>A32NX EFIS L - 12 - Overhead Annunciator Mode</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="49a9b792-7c3b-45b3-84fb-d4e020d9d9dc">
+      <active>true</active>
+      <description>A32NX EFIS L - 12 - Annunciator Brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="FSUIPC" offset="0x0000" offsetType="Integer" size="1" mask="0x00FF" bcdMode="False" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="EFIS/ SN-0a8-f79" trigger="normal" pin="Annunciators Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="if(#==2, 150, 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="True" ref="268a429b-93d8-48e9-887c-4f091b9b113e" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f4fe95d3-cd1c-4946-8516-bbbb3f768211">
+      <active>true</active>
+      <description>A32NX EFIS L - 09 - BARO Mode</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_Baro1_Mode)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="1647c56c-c4b6-4556-9436-cc3575d39dac">
+      <active>true</active>
+      <description>A32NX EFIS L - 09 - BARO Display (Std)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <comparison active="True" value="0" operand="=" ifValue="Std " elseValue="" />
+        <display type="Display Module" serial="EFIS/ SN-0a8-f79" trigger="normal" ledAddress="BARODisplay" ledConnector="1" ledModuleSize="8" ledPadding="False" ledBrightnessRef="b6b44fe6-6317-4610-959e-ad3c09ae16c5" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="f4fe95d3-cd1c-4946-8516-bbbb3f768211" operand="=" value="2" logic="and" />
+          <precondition type="config" active="true" ref="268a429b-93d8-48e9-887c-4f091b9b113e" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b6b44fe6-6317-4610-959e-ad3c09ae16c5">
+      <active>true</active>
+      <description>A32NX EFIS L - 11 - Display Brightness (LED Module)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:87, PERCENT)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <interpolation active="True">
+          <value x="0" y="0" />
+          <value x="100" y="3" />
+        </interpolation>
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6bb1a14a-c6cb-4263-a031-f9869ece8a93">
+      <active>true</active>
+      <description>A32NX EFIS L - 99 - ESS Bus is Powered (AC)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_AC_ESS_BUS_IS_POWERED, bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="ce324448-b01d-4b13-a338-45c179aae04c">
+      <active>true</active>
+      <description>A32NX EFIS L - 01 - FD</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="FD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="TOGGLE_FLIGHT_DIRECTOR" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f970ba51-4402-4bcc-a013-7807587e3f81">
+      <active>true</active>
+      <description>A32NX EFIS L - 02 - LS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="LS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="A320_Neo_PFD_BTN_LS_1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="185b5157-60f8-4639-bdbd-bcd245e06cfa">
+      <active>true</active>
+      <description>A32NX EFIS L - 03 - CSTR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="CSTR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_EFIS_L_OPTION, enum) 1 == if{ 0 } els{ 1 } (&gt;L:A32NX_EFIS_L_OPTION, enum)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a8a80893-b33a-4096-a2c0-0db45233f697">
+      <active>true</active>
+      <description>A32NX EFIS L - 03 - WPT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="WPT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_EFIS_L_OPTION, enum) 3 == if{ 0 } els{ 3 } (&gt;L:A32NX_EFIS_L_OPTION, enum)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e90f88e3-eb7a-4bf4-82d9-0cad0c51fdbc">
+      <active>true</active>
+      <description>A32NX EFIS L - 08 - Display Type - LS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DISP ILS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_EFIS_L_ND_MODE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="7c8cd453-2971-410b-9923-b2fd69b8a79a">
+      <active>true</active>
+      <description>A32NX EFIS L - 09 - Display Type - VOR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DISP VOR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_EFIS_L_ND_MODE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e135d9e5-7fbc-4264-8452-14c3c14c72c9">
+      <active>true</active>
+      <description>A32NX EFIS L - 10 - Display Type - NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DISP NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_EFIS_L_ND_MODE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c94ef486-1812-42f7-9981-0a73857b5250">
+      <active>true</active>
+      <description>A32NX EFIS L - 11 - Display Type - ARC</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DISP ARC" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="3 (&gt;L:A32NX_EFIS_L_ND_MODE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="957d7a15-adcc-49e5-96f2-be350f3d2a9c">
+      <active>true</active>
+      <description>A32NX EFIS L - 12 - Display Type - PLAN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DISP PLAN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="4 (&gt;L:A32NX_EFIS_L_ND_MODE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="48b0066c-a9e1-4223-9f42-5f35cc744789">
+      <active>true</active>
+      <description>A32NX EFIS L - 07 - BARO Push</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="BARO Push" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Baro1_Mode) 2 &lt; if{ (L:XMLVAR_Baro1_Mode) ++ } els{ 1 } (&gt;L:XMLVAR_Baro1_Mode)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="48847423-81eb-4d04-b92d-8a3af0e18b19">
+      <active>true</active>
+      <description>A32NX EFIS L - 07 - BARO Knob</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="BARO Encoder" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:KOHLSMAN_DEC)" />
+          <onRelease />
+        </button>
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(&gt;K:KOHLSMAN_DEC)" />
+          <onLeftFast />
+          <onRight type="MSFS2020CustomInputAction" command="(&gt;K:KOHLSMAN_INC)" />
+          <onRightFast />
+        </encoder>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c48fae06-30ad-4e03-a76c-65493e1387e7">
+      <active>true</active>
+      <description>A32NX EFIS L - 04 - VOR D</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="VORD" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_EFIS_L_OPTION, enum) 2 == if{ 0 } els{ 2 } (&gt;L:A32NX_EFIS_L_OPTION, enum)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4c18c8e2-a76d-41ff-bde9-5344907576ad">
+      <active>true</active>
+      <description>A32NX EFIS L - 05 - NDB</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="NDB" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_EFIS_L_OPTION, enum) 4 == if{ 0 } els{ 4 } (&gt;L:A32NX_EFIS_L_OPTION, enum)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e21b7f53-c097-44ed-b61d-610982d3529c">
+      <active>true</active>
+      <description>A32NX EFIS L - 06 - ARPT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="APRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="A320_Neo_MFD_BTN_ARPT_1" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:A32NX_EFIS_L_OPTION, enum) 5 == if{ 0 } els{ 5 } (&gt;L:A32NX_EFIS_L_OPTION, enum)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4db79d65-4da9-4480-b6e8-2bbe9b6bd830">
+      <active>true</active>
+      <description>A32NX EFIS L - 13 - Range - 10</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DIST 10" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_EFIS_L_ND_RANGE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="10cb12a1-6deb-4ae9-98da-abd3a7c07ad1">
+      <active>true</active>
+      <description>A32NX EFIS L - 14 - Range - 20</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DIST 20" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_EFIS_L_ND_RANGE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4b0795c9-2190-4956-9e80-fe219e37b06f">
+      <active>true</active>
+      <description>A32NX EFIS L - 15 - Range - 40</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DIST 40" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_EFIS_L_ND_RANGE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d74be6fb-dda4-4993-9cd6-5227b7ebe56c">
+      <active>true</active>
+      <description>A32NX EFIS L - 16 - Range - 80</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DIST 80" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="3 (&gt;L:A32NX_EFIS_L_ND_RANGE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="45d7bdc2-69df-44f7-9336-3e55471ac8cd">
+      <active>true</active>
+      <description>A32NX EFIS L - 17 - Range - 160</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DIST 160" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="4 (&gt;L:A32NX_EFIS_L_ND_RANGE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9366e4f4-010d-43c9-af82-87b175df8447">
+      <active>true</active>
+      <description>A32NX EFIS L - 18 - Range - 320</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="DIST 320" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="5 (&gt;L:A32NX_EFIS_L_ND_RANGE)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="4ead0d3c-cadb-4e91-82d1-3b388b5ab517">
+      <active>true</active>
+      <description>A32NX EFIS L - 19 - Switch 1 - ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="NAV 1 ADF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_EFIS_L_NAVAID_1_MODE)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_EFIS_L_NAVAID_1_MODE)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="662626b7-a781-43bc-a57a-98ea1430534d">
+      <active>true</active>
+      <description>A32NX EFIS L - 22 - Switch 2 - ADF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="NAV 2 ADF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_EFIS_L_NAVAID_2_MODE)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_EFIS_L_NAVAID_2_MODE)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="5fc854c9-14bb-4374-92b7-d9892d780667">
+      <active>true</active>
+      <description>A32NX EFIS L - 21 - Switch 1 - VOR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="NAV 1 VOR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_EFIS_L_NAVAID_1_MODE)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_EFIS_L_NAVAID_1_MODE)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="87af804b-b222-44c8-8227-47b7391bd25b">
+      <active>true</active>
+      <description>A32NX EFIS L - 24 - Switch 2 - VOR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="EFIS/ SN-0a8-f79" name="NAV 2 VOR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_EFIS_L_NAVAID_2_MODE)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_EFIS_L_NAVAID_2_MODE)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="188e7251-2265-4a04-98a8-e27f509db2c9" placeholder="B" />
+          <configref active="False" ref="530f66fe-1584-4f58-bc26-6752fecdf1a1" placeholder="A" />
+          <configref active="False" ref="03224cce-13b1-4d6a-8d13-e78c38937dba" placeholder="@" />
+          <configref active="False" ref="49e97101-4ba9-46ec-986f-ddcc1109f2b0" placeholder="?" />
+          <configref active="False" ref="2d77ca2d-ec67-4c53-81e6-acb0ad894523" placeholder="!" />
+          <configref active="False" ref="0a8d7036-8b99-42fa-af62-3927e48cfb22" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
