@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Illumination</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="XFR" Pin="2" />
+  <Output Name="Backlight Brt" Pin="3" />
+  <Button Name="CON OFF" Pin="4" />
+  <Button Name="CON BRT" Pin="5" />
+  <Button Name="GPWS GS" Pin="6" />
+  <Output Name="Annunciator Brt" Pin="9" />
+  <ShiftRegister Name="LED Registers" LatchPin="15" ClockPin="14" DataPin="16" NumModules="2" />
+  <AnalogInput Name="PFD" Pin="18" Sensitivity="5" />
+  <AnalogInput Name="ND" Pin="19" Sensitivity="5" />
+  <AnalogInput Name="Speaker" Pin="20" Sensitivity="5" />
+</Config>

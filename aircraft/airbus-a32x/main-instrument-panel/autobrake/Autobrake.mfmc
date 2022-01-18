@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Autobrake</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="Annunciator Brt" Pin="2" />
+  <Output Name="Backlight Brt" Pin="3" />
+  <ShiftRegister Name="LED Registers" LatchPin="4" ClockPin="5" DataPin="6" NumModules="3" />
+  <Button Name="BRK FAN" Pin="7" />
+  <Button Name="BRK LO" Pin="8" />
+  <Button Name="BRK MED" Pin="9" />
+  <Button Name="BRK MAX" Pin="10" />
+  <Button Name="ASKID ON" Pin="11" />
+  <Button Name="TERR ON ND R" Pin="12" />
+  <Button Name="TERR ON ND L" Pin="26" />
+  <Button Name="GEAR UP" Pin="27" />
+  <Servo Name="BRK ACCUM" DataPin="28" />
+  <Servo Name="BRK PRESS L" DataPin="30" />
+  <Servo Name="BRK PRESS R" DataPin="31" />
+</Config>

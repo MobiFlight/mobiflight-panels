@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>EFIS</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="BARODisplay" DinPin="2" ClsPin="3" ClkPin="4" Brightness="15" NumModules="1" />
+  <ShiftRegister Name="LightingRegister" LatchPin="23" ClockPin="9" DataPin="8" NumModules="3" />
+  <Output Name="Display Brt" Pin="5" />
+  <Output Name="Annunciators Brt" Pin="6" />
+  <Output Name="Backlight Brt" Pin="7" />
+  <Button Name="CSTR" Pin="10" />
+  <Button Name="WPT" Pin="11" />
+  <Button Name="VORD" Pin="12" />
+  <Button Name="NDB" Pin="14" />
+  <Button Name="APRT" Pin="15" />
+  <Button Name="FD" Pin="16" />
+  <Button Name="LS" Pin="17" />
+  <Button Name="DISP ILS" Pin="18" />
+  <Button Name="DISP VOR" Pin="19" />
+  <Button Name="DISP NAV" Pin="20" />
+  <Button Name="DISP ARC" Pin="21" />
+  <Button Name="DISP PLAN" Pin="22" />
+  <Button Name="DIST 10" Pin="54" />
+  <Button Name="DIST 20" Pin="55" />
+  <Button Name="DIST 40" Pin="56" />
+  <Button Name="DIST 80" Pin="57" />
+  <Button Name="DIST 160" Pin="58" />
+  <Button Name="DIST 320" Pin="59" />
+  <Button Name="NAV 1 ADF" Pin="29" />
+  <Button Name="NAV 1 VOR" Pin="30" />
+  <Button Name="NAV 2 ADF" Pin="32" />
+  <Button Name="NAV 2 VOR" Pin="33" />
+  <Encoder Name="BARO Encoder" PinLeft="61" PinRight="60" EncoderType="1" />
+  <Button Name="BARO Push" Pin="62" />
+</Config>

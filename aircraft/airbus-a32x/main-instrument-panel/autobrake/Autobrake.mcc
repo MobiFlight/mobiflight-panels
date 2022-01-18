@@ -1,0 +1,638 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="899237c6-6f5c-4541-be22-4d6a7d4e4d41">
+      <active>true</active>
+      <description>Autobrake - Low</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOBRAKES_ARMED_MODE, Number) 1 == (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" />
+        <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 9" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="!" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="#" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="#" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="#" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="!" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="bb799334-52fa-4bff-8cb8-a822495dca38">
+      <active>true</active>
+      <description>Autobrake - Medium</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOBRAKES_ARMED_MODE, Number) 2 == (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 11" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e878a895-cf81-4228-805d-2a230150612a">
+      <active>true</active>
+      <description>Autobrake - Max</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOBRAKES_ARMED_MODE, Number) 3 == (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 13" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e">
+      <active>true</active>
+      <description>Autobrake - Low Decel</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOBRAKES_DECEL_LIGHT, Bool) (L:A32NX_AUTOBRAKES_ARMED_MODE, Number) 1 == and (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 8" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="959db723-5fdd-432d-a965-e90d68ee096d">
+      <active>true</active>
+      <description>Lights - Annunciator</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Autobrake/ SN-34f-ccc" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="if(#==2, 150, 0)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+          <configref active="True" ref="f3858085-6e5d-4208-a3bc-49dd8830b8c2" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f">
+      <active>true</active>
+      <description>Autobrake - Gear 1 Down</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:GEAR POSITION:0,Enum) 0.9 &gt;= (L:A32NX_ELEC_DC_ESS_BUS_IS_POWERED, bool) and" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 1" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e6a44ade-ce40-4d3a-9b9e-abce57cadc47">
+      <active>true</active>
+      <description>Autobrake - Gear 2 Down</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:GEAR POSITION:1,Enum) 0.9 &gt;= (L:A32NX_ELEC_DC_ESS_BUS_IS_POWERED, bool) and" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 3" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e181861d-c163-409d-93f6-a3856696cfae">
+      <active>true</active>
+      <description>Autobrake - Gear 3 Down</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:GEAR POSITION:2,Enum) 0.9 &gt;= (L:A32NX_ELEC_DC_ESS_BUS_IS_POWERED, bool) and" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 5" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c66961c0-149f-46a5-ae73-3dcc43c8df93">
+      <active>true</active>
+      <description>Lights - Integral Lighting Brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:85, PERCENT)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Autobrake/ SN-34f-ccc" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="if(@==0, 255, (100-$)/100*255)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="True" ref="9dcc8d3e-4147-4c2e-b565-60f65702b2dd" placeholder="@" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="484a7e8e-a0ce-4470-b056-7cc74ea458f2">
+      <active>true</active>
+      <description>Autobrake - Gear 1 Unlock</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="0.01 0.99 (A:GEAR POSITION:0,Enum) rng (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_DC_ESS_BUS_IS_POWERED, bool) and" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 0" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c5ff10af-1c62-4705-bb16-4e12dcb38e71">
+      <active>true</active>
+      <description>Autobrake - Gear 2 Unlock</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="0.01 0.99 (A:GEAR POSITION:1,Enum) rng (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_DC_ESS_BUS_IS_POWERED, bool) and" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 2" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ef7e2dd0-48e8-4635-8990-9972632653b9">
+      <active>true</active>
+      <description>Autobrake - Gear 3 Unlock</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="0.01 0.99 (A:GEAR POSITION:2,Enum) rng (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_DC_ESS_BUS_IS_POWERED, bool) and" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 4" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a34ba625-afde-4dbe-be75-75625e4e6b98">
+      <active>true</active>
+      <description>Autobrake - Fan On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_BRAKE_FAN, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 7" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="fe59d27e-75f7-4026-8d31-43ae64e8d8b9">
+      <active>true</active>
+      <description>Autobrake - Fan Hot</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_BRAKES_HOT, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 6" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="726a2da1-81be-432e-8016-377897373370">
+      <active>true</active>
+      <description>Autobrake - Medium Decel</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOBRAKES_DECEL_LIGHT, Bool) (L:A32NX_AUTOBRAKES_ARMED_MODE, Number) 2 == and (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 10" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="bb48720a-93f5-4825-abd8-d206e78d725e">
+      <active>true</active>
+      <description>Autobrake - Max Decel</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOBRAKES_DECEL_LIGHT, Bool) (L:A32NX_AUTOBRAKES_ARMED_MODE, Number) 3 == and (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) and" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 12" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="f3858085-6e5d-4208-a3bc-49dd8830b8c2">
+      <active>true</active>
+      <description>99 - Overhead Annunciator Mode</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9dcc8d3e-4147-4c2e-b565-60f65702b2dd">
+      <active>true</active>
+      <description>99 - ESS Bus is Powered (DC)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_DC_ESS_BUS_IS_POWERED, bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a55e1fc6-6752-477d-8342-7bf63ed7c34c">
+      <active>true</active>
+      <description>Lights - Integral Lights On (AC Power)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 16|Output 17|Output 18|Output 19|Output 20|Output 21|Output 22|Output 23" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="eb29540d-1345-4cf0-abf3-c57ab87e3556">
+      <active>true</active>
+      <description>Autobrake - TERR ON ND R</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:BTN_TERRONND_2_ACTIVE) (L:A32NX_OVHD_INTLT_ANN) 0 == or 0 ! and 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 14" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="13a1da50-8146-41c0-868f-f75389d0636a">
+      <active>true</active>
+      <description>Brake Pressure Accumulator</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_HYD_BRAKE_ALTN_ACC_PRESS)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Servo" serial="Autobrake/ SN-34f-ccc" trigger="normal" servoAddress="BRK ACCUM" servoMin="0" servoMax="4000" servoMaxRotationPercent="55" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="13cd143a-ebf6-49d3-be2d-aeb7535e7f99">
+      <active>true</active>
+      <description>Brake Pressure Left</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_HYD_BRAKE_ALTN_LEFT_PRESS)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Servo" serial="Autobrake/ SN-34f-ccc" trigger="normal" servoAddress="BRK PRESS L" servoMin="0" servoMax="3000" servoMaxRotationPercent="55" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="13298357-67b8-4b14-9acc-03712ce208be">
+      <active>true</active>
+      <description>Brake Pressure Right</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_HYD_BRAKE_ALTN_RIGHT_PRESS)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Servo" serial="Autobrake/ SN-34f-ccc" trigger="normal" servoAddress="BRK PRESS R" servoMin="0" servoMax="3000" servoMaxRotationPercent="55" />
+        <interpolation active="False">
+          <value x="0" y="0" />
+          <value x="1024" y="1024" />
+        </interpolation>
+        <preconditions />
+        <transformation active="True" expression="3000-$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="37bb0d8d-e4c2-494e-a5c4-572e61823c9c">
+      <active>true</active>
+      <description>Autobrake - TERR ON ND L</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:BTN_TERRONND_1_ACTIVE) (L:A32NX_OVHD_INTLT_ANN) 0 == or 0 ! and 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="ShiftRegister" serial="Autobrake/ SN-34f-ccc" trigger="normal" shiftRegister="LED Registers" registerOutputPin="Output 15" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="c04b09dd-57fe-4e2b-9827-f2dd0bd346bc">
+      <active>true</active>
+      <description>Autobrake - Low</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Autobrake/ SN-34f-ccc" name="BRK LO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_AUTOBRK_LOW_ON_IS_PRESSED, bool)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_AUTOBRK_LOW_ON_IS_PRESSED, bool)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cc102070-fc84-433c-95c1-7dd3b3f99a16">
+      <active>true</active>
+      <description>Autobrake - Medium</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Autobrake/ SN-34f-ccc" name="BRK MED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_AUTOBRK_MED_ON_IS_PRESSED, bool)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_AUTOBRK_MED_ON_IS_PRESSED, bool)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="22e864cf-4c6e-4b36-bebf-6ac079808a4d">
+      <active>true</active>
+      <description>Autobrake - Max</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Autobrake/ SN-34f-ccc" name="BRK MAX" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_AUTOBRK_MAX_ON_IS_PRESSED, bool)" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_AUTOBRK_MAX_ON_IS_PRESSED, bool)" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b6ebade1-6c5a-477e-91d0-96e16656fa55">
+      <active>true</active>
+      <description>Autobrake - Antiskid</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Autobrake/ SN-34f-ccc" name="ASKID ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:ANTISKID BRAKES ACTIVE,Bool) ! if{ (&gt;K:ANTISKID_BRAKES_TOGGLE) }" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:ANTISKID BRAKES ACTIVE,Bool) if{ (&gt;K:ANTISKID_BRAKES_TOGGLE) }" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="1e1be51f-2eb4-4a98-a883-9aa8e0cf0c26">
+      <active>true</active>
+      <description>Autobrake - Fan</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Autobrake/ SN-34f-ccc" name="BRK FAN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="A32NX_BRAKE_FAN_BTN_PRESSED" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="35cb76ac-8f3c-40a4-a980-c5eb38e1533a">
+      <active>true</active>
+      <description>Autobrake - TERR ON ND R</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Autobrake/ SN-34f-ccc" name="TERR ON ND R" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_MFD_BTN_TERRONND_2)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="347576c6-7885-4811-afcf-276ef8779b29">
+      <active>true</active>
+      <description>Autobrake - TERR ON ND L</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Autobrake/ SN-34f-ccc" name="TERR ON ND L" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_MFD_BTN_TERRONND_1)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c64e4e6e-2a2a-4ff0-ad70-bebedd42b60c">
+      <active>true</active>
+      <description>Autobrake - Gear</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Autobrake/ SN-34f-ccc" name="GEAR UP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="GEAR_UP" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="GEAR_DOWN" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a2bcc2ae-5a3a-4b3d-952b-3cb988ba38eb">
+      <active>true</active>
+      <description>TEMP: Autobrake - Terr on ND (ECAM All)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Autobrake/ SN-34f-ccc" name="TERR ON ND R" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="A32NX_ECAM_ALL_Push_IsDown_PRESSED" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="A32NX_ECAM_ALL_Push_IsDown_RELEASED" />
+        </button>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="bdfff5a7-374e-42d8-b3fa-83b1b3bbee9f" placeholder="B" />
+          <configref active="False" ref="959db723-5fdd-432d-a965-e90d68ee096d" placeholder="A" />
+          <configref active="False" ref="2ae35fa9-9e1c-4c97-932f-3bb8cc862b7e" placeholder="@" />
+          <configref active="False" ref="e878a895-cf81-4228-805d-2a230150612a" placeholder="?" />
+          <configref active="False" ref="bb799334-52fa-4bff-8cb8-a822495dca38" placeholder="!" />
+          <configref active="False" ref="899237c6-6f5c-4541-be22-4d6a7d4e4d41" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
