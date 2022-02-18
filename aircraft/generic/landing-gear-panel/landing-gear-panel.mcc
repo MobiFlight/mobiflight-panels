@@ -4,7 +4,7 @@
     <config guid="fd3cf385-a20f-45c0-894d-a7c23771ec7a">
       <active>true</active>
       <description>Backlight intensity</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(L:MF-backlight)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Pin" serial="Landing gear/ SN-826-5df" trigger="normal" pin="Backlight" pinBrightness="255" pinPwm="True" />
@@ -20,10 +20,29 @@
         </configrefs>
       </settings>
     </config>
+    <config guid="5f0e5f5b-8ed9-4927-81c4-30ca67539ecc">
+      <active>true</active>
+      <description>Annunciators</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:MF-annunciators)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Landing gear/ SN-826-5df" trigger="normal" pin="Annunciators" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="False" ref="3d65ef03-467f-4fab-93e7-3978de3269d8" placeholder="A" />
+          <configref active="False" ref="9c9fd1ef-6af2-4fef-b414-88aed86c3beb" placeholder="@" />
+          <configref active="False" ref="69bfbea8-268a-4f1d-b757-4d331bef8ae2" placeholder="?" />
+          <configref active="False" ref="b0a08f41-56c9-4d5e-9ba7-5ee051326f88" placeholder="!" />
+          <configref active="False" ref="69bfbea8-268a-4f1d-b757-4d331bef8ae2" placeholder="!" />
+          <configref active="False" ref="b0a08f41-56c9-4d5e-9ba7-5ee051326f88" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
     <config guid="b0a08f41-56c9-4d5e-9ba7-5ee051326f88">
       <active>true</active>
       <description>Gear Test LEFT</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(L:TIGERTFLY_GEAR_TEST_LEFT)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
@@ -42,7 +61,7 @@
     <config guid="69bfbea8-268a-4f1d-b757-4d331bef8ae2">
       <active>true</active>
       <description>Gear Test NOSE</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(L:TIGERTFLY_GEAR_TEST_NOSE)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
@@ -59,7 +78,7 @@
     <config guid="9c9fd1ef-6af2-4fef-b414-88aed86c3beb">
       <active>true</active>
       <description>Gear Test RIGHT</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(L:TIGERTFLY_GEAR_TEST_RIGHT)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
@@ -76,7 +95,7 @@
     <config guid="3d65ef03-467f-4fab-93e7-3978de3269d8">
       <active>true</active>
       <description>LEFT Red</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GEAR LEFT POSITION,Percent Over 100)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Pin" serial="Landing gear/ SN-826-5df" trigger="normal" pin="LedL R" pinBrightness="255" />
@@ -95,7 +114,7 @@
     <config guid="c003632a-009a-4813-8ca8-158885927e87">
       <active>true</active>
       <description>NOSE Red</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GEAR CENTER POSITION,Percent Over 100)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Pin" serial="Landing gear/ SN-826-5df" trigger="normal" pin="LedN R" pinBrightness="255" />
@@ -114,7 +133,7 @@
     <config guid="edc6b060-025c-4e60-9a88-e0606d155a51">
       <active>true</active>
       <description>RIGHT Red</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GEAR RIGHT POSITION,Percent Over 100)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Pin" serial="Landing gear/ SN-826-5df" trigger="normal" pin="LedR R" pinBrightness="255" />
@@ -133,7 +152,7 @@
     <config guid="bd95fa36-3295-4864-84ab-92046c3b245a">
       <active>true</active>
       <description>LEFT Green</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GEAR LEFT POSITION,Percent Over 100)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Pin" serial="Landing gear/ SN-826-5df" trigger="normal" pin="LedL G" pinBrightness="255" />
@@ -152,7 +171,7 @@
     <config guid="0c7f4240-7a88-4d0c-b1f4-2f144da83174">
       <active>true</active>
       <description>NOSE Green</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GEAR CENTER POSITION,Percent Over 100)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Pin" serial="Landing gear/ SN-826-5df" trigger="normal" pin="LedN G" pinBrightness="255" />
@@ -171,7 +190,7 @@
     <config guid="1224e8ba-c087-4ec1-abb8-744e2b9a0f74">
       <active>true</active>
       <description>RIGHT Green</description>
-      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <source type="SimConnect" VarType="CODE" Value="(A:GEAR CENTER POSITION,Percent Over 100)" />
         <comparison active="False" value="" operand="" ifValue="" elseValue="" />
         <display type="Pin" serial="Landing gear/ SN-826-5df" trigger="normal" pin="LedR G" pinBrightness="255" />
@@ -192,7 +211,7 @@
     <config guid="0dccbc18-dacb-4baf-8f7f-b456c0480a8a">
       <active>true</active>
       <description>Gear Lever</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" serial="Landing gear/ SN-826-5df" name="Button GearDown" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" serial="Landing gear/ SN-826-5df" name="Button GearDown" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="GEAR_DOWN" />
           <onRelease type="MSFS2020EventIdInputAction" eventId="GEAR_UP" />
@@ -207,7 +226,7 @@
     <config guid="f85195fb-af50-4a6f-a456-4daa1f0ea3c4">
       <active>true</active>
       <description>Button LEFT</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" serial="Landing gear/ SN-826-5df" name="Button Left" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" serial="Landing gear/ SN-826-5df" name="Button Left" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="TIGERTFLY_GEAR_TEST_LEFT_ON" />
           <onRelease type="MSFS2020EventIdInputAction" eventId="TIGERTFLY_GEAR_TEST_LEFT_OFF" />
@@ -222,7 +241,7 @@
     <config guid="5ffa3284-c0e2-4a6a-99ac-dfa6bffac506">
       <active>true</active>
       <description>Button NOSE</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" serial="Landing gear/ SN-826-5df" name="Button Nose" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" serial="Landing gear/ SN-826-5df" name="Button Nose" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="TIGERTFLY_GEAR_TEST_NOSE_ON" />
           <onRelease type="MSFS2020EventIdInputAction" eventId="TIGERTFLY_GEAR_TEST_NOSE_OFF" />
@@ -237,7 +256,7 @@
     <config guid="55e0031c-05af-48fa-a9b8-951ce7500990">
       <active>true</active>
       <description>Button RIGHT</description>
-      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.2, Culture=neutral, PublicKeyToken=null" serial="Landing gear/ SN-826-5df" name="Button Right" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.3, Culture=neutral, PublicKeyToken=null" serial="Landing gear/ SN-826-5df" name="Button Right" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <button>
           <onPress type="MSFS2020EventIdInputAction" eventId="TIGERTFLY_GEAR_TEST_RIGHT_ON" />
           <onRelease type="MSFS2020EventIdInputAction" eventId="TIGERTFLY_GEAR_TEST_RIGHT_OFF" />

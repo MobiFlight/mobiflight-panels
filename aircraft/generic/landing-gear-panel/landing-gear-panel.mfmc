@@ -13,4 +13,5 @@
   <Output Name="LedN G" Pin="15" />
   <Output Name="LedL R" Pin="14" />
   <Output Name="LedL G" Pin="16" />
+  <Output Name="Annunciators" Pin="10" />
 </Config>
