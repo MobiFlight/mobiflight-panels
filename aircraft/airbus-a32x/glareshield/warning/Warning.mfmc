@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Warning</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="LED AUTOLAND" Pin="1" />
+  <Button Name="AUTOLAND" Pin="0" />
+  <Output Name="LED WARN" Pin="2" />
+  <Button Name="WARN" Pin="3" />
+  <Button Name="CAUT" Pin="4" />
+  <Output Name="LED CAUT" Pin="5" />
+  <Output Name="Backlight Brt" Pin="6" />
+  <Output Name="LED CAPT" Pin="7" />
+  <Button Name="SSP" Pin="8" />
+  <Output Name="Flood Brt" Pin="9" />
+  <Output Name="Annunciator Brt" Pin="10" />
+  <Output Name="LED ARROW" Pin="16" />
+  <Button Name="CHRONO" Pin="14" />
+</Config>

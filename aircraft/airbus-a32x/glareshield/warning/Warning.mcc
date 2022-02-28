@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="fe076f53-f5ed-4ba0-94e3-577b9dfe57e8">
+      <active>true</active>
+      <description>Warning - Integral Lighting Brightness (Backlight LEDs)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Warning/ SN-62e-c04" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <interpolation active="True">
+          <value x="0" y="0" />
+          <value x="255" y="100" />
+        </interpolation>
+        <preconditions />
+        <transformation active="True" expression="if(@==0, 0, #/100*255)" substrStart="0" substrEnd="7" />
+        <configrefs>
+          <configref active="True" ref="19780cfe-1382-42ae-933d-cf9017fefb9c" placeholder="#" />
+          <configref active="True" ref="407315e2-ac27-4185-b4eb-4827949880e4" placeholder="@" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="d2b32556-5af9-471f-b1c6-f6551b7cb6b9">
+      <active>true</active>
+      <description>Warning - Annunciator Brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 2 == if{ 100 } els{ 255 }" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Warning/ SN-62e-c04" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <transformation active="True" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14aa9b38-4618-4f64-852e-715586b24fd2">
+      <active>true</active>
+      <description>Warning - Autoland</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AUTOPILOT_AUTOLAND_WARNING) (L:A32NX_OVHD_INTLT_ANN) 0 == or" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Warning/ SN-62e-c04" trigger="normal" pin="LED AUTOLAND" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ae43713b-7d17-434f-a0cd-1c3e6a0744c8">
+      <active>true</active>
+      <description>Warning - Warning</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:Generic_Master_Warning_Active) (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) or and (I:SAFETY_Push_Warning_ButtonAnimVar_IsDown) or (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * max 0 &gt; (A:CIRCUIT GENERAL PANEL ON, Bool) and" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Warning/ SN-62e-c04" trigger="normal" pin="LED WARN" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5cb7cfab-ca2e-47fb-9062-0bc9eede8e09">
+      <active>true</active>
+      <description>Warning - Caution</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:Generic_Master_Caution_Active) (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) or and (I:SAFETY_Push_Warning_ButtonAnimVar_IsDown) or (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * max 0 &gt; (A:CIRCUIT GENERAL PANEL ON, Bool) and" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Warning/ SN-62e-c04" trigger="normal" pin="LED CAUT" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0c243511-4a76-41fe-81ea-051092ae9ee0">
+      <active>true</active>
+      <description>Warning - Captain</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 ==" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Warning/ SN-62e-c04" trigger="normal" pin="LED CAPT" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d982aea3-8105-4258-8d01-5dd63b219e52">
+      <active>true</active>
+      <description>Warning - Arrow</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 ==" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="Pin" serial="Warning/ SN-62e-c04" trigger="normal" pin="LED ARROW" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="19780cfe-1382-42ae-933d-cf9017fefb9c">
+      <active>true</active>
+      <description>Warning - Integral Lighting Brightness (Raw)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:84, PERCENT)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="407315e2-ac27-4185-b4eb-4827949880e4">
+      <active>true</active>
+      <description>Warning - ESS Bus is Powered (AC)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_AC_ESS_BUS_IS_POWERED, bool)" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="4ed49c7d-d0d0-4c50-ad1f-5417fe8596f0">
+      <active>true</active>
+      <description>Warning - Master Caution</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Warning/ SN-62e-c04" name="CAUT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="A32NX_MASTER_CAUTION_PRESSED" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="A32NX_MASTER_CAUTION_RELEASED" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="60819d5e-2cb9-4f80-bcb7-ab130052b0a3">
+      <active>true</active>
+      <description>Warning - Master Warning</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Warning/ SN-62e-c04" name="WARN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="A32NX_MASTER_WARNING_PRESSED" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="A32NX_MASTER_WARNING_RELEASED" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="60e56a4e-43ad-4572-ab2d-9730847397d0">
+      <active>true</active>
+      <description>Warning - Chrono</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.2.0.0, Culture=neutral, PublicKeyToken=null" serial="Warning/ SN-62e-c04" name="CHRONO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A32NX_EFIS_L_CHRONO_PUSHED)" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
