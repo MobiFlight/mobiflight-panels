@@ -4,7 +4,7 @@ A small panel that encompasses many of the A320 overhead features into a small p
 
 ![Mini Overhead](https://user-images.githubusercontent.com/2242776/149878500-271aab1d-ab63-4d59-a4bd-bb05953e75b0.jpeg)
 
-The panel is comprised of three layers, starting with the frontmost (user-facing) layer and moving backward as defined in the [A320 Mini Overad SVG File for Laser Cutting](https://github.com/ssewell/mobiflight-panels/blob/main/aircraft/airbus-a32x/overhead/mini-overhead/a320-mini-overhead.svg)
+The panel is comprised of three layers, starting with the frontmost (user-facing) layer and moving backward as defined in the [A320 Mini Overhead SVG File for Laser Cutting](https://github.com/ssewell/mobiflight-panels/blob/main/aircraft/airbus-a32x/overhead/mini-overhead/a320-mini-overhead.svg)
  - 3mm white acrylic, laser cut, painted Pigeon Blue, then laser etched
  - 3mm clear acrylic, painted black in non-masked areas
  - PCB
