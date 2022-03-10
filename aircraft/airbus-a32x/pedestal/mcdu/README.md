@@ -37,3 +37,7 @@ have been attached as a .zip to spread the screen to the
 edge properly on the MCDU.
 
 This design also matches the Opencockpits panel footprint.
+
+**Button caps for resin pritners** - Special design for resin printers. Print with white resin, spray with black acrylic paint and engrave letters, numbers and symbols with CO2 laser. Only 3 designs available now (numbers, letters, line select), we are working on the rest. Usable with 3+3+3mm MCDU panel. Fusion 360 source files will be available after all buttons will be ready.
+
+![image](https://user-images.githubusercontent.com/13331823/157750405-e8288548-f697-4958-ab13-5291bc08442f.png)
