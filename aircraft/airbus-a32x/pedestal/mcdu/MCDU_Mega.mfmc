@@ -69,4 +69,5 @@
   <Button Name="O" Pin="29" />
   <Button Name="T" Pin="30" />
   <Button Name="Y" Pin="31" />
+  <Output Name="Brightness" Pin="13" />
 </Config>
