@@ -1,5 +1,5 @@
 # Button caps design for resin printers
-This folder contains ready to print STL files for resin printers. Buttons caps are compatible with 3+3+3mm panel layout made from acrylic.
+This folder contains ready to print STL files for resin printers. Buttons caps are compatible with 3+3+3mm panel layout made from acrylic. Fusion 360 source files will be added later.
 
 # What you need:
 * Resin 3D printer (I am using Creality Halot One)
@@ -28,6 +28,7 @@ in progress...
 - [ ] Write short how to print with small ammount of supports.
 - [ ] Write short how to engrave text and symbols with laser.
 - [ ] Upload pictures of finished buttons.
+- [ ] Upload Fusion 360 source files.
 
 # Button caps design preview:
 ![image](https://user-images.githubusercontent.com/13331823/158015448-734bbe5b-0045-4e7f-90ff-f07113a4aa0b.png)
