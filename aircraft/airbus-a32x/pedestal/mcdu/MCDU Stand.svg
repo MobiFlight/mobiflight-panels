@@ -32,10 +32,11 @@
      inkscape:zoom="0.6267951"
      inkscape:cx="292.10261"
      inkscape:cy="351.06623"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4" />
+     inkscape:current-layer="layer4"
+     inkscape:document-rotation="0" />
   <!--
 Console - Console with slanted panel
 
@@ -196,21 +197,12 @@ SettingsUrl: http://festi.info/Console?FingerJoint_angle=90.0&amp;FingerJoint_st
        stroke-width="0.2"
        id="path20"
        style="display:inline;fill:none;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round" />
-    <g
-       id="g935"
-       transform="translate(3.3272217,2.8302246)">
-      <circle
-         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.080822;stop-color:#000000"
-         id="path929"
-         cx="423.82596"
-         cy="126.83466"
-         r="17.459589" />
-      <circle
-         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.080822;stop-color:#000000"
-         id="circle931"
-         cx="589.62726"
-         cy="126.83466"
-         r="17.459589" />
-    </g>
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.041275;stop-color:#000000"
+       id="rect857"
+       width="214.01532"
+       height="121.14871"
+       x="403.04617"
+       y="69.09053" />
   </g>
 </svg>
