@@ -23,9 +23,9 @@ The following files are included for 3D Printing
 
 The electronic component listing for the circuit can be found within the EasyEDA schematic standard BOM listing.
 
-## MobiFlight Configuration
+## MobiFlight Configuration for FBW A32NX
 
-In the included MobiFlight config files, many of the sim functions are combined into a single button/switch (i.e. pressing the fuel pump button will toggle all fuel pumps at the same time).
+In the included MobiFlight config file (Mini Overhead.mcc), many of the sim functions are combined into a single button/switch (i.e. pressing the fuel pump button will toggle all fuel pumps at the same time).
 
 The switches to control the lighting have the following attributes:
 
@@ -41,3 +41,7 @@ The switches to control the lighting have the following attributes:
   - Both landing lights: On
   - Both landing lights: Off
   - Both landing lights: Retracted
+
+## MobiFlight Configuration for Fenix Simulations A320
+
+Similar configuration settings targeting the Fenix Simulations A320 for MobiFlight can be found in the MiniOverheadFenix.mcc file.
