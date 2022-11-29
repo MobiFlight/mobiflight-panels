@@ -1,6 +1,6 @@
 # A320 FCU (Flight Control Unit)
 
-### Status: **Untested** - The current PCB (v1.0.3) is functionally complete, but untested. Version 1.0 was used to produce the following FCU, but it required a bodge that was corrected in v1.0.2.
+### Status: **Complete** - The current PCB (v1.0.3) has been fabricated and tested.
 
 ![FCU Front](https://user-images.githubusercontent.com/2242776/165022881-99ba330a-aba8-41ba-a877-558f19cb1174.jpg)
 
