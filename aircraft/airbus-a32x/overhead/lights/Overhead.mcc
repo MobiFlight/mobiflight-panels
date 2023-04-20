@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="7d885b5e-e1a3-430b-93eb-4ed1422b1e6d">
+      <active>true</active>
+      <description>Crew Supply</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="True" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9a0c7285-612a-4873-b90e-518bd8dba67e">
+      <active>true</active>
+      <description>Wing Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f5515b87-3300-41a8-88f7-4fd2023b8b54">
+      <active>true</active>
+      <description>Wing On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="21402757-69b4-4bbe-9f80-26a075d81bc5">
+      <active>true</active>
+      <description>Eng1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a50069b6-0f78-4802-ab22-176036d7b707">
+      <active>true</active>
+      <description>Eng1 On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c50b5218-89a7-41a8-87e8-d9412dee65dc">
+      <active>true</active>
+      <description>Eng2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="175492b1-84bb-448c-bee8-bad37535de6f">
+      <active>true</active>
+      <description>Eng2 On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="07388731-079a-45ab-848f-6f05c38d6482">
+      <active>true</active>
+      <description>APU Bleed Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b5ef7b11-11df-4332-aa7a-d0d037c2cd84">
+      <active>true</active>
+      <description>APU Bleed On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bf8637bf-da14-483d-b4f7-d85209a0c567">
+      <active>true</active>
+      <description>Battery Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="654bc0a5-0184-4526-bb4f-f85d27b6d80e">
+      <active>true</active>
+      <description>Battery Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="-" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 27" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5ce2bd36-2454-427d-a064-06dea844ec84">
+      <active>true</active>
+      <description>Fuel Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 24" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4e130e6f-7f00-4d72-852a-1b59fb297a36">
+      <active>true</active>
+      <description>Fuel Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 25" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="36e95941-a20a-44a4-9c6c-1c58707bb423">
+      <active>true</active>
+      <description>APU Master Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 20" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6032de53-a850-4ac2-bb3c-b85c6f20e5a9">
+      <active>true</active>
+      <description>APU Master On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 21" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6db003cb-9dff-485e-92b7-f8e3293d5b4a">
+      <active>true</active>
+      <description>APU Start Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 22" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d338feed-c3df-47f3-be44-0d8f87c6605f">
+      <active>true</active>
+      <description>APU Start On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 23" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8beaf650-8f42-479d-8c76-e30bba084592">
+      <active>true</active>
+      <description>Signs Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead/ SN-690-d88" trigger="normal" shiftRegister="Korry LEDs" registerOutputPin="Output 27" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="32e86626-0420-4f8a-927f-98cda31dbc19">
+      <active>true</active>
+      <description>Strobe</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="StrobeOn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_STROBE_0)&#xA;0 (&gt;L:STROBE_0_Auto) 1 0 r (&gt;K:2:STROBES_SET)" presetId="b16d3396-e6a2-4d00-a193-81068b7240fa" />
+          <onRelease type="MSFS2020CustomInputAction" command="2 (&gt;L:LIGHTING_STROBE_0)&#xA;0 (&gt;L:STROBE_0_Auto) 0 0 r (&gt;K:2:STROBES_SET)" presetId="909a1e70-5ea4-4d9c-b043-7ed97e60c364" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a8a2813d-3ba5-4e43-b1d2-eee8e5b19c54">
+      <active>true</active>
+      <description>Beacon</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="BeaconOn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 1 (&gt;K:2:BEACON_LIGHTS_SET)" presetId="78cfa5f3-ee46-4bea-a2b1-2a2d8ead8972" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 0 (&gt;K:2:BEACON_LIGHTS_SET)" presetId="00928f01-b8eb-4e44-b9a7-c42a03d36ece" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e3bdd3c2-2925-4c1c-bdd5-7fd3dbcdeba1">
+      <active>true</active>
+      <description>Wing Light</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="WingLtOn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 1 s0 (&gt;K:2:WING_LIGHTS_SET) l0 (&gt;L:LIGHTING_WING_0)" presetId="b7aa37f9-63f1-4e05-ad1d-d8fbf403b28a" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 0 s0 (&gt;K:2:WING_LIGHTS_SET) l0 (&gt;L:LIGHTING_WING_0)" presetId="30f4286f-aae3-4189-a0aa-ac92ee360eb0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="25fe770d-3661-4cae-b398-bec0e9f5ef59">
+      <active>true</active>
+      <description>Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="NavLogoOff" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 0 (&gt;K:2:NAV_LIGHTS_SET) 0 0 (&gt;K:2:LOGO_LIGHTS_SET)" presetId="5ffc07f2-7479-4d57-8605-b26eacc9df48" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 1 (&gt;K:2:NAV_LIGHTS_SET) 0 1 (&gt;K:2:LOGO_LIGHTS_SET)" presetId="e1e74d64-5c8a-49f9-a573-73ba0790b658" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="21aa2d30-e6b5-4162-882b-d2cd38eb4eb8">
+      <active>true</active>
+      <description>Rwy Turn Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="RwyTurnOn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 s0 (&gt;L:LIGHTING_TAXI_2) &#xA;2 l0 (&gt;K:2:TAXI_LIGHTS_SET) &#xA;3 l0 (&gt;K:2:TAXI_LIGHTS_SET)" presetId="6018eedc-d57e-459d-91e5-419fb29061fd" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 s0 (&gt;L:LIGHTING_TAXI_2) &#xA;2 l0 (&gt;K:2:TAXI_LIGHTS_SET) &#xA;3 l0 (&gt;K:2:TAXI_LIGHTS_SET)" presetId="2f8d1e5d-286d-4d6b-bc07-48bde1fdf1eb" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c2dcdafc-6939-4b94-94f8-bba2597d8433">
+      <active>true</active>
+      <description>Left Land Retract</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="LandLRetract" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:LIGHTING_LANDING_2)&#xA;1 (&gt;L:LANDING_2_Retracted) 0 2 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="cf942ad7-9231-4024-b653-78716c61384b" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_LANDING_2)&#xA;0 (&gt;L:LANDING_2_Retracted) 0 2 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="3fd1c0e8-0261-4cbc-b4d0-341d0e4e8aa2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eeca1d06-48eb-4a6a-8aa0-9d4024b4af3f">
+      <active>true</active>
+      <description>Left Land On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="LandLOn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_LANDING_2)&#xA;0 (&gt;L:LANDING_2_Retracted) 1 2 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="852a4fa8-02a5-451c-abb6-1a001f154b7d" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_LANDING_2)&#xA;0 (&gt;L:LANDING_2_Retracted) 0 2 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="3fd1c0e8-0261-4cbc-b4d0-341d0e4e8aa2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2a3f19d8-d2df-4806-b10a-7582cb6343c5">
+      <active>true</active>
+      <description>Right Land Retract</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="LandRRetract" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:LIGHTING_LANDING_3) &#xA;1 (&gt;L:LANDING_3_Retracted) 0 3 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="96181372-4acf-4c03-8c54-69c9ad85f05d" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_LANDING_3) &#xA;0 (&gt;L:LANDING_3_Retracted) 0 3 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="ae2c7e4c-9778-41f2-8198-cd7529dae092" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2ae43801-b957-4b22-b708-0bc85d5a0873">
+      <active>true</active>
+      <description>Right Land On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="LandROn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_LANDING_3) &#xA;0 (&gt;L:LANDING_3_Retracted) 1 3 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="abfe3fe0-f18c-4352-abea-17fbfdcb141d" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_LANDING_3) &#xA;0 (&gt;L:LANDING_3_Retracted) 0 3 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="ae2c7e4c-9778-41f2-8198-cd7529dae092" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="336ebd42-7a6f-4662-a654-73b26b5fdb13">
+      <active>true</active>
+      <description>Nose Light Taxi</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="NoseOff" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:LIGHTING_LANDING_1) &#xA;0 1 r (&gt;K:2:LANDING_LIGHTS_SET) &#xA;0 1 r (&gt;K:2:TAXI_LIGHTS_SET)" presetId="2f8c9856-b323-4174-b707-01f5b6e07bc3" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_LANDING_1) &#xA;0 1 r (&gt;K:2:LANDING_LIGHTS_SET) &#xA;1 1 r (&gt;K:2:TAXI_LIGHTS_SET)&#xA;" presetId="76696abc-dcce-4148-be15-663bb3493f21" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b42f7045-949b-4b5f-a02d-8ad64ad00ef1">
+      <active>true</active>
+      <description>Nose Light T.O</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="NoseOn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_LANDING_1) &#xA;1 1 r (&gt;K:2:LANDING_LIGHTS_SET) &#xA;0 1 r (&gt;K:2:TAXI_LIGHTS_SET)" presetId="b214b197-fb87-4222-a373-91bffd60158b" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_LANDING_1) &#xA;0 1 r (&gt;K:2:LANDING_LIGHTS_SET) &#xA;1 1 r (&gt;K:2:TAXI_LIGHTS_SET)&#xA;" presetId="76696abc-dcce-4148-be15-663bb3493f21" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3868b991-0611-40b8-911d-779067605782">
+      <active>true</active>
+      <description>Seatbelts</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="SeatBeltsOn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:CABIN SEATBELTS ALERT SWITCH, bool) ! if{ (&gt;K:CABIN_SEATBELTS_ALERT_SWITCH_TOGGLE) }" presetId="f6941e58-ffa8-4e04-aabc-9f8515e94c0f" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:CABIN SEATBELTS ALERT SWITCH, bool) if{ (&gt;K:CABIN_SEATBELTS_ALERT_SWITCH_TOGGLE) }" presetId="4f2687b6-3b70-49b3-9dbc-4f3f3b9b86ec" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="489718df-5092-49fc-9a8b-10d8d228f916">
+      <active>true</active>
+      <description>No Smoking Auto</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="NoSmokingOff" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" presetId="853c9228-8aef-4b4d-9944-e6a421f46639" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" presetId="e87442ea-92db-43e8-beff-38b50e71c5f5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c32f97e8-7987-449f-b9d4-170b7501a089">
+      <active>true</active>
+      <description>No Smoking On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="NoSmokingOn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" presetId="c0cb2e63-64c9-4afc-a16d-83745e0d09ab" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" presetId="e87442ea-92db-43e8-beff-38b50e71c5f5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="abf0b325-d7aa-42ab-9621-2c7b540f3b6a">
+      <active>true</active>
+      <description>Emer Exit Arm</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="EmerExitOff" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position)" presetId="0da1d325-54c4-435b-a33e-cb38121a8dcf" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position)" presetId="3abe58cd-33f2-4134-ae4d-7c7a52020197" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="109b179e-5074-4aa7-90c4-5b1f5c7437eb">
+      <active>true</active>
+      <description>Emer Exit On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="EmerExitOn" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position)" presetId="efb1635b-4c1b-4fc7-af59-d2e8e0da5979" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position)" presetId="3abe58cd-33f2-4134-ae4d-7c7a52020197" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8288452e-beb3-487e-a9fd-cdc390d138c8">
+      <active>true</active>
+      <description>Dome DIM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="DomeDim" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;K:2:CABIN_LIGHTS_SET) 0 (&gt;K:LIGHT_POTENTIOMETER_7_SET)" presetId="c86a634e-df76-49bc-b921-5b655097c9bf" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;K:2:CABIN_LIGHTS_SET) 50 (&gt;K:LIGHT_POTENTIOMETER_7_SET)" presetId="ac5119ce-b4c7-453a-a1c2-0d472f06ff1d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6624fc1c-ef5c-4637-9f9a-7a725fc24fef">
+      <active>true</active>
+      <description>Dome BRT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="DomeBrt" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:2:CABIN_LIGHTS_SET) 100 (&gt;K:LIGHT_POTENTIOMETER_7_SET)" presetId="34c664f6-b814-42fd-91ba-8cb73287feaf" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;K:2:CABIN_LIGHTS_SET) 50 (&gt;K:LIGHT_POTENTIOMETER_7_SET)" presetId="ac5119ce-b4c7-453a-a1c2-0d472f06ff1d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6e102bf1-cb64-460f-a79e-21cbf0ac1915">
+      <active>true</active>
+      <description>ADIRS1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="ADIRSOff" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_ADIRS_IR_1_MODE_SELECTOR_KNOB)" presetId="49964182-5e85-4f0b-88e0-eefc5de9352c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b18dddf1-eb65-4e74-a771-4e5903857a8e">
+      <active>true</active>
+      <description>ADIRS2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="ADIRSOff" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_ADIRS_IR_2_MODE_SELECTOR_KNOB)" presetId="86d6fc0a-2794-4d56-8fbb-a046ae7da922" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="323580c5-e720-4731-a510-c7324bb3b357">
+      <active>true</active>
+      <description>ADIRS3 Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="ADIRSOff" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_ADIRS_IR_3_MODE_SELECTOR_KNOB)" presetId="2f08a28c-ea54-4b50-89ae-da55f3110670" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bcbc2b8b-8305-4fd6-8897-f40477c3fee4">
+      <active>true</active>
+      <description>ADIRS1 Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="ADIRSNav" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_ADIRS_IR_1_MODE_SELECTOR_KNOB)" presetId="b38165c2-8aa7-4351-afc4-b7475fa7782b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="06d411b2-62c9-4f24-a7a5-7d073bd66826">
+      <active>true</active>
+      <description>ADIRS2 Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="ADIRSNav" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_ADIRS_IR_2_MODE_SELECTOR_KNOB)" presetId="735ce408-c3a1-4263-ad1c-c55fd6ae0dc7" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="da86cb13-20b0-4b4c-8a3e-d1a1c3bd4d49">
+      <active>true</active>
+      <description>ADIRS3 Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="ADIRSNav" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_ADIRS_IR_3_MODE_SELECTOR_KNOB)" presetId="238d1227-e73d-45c2-affa-fcb5f032f8af" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="445d0806-8b63-4a2e-bec5-784fac5cee79">
+      <active>true</active>
+      <description>Wing Anti Ice</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="WingAIce" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_WING_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_WING_Pressed)&#xA;(&gt;K:TOGGLE_STRUCTURAL_DEICE)" presetId="3a97c92c-6194-4638-aca3-dacffcc3f44e" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6c574150-b244-4cfa-81c8-8b4d3fbb455b">
+      <active>true</active>
+      <description>Eng1 Anti Ice</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="Eng1AIce" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG1_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG1_Pressed)&#xA;(&gt;K:ANTI_ICE_TOGGLE_ENG1)" presetId="3846b25d-ab61-49eb-84c7-98499614c71e" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="033065cb-76f9-48fe-ae32-a83882aed526">
+      <active>true</active>
+      <description>Eng2 Anti Ice</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="Eng2AIce" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG2_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG2_Pressed)&#xA;(&gt;K:ANTI_ICE_TOGGLE_ENG2)" presetId="e5ffea42-81ab-4f5c-a8e1-48359a551380" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b49d2ae5-ddcb-4216-b1e7-d66d1ee28b82">
+      <active>true</active>
+      <description>APU Bleed</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="APUBleed" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_PNEU_APU_BLEED_PB_IS_ON, bool) ! (&gt;L:A32NX_OVHD_PNEU_APU_BLEED_PB_IS_ON, bool)" presetId="4a41792d-c6ab-44f0-a555-cb9081c2a4a8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a2860431-2237-4600-b188-5452a1ce9186">
+      <active>true</active>
+      <description>Batt1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="ModeSelButton" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_ELEC_BAT_1_PB_IS_AUTO, Bool) ! (&gt;L:A32NX_OVHD_ELEC_BAT_1_PB_IS_AUTO) (L:XMLVAR_Momentary_PUSH_OVHD_ELEC_BAT1_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ELEC_BAT1_Pressed)" presetId="e50bd5cb-28de-4cf4-b28b-7bcc5cc6e43e" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9e2e12fb-d8ce-41f2-b157-d2cc23250f53">
+      <active>true</active>
+      <description>Batt2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="ModeSelButton" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_ELEC_BAT_2_PB_IS_AUTO, Bool) ! (&gt;L:A32NX_OVHD_ELEC_BAT_2_PB_IS_AUTO) } (L:XMLVAR_Momentary_PUSH_OVHD_ELEC_BAT2_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ELEC_BAT2_Pressed)" presetId="c2b23777-a70f-4f58-a762-86f17fa84574" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0bb4dcde-6f52-4d76-8fb8-2386ab6f6c15">
+      <active>true</active>
+      <description>Fuel Pump1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="FuelPumps" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_FUEL_PUMP1_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_FUEL_PUMP1_Pressed)&#xA;1 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" presetId="724e739f-8cc7-446d-872f-e27566af6a70" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="edf1a918-8443-472e-8b52-55e637071408">
+      <active>true</active>
+      <description>Fuel Pump2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="FuelPumps" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_FUEL_PUMP2_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_FUEL_PUMP2_Pressed)&#xA;4 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" presetId="08b08855-b68f-411f-b500-55109c987ed3" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e6353890-afb3-478d-a79a-865a099c1544">
+      <active>true</active>
+      <description>Fuel Pump3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="FuelPumps" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_FUEL_LTKPUMPS1_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_FUEL_LTKPUMPS1_Pressed)&#xA;2 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" presetId="fa49d278-6b41-484f-9509-668763fffc38" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2a2a3875-7d75-40a5-9fdf-25dbe76eb656">
+      <active>true</active>
+      <description>Fuel Pump4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="FuelPumps" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_FUEL_LTKPUMPS2_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_FUEL_LTKPUMPS2_Pressed)&#xA;5 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" presetId="8ec7f27e-c556-429a-be78-033bf83822ae" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7230fd68-2293-4072-9a98-aa44bc49e5d4">
+      <active>true</active>
+      <description>Fuel Pump5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="FuelPumps" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_FUEL_RTKPUMPS1_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_FUEL_RTKPUMPS1_Pressed)&#xA;3 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" presetId="1b3978c8-90ca-43a6-ba6d-a0da241fc8a9" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9a7f5447-de58-4f03-bfdc-ce5a0046739d">
+      <active>true</active>
+      <description>Fuel Pump6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="FuelPumps" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_FUEL_RTKPUMPS2_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_FUEL_RTKPUMPS2_Pressed)&#xA;6 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" presetId="fc078489-64bc-4c19-b0a9-b7b9e837aeda" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dc74a1d3-4440-4e35-affb-22d1b69cb16c">
+      <active>true</active>
+      <description>APU Master</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="APUMaster" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON, Bool) if{ 0 (&gt;L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON) } els{ (A:ELECTRICAL MAIN BUS VOLTAGE, Volts) 20 &gt; if{ 1 (&gt;L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON) } } (L:XMLVAR_Momentary_PUSH_OVHD_MASTERSW_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_MASTERSW_Pressed)" presetId="20771aae-e971-4e24-85dd-99f3ff89f74c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1d883d4b-d280-42bc-b9f1-c39a058793b9">
+      <active>true</active>
+      <description>APU Start</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Overhead/ SN-690-d88" name="APUStart" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:ELECTRICAL MAIN BUS VOLTAGE, Volts) 20 &gt; (L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON, Bool) and if{ 1 (&gt;L:A32NX_OVHD_APU_START_PB_IS_ON) }" presetId="8ed639e8-e1cd-4832-be14-8402211dfca5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
