@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Chrono</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="ET_RST" Pin="1" />
+  <Button Name="DATE" Pin="0" />
+  <Button Name="GPS_INT" Pin="2" />
+  <Button Name="GPS_GPS" Pin="3" />
+  <Button Name="CHR_CHR" Pin="4" />
+  <Button Name="ET_RUN" Pin="5" />
+  <Button Name="ET_STP" Pin="6" />
+  <Button Name="CHR_RST" Pin="7" />
+  <LedModule Name="LedModule" DinPin="19" ClsPin="21" ClkPin="20" Brightness="15" NumModules="3" />
+  <ShiftRegister Name="Backlight" LatchPin="18" ClockPin="15" DataPin="14" NumModules="1" />
+  <Output Name="Backlight_Brt" Pin="10" />
+</Config>

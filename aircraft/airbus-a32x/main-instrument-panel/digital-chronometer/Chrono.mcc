@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="11d69c6a-7bab-4859-a587-143ca79022b0">
+      <active>true</active>
+      <description>Chrono - CHR - Mins</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_CHRONO_ELAPSED_TIME) 60 / flr" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="-1" operand="=" ifValue="'  '" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Chrono/ SN-8e8-992" trigger="normal" ledAddress="LedModule" ledConnector="3" ledModuleSize="4" ledPadding="True" ledBrightnessRef="a42db875-6ea9-493d-974d-6290681e7bb4" ledPaddingChar="0" ledDigits="2,3" ledDecimalPoints="2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="a01db9a2-9382-4b6d-82f7-1690bc669cc5" operand="!=" value="-1" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="dfe6816b-05a5-414f-b753-a53f24b0c475" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="1c2213a7-7bd0-4b95-9d15-91ab6071cbf1">
+      <active>true</active>
+      <description>Chrono - CHR - Mins (Off)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_CHRONO_ELAPSED_TIME) 60 / flr" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="-1" operand="=" ifValue="'  '" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Chrono/ SN-8e8-992" trigger="normal" ledAddress="LedModule" ledConnector="3" ledModuleSize="4" ledPadding="True" ledBrightnessRef="a42db875-6ea9-493d-974d-6290681e7bb4" ledPaddingChar="0" ledDigits="2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="a01db9a2-9382-4b6d-82f7-1690bc669cc5" operand="=" value="-1" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="dfe6816b-05a5-414f-b753-a53f24b0c475" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="40b0c5ae-2638-4d32-8abd-7f5a44905b66">
+      <active>true</active>
+      <description>Chrono - CHR - Seconds</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_CHRONO_ELAPSED_TIME) 60 % flr" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="-1" operand="=" ifValue="'  '" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Chrono/ SN-8e8-992" trigger="normal" ledAddress="LedModule" ledConnector="3" ledModuleSize="4" ledPadding="True" ledBrightnessRef="a42db875-6ea9-493d-974d-6290681e7bb4" ledPaddingChar="0" ledDigits="0,1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="44f3a6ad-68bf-49c5-99b8-8aa9e17d3ea4">
+      <active>true</active>
+      <description>Chrono - UTC - Hours</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:ZULU TIME,second) 3600 / flr" UUID="b406ff1f-7d3f-4b7e-872a-a2e2a2a2b760" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Chrono/ SN-8e8-992" trigger="normal" ledAddress="LedModule" ledConnector="1" ledModuleSize="6" ledPadding="True" ledBrightnessRef="a42db875-6ea9-493d-974d-6290681e7bb4" ledPaddingChar="0" ledDigits="4,5" ledDecimalPoints="4" />
+        <preconditions>
+          <precondition type="variable" active="true" ref="CHRONO_DATE_PRESSED" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f3715e46-49a6-4d63-97e6-224ceb52893b">
+      <active>true</active>
+      <description>Chrono - UTC - Mins</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:ZULU TIME,second) 3600 % 60 / flr" UUID="b406ff1f-7d3f-4b7e-872a-a2e2a2a2b760" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Chrono/ SN-8e8-992" trigger="normal" ledAddress="LedModule" ledConnector="1" ledModuleSize="6" ledPadding="True" ledBrightnessRef="a42db875-6ea9-493d-974d-6290681e7bb4" ledPaddingChar="0" ledDigits="2,3" ledDecimalPoints="2" />
+        <preconditions>
+          <precondition type="variable" active="true" ref="CHRONO_DATE_PRESSED" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3f221db4-ffa3-4918-a140-e3d6849b9468">
+      <active>true</active>
+      <description>Chrono - UTC - Seconds</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:ZULU TIME,second) 60 % flr" UUID="b406ff1f-7d3f-4b7e-872a-a2e2a2a2b760" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Chrono/ SN-8e8-992" trigger="normal" ledAddress="LedModule" ledConnector="1" ledModuleSize="6" ledPadding="True" ledBrightnessRef="a42db875-6ea9-493d-974d-6290681e7bb4" ledPaddingChar="0" ledDigits="0,1" />
+        <preconditions>
+          <precondition type="variable" active="true" ref="CHRONO_DATE_PRESSED" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bce3461a-8c74-449e-a226-40ea3c466da6">
+      <active>true</active>
+      <description>Chrono - UTC - Date</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(E:ZULU MONTH OF YEAR, number) 10000 * (E:ZULU DAY OF MONTH, number) 100 * + (E:ZULU YEAR, number) 2000 - +" UUID="b406ff1f-7d3f-4b7e-872a-a2e2a2a2b760" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Chrono/ SN-8e8-992" trigger="normal" ledAddress="LedModule" ledConnector="1" ledModuleSize="6" ledPadding="True" ledBrightnessRef="a42db875-6ea9-493d-974d-6290681e7bb4" ledPaddingChar="0" ledDigits="0,1,2,3,4,5" ledDecimalPoints="2,4" />
+        <preconditions>
+          <precondition type="variable" active="true" ref="CHRONO_DATE_PRESSED" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="52da5cf1-74a5-459c-bb39-67529e307096">
+      <active>true</active>
+      <description>Chrono - ET - Hours</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_CHRONO_ET_ELAPSED_TIME) 3600 / flr" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="-1" operand="=" ifValue="'  '" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Chrono/ SN-8e8-992" trigger="normal" ledAddress="LedModule" ledConnector="2" ledModuleSize="4" ledPadding="True" ledBrightnessRef="a42db875-6ea9-493d-974d-6290681e7bb4" ledPaddingChar="0" ledDigits="2,3" ledDecimalPoints="2" />
+        <preconditions>
+          <precondition type="config" active="true" ref="89d5a138-691b-4a44-b22c-64f6e430e5cf" operand="!=" value="-1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b204067e-5498-4825-8780-41b4bd830475">
+      <active>true</active>
+      <description>Chrono - ET - Hours (Decimal Off)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_CHRONO_ET_ELAPSED_TIME) 3600 / flr" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="-1" operand="=" ifValue="'  '" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Chrono/ SN-8e8-992" trigger="normal" ledAddress="LedModule" ledConnector="2" ledModuleSize="4" ledPadding="True" ledBrightnessRef="a42db875-6ea9-493d-974d-6290681e7bb4" ledPaddingChar="0" ledDigits="2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="89d5a138-691b-4a44-b22c-64f6e430e5cf" operand="=" value="-1" logic="and" />
+        </preconditions>
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="86143d4c-3d4b-47ee-bcea-68b9d878c2a3">
+      <active>true</active>
+      <description>Clock - ET - Mins</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_CHRONO_ET_ELAPSED_TIME) 3600 % 60 / flr" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="-1" operand="=" ifValue="'  '" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Chrono/ SN-8e8-992" trigger="normal" ledAddress="LedModule" ledConnector="2" ledModuleSize="4" ledPadding="True" ledBrightnessRef="a42db875-6ea9-493d-974d-6290681e7bb4" ledPaddingChar="0" ledDigits="0,1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dfe6816b-05a5-414f-b753-a53f24b0c475">
+      <active>true</active>
+      <description>Lights - Integral Lights On (AC Power)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool)" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Chrono/ SN-8e8-992" trigger="normal" shiftRegister="Backlight" registerOutputPin="Output 4|Output 5|Output 6|Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3f448736-f41f-4500-9dd6-4d2c88caeae9">
+      <active>true</active>
+      <description>Lights - Integral Lighting Brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:85, PERCENT)" UUID="0" />
+        <modifiers>
+          <transformation active="True" expression="if(@==0, 255, (100-$)/100*255)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Chrono/ SN-8e8-992" trigger="normal" pin="Backlight_Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="dfe6816b-05a5-414f-b753-a53f24b0c475" placeholder="@" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="a42db875-6ea9-493d-974d-6290681e7bb4">
+      <active>true</active>
+      <description>Lights - Display Brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_DC_ESS_BUS_IS_POWERED, bool) if{ (A:LIGHT POTENTIOMETER:85, PERCENT) } els{ 0 }" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="0" />
+            <value x="100" y="12" />
+          </interpolation>
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a01db9a2-9382-4b6d-82f7-1690bc669cc5">
+      <active>true</active>
+      <description>Chrono - CHR - Raw</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_CHRONO_ELAPSED_TIME) near" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="89d5a138-691b-4a44-b22c-64f6e430e5cf">
+      <active>true</active>
+      <description>Chrono - ET - Raw</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_CHRONO_ET_ELAPSED_TIME) near" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c4e4a2e5-594b-4529-a303-681d228dfd51">
+      <active>true</active>
+      <description>99 - ESS Bus is Powered (DC)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_DC_ESS_BUS_IS_POWERED, bool)" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="61611299-664a-4206-b94e-e0b337dd61b7">
+      <active>true</active>
+      <description>Chrono - CHR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Chrono/ SN-8e8-992" name="CHR_CHR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A32NX_CHRONO_TOGGLE)" presetId="-" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="172de925-9da8-4350-b512-41ebdcbd4a10">
+      <active>true</active>
+      <description>Chrono - RST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Chrono/ SN-8e8-992" name="CHR_RST" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A32NX_CHRONO_RST)" presetId="-" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dc5034ee-c817-4651-bac8-2867c3a16e35">
+      <active>true</active>
+      <description>Chrono - ET - RUN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Chrono/ SN-8e8-992" name="ET_RUN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_CHRONO_ET_SWITCH_POS, number) (&gt;H:A32NX_CHRONO_ET_POS_CHANGED)" presetId="-" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="73bd166f-1654-40f9-a66a-2fdd60475bd8">
+      <active>true</active>
+      <description>Chrono - ET - STP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Chrono/ SN-8e8-992" name="ET_STP" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_CHRONO_ET_SWITCH_POS, number) (&gt;H:A32NX_CHRONO_ET_POS_CHANGED)" presetId="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5da6966-1240-4279-a9e7-72889c71cad2">
+      <active>true</active>
+      <description>Chrono - ET - RST</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Chrono/ SN-8e8-992" name="ET_RST" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_CHRONO_ET_SWITCH_POS, number) (&gt;H:A32NX_CHRONO_ET_POS_CHANGED)" presetId="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e3f64a6f-6699-41b7-9edd-a27aa0693f56">
+      <active>true</active>
+      <description>Chrono - DATE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Chrono/ SN-8e8-992" name="DATE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="VariableInputAction" varType="number" varName="CHRONO_DATE_PRESSED" varExpression="1" />
+          <onRelease type="VariableInputAction" varType="number" varName="CHRONO_DATE_PRESSED" varExpression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
