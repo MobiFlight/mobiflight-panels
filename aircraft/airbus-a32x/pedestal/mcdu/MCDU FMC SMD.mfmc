@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>MCDU FMC SMD</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <ShiftRegister Name="Indicator LEDs" LatchPin="59" ClockPin="58" DataPin="57" NumModules="2" />
+  <Button Name="Left" Pin="2" />
+  <Button Name="Up" Pin="3" />
+  <Button Name="Right" Pin="4" />
+  <Button Name="Down" Pin="5" />
+  <Button Name="1" Pin="6" />
+  <Button Name="2" Pin="7" />
+  <Button Name="3" Pin="8" />
+  <Button Name="4" Pin="9" />
+  <Button Name="5" Pin="10" />
+  <Button Name="A" Pin="11" />
+  <Output Name="Annunciator Brt" Pin="12" />
+  <Output Name="Backlight Brt" Pin="13" />
+  <Button Name="B" Pin="14" />
+  <Button Name="C" Pin="15" />
+  <Button Name="D" Pin="16" />
+  <Button Name="E" Pin="17" />
+  <Button Name="ATC COMM" Pin="18" />
+  <Button Name="PROG" Pin="19" />
+  <Button Name="RADNAV" Pin="20" />
+  <Button Name="PERF" Pin="21" />
+  <Button Name="FUELPRED" Pin="22" />
+  <Button Name="BLANK2" Pin="23" />
+  <Button Name="DATA" Pin="24" />
+  <Button Name="MCDUMENU" Pin="25" />
+  <Button Name="R6" Pin="26" />
+  <Button Name="R5" Pin="27" />
+  <Button Name="R4" Pin="28" />
+  <Button Name="R3" Pin="29" />
+  <Button Name="R2" Pin="30" />
+  <Button Name="R1" Pin="31" />
+  <Button Name="H" Pin="32" />
+  <Button Name="K" Pin="33" />
+  <Button Name="L" Pin="34" />
+  <Button Name="M" Pin="35" />
+  <Button Name="SECFPLN" Pin="36" />
+  <Button Name="P" Pin="37" />
+  <Button Name="Q" Pin="38" />
+  <Button Name="R" Pin="39" />
+  <Button Name="AIRPORT" Pin="40" />
+  <Button Name="U" Pin="41" />
+  <Button Name="V" Pin="42" />
+  <Button Name="W" Pin="43" />
+  <Button Name="Z" Pin="45" />
+  <Button Name="SLASH" Pin="46" />
+  <Button Name="SPACE" Pin="47" />
+  <Button Name="J" Pin="48" />
+  <Button Name="I" Pin="49" />
+  <Button Name="INIT" Pin="50" />
+  <Button Name="BLANK1" Pin="51" />
+  <Button Name="DIM" Pin="52" />
+  <InputShiftRegister Name="Input Shifter" LatchPin="56" ClockPin="55" DataPin="54" NumModules="2" />
+  <Button Name="6" Pin="61" />
+  <Button Name="7" Pin="62" />
+  <Button Name="8" Pin="63" />
+  <Button Name="9" Pin="64" />
+  <Button Name="DOT" Pin="65" />
+  <Button Name="0" Pin="66" />
+  <Button Name="PLUSMINUS" Pin="67" />
+  <Button Name="F" Pin="68" />
+  <Button Name="G" Pin="69" />
+  <Button Name="BRT" Pin="53" />
+</Config>
