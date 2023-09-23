@@ -1,0 +1,591 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="d3384832-f66d-4cbb-b77b-9d681086dd0c">
+      <active>true</active>
+      <description>Annunciator Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="True" expression="150" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="48ea94d3-112d-4277-bd6d-4e67ce3b56de">
+      <active>true</active>
+      <description>Eng1 Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="c55ea4a6-c670-4a83-b47e-086ef4a8c6a1" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f6aea094-f706-47ba-8e01-27767dae247e">
+      <active>true</active>
+      <description>Eng2 Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="42839db1-05ac-49f2-905a-2c61a4cf81f0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 15" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9b4af176-dbd4-4784-a3c4-ff6dce8a6ec5">
+      <active>true</active>
+      <description>Eng1 Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ENG ANTI ICE:1, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="658fd326-1f2c-4fea-93a1-fc2b1064ec18" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c692d9f8-d7e4-490e-be8e-971746341f28">
+      <active>true</active>
+      <description>Eng2 Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ENG ANTI ICE:2, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="bb66dd94-70b9-4427-b5e4-d08a27c673b1" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 14" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5a8e90f9-10fa-435e-a8ff-8e3bdf23c07c">
+      <active>true</active>
+      <description>Wing Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and ((L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="5c9457fb-1d58-418b-afe2-332e3d03a0bf" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="be17f857-1ad2-4450-bafd-77ea3a44cf3d">
+      <active>true</active>
+      <description>Wing Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:STRUCTURAL DEICE SWITCH, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="930ad9db-7be9-4a74-b51d-ef6e27a14e76" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="48f2abeb-a57b-431a-8e97-f2827269de57">
+      <active>true</active>
+      <description>Probe Window on</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_MAN_PITOT_HEAT) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="538b0e0e-5aee-4b27-b5a9-a60c74444ff5" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="10acbd38-b176-4bab-8e1f-f980e1e4e4c9">
+      <active>true</active>
+      <description>Emer Exit Lt Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position) 2 ==" UUID="7a9bb354-36e8-4a8b-af24-78f7bcacbbaa" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f4dcf84a-7708-4985-85f7-470a9cdb25a7">
+      <active>true</active>
+      <description>Ditching On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5d5d0a47-fe38-462a-b24e-efaa850a4a7c">
+      <active>true</active>
+      <description>APU Start On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_APU_START_PB_IS_ON, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, Bool) or and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="01beacc5-017b-42d2-82fd-bc20a3d5838b" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5cf2a94-e21f-4acc-903e-ce8d799f106d">
+      <active>true</active>
+      <description>APU Start Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_APU_START_PB_IS_AVAILABLE, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, Bool) or and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="2beeccb3-6515-4c93-9928-7332a5f1170e" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="edfe30ec-0e14-4c1f-a276-28f75e067f99">
+      <active>true</active>
+      <description>APU Master On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, Bool) or and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="1844b80b-faa6-4464-8908-1244d2cb9d7b" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c4ad1fb8-9e59-41bc-8f31-4cb717b45be0">
+      <active>true</active>
+      <description>APU Master Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_APU_MASTER_SW_PB_HAS_FAULT, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, Bool) or and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="3704dec9-e29f-4e58-a540-bb2bdc5fd7f5" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="658ee6ef-29a5-47c7-82cc-e68b09f8697f">
+      <active>true</active>
+      <description>Mode Sel On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_PRESS_MODE_SEL_PB_IS_AUTO) !" UUID="c4f7c706-c04b-4035-8ede-d99c86897243" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 12" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6aefb7dd-a9d4-4727-9b83-8fc5594fde6e">
+      <active>true</active>
+      <description>Backlight</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:86, PERCENT)" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Overhead Lights/ SN-E4625C8403355024" trigger="normal" pin="Backlight Brt" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="62a0eab7-c974-4adb-8820-026098afe19a">
+      <active>true</active>
+      <description>Eng2 Anti Ice</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Eng2 Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG2_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG2_Pressed)&#xA;(&gt;K:ANTI_ICE_TOGGLE_ENG2)" presetId="e5ffea42-81ab-4f5c-a8e1-48359a551380" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29d6a0bd-3ca5-4f32-b29b-72aa75915ec7">
+      <active>true</active>
+      <description>Eng1 Anti Ice</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Eng1 Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG1_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_ENG1_Pressed)&#xA;(&gt;K:ANTI_ICE_TOGGLE_ENG1)" presetId="3846b25d-ab61-49eb-84c7-98499614c71e" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4c5d67aa-6e52-4e0b-8086-afa679e43243">
+      <active>true</active>
+      <description>Wing Anti Ice</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Wing Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_WING_Pressed) ! (&gt;L:XMLVAR_Momentary_PUSH_OVHD_ANTIICE_WING_Pressed)&#xA;(&gt;K:TOGGLE_STRUCTURAL_DEICE)" presetId="3a97c92c-6194-4638-aca3-dacffcc3f44e" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cc9ddf09-838b-4d93-b93f-9cf97498ae60">
+      <active>true</active>
+      <description>Probe Window</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Probe Window" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_MAN_PITOT_HEAT) ! (&gt;L:A32NX_MAN_PITOT_HEAT)&#xA;(L:XMLVAR_Momentary_PUSH_OVHD_PROBESWINDOW_Pressed) !  &#xA;(&gt;L:XMLVAR_Momentary_PUSH_OVHD_PROBESWINDOW_Pressed)" presetId="b23091a4-a265-4d11-967a-98a98df493ed" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ec35eb04-b83a-4a4f-b4b1-308762f1a564">
+      <active>true</active>
+      <description>Mode Sel</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Mode Sel" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_CAB_PRESS_MODE_MAN, bool) ! (&gt;L:A32NX_CAB_PRESS_MODE_MAN, bool)" presetId="aa58f92d-56e5-47a8-9a9c-8d5e04f9d00b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c82c37b7-000b-455c-aaad-75e3fc703e24">
+      <active>true</active>
+      <description>Ditching</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="11">
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_DITCHING_LOCK) ! (&gt;L:A32NX_DITCHING_LOCK)&#xA;(L:A32NX_DITCHING) ! (&gt;L:A32NX_DITCHING)" presetId="7ac20441-5121-4332-b2af-7482b8686f95" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fcd8341e-8bb8-4bea-85be-2579f644c179">
+      <active>true</active>
+      <description>APU Master</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="14">
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON, Bool) ! (&gt;L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON) " presetId="6e2c0773-9e0f-416b-8e0c-fb37e2b2f793" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d4ef5de3-6481-4f0c-af80-e1bf9887e3c3">
+      <active>true</active>
+      <description>APU Start</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="15">
+          <onPress type="MSFS2020CustomInputAction" command="(A:ELECTRICAL MAIN BUS VOLTAGE, Volts) 20 &gt; (L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON, Bool) and if{ 1 (&gt;L:A32NX_OVHD_APU_START_PB_IS_ON) }" presetId="8ed639e8-e1cd-4832-be14-8402211dfca5" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="52ddafa5-e09c-49c0-a4c2-0f4de8c126af">
+      <active>true</active>
+      <description>Strobe Auto</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Strobe Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:LIGHTING_STROBE_0)&#xA;0 (&gt;L:STROBE_0_Auto) 0 0 r (&gt;K:2:STROBES_SET)" presetId="909a1e70-5ea4-4d9c-b043-7ed97e60c364" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_STROBE_0)&#xA;1 (&gt;L:STROBE_0_Auto) 1 0 r (&gt;K:2:STROBES_SET)" presetId="19f524cc-75b6-464f-b69c-9b328e701bf9" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="82d68a53-e1f7-4f9d-9cbc-b4a2245745be">
+      <active>true</active>
+      <description>Strobe On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Strobe On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_STROBE_0)&#xA;0 (&gt;L:STROBE_0_Auto) 1 0 r (&gt;K:2:STROBES_SET)" presetId="b16d3396-e6a2-4d00-a193-81068b7240fa" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_STROBE_0)&#xA;1 (&gt;L:STROBE_0_Auto) 1 0 r (&gt;K:2:STROBES_SET)" presetId="19f524cc-75b6-464f-b69c-9b328e701bf9" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4f8c1bfc-e9b1-437c-ab70-1376c76c2777">
+      <active>true</active>
+      <description>Beacon</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Beacon On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:BEACON_LIGHTS_SET)" presetId="78cfa5f3-ee46-4bea-a2b1-2a2d8ead8972" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;K:BEACON_LIGHTS_SET)" presetId="00928f01-b8eb-4e44-b9a7-c42a03d36ece" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4f4fa679-597d-43d1-9551-ef042ad05a80">
+      <active>true</active>
+      <description>Wing</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Wing On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 1 s0 (&gt;K:2:WING_LIGHTS_SET) l0 (&gt;L:LIGHTING_WING_0)" presetId="b7aa37f9-63f1-4e05-ad1d-d8fbf403b28a" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 0 s0 (&gt;K:2:WING_LIGHTS_SET) l0 (&gt;L:LIGHTING_WING_0)" presetId="30f4286f-aae3-4189-a0aa-ac92ee360eb0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="78409929-473a-40f9-bc8d-eb77dc273763">
+      <active>true</active>
+      <description>Nav Logo</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Nav Logo On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 1 (&gt;K:2:NAV_LIGHTS_SET) 0 1 (&gt;K:2:LOGO_LIGHTS_SET)" presetId="e1e74d64-5c8a-49f9-a573-73ba0790b658" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 0 (&gt;K:2:NAV_LIGHTS_SET) 0 0 (&gt;K:2:LOGO_LIGHTS_SET)" presetId="5ffc07f2-7479-4d57-8605-b26eacc9df48" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d055217e-77c2-4342-b026-11358b865e32">
+      <active>true</active>
+      <description>Runway TO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Runway TO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 s0 (&gt;L:LIGHTING_TAXI_2) &#xA;2 l0 (&gt;K:2:TAXI_LIGHTS_SET) &#xA;3 l0 (&gt;K:2:TAXI_LIGHTS_SET)" presetId="6018eedc-d57e-459d-91e5-419fb29061fd" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 s0 (&gt;L:LIGHTING_TAXI_2) &#xA;2 l0 (&gt;K:2:TAXI_LIGHTS_SET) &#xA;3 l0 (&gt;K:2:TAXI_LIGHTS_SET)" presetId="2f8d1e5d-286d-4d6b-bc07-48bde1fdf1eb" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8d10a6a5-e62c-4273-ad36-d52769f0564b">
+      <active>true</active>
+      <description>Land L</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="L Land On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_LANDING_2)&#xA;0 (&gt;L:LANDING_2_Retracted) 1 2 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="852a4fa8-02a5-451c-abb6-1a001f154b7d" />
+          <onRelease type="MSFS2020CustomInputAction" command="2 (&gt;L:LIGHTING_LANDING_2)&#xA;1 (&gt;L:LANDING_2_Retracted) 0 2 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="cf942ad7-9231-4024-b653-78716c61384b" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a805e942-188f-459f-a4c9-bd8d3b6005c4">
+      <active>true</active>
+      <description>Land R</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="R Land On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_LANDING_3) &#xA;0 (&gt;L:LANDING_3_Retracted) 1 3 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="abfe3fe0-f18c-4352-abea-17fbfdcb141d" />
+          <onRelease type="MSFS2020CustomInputAction" command="2 (&gt;L:LIGHTING_LANDING_3) &#xA;1 (&gt;L:LANDING_3_Retracted) 0 3 r (&gt;K:2:LANDING_LIGHTS_SET)" presetId="96181372-4acf-4c03-8c54-69c9ad85f05d" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="da046cba-f075-4dd0-a6e2-f8105acdcb5c">
+      <active>true</active>
+      <description>Man VS Ctl Up</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Man VS Up" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_MAN_VS_CONTROL, number)" presetId="3668cc72-946a-4006-9c64-f4fa664274cf" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_MAN_VS_CONTROL, number)" presetId="f3ae8db7-3436-4243-a792-12480600db3f" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6f9a355b-b7e7-4d2d-84d0-b25b74648df1">
+      <active>true</active>
+      <description>Man VS Ctl Dn</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Man VS Down" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_MAN_VS_CONTROL, number)" presetId="6c63b07c-bf68-4068-a655-685fb7e35084" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_MAN_VS_CONTROL, number)" presetId="f3ae8db7-3436-4243-a792-12480600db3f" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="afab5517-d95d-42fc-8628-71e01238f226">
+      <active>true</active>
+      <description>Stby Compass</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="Stby Compass On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_STBY_COMPASS_LIGHT_TOGGLE) ! (&gt;L:A32NX_STBY_COMPASS_LIGHT_TOGGLE)" presetId="dae1eeaf-6717-408c-99bc-ade12a1eb2e0" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:A32NX_STBY_COMPASS_LIGHT_TOGGLE) ! (&gt;L:A32NX_STBY_COMPASS_LIGHT_TOGGLE)" presetId="dae1eeaf-6717-408c-99bc-ade12a1eb2e0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="60953df8-642a-4725-adc0-719f530aee8e">
+      <active>true</active>
+      <description>Dome Brt</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="3">
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:2:CABIN_LIGHTS_SET) 100 (&gt;K:LIGHT_POTENTIOMETER_7_SET)" presetId="34c664f6-b814-42fd-91ba-8cb73287feaf" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;K:2:CABIN_LIGHTS_SET) 50 (&gt;K:LIGHT_POTENTIOMETER_7_SET)" presetId="ac5119ce-b4c7-453a-a1c2-0d472f06ff1d" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="32bf8c82-ffb2-45d6-ba03-05a0641c17e2">
+      <active>true</active>
+      <description>Dome Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="2">
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;K:2:CABIN_LIGHTS_SET) 0 (&gt;K:LIGHT_POTENTIOMETER_7_SET)" presetId="c86a634e-df76-49bc-b921-5b655097c9bf" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;K:2:CABIN_LIGHTS_SET) 50 (&gt;K:LIGHT_POTENTIOMETER_7_SET)" presetId="ac5119ce-b4c7-453a-a1c2-0d472f06ff1d" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6e42a3bd-63c2-449f-a851-c53d203e1909">
+      <active>true</active>
+      <description>Ann Lt Test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="0">
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_INTLT_ANN)" presetId="c71ee409-fc4e-4046-b586-bfdd5503de47" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_INTLT_ANN)" presetId="57cf2c91-cd12-43a3-bed7-ed3c30afff90" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b2f36223-b8f6-4df2-aea6-e671d1aadbb2">
+      <active>true</active>
+      <description>Ann Lt</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="1">
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_OVHD_INTLT_ANN)" presetId="4978e5ef-c609-4cdc-9811-f28424aa3c93" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_INTLT_ANN)" presetId="57cf2c91-cd12-43a3-bed7-ed3c30afff90" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="073ec056-4a04-4c80-af70-9580b0e158ce">
+      <active>true</active>
+      <description>Seatbelt</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="10">
+          <onPress type="MSFS2020CustomInputAction" command="(A:CABIN SEATBELTS ALERT SWITCH, bool) ! if{ (&gt;K:CABIN_SEATBELTS_ALERT_SWITCH_TOGGLE) }" presetId="f6941e58-ffa8-4e04-aabc-9f8515e94c0f" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:CABIN SEATBELTS ALERT SWITCH, bool) if{ (&gt;K:CABIN_SEATBELTS_ALERT_SWITCH_TOGGLE) }" presetId="4f2687b6-3b70-49b3-9dbc-4f3f3b9b86ec" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2eebc686-180b-4192-8356-228f0dd14980">
+      <active>true</active>
+      <description>No Smoking On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="8">
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" presetId="c0cb2e63-64c9-4afc-a16d-83745e0d09ab" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" presetId="e87442ea-92db-43e8-beff-38b50e71c5f5" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8cc200a7-b579-4b14-a138-8f020317d32c">
+      <active>true</active>
+      <description>No Smoking Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="9">
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" presetId="853c9228-8aef-4b4d-9944-e6a421f46639" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" presetId="e87442ea-92db-43e8-beff-38b50e71c5f5" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fe5023a0-577a-436c-8aae-e8a5b327a913">
+      <active>true</active>
+      <description>Emer Exit On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="6">
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position)" presetId="efb1635b-4c1b-4fc7-af59-d2e8e0da5979" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position)" presetId="3abe58cd-33f2-4134-ae4d-7c7a52020197" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="61e0d261-2ef5-4565-9749-e4a74eeb2095">
+      <active>true</active>
+      <description>Emer Exit Arm</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="7">
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position)" presetId="0da1d325-54c4-435b-a33e-cb38121a8dcf" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_Position)" presetId="3abe58cd-33f2-4134-ae4d-7c7a52020197" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ba4256d4-c31b-4ae1-9ead-7501840c0b35">
+      <active>true</active>
+      <description>Integ Light Brt</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="12">
+          <onPress type="MSFS2020CustomInputAction" command="(A:LIGHT POTENTIOMETER:86,percent) 5 + 100 min 86 (&gt;K:2:LIGHT_POTENTIOMETER_SET)" presetId="27c6b99a-055d-4a1b-a97b-c24ed6ce83ee" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4790c63b-7758-450b-980c-df89e666360a">
+      <active>true</active>
+      <description>Integ Light Dim</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Lights/ SN-E4625C8403355024" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="5">
+          <onPress type="MSFS2020CustomInputAction" command="(A:LIGHT POTENTIOMETER:86,percent) 5 - 0 max 86 (&gt;K:2:LIGHT_POTENTIOMETER_SET)" presetId="56e4b33d-1fdf-4023-9679-0f670e1f946e" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

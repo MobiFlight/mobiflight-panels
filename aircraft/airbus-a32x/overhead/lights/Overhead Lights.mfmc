@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Overhead Lights</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="Annunciator Brt" Pin="8" />
+  <ShiftRegister Name="LED Driver" LatchPin="12" ClockPin="17" DataPin="16" NumModules="2" />
+  <Button Name="Eng2 Anti Ice" Pin="0" />
+  <Button Name="Eng1 Anti Ice" Pin="1" />
+  <Button Name="Wing Anti Ice" Pin="2" />
+  <Button Name="Strobe Off" Pin="3" />
+  <Button Name="Strobe On" Pin="4" />
+  <Output Name="Backlight Brt" Pin="5" />
+  <Button Name="Beacon On" Pin="6" />
+  <Button Name="Wing On" Pin="7" />
+  <Button Name="Runway TO" Pin="9" />
+  <Button Name="L Land On" Pin="10" />
+  <Button Name="Nav Logo On" Pin="11" />
+  <Button Name="R Land On" Pin="13" />
+  <Button Name="Nose Off" Pin="14" />
+  <Button Name="Nose On" Pin="15" />
+  <InputShiftRegister Name="InputShifter" LatchPin="19" ClockPin="18" DataPin="20" NumModules="2" />
+  <Button Name="Stby Compass On" Pin="21" />
+  <Button Name="Mode Sel" Pin="22" />
+  <Button Name="Man VS Up" Pin="26" />
+  <Button Name="Man VS Down" Pin="27" />
+  <Button Name="Probe Window" Pin="28" />
+</Config>
