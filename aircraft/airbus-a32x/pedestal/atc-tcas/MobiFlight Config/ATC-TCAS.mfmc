@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>ATC-TCAS</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <LedModule Name="LedDisplay" DinPin="1" ClsPin="0" ClkPin="2" Brightness="15" NumModules="1" />
+  <ShiftRegister Name="Backlight" LatchPin="4" ClockPin="5" DataPin="6" NumModules="1" />
+  <Output Name="Backlight_Brt" Pin="3" />
+  <Output Name="LED_ATC_FAIL" Pin="7" />
+  <Button Name="ALT_RPTG_OFF" Pin="8" />
+  <Button Name="ALT_RPTG_ON" Pin="9" />
+  <Button Name="XPDR_1" Pin="10" />
+  <Button Name="IDENT" Pin="14" />
+  <Button Name="MS_AUTO" Pin="15" />
+  <Button Name="CLR" Pin="16" />
+  <Button Name="MS_STBY" Pin="18" />
+  <InputShiftRegister Name="InputShifter" LatchPin="21" ClockPin="20" DataPin="19" NumModules="2" />
+</Config>

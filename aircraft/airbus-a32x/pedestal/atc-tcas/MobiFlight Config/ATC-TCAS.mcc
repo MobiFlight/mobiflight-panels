@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="146c5a88-ec8e-4e2a-ae45-ab0e3e45e724">
+      <active>true</active>
+      <description>XPDR - CLR LVAR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XPNDR_clr)" UUID="019f0ab4-8e1c-4ba8-bb5c-ddf9f25189f8" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a9bd9329-5313-4d9c-a260-1185d3624495">
+      <active>true</active>
+      <description>XPDR - POS LVAR</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XPNDR_pos)" UUID="f3b27a67-4aee-4ea7-b92e-e3417ca7b794" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="94c4901c-5f68-4935-a233-c7a050204c5f">
+      <active>true</active>
+      <description>XPDR - Numeric Keypress Handler</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XPNDR_act,bool) if{ 0 (&gt;L:XPNDR_act) &#xA;(E:SIMULATION TIME,second) 7 + (&gt;L:XPNDR_timeout) &#xA;(L:XPNDR_clr) 2 == if{ 1 (&gt;L:XPNDR_clr) } &#xA;(L:XPNDR_key) (L:XPNDR_temp,number) 10 * + (&gt;L:XPNDR_temp,number) (L:XPNDR_pos) ++ 4 min s0 (&gt;L:XPNDR_pos) l0 4 == if{ (L:XPNDR_temp,bco16) (&gt;K:XPNDR_SET) &#xA;0 (&gt;L:XPNDR_timeout) 0 (&gt;L:XPNDR_temp,number) &#xA;0 (&gt;L:XPNDR_pos) 0 (&gt;L:XPNDR_clr) } } &#xA;(L:XPNDR_temp)" UUID="7a7b4c80-5390-47bd-983e-1398bcf682bd" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="35a69639-392f-46d3-9f59-a96a0b357f4d">
+      <active>true</active>
+      <description>XPDR - Timeout Handler</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:XPNDR_timeout) 0 != if{ (E:SIMULATION TIME,second) (L:XPNDR_timeout) &gt; if{ 0 s0 (&gt;L:XPNDR_timeout) l0 (&gt;L:XPNDR_temp) l0 (&gt;L:XPNDR_pos) l0 (&gt;L:XPNDR_clr) } }" UUID="47bbb8c4-cea0-45d0-b75c-c4cd011b9df6" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9c5adc09-79a5-4b65-8dfd-4bc636614a7d">
+      <active>true</active>
+      <description>XPDR - 7 Segment - Zero Left Pad</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER CODE:1,number)" UUID="db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70" />
+        <modifiers>
+          <transformation active="True" expression="if(!#,8000,$)" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="8000" operand="=" ifValue="'    '" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" ledAddress="LedDisplay" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="146c5a88-ec8e-4e2a-ae45-ab0e3e45e724" operand="=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="9e347547-59df-4e5f-9f1b-946c89c3780f" operand="!=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="cd528ffe-f028-44b1-bd82-00605c60bb5a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cfb07f00-3df0-4be6-97ed-50627486a564">
+      <active>true</active>
+      <description>XPDR - 7 Segment - Test Mode</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:TRANSPONDER CODE:1,number)" UUID="db3bd1a4-4c3c-4e3e-a9aa-3480bf0f4a70" />
+        <modifiers>
+          <transformation active="True" expression="if(!#,8000,8888)" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="8000" operand="=" ifValue="'    '" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" ledAddress="LedDisplay" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="9e347547-59df-4e5f-9f1b-946c89c3780f" operand="=" value="0" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="cd528ffe-f028-44b1-bd82-00605c60bb5a" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cd528ffe-f028-44b1-bd82-00605c60bb5a">
+      <active>true</active>
+      <description>99 - ESS Bus is Powered (AC)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_AC_ESS_BUS_IS_POWERED)" UUID="95b6f5a3-c4e8-419d-976e-82a018bdec83" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0064a9d2-a197-46dc-96af-f59109c22578">
+      <active>true</active>
+      <description>XPDR - 7 Segment - Edit Mode</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <modifiers>
+          <transformation active="True" expression="?" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="2" operand="&lt;" ifValue="if($=0,'    ','@   ')" elseValue="if($=2,'@  ','@ ')" />
+        </modifiers>
+        <display type="Display Module" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" ledAddress="LedDisplay" ledConnector="1" ledModuleSize="8" ledPadding="True" ledPaddingChar="0" ledDigits="0,1,2,3" />
+        <preconditions>
+          <precondition type="config" active="true" ref="146c5a88-ec8e-4e2a-ae45-ab0e3e45e724" operand="!=" value="0" logic="and" />
+          <precondition type="config" active="true" ref="9e347547-59df-4e5f-9f1b-946c89c3780f" operand="=" value="" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="True" ref="a9bd9329-5313-4d9c-a260-1185d3624495" placeholder="?" />
+          <configref active="True" ref="94c4901c-5f68-4935-a233-c7a050204c5f" placeholder="@" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="50592ccc-c56c-4260-aaab-f91c49976d87">
+      <active>true</active>
+      <description>XPDR - ATC FAIL</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_XPDR_FAIL)" UUID="197c602a-4654-49e9-98f0-acb778d4619a" />
+        <modifiers>
+          <transformation active="True" expression="if($==0,1,0)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" pin="LED_ATC_FAIL" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="28cdb21f-163a-4f65-a4b0-9f364f523f47">
+      <active>true</active>
+      <description>XPDR - Integral Lighting</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool)  if{ (A:LIGHT POTENTIOMETER:85, PERCENT) } els{ 0 }" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="255" />
+            <value x="100" y="100" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" pin="Backlight_Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d3c6ac13-6416-4358-bd4a-c97f977d5dfa">
+      <active>true</active>
+      <description>XPDR - Backlight Shifter</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="True" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ATC-TCAS/ SN-f58-1ab" trigger="normal" shiftRegister="Backlight" registerOutputPin="Output 0|Output 1|Output 2|Output 3|Output 4|Output 5|Output 6|Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9e347547-59df-4e5f-9f1b-946c89c3780f">
+      <active>true</active>
+      <description>XPDR - Overhead Annunciator Mode</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN)" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="36375eec-a907-4a38-a825-8905347644de">
+      <active>true</active>
+      <description>XPDR - Power - STBY</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="MS_STBY" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_TRANSPONDER_MODE)" presetId="8b97233f-ec82-4fd1-8c7f-617cf109786f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8dcfc81a-9cd1-4f2b-8185-2682b63d3952">
+      <active>true</active>
+      <description>XPDR - Power - AUTO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="MS_AUTO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_TRANSPONDER_MODE)" presetId="39122054-060f-4d65-9eda-b5c0a491de53" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="22dd1423-8566-4e26-83d2-9a3efcc20a93">
+      <active>true</active>
+      <description>XPDR - Power - ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="3">
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_TRANSPONDER_MODE)" presetId="3e581ca4-bad7-49ce-8466-500a14f991a7" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e7d3d09d-0749-47c8-bde2-ab04df6bbc25">
+      <active>true</active>
+      <description>XPDR - System - Set</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="XPDR_1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_TRANSPONDER_SYSTEM)" presetId="0" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_TRANSPONDER_SYSTEM)" presetId="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7c765e1f-322a-4b6a-8700-2abacfa21b55">
+      <active>true</active>
+      <description>XPDR - ALT RTPG - OFF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="ALT_RPTG_OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_SWITCH_ATC_ALT,number)" presetId="39cec04c-cfe7-466b-88d8-5d693b4fb00b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="83157401-96ad-41c2-afde-731e80977f5c">
+      <active>true</active>
+      <description>XPDR - ALT RTPG - ON</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="ALT_RPTG_ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_SWITCH_ATC_ALT,number)" presetId="0d4033f7-5ed7-4a3d-8ef3-19bc5b263671" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="095170ce-be6a-47a6-ba48-28dfa73c8057">
+      <active>true</active>
+      <description>XPDR - Ident</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="IDENT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_ATC_BTN_IDENT)" presetId="394f40f6-b21b-48e3-91ce-f0311b407c72" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5e021bc-bed5-4ec7-be98-facfadca2f9e">
+      <active>true</active>
+      <description>XPDR - TCAS Traffic - THRT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="7">
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_SWITCH_TCAS_TRAFFIC_POSITION, enum)" presetId="10ef4a4c-722e-4188-aca2-2a760e4917c5" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="939485f1-8519-44d9-96fd-8670c6c6fbcf">
+      <active>true</active>
+      <description>XPDR - TCAS Traffic - ALL</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="0">
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_SWITCH_TCAS_TRAFFIC_POSITION, enum)" presetId="317ffcf1-ad0b-4926-96cb-d9ab2dd59fbb" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="101634e4-95d8-499d-99e3-bae103972389">
+      <active>true</active>
+      <description>XPDR - TCAS Traffic - ABV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="1">
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_SWITCH_TCAS_TRAFFIC_POSITION, enum)" presetId="ade8c6a2-f9a5-43b8-afb0-2a550c1b3085" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="911d90fa-2a4e-4cf0-a942-d97ec80fad35">
+      <active>true</active>
+      <description>XPDR - TCAS Traffic - BLW</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="2">
+          <onPress type="MSFS2020CustomInputAction" command="3 (&gt;L:A32NX_SWITCH_TCAS_TRAFFIC_POSITION, enum)" presetId="9e7aae3b-6ca4-4182-878a-04bf55fdd447" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e09a3f7f-720a-4911-af56-fcad399b4be2">
+      <active>true</active>
+      <description>XPDR - TCAS - STBY</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="6">
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_SWITCH_TCAS_Position)" presetId="1142257e-f7dd-44c5-97fd-88f890d6f764" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ccaccdb8-c15c-41d2-85db-8d2cbab28ad7">
+      <active>true</active>
+      <description>XPDR - TCAS - TA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="5">
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_SWITCH_TCAS_Position)" presetId="7f9432bb-d1c3-4cb0-9394-670ff5f01872" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="718cd384-aa8f-400d-a3f7-b417fc1b4f71">
+      <active>true</active>
+      <description>XPDR - TCAS - TA/RA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="4">
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_SWITCH_TCAS_Position)" presetId="c746ca75-0f7f-46ba-8348-c18aca3d6c3a" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="094ca673-2266-4df5-8b8b-117890de5fc4">
+      <active>true</active>
+      <description>XPDR - Button - 0</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="8">
+          <onPress type="MSFS2020CustomInputAction" command="(L:XPNDR_clr) 0 &gt; if{ 0 (&gt;L:XPNDR_key) 1 (&gt;L:XPNDR_act,bool) (&gt;H:A320_Neo_ATC_BTN_0) }" presetId="301cb65a-a9cb-4085-a48d-3cc6534a6645" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dd00366a-1ec8-4865-9c33-6c2be906eb14">
+      <active>true</active>
+      <description>XPDR - Button - 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="9">
+          <onPress type="MSFS2020CustomInputAction" command="(L:XPNDR_clr) 0 &gt; if{ 1 (&gt;L:XPNDR_key) 1 (&gt;L:XPNDR_act,bool) (&gt;H:A320_Neo_ATC_BTN_1) }" presetId="a9ac707d-1f15-40a8-826e-eae7f5a40b2b" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a60d58d5-c1b7-4d6f-9d25-6f0225d4a40e">
+      <active>true</active>
+      <description>XPDR - Button - 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="10">
+          <onPress type="MSFS2020CustomInputAction" command="(L:XPNDR_clr) 0 &gt; if{ 2 (&gt;L:XPNDR_key) 1 (&gt;L:XPNDR_act,bool) (&gt;H:A320_Neo_ATC_BTN_2) }" presetId="00c5fbb4-5c20-4547-9908-1f9790ac8091" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e1465a41-07d7-4883-b391-31460a238ed1">
+      <active>true</active>
+      <description>XPDR - Button - 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="11">
+          <onPress type="MSFS2020CustomInputAction" command="(L:XPNDR_clr) 0 &gt; if{ 3 (&gt;L:XPNDR_key) 1 (&gt;L:XPNDR_act,bool) (&gt;H:A320_Neo_ATC_BTN_3) }" presetId="61471e7e-f3fa-4d74-ae7f-732ffc8cfc5e" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eedffe97-40d3-4a9a-80b5-f1e33a363042">
+      <active>true</active>
+      <description>XPDR - Button - 4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="12">
+          <onPress type="MSFS2020CustomInputAction" command="(L:XPNDR_clr) 0 &gt; if{ 4 (&gt;L:XPNDR_key) 1 (&gt;L:XPNDR_act,bool) (&gt;H:A320_Neo_ATC_BTN_4) }" presetId="94eb450a-bdc7-4c48-8792-ce01ee50f930" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e3eb26e4-c23e-462b-83c8-1d21f21bd793">
+      <active>true</active>
+      <description>XPDR - Button - 5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="13">
+          <onPress type="MSFS2020CustomInputAction" command="(L:XPNDR_clr) 0 &gt; if{ 5 (&gt;L:XPNDR_key) 1 (&gt;L:XPNDR_act,bool) (&gt;H:A320_Neo_ATC_BTN_5) }" presetId="e4e6b57d-ef7a-491a-b422-a5d3a35d6446" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="86f2b24f-fe3d-4670-af28-481dded17785">
+      <active>true</active>
+      <description>XPDR - Button - 6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="14">
+          <onPress type="MSFS2020CustomInputAction" command="(L:XPNDR_clr) 0 &gt; if{ 6 (&gt;L:XPNDR_key) 1 (&gt;L:XPNDR_act,bool) (&gt;H:A320_Neo_ATC_BTN_6) }" presetId="96619f5d-070f-41e5-95ad-57afc2c12362" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="623667c5-bd72-49fc-b097-93f32fc9ba26">
+      <active>true</active>
+      <description>XPDR - Button - 7</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="15">
+          <onPress type="MSFS2020CustomInputAction" command="(L:XPNDR_clr) 0 &gt; if{ 7 (&gt;L:XPNDR_key) 1 (&gt;L:XPNDR_act,bool) (&gt;H:A320_Neo_ATC_BTN_7) }" presetId="477efc0c-1e4e-4682-9745-2e0568a473ca" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1eeec1c5-1477-435a-abe8-ea241029b6c5">
+      <active>true</active>
+      <description>XPDR - Button - CLR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ATC-TCAS/ SN-f58-1ab" name="CLR" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:XPNDR_clr) s1 2 &lt; if{ (L:XPNDR_pos) -- s0 0 &lt; if{ 3 } els{ l0 } (&gt;L:XPNDR_pos) &#xA;l1 0 == if{ (A:TRANSPONDER CODE:1,number) } els{ (L:XPNDR_temp) } 10 div &#xA;(&gt;L:XPNDR_temp) 2 (&gt;L:XPNDR_clr) } els{ 0 (&gt;L:XPNDR_temp) 0 (&gt;L:XPNDR_pos) } &#xA;(&gt;H:A320_Neo_ATC_BTN_CLR) (E:SIMULATION TIME,second) 7 + (&gt;L:XPNDR_timeout)" presetId="70f9653a-793a-4d26-a4e8-43d61d97467c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
