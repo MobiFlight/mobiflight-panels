@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>GSX</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Button Name="Jetway" Pin="0" />
+  <Button Name="Stairs" Pin="1" />
+  <Button Name="Door Fwd" Pin="2" />
+  <Button Name="Ext Pwr" Pin="3" />
+  <Button Name="Baggage" Pin="4" />
+  <Button Name="Fuel" Pin="5" />
+  <Button Name="Tug" Pin="6" />
+  <Button Name="Push Back" Pin="9" />
+  <Button Name="Push Right" Pin="10" />
+  <Output Name="Backlight Brt" Pin="11" />
+  <Button Name="Door Aft" Pin="12" />
+  <Button Name="Stop" Pin="13" />
+  <Button Name="Push Left" Pin="14" />
+  <Button Name="Food" Pin="17" />
+</Config>

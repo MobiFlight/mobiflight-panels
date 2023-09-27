@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="abc6efa6-2192-4bd9-ae91-4916dfc1ff35">
+      <active>true</active>
+      <description>Backlight</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:86, PERCENT)" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="GSX/ SN-E4625C168F56342B" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="e9aad269-fa17-455b-88c3-9ca4c59a6a83">
+      <active>true</active>
+      <description>Jetway</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="GSX/ SN-E4625C168F56342B" name="Jetway" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:TOGGLE_JETWAY)" presetId="403e41f0-7713-430b-921c-ba47d55da3d2" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2822e139-424c-4121-a818-3ffeb1471d1a">
+      <active>true</active>
+      <description>Stairs</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="GSX/ SN-E4625C168F56342B" name="Stairs" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:TOGGLE_JETWAY)" presetId="403e41f0-7713-430b-921c-ba47d55da3d2" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="115f00b4-b0dc-4b64-a4b9-a7a5b36c4788">
+      <active>true</active>
+      <description>GPU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="GSX/ SN-E4625C168F56342B" name="Ext Pwr" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:REQUEST_POWER_SUPPLY)" presetId="ead13209-35ed-4a08-b65e-6673f7cd5d07" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8af94c17-ca88-4b44-9391-13945f31690b">
+      <active>true</active>
+      <description>Baggage</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="GSX/ SN-E4625C168F56342B" name="Baggage" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:REQUEST_LUGGAGE)" presetId="-" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8e2369c1-f71f-443b-bdd3-a20065793767">
+      <active>true</active>
+      <description>Fuel</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="GSX/ SN-E4625C168F56342B" name="Fuel" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:REQUEST_FUEL_KEY)" presetId="-" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1505c1f4-a252-404e-897c-9bb104bd2605">
+      <active>true</active>
+      <description>Food</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="GSX/ SN-E4625C168F56342B" name="Food" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:REQUEST_CATERING)" presetId="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ea463932-ab24-462f-bdd2-4fdfdbc074b1">
+      <active>true</active>
+      <description>Push Left</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="GSX/ SN-E4625C168F56342B" name="Push Left" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="11930465 90 * (&gt;K:KEY_TUG_HEADING)" presetId="-" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cd0c582f-26e6-453e-affb-02ac7fbe458c">
+      <active>true</active>
+      <description>Push Right</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="GSX/ SN-E4625C168F56342B" name="Push Right" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="11930465 270 * (&gt;K:KEY_TUG_HEADING)" presetId="-" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="867c4a07-0252-4884-9714-a19e56491487">
+      <active>true</active>
+      <description>Push Back</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="GSX/ SN-E4625C168F56342B" name="Push Back" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:TOGGLE_PUSHBACK)" presetId="-" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9b5da40a-5ec2-443f-b31c-c23bd53f77d4">
+      <active>true</active>
+      <description>Stop</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="GSX/ SN-E4625C168F56342B" name="Stop" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:TUG_DISABLE)" presetId="4c7b2bfc-7c48-46bb-a91f-c7ba772e123f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
