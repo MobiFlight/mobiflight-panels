@@ -1,6 +1,6 @@
 #Airspeed indicator faceplate for Cessna 172 and similar GA
 
-{place link to image]
+![gauge image](./cessna172-airspeed-decal-v4.png)
 
 This is for the analog panel variants of a Cessna 172.
 
