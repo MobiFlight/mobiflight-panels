@@ -5,7 +5,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
@@ -17,7 +16,7 @@
    enable-background="new 0 0 595.28 822.05"
    xml:space="preserve"
    id="svg658"
-   sodipodi:docname="Decals-Airspeed-Upgrade4b.svg"
+   sodipodi:docname="cessna172-airspeed-decal-v4b.svg"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"><metadata
    id="metadata664"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -145,118 +144,19 @@
    inkscape:window-height="1017"
    id="namedview660"
    showgrid="false"
-   inkscape:zoom="0.98005173"
-   inkscape:cx="205.68469"
-   inkscape:cy="322.39093"
-   inkscape:window-x="3832"
+   inkscape:zoom="1.349361"
+   inkscape:cx="409.82502"
+   inkscape:cy="309.16911"
+   inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
    inkscape:current-layer="svg658"
    inkscape:document-rotation="0" />
-<g
-   id="Original_GFX"
-   display="none">
-	<g
-   display="inline"
-   id="g28">
-		<defs
-   id="defs3">
-			<rect
-   id="SVGID_1_"
-   x="15"
-   y="20.431"
-   width="559"
-   height="256" />
-		</defs>
-		<clipPath
-   id="SVGID_2_">
-			<use
-   xlink:href="#SVGID_1_"
-   overflow="visible"
-   id="use5"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-		</clipPath>
-		<g
-   clip-path="url(#SVGID_2_)"
-   id="g26">
-			<defs
-   id="defs9">
-				<rect
-   id="SVGID_3_"
-   y="-36.488998"
-   width="595.20001"
-   height="841.67999"
-   x="0" />
-			</defs>
-			<clipPath
-   id="SVGID_4_">
-				<use
-   xlink:href="#SVGID_3_"
-   overflow="visible"
-   id="use11"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-			</clipPath>
-			<g
-   clip-path="url(#SVGID_4_)"
-   id="g24">
-				<defs
-   id="defs15">
-					<rect
-   id="SVGID_5_"
-   y="-36.488998"
-   width="595.20001"
-   height="841.67999"
-   x="0" />
-				</defs>
-				<clipPath
-   id="SVGID_6_">
-					<use
-   xlink:href="#SVGID_5_"
-   overflow="visible"
-   id="use17"
-   x="0"
-   y="0"
-   width="100%"
-   height="100%" />
-				</clipPath>
-				<g
-   clip-path="url(#SVGID_6_)"
-   id="g22">
-					
-						<image
-   sodipodi:absref="D:\OneDrive\Active Projects\MobiFlight\Captain Bob C172 3D Prints\5B93E636.png"
-   xlink:href="5B93E636.png"
-   overflow="visible"
-   width="2480"
-   height="3507"
-   transform="matrix(0.24,0,0,0.24,0,-36.4893)"
-   id="image20">
-					</image>
-				</g>
-			</g>
-		</g>
-	</g>
-	
-		<image
-   sodipodi:absref="D:\OneDrive\Active Projects\MobiFlight\Captain Bob C172 3D Prints\5B93E636.jpg"
-   xlink:href="5B93E636.jpg"
-   display="inline"
-   overflow="visible"
-   width="515"
-   height="528"
-   transform="matrix(0.3852,0,0,0.3852,255.8701,53.0513)"
-   id="image30">
-	</image>
-</g>
+
 <g
    id="Needles"
-   transform="matrix(1.32,0,0,1.32,0.35140884,0.34221803)">
+   transform="matrix(1.32,0,0,1.32,0.35140884,0.34221803)"
+   style="display:inline">
 	<g
    id="g40">
 		<g
@@ -278,7 +178,7 @@
    stroke-linecap="round"
    stroke-linejoin="round"
    stroke-miterlimit="10"
-   points="542.758,172.616 541.459,191.525 548.912,197.142 556.367,191.53 555.08,172.62 548.919,177.258 "
+   points="555.08,172.62 548.919,177.258 542.758,172.616 541.459,191.525 548.912,197.142 556.367,191.53 "
    id="polygon36" />
 		
 			<polygon
@@ -312,7 +212,7 @@
    stroke-linecap="round"
    stroke-linejoin="round"
    stroke-miterlimit="10"
-   points="496.068,204.65 494.173,232.238 505.047,240.432 515.924,232.245 514.046,204.655 505.058,211.423 "
+   points="514.046,204.655 505.058,211.423 496.068,204.65 494.173,232.238 505.047,240.432 515.924,232.245 "
    id="polygon45" />
 		
 			<polygon
@@ -328,7 +228,8 @@
 </g>
 <g
    id="Instrument_Perimeter"
-   transform="matrix(1.32,0,0,1.32,0.35140884,0.34221803)">
+   transform="matrix(1.32,0,0,1.32,0.35140884,0.34221803)"
+   style="display:inline">
 	<g
    id="g90">
 		<path
@@ -1005,7 +906,8 @@
    id="path301" />
 	</g><g
    id="g319"
-   transform="matrix(1.32,0,0,1.32,0.35140884,0.34221803)">
+   transform="matrix(1.32,0,0,1.32,0.35140884,0.34221803)"
+   style="display:inline">
 		<path
    fill="#ffffff"
    d="m 334.41,78.216 1.292,-0.429 c 0.105,0.271 0.267,0.461 0.484,0.568 0.219,0.107 0.458,0.132 0.721,0.073 0.282,-0.063 0.5,-0.205 0.652,-0.426 0.152,-0.221 0.195,-0.483 0.128,-0.786 -0.063,-0.286 -0.207,-0.492 -0.43,-0.618 -0.221,-0.126 -0.466,-0.16 -0.731,-0.101 -0.174,0.039 -0.378,0.115 -0.607,0.226 l -0.056,-0.961 c 0.371,-0.075 0.637,-0.204 0.8,-0.39 0.163,-0.186 0.218,-0.396 0.165,-0.63 -0.044,-0.2 -0.15,-0.343 -0.319,-0.43 -0.17,-0.087 -0.373,-0.104 -0.609,-0.051 -0.232,0.052 -0.418,0.164 -0.553,0.336 -0.136,0.172 -0.191,0.392 -0.17,0.659 l -1.297,0.103 c 0.007,-0.378 0.073,-0.695 0.203,-0.949 0.129,-0.253 0.338,-0.478 0.625,-0.671 0.288,-0.193 0.629,-0.334 1.021,-0.421 0.671,-0.15 1.249,-0.092 1.734,0.173 0.398,0.217 0.639,0.509 0.722,0.876 0.115,0.521 -0.134,1.014 -0.748,1.477 0.426,-0.018 0.788,0.072 1.089,0.271 0.302,0.2 0.492,0.479 0.572,0.837 0.117,0.521 -0.012,1.017 -0.387,1.486 -0.375,0.469 -0.903,0.78 -1.584,0.933 -0.644,0.144 -1.214,0.108 -1.706,-0.106 -0.494,-0.215 -0.831,-0.564 -1.011,-1.049 z"
@@ -1139,10 +1041,11 @@
    stroke-miterlimit="10"
    d="M 468.14752,202.99389"
    id="path347"
-   style="stroke-width:1.32" />
+   style="display:inline;stroke-width:1.32" />
 <g
    id="TAS_Sticker"
-   transform="matrix(1.32,0,0,1.32,0.35140884,0.34221803)">
+   transform="matrix(1.32,0,0,1.32,0.35140884,0.34221803)"
+   style="display:inline">
 	<circle
    fill="none"
    stroke="#000000"
@@ -1162,7 +1065,8 @@
    r="101.193"
    id="circle354" />
 	<g
-   id="g396">
+   id="g396"
+   style="display:inline">
 		<path
    d="m 65.354,74.92 c 0.136,-0.106 0.289,-0.15 0.459,-0.13 0.169,0.02 0.309,0.099 0.417,0.237 0.003,0.004 0.049,0.087 0.135,0.248 0.087,0.161 0.136,0.253 0.148,0.278 0.324,0.658 0.516,1.375 0.574,2.151 0.058,0.776 -0.026,1.516 -0.254,2.218 -0.081,0.249 -0.142,0.491 -0.183,0.726 -0.042,0.235 -0.073,0.488 -0.096,0.758 -0.021,0.358 0.086,0.664 0.322,0.915 0.236,0.251 0.537,0.359 0.904,0.325 0.446,-0.048 0.754,-0.281 0.925,-0.701 0.17,-0.42 0.11,-0.801 -0.18,-1.143 -0.005,-0.007 -0.012,-0.014 -0.02,-0.021 -0.007,-0.007 -0.014,-0.014 -0.019,-0.021 -0.097,-0.096 -0.152,-0.219 -0.166,-0.37 -0.014,-0.151 0.017,-0.28 0.093,-0.388 0.114,-0.167 0.268,-0.263 0.459,-0.287 0.192,-0.023 0.356,0.034 0.494,0.171 0.023,0.016 0.09,0.101 0.202,0.255 0.111,0.155 0.174,0.247 0.187,0.278 0.34,0.649 0.376,1.31 0.108,1.982 -0.268,0.673 -0.749,1.129 -1.441,1.37 -0.826,0.281 -1.567,0.148 -2.225,-0.397 -0.657,-0.546 -0.952,-1.241 -0.884,-2.086 0.015,-0.171 0.031,-0.342 0.05,-0.511 0.019,-0.168 0.047,-0.338 0.084,-0.509 0.058,-0.268 0.133,-0.533 0.224,-0.794 0.092,-0.261 0.148,-0.528 0.168,-0.801 0.022,-0.315 0.02,-0.64 -0.007,-0.976 -0.026,-0.336 -0.088,-0.654 -0.185,-0.954 -0.004,-0.02 -0.026,-0.084 -0.065,-0.194 -0.04,-0.11 -0.063,-0.169 -0.068,-0.176 l -2.569,2.008 c -0.334,0.229 -0.621,0.181 -0.859,-0.143 -0.238,-0.323 -0.201,-0.607 0.11,-0.851 z"
    id="path356" />
@@ -2004,7 +1908,8 @@
    id="path564" />
 	</g>
 	<g
-   id="g578">
+   id="g578"
+   style="display:inline">
 		<path
    d="m 116.205,87.585 c 0.529,-0.048 0.982,0.133 1.357,0.542 0.375,0.409 0.648,0.835 0.819,1.277 0.072,0.193 0.139,0.397 0.198,0.611 0.179,0.635 0.243,1.341 0.193,2.121 -0.05,0.779 -0.275,1.441 -0.676,1.988 -0.323,0.437 -0.721,0.676 -1.193,0.719 -0.726,0.066 -1.306,-0.263 -1.739,-0.986 -0.434,-0.724 -0.693,-1.539 -0.778,-2.446 -0.086,-0.907 0.016,-1.755 0.305,-2.544 0.288,-0.789 0.793,-1.217 1.514,-1.282 z m 0.115,1.001 c -0.275,0.082 -0.484,0.263 -0.624,0.542 -0.141,0.28 -0.234,0.592 -0.282,0.937 -0.047,0.345 -0.059,0.691 -0.035,1.037 0.024,0.346 0.063,0.625 0.115,0.836 0.047,0.201 0.138,0.457 0.273,0.767 0.135,0.311 0.294,0.574 0.477,0.79 0.183,0.216 0.38,0.332 0.591,0.347 0.211,0.016 0.417,-0.171 0.618,-0.562 0.151,-0.3 0.251,-0.672 0.299,-1.117 0.048,-0.445 0.038,-0.895 -0.028,-1.349 -0.067,-0.454 -0.193,-0.876 -0.378,-1.267 -0.184,-0.391 -0.431,-0.683 -0.738,-0.877 -0.093,-0.054 -0.18,-0.083 -0.259,-0.087 -0.002,0 -0.005,0 -0.009,0.001 -0.003,10e-4 -0.01,10e-4 -0.02,0.002 z"
    id="path568" />
@@ -2022,361 +1927,6 @@
    id="path576" />
 	</g>
 </g>
-<g
-   id="Faceplate_x5F_Trace_DXF"
-   display="none">
-	<g
-   id="CIRCLE_21_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 348.578,122.157 c 0,-1.728 -1.4,-3.128 -3.128,-3.128 -1.728,0 -3.128,1.4 -3.128,3.128 0,1.728 1.4,3.128 3.128,3.128 1.728,0 3.128,-1.4 3.128,-3.128 z"
-   id="path581" />
-	</g>
-	<g
-   id="CIRCLE_20_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 374.773,114.907 c 0,-3.141 -2.547,-5.687 -5.688,-5.687 -3.141,0 -5.687,2.546 -5.687,5.687 0,3.141 2.546,5.687 5.687,5.687 3.141,0 5.688,-2.546 5.688,-5.687 z"
-   id="path584" />
-	</g>
-	<g
-   id="CIRCLE_19_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 374.773,191.702 c 0,-3.141 -2.547,-5.687 -5.688,-5.687 -3.141,0 -5.687,2.546 -5.687,5.687 0,3.142 2.546,5.688 5.687,5.688 3.141,0 5.688,-2.546 5.688,-5.688 z"
-   id="path587" />
-	</g>
-	<g
-   id="CIRCLE_18_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 282.312,229.377 c 0,-3.533 -2.864,-6.397 -6.397,-6.397 -3.533,0 -6.398,2.864 -6.398,6.397 0,3.533 2.865,6.397 6.398,6.397 3.533,0 6.397,-2.864 6.397,-6.397 z"
-   id="path590" />
-	</g>
-	<g
-   id="LWPOLYLINE"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 301.756,213.173 c 27.9,24.392 72.624,24.392 100.523,0 l 12.793,15.247 c -35.001,30.6 -91.109,30.6 -126.109,0 z"
-   id="path593" />
-	</g>
-	<g
-   id="LWPOLYLINE_3_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 341.242,102.658 -3.996,-18.772 c 9.359,-2.525 25.528,-1.921 34.673,1.294 l -5.384,18.422 c -6.671,-2.345 -18.466,-2.786 -25.293,-0.944 z"
-   id="path596" />
-	</g>
-	<g
-   id="CIRCLE_17_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 447.526,242.644 c 0,-3.391 -2.749,-6.14 -6.139,-6.14 -3.391,0 -6.14,2.749 -6.14,6.14 0,3.39 2.749,6.139 6.14,6.139 3.39,-10e-4 6.139,-2.75 6.139,-6.139 z"
-   id="path599" />
-	</g>
-	<g
-   id="CIRCLE_16_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 461.09,206.615 c 0,-2.198 -1.782,-3.98 -3.981,-3.98 -2.198,0 -3.98,1.782 -3.98,3.98 0,2.198 1.782,3.98 3.98,3.98 2.199,0.001 3.981,-1.782 3.981,-3.98 z"
-   id="path602" />
-	</g>
-	<g
-   id="CIRCLE_6_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 358.842,153.273 c 0,-3.769 -3.056,-6.824 -6.824,-6.824 -3.77,0 -6.824,3.055 -6.824,6.824 0,3.769 3.055,6.824 6.824,6.824 3.768,0.001 6.824,-3.055 6.824,-6.824 z"
-   id="path605" />
-	</g>
-	<g
-   id="CIRCLE_7_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 447.526,63.904 c 0,-3.391 -2.749,-6.139 -6.139,-6.139 -3.391,0 -6.14,2.749 -6.14,6.139 0,3.39 2.749,6.139 6.14,6.139 3.39,-0.001 6.139,-2.749 6.139,-6.139 z"
-   id="path608" />
-	</g>
-	<g
-   id="CIRCLE_8_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 268.787,63.904 c 0,-3.391 -2.749,-6.139 -6.139,-6.139 -3.391,0 -6.14,2.749 -6.14,6.139 0,3.39 2.749,6.139 6.14,6.139 3.39,-0.001 6.139,-2.749 6.139,-6.139 z"
-   id="path611" />
-	</g>
-	<g
-   id="CIRCLE_9_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 409.34,48.183 c 0,-2.199 -1.782,-3.981 -3.98,-3.981 -2.198,0 -3.98,1.782 -3.98,3.981 0,2.198 1.782,3.98 3.98,3.98 2.198,0 3.98,-1.782 3.98,-3.98 z"
-   id="path614" />
-	</g>
-	<g
-   id="CIRCLE_3_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 409.34,258.364 c 0,-2.198 -1.782,-3.98 -3.98,-3.98 -2.198,0 -3.98,1.782 -3.98,3.98 0,2.199 1.782,3.981 3.98,3.981 2.198,0 3.98,-1.782 3.98,-3.981 z"
-   id="path617" />
-	</g>
-	<g
-   id="CIRCLE_2_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 302.656,258.364 c 0,-2.198 -1.781,-3.98 -3.98,-3.98 -2.198,0 -3.98,1.782 -3.98,3.98 0,2.199 1.782,3.981 3.98,3.981 2.199,10e-4 3.98,-1.782 3.98,-3.981 z"
-   id="path620" />
-	</g>
-	<g
-   id="CIRCLE_12_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 461.09,99.932 c 0,-2.198 -1.782,-3.98 -3.981,-3.98 -2.198,0 -3.98,1.782 -3.98,3.98 0,2.199 1.782,3.981 3.98,3.981 2.199,0 3.981,-1.783 3.981,-3.981 z"
-   id="path623" />
-	</g>
-	<g
-   id="CIRCLE_13_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 302.656,48.183 c 0,-2.199 -1.781,-3.981 -3.98,-3.981 -2.198,0 -3.98,1.782 -3.98,3.981 0,2.198 1.782,3.98 3.98,3.98 2.199,0 3.98,-1.782 3.98,-3.98 z"
-   id="path626" />
-	</g>
-	<g
-   id="CIRCLE_14_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 250.907,206.615 c 0,-2.198 -1.782,-3.98 -3.981,-3.98 -2.198,0 -3.98,1.782 -3.98,3.98 0,2.198 1.782,3.98 3.98,3.98 2.199,0.001 3.981,-1.782 3.981,-3.98 z"
-   id="path629" />
-	</g>
-	<g
-   id="CIRCLE_15_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 250.907,99.932 c 0,-2.198 -1.782,-3.98 -3.981,-3.98 -2.198,0 -3.98,1.782 -3.98,3.98 0,2.199 1.782,3.981 3.98,3.981 2.199,0 3.981,-1.783 3.981,-3.981 z"
-   id="path632" />
-	</g>
-	<g
-   id="LWPOLYLINE_2_"
-   display="inline">
-		
-			<path
-   fill="none"
-   stroke="#00aebf"
-   stroke-width="0.7087"
-   stroke-linecap="round"
-   stroke-linejoin="round"
-   stroke-miterlimit="10"
-   d="m 427.438,37.088 c -1.681,-1.021 -4.866,-1.822 -6.83,-1.717 h -137.21 c -1.947,-0.104 -5.112,0.685 -6.783,1.691 L 254.903,48.61 c -2.706,1.239 -5.749,4.655 -6.667,7.486 L 235.11,89.615 c -0.591,1.325 -1.062,3.817 -0.995,5.267 v 116.783 c -0.067,1.449 0.404,3.941 0.995,5.268 l 13.126,33.518 c 1.103,3.387 4.809,7.089 8.197,8.188 l 29.578,11.548 c 1.322,0.587 3.809,1.055 5.253,0.989 H 412.77 c 1.445,0.065 3.931,-0.402 5.253,-0.989 l 29.579,-11.548 c 3.388,-1.1 7.094,-4.802 8.196,-8.188 l 13.126,-33.518 c 0.591,-1.326 1.062,-3.818 0.995,-5.268 V 94.882 c 0.066,-1.45 -0.404,-3.942 -0.995,-5.267 L 455.798,56.097 c -1.103,-3.387 -4.809,-7.089 -8.196,-8.188 z"
-   id="path635" />
-	</g>
-</g>
-<g
-   id="Layer_9"
-   display="none">
-	
-		<image
-   sodipodi:absref="D:\OneDrive\Active Projects\The-Cessna-172-Project-V3\Section 2 - Component Library and Structure\2-5 Instruments\6-PACK_Airspeed Indicator\Decals\Face Airspeed Indicator.png"
-   xlink:href="../../The-Cessna-172-Project-V3/Section%202%20-%20Component%20Library%20and%20Structure/2-5%20Instruments/6-PACK_Airspeed%20Indicator/Decals/Face%20Airspeed%20Indicator.png"
-   display="inline"
-   overflow="visible"
-   width="328"
-   height="360"
-   transform="matrix(0.7501,0,0,0.7501,324,453)"
-   id="image639">
-	</image>
-	
-		<rect
-   x="513.66699"
-   y="590.66602"
-   display="inline"
-   fill="none"
-   stroke="#ef549e"
-   stroke-width="0.2835"
-   stroke-miterlimit="10"
-   width="34.666"
-   height="93.333"
-   id="rect641" />
-	<text
-   transform="translate(570.0342,643.667)"
-   display="inline"
-   font-family="MyriadPro-Regular"
-   font-size="12px"
-   id="text643">12.23</text>
-	
-		<rect
-   x="345.66699"
-   y="583.99902"
-   display="inline"
-   fill="none"
-   stroke="#ef549e"
-   stroke-width="0.2835"
-   stroke-miterlimit="10"
-   width="33.666"
-   height="101.334"
-   id="rect645" />
-	<text
-   transform="translate(286,649.333)"
-   display="inline"
-   font-family="MyriadPro-Regular"
-   font-size="12px"
-   id="text647">11.877</text>
-	
-		<rect
-   x="467.66699"
-   y="521.33301"
-   display="inline"
-   fill="none"
-   stroke="#ef549e"
-   stroke-width="0.2835"
-   stroke-miterlimit="10"
-   width="80.666"
-   height="85.666"
-   id="rect649" />
-	<text
-   transform="translate(573.7197,540.666)"
-   display="inline"
-   font-family="MyriadPro-Regular"
-   font-size="12px"
-   id="text651">28.457</text>
-	
-		<rect
-   x="345.66699"
-   y="519.66602"
-   display="inline"
-   fill="none"
-   stroke="#ef549e"
-   stroke-width="0.2835"
-   stroke-miterlimit="10"
-   width="84.666"
-   height="73.333"
-   id="rect653" />
-	<text
-   transform="translate(287.334,550.666)"
-   display="inline"
-   font-family="MyriadPro-Regular"
-   font-size="12px"
-   id="text655">29.868</text>
-</g>
+
+
 </svg>
