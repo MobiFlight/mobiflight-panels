@@ -1,0 +1,1126 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="a713e76f-55b1-4cf2-8b8d-c7098a0cbed3">
+      <active>true</active>
+      <description>ESS Bus is Powered (DC)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_DC_ESS_BUS_IS_POWERED, bool)" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="072e704f-52c4-4f61-aacb-0076c3fd5c83" placeholder="B" />
+          <configref active="False" ref="f732c6e4-f63d-4aa5-b331-96cd00643f79" placeholder="A" />
+          <configref active="False" ref="9d10f89f-6b09-4b8d-95aa-ee064b6d7e34" placeholder="@" />
+          <configref active="False" ref="3791a47a-7a03-4009-8ae3-e57c56070e70" placeholder="?" />
+          <configref active="False" ref="aa28640d-8ef5-436b-aa05-40a2adad490a" placeholder="!" />
+          <configref active="False" ref="09f954ee-e879-4da9-adf3-130bbbfddf8d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="cac393d1-1dc8-45a0-acd3-e7281d46255c">
+      <active>true</active>
+      <description>Integral Lighting Brightness (Raw)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:84, PERCENT)" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="072e704f-52c4-4f61-aacb-0076c3fd5c83" placeholder="B" />
+          <configref active="False" ref="f732c6e4-f63d-4aa5-b331-96cd00643f79" placeholder="A" />
+          <configref active="False" ref="9d10f89f-6b09-4b8d-95aa-ee064b6d7e34" placeholder="@" />
+          <configref active="False" ref="3791a47a-7a03-4009-8ae3-e57c56070e70" placeholder="?" />
+          <configref active="False" ref="aa28640d-8ef5-436b-aa05-40a2adad490a" placeholder="!" />
+          <configref active="False" ref="09f954ee-e879-4da9-adf3-130bbbfddf8d" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ba758ea4-0a95-4bee-a693-bd3be04f9ea8">
+      <active>true</active>
+      <description>Indicator 1 (Airbus)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_MCDU_L_ANNUNC_FM1)" UUID="b7239acd-7598-44cb-a888-616977df1e8b" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="06aa0318-32ed-42d6-a253-bf8e5a399c71">
+      <active>true</active>
+      <description>Indicator 2 (Airbus)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_MCDU_L_ANNUNC_IND)" UUID="245b8635-a34c-4991-8120-bf08a2549061" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5b00ecc0-f212-495e-a278-384bab71cc28">
+      <active>true</active>
+      <description>Indicator 3 (Airbus)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_MCDU_L_ANNUNC_RDY)" UUID="4e059ae4-cdad-41b7-ae34-bc102fc07884" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7f6aa8d7-3a36-4b24-97f4-0e9c8e1a3639">
+      <active>true</active>
+      <description>Indicator 4 (Airbus)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d9bd0ad9-48d2-439b-98d1-a8901c2549ab">
+      <active>true</active>
+      <description>Indicator 5 (Airbus)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_MCDU_L_ANNUNC_FM2)" UUID="4b588c7a-ab03-4e0b-ba55-9aee67fbb899" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bd87b513-0dbf-48db-8f76-49529a0343d9">
+      <active>true</active>
+      <description>Indicator 6</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_MCDU_L_ANNUNC_FAIL)" UUID="60f34f8b-d256-49c7-a49c-6b9e1d0e7b2a" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7c56c5da-0ed6-4cfa-a9b0-827484f17a10">
+      <active>false</active>
+      <description>Indicator 6a (Boeing)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <blink active="True" blinkValue=" " onOffSequence="200,200,400,200" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="58dc43c6-59db-45e6-8ccb-e55ef008f612">
+      <active>true</active>
+      <description>Indicator 7 (Airbus)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_MCDU_L_ANNUNC_FMGC)" UUID="d38837af-e993-4576-b110-ea9ba528017f" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="066ea760-50b8-4bcc-8a2a-9d81e9e74f18">
+      <active>true</active>
+      <description>Indicator 8</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_MCDU_L_ANNUNC_MCDU_MENU)" UUID="0d2207db-c4ec-4928-a05b-0a1e42f955d9" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="18ff13ae-7736-4868-a4a5-5ec636a4142c">
+      <active>true</active>
+      <description>Indicator 9</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_MCDU_L_ANNUNC_MCDU_MENU)" UUID="0d2207db-c4ec-4928-a05b-0a1e42f955d9" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f1e5f68c-1081-49eb-8146-5075d7866742">
+      <active>false</active>
+      <description>Exec (Boeing)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d2659d66-4f65-44b1-a35a-fb90b9d42d3a">
+      <active>true</active>
+      <description>Backlighting</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:85, Percent)" UUID="0" />
+        <modifiers>
+          <transformation active="True" expression="if(#=1, $, 0)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="a713e76f-55b1-4cf2-8b8d-c7098a0cbed3" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="409c6929-abbc-4cad-b179-b0e21e647b2c">
+      <active>true</active>
+      <description>Annunciator Brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="True" expression="200" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="91e90a46-72a4-491f-bc2e-522e5105c101">
+      <active>true</active>
+      <description>Master Caution</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:Generic_Master_Caution_Active) (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) or and (I:SAFETY_Push_Warning_ButtonAnimVar_IsDown) or (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * max 0 &gt; (A:CIRCUIT GENERAL PANEL ON, Bool) and" UUID="7a74aa15-d4f3-431f-9e71-c762ca11e52e" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 1|Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="933325db-82a9-4ca4-92f4-435c4d806728">
+      <active>true</active>
+      <description>Master Warning</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:Generic_Master_Warning_Active) (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) or and (I:SAFETY_Push_Warning_ButtonAnimVar_IsDown) or (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * max 0 &gt; (A:CIRCUIT GENERAL PANEL ON, Bool) and" UUID="d8edba9d-2f92-4887-a0a1-160eb8b14eec" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="MCDU FMC SMD/ SN-abf-b35" trigger="normal" shiftRegister="Indicator LEDs" registerOutputPin="Output 0|Output 1|Output 3|Output 4|Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="d50cf3d5-269a-4990-91a1-ab8df6ce7247">
+      <active>true</active>
+      <description>L1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="12">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_L1)" presetId="b7276f8b-1655-43e5-9673-4a608289b4e9" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="64fd80a3-5570-4fb8-bdd1-03ddb45d8460">
+      <active>true</active>
+      <description>L2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="13">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_L2)" presetId="d18fcc42-c0b1-4b50-98b6-b491ba8001a0" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4c27085d-58ac-475c-9705-acba4f6c87fa">
+      <active>true</active>
+      <description>L3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="14">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_L3)" presetId="17e38f47-d53c-4019-8771-e483ddcbfa72" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29dc7e61-da28-4b6f-a50f-1258336f4403">
+      <active>true</active>
+      <description>L4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="15">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_L4)" presetId="3034aa2a-ed8b-4ac5-b549-5c4dcb514d90" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2e6c8488-02e3-4cc0-8162-15f27c519d47">
+      <active>true</active>
+      <description>L5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="11">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_L5)" presetId="eb491032-ec0e-43c5-bd88-ef5a0a0e9b8b" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d99dd61f-dc86-4ed0-bd2a-6b71db798cb1">
+      <active>true</active>
+      <description>L6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="10">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_L6)" presetId="4e84d46d-1ecd-47a6-be2c-a52f031a1a3f" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a661078b-f049-44d1-ac24-9b4d6600f218">
+      <active>true</active>
+      <description>FPLN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="9">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_FPLN)" presetId="1b9e3693-c31b-4fac-9c44-40dde4696231" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="59b9e14a-6120-405c-8803-685967505bae">
+      <active>true</active>
+      <description>DIR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="8">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_DIR)" presetId="8e8d5a19-9eb7-4364-a831-4d0a37c7bfaa" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d377dd2e-a17f-4cce-aa58-0ffde23f9973">
+      <active>true</active>
+      <description>N</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="4">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_N)" presetId="751d5fac-2395-4515-a575-3aad26b253ed" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8f587813-1ab0-46b7-be7b-374563fb077b">
+      <active>true</active>
+      <description>O</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="5">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_O)" presetId="2dac15c3-bc10-4e7f-8899-f7b2a4f60ed8" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="40e6e58c-fbbb-4f4c-aef9-1aa4daf50a6f">
+      <active>true</active>
+      <description>S</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="6">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_S)" presetId="797ffa34-7c25-4038-8703-4a4719517c9f" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b29c8b9c-5e63-4668-9427-edb143155b6c">
+      <active>true</active>
+      <description>T</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="7">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_T)" presetId="6edc885e-f8bf-4b66-a978-3402f54549b0" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e964c69d-3d2c-4076-acd6-3ffb94151d5e">
+      <active>true</active>
+      <description>CLR</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="3">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_CLR)" presetId="80db2fb9-2d75-4489-b85a-9e01e40b55f1" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aa852fc4-823a-49d5-af78-9545286391c1">
+      <active>true</active>
+      <description>Y</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="2">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_Y)" presetId="f4392c1e-af8e-422a-921c-7a76ffbb4819" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b263e4dc-12d2-4576-b485-220a91aa7098">
+      <active>true</active>
+      <description>OVFY</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="1">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_OVFY)" presetId="c8c6ebfc-d49b-4fe7-a04e-4bc1f126e937" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ebce48c5-a235-44d9-ad3f-c450179d41a9">
+      <active>true</active>
+      <description>X</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Input Shifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="0">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_X)" presetId="3fe54c34-8d1c-4fab-acd8-acd0e776da3f" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d898049e-5354-45e9-9c6d-3958fc7a18e2">
+      <active>true</active>
+      <description>LEFT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Left" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_PREVPAGE)" presetId="f9df0eab-0924-4ed4-a163-9517e8618d9a" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="17ae4bcd-fe8a-46f7-bed9-3422df7c1e5d">
+      <active>true</active>
+      <description>RIGHT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Right" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_NEXTPAGE)" presetId="57375545-9f60-45e3-8df4-04f9dff8b2e7" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="99750eb8-2356-4b4f-abb5-6fddbf507f8c">
+      <active>true</active>
+      <description>U</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="U" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_U)" presetId="f4d8249a-3683-4c80-9f1b-489b581bb869" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c6136380-9be2-4883-badc-5dd2a81e1b66">
+      <active>true</active>
+      <description>V</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="V" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_V)" presetId="db1c3203-92d2-4e51-8665-ea7fdd8d7f71" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8d89cf81-90b0-4855-885d-4e4a6d292068">
+      <active>true</active>
+      <description>W</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="W" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_W)" presetId="95fbbda3-3d0f-40bb-905e-d2bc51cc9410" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7171699a-82f3-4b17-9ef1-39313b0a4f14">
+      <active>true</active>
+      <description>Z</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Z" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_Z)" presetId="e2429afe-360f-4a0d-8547-8cf55f6113ba" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="45676521-ae5e-43e1-a3e3-3973cfc52bbf">
+      <active>true</active>
+      <description>UP</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Up" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_UP)" presetId="4c55798f-0fc2-4d2b-971d-5b0c324d7581" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="39887292-8870-4892-a113-a1f55ef5a25e">
+      <active>true</active>
+      <description>DOWN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Down" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_DOWN)" presetId="b72e88b1-6105-4c9b-8042-3cbbf4412d03" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aa0a43e8-958c-4737-b185-19fe0830525f">
+      <active>true</active>
+      <description>1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_1)" presetId="a20ac67f-9ab2-4fe9-9e37-bb8148fdca56" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7ae4747b-7121-4dea-9f8b-72b02a00f939">
+      <active>true</active>
+      <description>0</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="0" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_0)" presetId="87cf809e-4e5f-4ede-ba9b-83adef30ca88" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c89614a8-7713-469d-9a26-69dab5391135">
+      <active>true</active>
+      <description>2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_2)" presetId="fabd2394-88d8-4618-b505-826a6fc7f6b8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="07fca701-9e1a-4f64-9b87-d8edfacce905">
+      <active>true</active>
+      <description>3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_3)" presetId="b6f7040e-d83a-48a8-b2f9-2da69c450cbf" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dbf98601-2596-4e9c-a1b7-3d78392f46e7">
+      <active>true</active>
+      <description>4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_4)" presetId="c6b8233e-db2a-4850-8436-53efc98d8886" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bf76d255-d865-49f3-97d3-acd7511b5173">
+      <active>true</active>
+      <description>5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_5)" presetId="0a81c7ce-0096-4bc5-9c53-c3ea4ba278ce" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="52ab3768-1653-4499-bbe3-f3099cce3afc">
+      <active>true</active>
+      <description>6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_6)" presetId="01ca2e2a-16e1-4042-906a-e9a5da3900f8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="74e888ef-ecfe-47a6-a084-3c2904c24e5a">
+      <active>true</active>
+      <description>7</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="7" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_7)" presetId="c4a0bbd5-975a-4ea6-a35a-1c548424246f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c888a2f9-dfa1-4338-a335-9a5a19048c60">
+      <active>true</active>
+      <description>8</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="8" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_8)" presetId="ff3d1f6c-fa86-4f8a-b070-7fb7cb8eb854" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="556bee38-8ba7-4564-9608-f255ce8547ad">
+      <active>true</active>
+      <description>9</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="9" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_9)" presetId="a00c63bf-b5d6-4fb4-a91e-168333039c3a" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bb08b499-93d6-4059-9b79-43b4d70994ae">
+      <active>true</active>
+      <description>A</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="A" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_A)" presetId="9cadea55-a9c5-4602-a1d1-c974f2f7f7ae" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8cb6859c-42a9-4cc9-a39f-58eb21b6e431">
+      <active>true</active>
+      <description>ATCCOMM</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="ATC COMM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_ATC)" presetId="d82c50fb-f4da-400e-8cd2-9e5f796cdf32" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="24fa6c8a-2355-4cf6-a772-d74e7fe3b359">
+      <active>true</active>
+      <description>MCDU MENU</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="MCDUMENU" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_MENU)" presetId="81274455-24df-4bd3-b3bd-dac3bb1df960" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="94eff6d2-8149-4d21-a3c6-f06f98ce6c69">
+      <active>true</active>
+      <description>AIRPORT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="AIRPORT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_AIRPORT)" presetId="cb5fdeae-be86-4ad3-870e-bc6e99b43684" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="44cb3e45-30f6-4018-a399-450dc2f82624">
+      <active>true</active>
+      <description>B</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="B" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_B)" presetId="73233e09-7f45-4823-9df0-71513364fe9f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2a1067a3-0a27-4a77-939b-7ff3cafac2ff">
+      <active>true</active>
+      <description>C</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="C" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_C)" presetId="67a9dc46-fb44-4594-8ff4-73893366e652" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="79a4a85a-904a-4391-9f2a-1d65482cb5b6">
+      <active>true</active>
+      <description>D</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="D" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_D)" presetId="2bfc834e-01d4-45ff-97cd-dd49db65fd3f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="80c50050-37cc-42d1-acf7-389bef9f115c">
+      <active>true</active>
+      <description>E</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="E" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_E)" presetId="596487e7-96ff-4904-9cc5-5c3cbffd1b6e" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b9ac38be-48d8-41c9-b650-d78ab2c24bfd">
+      <active>true</active>
+      <description>DOT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="DOT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_DOT)" presetId="08e98d4f-b3e9-485b-83db-bc4856cd8083" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="10325519-1bbd-4345-83e2-6d1b520275a7">
+      <active>true</active>
+      <description>PLUSMINUS</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="PLUSMINUS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_PLUSMINUS)" presetId="8c67b3d7-245a-404a-951b-43e6e45f54af" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="03a0f656-6835-48b1-8a2e-0e60edaac94d">
+      <active>true</active>
+      <description>PERF</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="PERF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_PERF)" presetId="2fc47d8a-eec0-4aaf-98e5-4b5f77e90444" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3b886bd2-9c47-4571-b9d9-2b75a721579f">
+      <active>true</active>
+      <description>INIT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="INIT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_INIT)" presetId="c4d35393-27ce-4c0a-b7e3-4fed502efe2a" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e70bf06f-24b0-432b-84ae-0f36af261527">
+      <active>true</active>
+      <description>PROG</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="PROG" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_PROG)" presetId="0aedb3d0-cd5c-4b6c-8aae-32539615e0c5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f4a80d2d-7bb4-4062-96d1-8e2b1ba711cf">
+      <active>true</active>
+      <description>SLASH</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="SLASH" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_DIV)" presetId="e0549b35-c9d1-49a4-b386-7aab812f881e" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0e7ca77a-5500-4a3f-833d-d4e50645da0e">
+      <active>true</active>
+      <description>SPACE</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="SPACE" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_SP)" presetId="491adbcd-752a-4c57-93c6-fd15199dfdf9" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="49ff417a-40db-4fef-aec1-5ff437d765eb">
+      <active>true</active>
+      <description>F</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="F" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_2_BTN_F)" presetId="2c1ed486-a514-4c70-a2af-fcf78595fd91" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="457a4cd7-9c1f-4ff6-8b5f-246676111c50">
+      <active>true</active>
+      <description>G</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="G" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_2_BTN_G)" presetId="2cf7d61d-d058-4dd1-8f67-4f3dda707210" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ca1d41ac-56c7-4351-9b54-e0bfa9c3b4fd">
+      <active>true</active>
+      <description>H</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="H" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_2_BTN_H)" presetId="2633f1d5-c664-4e4a-9ac2-3c35dfba59d8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5f4ae66c-4491-4a3f-8fad-fdcc40a0f777">
+      <active>true</active>
+      <description>I</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="I" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_I)" presetId="9bc55f58-43f9-4ae8-b901-71101d78281c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e7840fa7-12b6-4f0d-8557-263f7b8bf9b2">
+      <active>true</active>
+      <description>J</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="J" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_2_BTN_J)" presetId="50f0bcac-a76b-44d4-8d8e-11db34f47ad1" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3f0aa29b-f7ca-45fd-b202-5e24d1844c93">
+      <active>true</active>
+      <description>K</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="K" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_2_BTN_K)" presetId="e108288c-a215-4e7e-88c1-69cbc1ff96a8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="adfd0239-ac88-4d34-8149-0d67bc8754ec">
+      <active>true</active>
+      <description>L</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="L" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_2_BTN_L)" presetId="c3aa9bc5-ad71-414a-9116-ceaba6ac35b3" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="864565cf-63e3-4970-8e40-1a45d3a2269c">
+      <active>true</active>
+      <description>M</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="M" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_2_BTN_M)" presetId="dd6141ab-e2c8-4979-8ac1-1ccd73381194" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2abc8e8c-239e-4ec7-b161-8d6af368eb8a">
+      <active>true</active>
+      <description>P</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="P" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_2_BTN_P)" presetId="96ab4d6a-3e1e-412f-aa32-862bbf94dd70" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8091f8c5-11e4-4c8e-8c8f-afdcdaf90fd0">
+      <active>true</active>
+      <description>DATA</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="DATA" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_DATA)" presetId="e3d8c391-36f8-4fdf-82a6-a57aa00eb555" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c3ac27e0-fc13-4620-a355-d6fe5d73e2f2">
+      <active>true</active>
+      <description>RADNAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="RADNAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_RAD)" presetId="b3c77a9a-ae01-4984-b13a-f666cfe47403" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="66c1d864-3dee-46fb-8623-51d0797ea5a9">
+      <active>true</active>
+      <description>SEC FPLN</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="SECFPLN" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_SEC)" presetId="627135f9-4a66-42d7-ba32-c7fcfc11bee4" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f169107d-43d0-4918-92f4-a5b3fb1b2b41">
+      <active>true</active>
+      <description>FUELPRED</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="FUELPRED" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_FUEL)" presetId="18bdc690-687a-4aa7-b9c5-1abb234ce731" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="039703e4-b22b-4521-92d7-e707b69a1ed3">
+      <active>true</active>
+      <description>Q</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="Q" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_Q)" presetId="5a2f803a-eb58-4bcc-9704-29cd1f609357" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5f647da0-4c9b-48bc-9489-507094b222de">
+      <active>true</active>
+      <description>R</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="R" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_R)" presetId="f67fcd09-2d16-4f00-8d12-5d9dce9d1729" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f53fefa9-77f4-4943-82e3-0951a94648a3">
+      <active>true</active>
+      <description>R1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="R1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_R1)" presetId="d38f2c7a-8319-4657-9898-f3c4901c028f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d77aafeb-13bc-479c-bf90-2a989eb1d424">
+      <active>true</active>
+      <description>R2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="R2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_R2)" presetId="71b33dcf-1b1b-45b0-aa7c-f44a3c8b121a" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e998b7ec-3776-46c0-a1d7-22953d0a4970">
+      <active>true</active>
+      <description>R3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="R3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_R3)" presetId="3abf817d-93d5-4132-a218-67d198deaa03" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="48554f4a-8308-4f08-a961-ea6ebc59234f">
+      <active>true</active>
+      <description>R4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="R4" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_R4)" presetId="3f75b42a-0409-4b3a-ada5-dee2db1189e5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f3f990a3-30f7-4d31-b51d-c069e478f438">
+      <active>true</active>
+      <description>R5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="R5" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_R5)" presetId="a476305b-90a5-4f67-b2bd-5bf6cb72d6d2" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="27c0d6bd-4c42-4488-988a-3911ef2c9430">
+      <active>true</active>
+      <description>R6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="R6" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;H:A320_Neo_CDU_1_BTN_R6)" presetId="35a556a4-6433-4fec-acaf-d862e8933940" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e3335815-b5e8-4eb8-8706-82ed5b12706a">
+      <active>true</active>
+      <description>Backlight Brighter</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="BRT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:LIGHT POTENTIOMETER:85,percent) 33 + 100 min 85 (&gt;K:2:LIGHT_POTENTIOMETER_SET)&#xD;&#xA;(A:LIGHT POTENTIOMETER:86,percent) 33 + 100 min 86 (&gt;K:2:LIGHT_POTENTIOMETER_SET)&#xD;&#xA;(A:LIGHT POTENTIOMETER:84, percent) 33 + 100 min 84 (&gt;K:2:LIGHT_POTENTIOMETER_SET)&#xD;&#xA;(A:LIGHT POTENTIOMETER:87, percent) 33 + 100 min 87 (&gt;K:2:LIGHT_POTENTIOMETER_SET)" presetId="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="df8f327f-755d-4146-ae3f-d21056401792">
+      <active>true</active>
+      <description>Backlight Dimmer</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.0.0, Culture=neutral, PublicKeyToken=null" serial="MCDU FMC SMD/ SN-abf-b35" name="DIM" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:LIGHT POTENTIOMETER:85,percent) 33 - 0 max 85 (&gt;K:2:LIGHT_POTENTIOMETER_SET)&#xD;&#xA;(A:LIGHT POTENTIOMETER:86,percent) 33 - 0 max 86 (&gt;K:2:LIGHT_POTENTIOMETER_SET)&#xD;&#xA;(A:LIGHT POTENTIOMETER:84, percent) 33 - 0 max 84 (&gt;K:2:LIGHT_POTENTIOMETER_SET)&#xD;&#xA;(A:LIGHT POTENTIOMETER:87, percent) 33 - 0 max 87 (&gt;K:2:LIGHT_POTENTIOMETER_SET)" presetId="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

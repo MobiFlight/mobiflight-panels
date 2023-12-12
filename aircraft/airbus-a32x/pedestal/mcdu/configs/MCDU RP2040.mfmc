@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>MCDU RP2040</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <ShiftRegister Name="LED Register" LatchPin="0" ClockPin="1" DataPin="2" NumModules="1" />
+  <InputShiftRegister Name="InputShifter1" LatchPin="13" ClockPin="12" DataPin="11" NumModules="4" />
+  <InputShiftRegister Name="InputShifter2" LatchPin="16" ClockPin="14" DataPin="15" NumModules="3" />
+  <Button Name="R6" Pin="3" />
+  <Button Name="L1" Pin="4" />
+  <Button Name="L2" Pin="5" />
+  <Button Name="L3" Pin="6" />
+  <Button Name="L4" Pin="7" />
+  <Button Name="L5" Pin="8" />
+  <Button Name="L6" Pin="9" />
+  <Output Name="Backlight Brt" Pin="10" />
+  <Button Name="T" Pin="17" />
+  <Button Name="O" Pin="18" />
+  <Button Name="J" Pin="19" />
+  <Button Name="E" Pin="20" />
+  <Button Name="Dim" Pin="21" />
+  <Button Name="Brt" Pin="22" />
+  <Button Name="R3" Pin="26" />
+  <Button Name="R2" Pin="27" />
+  <Button Name="R1" Pin="28" />
+</Config>

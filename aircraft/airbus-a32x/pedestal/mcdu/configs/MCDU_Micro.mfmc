@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>MobiFlight Micro</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="INDICATOR3" Pin="21" />
+  <Output Name="INDICATOR2" Pin="20" />
+  <Output Name="INDICATOR1" Pin="19" />
+  <Output Name="INDICATOR7" Pin="18" />
+  <Output Name="INDICATOR6" Pin="15" />
+  <Output Name="INDICATOR5" Pin="2" />
+  <Output Name="INDICATOR4" Pin="3" />
+  <Output Name="INDICATOR9" Pin="6" />
+  <Output Name="INDICATOR8" Pin="7" />
+  <Button Name="AIRPORT" Pin="14" />
+  <Button Name="SECFPLN" Pin="16" />
+  <Button Name="OVFY" Pin="10" />
+  <Button Name="BLANK1" Pin="4" />
+  <Button Name="BLANK2" Pin="5" />
+  <Button Name="BRT" Pin="8" />
+  <Button Name="DIM" Pin="9" />
+</Config>
