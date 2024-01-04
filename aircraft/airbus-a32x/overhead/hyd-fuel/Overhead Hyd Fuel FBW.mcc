@@ -1,0 +1,485 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="b46b65b5-18b5-4901-b9da-45447fdcc989">
+      <active>true</active>
+      <description>Backlight Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:86, PERCENT)" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="04414174-1c4a-4651-8ba8-0a3fdee5044c">
+      <active>true</active>
+      <description>Annunciator Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="True" expression="200" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c2e56d7d-93c7-4990-8c20-275655486685">
+      <active>true</active>
+      <description>LTKPump1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="a7ec8def-8398-4104-a61d-08a5bf4ebf2d" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2a54e49a-2fbb-405c-82e4-671a7d380380">
+      <active>true</active>
+      <description>LTKPump1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUELSYSTEM PUMP SWITCH:2, Enum) 0 == (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="4f215d3d-87e8-4204-905d-44e044f2e57a" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="224d41ea-e060-4c90-bff4-9b6dea88aa62">
+      <active>true</active>
+      <description>LTKPump2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * 0 &gt; (A:CIRCUIT GENERAL PANEL ON, Bool) and" UUID="c38dc427-be45-42b8-85b7-0a26f337b709" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8f9c1996-fec9-41b8-8190-e5dcb282523b">
+      <active>true</active>
+      <description>LTKPump2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUELSYSTEM PUMP SWITCH:5, Enum) 0 == (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * " UUID="f5a94739-a0a4-44ce-98e9-3479d77060dc" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="68f4b041-c0ce-4615-9b16-4b28de1cb225">
+      <active>true</active>
+      <description>CTKPump1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="81cd6271-d2c9-4958-9576-9149de2ce1e2" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b4a01c89-3cc4-4252-8523-2f5900c60a04">
+      <active>true</active>
+      <description>CTKPump1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUELSYSTEM VALVE SWITCH:9, Enum) 0 == (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * " UUID="e8575ac7-499c-4571-bfb3-64eba7952316" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a1a46318-c1ee-495b-ba37-33472e519cdb">
+      <active>true</active>
+      <description>CTKPump2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="b91347c6-9af6-4696-a135-c61d601778f9" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 16" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ea88736e-7178-4dbf-b116-557162695d84">
+      <active>true</active>
+      <description>CTKPump2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUELSYSTEM VALVE SWITCH:10, Enum) 0 == (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * " UUID="45f550a0-121d-4468-a665-de30dfc3359f" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 17" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8662d031-fcf4-4410-b42d-c681e8bf5e6d">
+      <active>true</active>
+      <description>RTKPump1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="2618ffbb-4a4f-431d-91da-a24eca15441f" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 19" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="004bf966-284a-43fd-ba15-78cfbee8bc45">
+      <active>true</active>
+      <description>RTKPump1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="2618ffbb-4a4f-431d-91da-a24eca15441f" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 18" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aaec39d9-558b-4f05-9961-f9e045115e5e">
+      <active>true</active>
+      <description>RTKPump2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="c67afcc3-b801-4504-9011-e26a69a30317" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 21" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4e8d73c1-c3fd-4c6f-9647-597a2ef7a414">
+      <active>true</active>
+      <description>RTKPump2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUELSYSTEM PUMP SWITCH:6, Enum) 0 == (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * " UUID="09233e60-afba-499d-950d-7f322633dd4a" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 20" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fa71e310-4055-41df-b98e-c931c6f09344">
+      <active>true</active>
+      <description>Mode Sel Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUELSYSTEM TANK WEIGHT:1, pound) 550 &gt; &#xA;(A:FUELSYSTEM TANK WEIGHT:2, pound) 11000 &lt; &#xA;(A:FUELSYSTEM TANK WEIGHT:3, pound) 11000 &lt; or and &#xA;(L:A32NX_OVHD_INTLT_ANN) 0 == (L:A32NX_ELEC_DC_2_BUS_IS_POWERED, Bool) and or &#xA;(L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and &#xA;(L:A32NX_OVHD_INTLT_ANN, Number) 2 == if{ 0.1 } els{ 1 } *" UUID="692b286d-b010-44fc-9417-451b3ddf46d3" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b2d72457-614e-4eee-8198-96fdc73d0570">
+      <active>true</active>
+      <description>Mode Sel Man</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_FUEL_MODESEL_MANUAL) (L:A32NX_OVHD_INTLT_ANN) 0 == (L:A32NX_ELEC_DC_2_BUS_IS_POWERED, Bool) and or (L:A32NX_OVHD_INTLT_ANN, Number) 2 == if{ 0.1 } els{ 1 } *  " UUID="5a747c50-791d-423f-9742-a0ce5212e22f" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b4393e8e-a4db-4c4d-9937-ce7e668c11bd">
+      <active>true</active>
+      <description>Eng1 Pump Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_ENG_1_PUMP_PB_HAS_FAULT)" UUID="5a182ac0-df02-4a61-83ee-6c5734c461cf" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 14" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="39cda7fe-0add-4f07-8a31-294b7b3a17f2">
+      <active>true</active>
+      <description>Eng2 Pump Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_ENG_2_PUMP_PB_HAS_FAULT)" UUID="878cdbee-df60-411e-9c2a-ca78ca3d30ec" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 29" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cd2403b1-ba32-44f2-adb4-fe040584cc38">
+      <active>true</active>
+      <description>Eng1 Pump Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_ENG_1_PUMP_PB_IS_AUTO)" UUID="8eb3fe2f-46b4-4b59-9e8a-33b56598744f" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 15" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="75db1051-e5b3-4278-9fe6-4bc2a886b990">
+      <active>true</active>
+      <description>Eng2 Pump Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_ENG_2_PUMP_PB_IS_AUTO)" UUID="1452815e-c8a7-4205-a6cd-ec9bdf29ac6e" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 28" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="456fe808-cc54-4cb3-ae05-da487243b6c5">
+      <active>true</active>
+      <description>ElecPump1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_EPUMPB_PB_HAS_FAULT)" UUID="82c081ed-d753-4d70-9961-981145f163fc" />
+        <modifiers>
+          <transformation active="False" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3d9ab5b3-6a7c-4cf5-aa41-1002d4900a65">
+      <active>true</active>
+      <description>ElecPump2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_EPUMPY_PB_HAS_FAULT)" UUID="0b071170-e41d-4f5c-b9de-06fbf6619667" />
+        <modifiers>
+          <transformation active="False" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 26" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="715d6133-5b88-4535-8af5-c4f993d1fda8">
+      <active>true</active>
+      <description>ElecPump1 On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_EPUMPB_PB_IS_AUTO)" UUID="ab6d76b6-eeb1-4677-9bfe-deffe9ab512f" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a2137a4d-af37-48d4-9242-6d053020d963">
+      <active>true</active>
+      <description>ElecPump2 On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_EPUMPY_PB_IS_AUTO)" UUID="5f5941b1-f4e8-4f67-b262-92705feacf12" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 26" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ca792093-c0ed-48d5-82e8-33a2f3721069">
+      <active>true</active>
+      <description>PTUPump Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_PTU_PB_HAS_FAULT)" UUID="ded23688-6ca5-4fdd-b754-f5fe3bcb8116" />
+        <modifiers>
+          <transformation active="False" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 30" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f58bd443-019c-4003-ad9b-92187f88f816">
+      <active>true</active>
+      <description>PTUPump Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_PTU_PB_IS_AUTO)" UUID="0ddf6cad-967d-4a2c-a57c-a086c7517e06" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 31" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="03b43748-8f1c-4d0f-9491-402cf9f49e21">
+      <active>true</active>
+      <description>RatMan On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_HYD_RAT_MAN_ON_IS_PRESSED)" UUID="858c68de-643b-416f-b8f1-0f49b627621b" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 13" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6afbe49f-9f36-41e1-9356-8f13f4e496ae">
+      <active>true</active>
+      <description>XFeed Open</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_HYD_PTU_VALVE_OPENED)" UUID="2cb9b164-13fa-4eaa-b6c6-f7059a229db4" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dc9cee0f-cecc-4ae9-9fe2-5486903d6e65">
+      <active>false</active>
+      <description>XFeed On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_HYD_PTU_VALVE_OPENED)" UUID="2cb9b164-13fa-4eaa-b6c6-f7059a229db4" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Hyd Fuel/ SN-E462C0A053290C38" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="3c4541e0-bfbb-4282-ac6f-8ea6e4567cac">
+      <active>true</active>
+      <description>LTKPump1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Hyd Fuel/ SN-E462C0A053290C38" name="LTKPump1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" presetId="fa49d278-6b41-484f-9509-668763fffc38" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="178c2f5a-62f7-4a1b-a7c4-3b5a0ad338fe">
+      <active>true</active>
+      <description>LTKPump2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Hyd Fuel/ SN-E462C0A053290C38" name="LTKPump2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="5 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" presetId="8ec7f27e-c556-429a-be78-033bf83822ae" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f4540c0d-c994-4b40-a2d6-ea71c78693b8">
+      <active>true</active>
+      <description>CTKPump1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Hyd Fuel/ SN-E462C0A053290C38" name="CTRTKPump1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="9 (&gt;K:FUELSYSTEM_VALVE_TOGGLE)" presetId="724e739f-8cc7-446d-872f-e27566af6a70" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8b55a6dd-d072-43d8-94c5-b303e7ad14cf">
+      <active>true</active>
+      <description>CTKPump2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Hyd Fuel/ SN-E462C0A053290C38" name="CTRTKPump2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="10 (&gt;K:FUELSYSTEM_VALVE_TOGGLE)" presetId="08b08855-b68f-411f-b500-55109c987ed3" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3c26c90c-bc32-46d0-aecc-a403b3f1ca01">
+      <active>true</active>
+      <description>RTKPump1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Hyd Fuel/ SN-E462C0A053290C38" name="RTKPump1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="3 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" presetId="1b3978c8-90ca-43a6-ba6d-a0da241fc8a9" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="807c6bce-3efe-4e03-81a1-dc1b5f580701">
+      <active>true</active>
+      <description>RTKPump2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Hyd Fuel/ SN-E462C0A053290C38" name="RTKPump2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="6 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" presetId="fc078489-64bc-4c19-b0a9-b7b9e837aeda" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

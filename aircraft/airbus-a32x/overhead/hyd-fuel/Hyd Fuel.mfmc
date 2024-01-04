@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Hyd Fuel</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <ShiftRegister Name="ShiftRegister" LatchPin="18" ClockPin="17" DataPin="16" NumModules="4" />
+  <Button Name="ENG1 Pump" Pin="0" />
+  <Button Name="LTKPump1" Pin="1" />
+  <Button Name="LTKPump2" Pin="2" />
+  <Button Name="RTKPump2" Pin="10" />
+  <Button Name="RTKPump1" Pin="11" />
+  <Button Name="CTRTKPump2" Pin="12" />
+  <Button Name="Mode Sel" Pin="13" />
+  <Button Name="CTRTKPump1" Pin="14" />
+  <Output Name="Backlight Brt" Pin="15" />
+  <Output Name="Annunciator Brt" Pin="19" />
+  <Button Name="XFeed" Pin="20" />
+  <Button Name="ELEC2Pump" Pin="21" />
+  <Button Name="ENG2Pump" Pin="22" />
+  <Button Name="ELECPump" Pin="26" />
+  <Button Name="PTU" Pin="27" />
+  <Button Name="Rat Man" Pin="28" />
+</Config>
