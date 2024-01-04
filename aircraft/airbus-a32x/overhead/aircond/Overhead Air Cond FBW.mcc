@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="84d23443-9de9-4265-87ea-856c8b1d0487">
+      <active>true</active>
+      <description>Annunciator Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="True" expression="250" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="08802ee7-d2d3-4223-a6d8-af8b22c0674a">
+      <active>true</active>
+      <description>Pack1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_COND_PACK_1_PB_HAS_FAULT)" UUID="9bad6f9e-96ea-4fad-b827-dede03aeb059" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8c851003-9df0-4dd4-a6b3-9e81c9361d4a">
+      <active>true</active>
+      <description>Pack2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_COND_PACK_2_PB_HAS_FAULT)" UUID="b673c41f-7cc5-4968-9271-6757f1122632" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1e3ded68-5119-4c04-afc7-d57f7f8daf05">
+      <active>true</active>
+      <description>Pack1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_COND_PACK_1_PB_IS_ON, bool)" UUID="93ab49e2-a821-4264-9314-a62825a5d8e7" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="152754ca-defd-48ad-8642-964c74858412">
+      <active>true</active>
+      <description>Pack2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_COND_PACK_2_PB_IS_ON, bool)" UUID="945c8e19-62df-4050-9143-0b61dd096dc7" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a46e60ed-0e2d-40a6-b800-a5815ccdfbab">
+      <active>true</active>
+      <description>APU Bleed Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_PNEU_APU_BLEED_PB_HAS_FAULT, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="f8b15932-9b0e-45b8-b033-dc0597b1508c" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="33c227c6-f095-4ebb-b286-f27545e6d4ab">
+      <active>true</active>
+      <description>APU Bleed On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_PNEU_APU_BLEED_PB_IS_ON, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="14548f87-407f-4e41-81bd-ccc169d7c284" />
+        <modifiers>
+          <transformation active="False" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7a9aca7b-7a8f-42d3-81c1-8f45ff3e54d3">
+      <active>true</active>
+      <description>Ram Air Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AIRCOND_RAMAIR_TOGGLE)" UUID="c90a98b2-dd69-49f3-9d4a-1feb774645e7" />
+        <modifiers>
+          <transformation active="False" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e4df8d13-a0c3-465f-96bc-2f34579f6e87">
+      <active>true</active>
+      <description>ENG1 Bleed Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_PNEU_ENG_1_BLEED_PB_HAS_FAULT)" UUID="2f52ce83-5605-43ed-b09d-bef85de222b3" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1463e7ab-fb7f-46cb-a72c-8da2136d1ea8">
+      <active>true</active>
+      <description>ENG2 Bleed Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_PNEU_ENG_2_BLEED_PB_HAS_FAULT)" UUID="05eb50bd-ee69-448d-a9a2-2ef0a84bb002" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="964cbce6-b12b-45a6-9773-84ffb82d114e">
+      <active>true</active>
+      <description>ENG1 Bleed Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:BLEED AIR ENGINE:1,bool) !" UUID="0e98e9c7-ffb3-4d3b-9218-121adedcc99c" />
+        <modifiers>
+          <transformation active="True" expression="if(#=0,0,$)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="78e421c0-a905-4189-85b2-749ec024193c" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2739e979-f40f-499f-8426-7c29fa91efbf">
+      <active>true</active>
+      <description>ENG2 Bleed Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:BLEED AIR ENGINE:1,bool) !" UUID="0e98e9c7-ffb3-4d3b-9218-121adedcc99c" />
+        <modifiers>
+          <transformation active="True" expression="if(#=0,0,$)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="78e421c0-a905-4189-85b2-749ec024193c" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="60f4f0fc-ccd6-4c2d-8ab2-cb5e53ec0fda">
+      <active>true</active>
+      <description>Hot Air Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AIRCOND_HOTAIR_FAULT)" UUID="966f6b4d-594d-4433-beee-684b21ecce29" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 13" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3197fb23-6185-4a33-a30c-284127e80803">
+      <active>true</active>
+      <description>Hot Air Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_AIRCOND_HOTAIR_TOGGLE)" UUID="6b559150-5c10-42a5-ae4b-c6d4dad84945" />
+        <modifiers>
+          <transformation active="True" expression="if{$=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" shiftRegister="Led Driver" registerOutputPin="Output 12" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="78e421c0-a905-4189-85b2-749ec024193c">
+      <active>true</active>
+      <description>Generators runnning</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:GENERAL ENG MASTER ALTERNATOR:1,Bool) !" UUID="dc22cd3c-1aa2-4b7d-838a-5589e3668cc4" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="-" serial="Air Cond/ SN-E462C0A0533E2527" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="858c6dd5-c0c8-40ce-8c60-9d8c70b5f36c">
+      <active>true</active>
+      <description>Fwd Cabin</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="Cockpit" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_FWD_SELECTOR_KNOB,percent) 5 - 0 max (&gt;L:A32NX_OVHD_COND_FWD_SELECTOR_KNOB)" presetId="5a0fc103-2a9e-4cff-b5d3-64f6609bbfbd" />
+          <onLeftFast type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_FWD_SELECTOR_KNOB,percent) 5 - 0 max (&gt;L:A32NX_OVHD_COND_FWD_SELECTOR_KNOB)" presetId="5a0fc103-2a9e-4cff-b5d3-64f6609bbfbd" />
+          <onRight type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_FWD_SELECTOR_KNOB,percent) 5 + 300 min  (&gt;L:A32NX_OVHD_COND_FWD_SELECTOR_KNOB)" presetId="6528bcbf-24ec-4a28-be34-21ee7042f892" />
+          <onRightFast type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_FWD_SELECTOR_KNOB,percent) 5 + 300 min  (&gt;L:A32NX_OVHD_COND_FWD_SELECTOR_KNOB)" presetId="6528bcbf-24ec-4a28-be34-21ee7042f892" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="024ad1e3-6b7d-401c-892f-ed0540ec3eec">
+      <active>true</active>
+      <description>Cockpit</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="Cockpit" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_CKPT_SELECTOR_KNOB,percent) 5 - 0 max (&gt;L:A32NX_OVHD_COND_CKPT_SELECTOR_KNOB)" presetId="7b86e3ae-bf57-4d39-8f5e-4a8bcb1f7724" />
+          <onLeftFast type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_CKPT_SELECTOR_KNOB,percent) 5 - 0 max (&gt;L:A32NX_OVHD_COND_CKPT_SELECTOR_KNOB)" presetId="7b86e3ae-bf57-4d39-8f5e-4a8bcb1f7724" />
+          <onRight type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_CKPT_SELECTOR_KNOB,percent) 5 + 300 min  (&gt;L:A32NX_OVHD_COND_CKPT_SELECTOR_KNOB)" presetId="b7b67be6-5908-478e-83f2-6de2cc3872c0" />
+          <onRightFast type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_CKPT_SELECTOR_KNOB,percent) 5 + 300 min  (&gt;L:A32NX_OVHD_COND_CKPT_SELECTOR_KNOB)" presetId="b7b67be6-5908-478e-83f2-6de2cc3872c0" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14d3ecc0-27b1-4207-8741-52c0f970d234">
+      <active>true</active>
+      <description>Aft Cabin</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="Aft Cabin" type="Encoder" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <encoder>
+          <onLeft type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_AFT_SELECTOR_KNOB,percent) 5 - 0 max (&gt;L:A32NX_OVHD_COND_AFT_SELECTOR_KNOB)" presetId="843432ea-4fc3-44e6-9e28-83d28db942ba" />
+          <onLeftFast type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_AFT_SELECTOR_KNOB,percent) 5 - 0 max (&gt;L:A32NX_OVHD_COND_AFT_SELECTOR_KNOB)" presetId="843432ea-4fc3-44e6-9e28-83d28db942ba" />
+          <onRight type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_AFT_SELECTOR_KNOB,percent) 5 + 300 min (&gt;L:A32NX_OVHD_COND_AFT_SELECTOR_KNOB)" presetId="d49c42b4-333c-4e6f-965b-178c8b3e07a6" />
+          <onRightFast type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_AFT_SELECTOR_KNOB,percent) 5 + 300 min (&gt;L:A32NX_OVHD_COND_AFT_SELECTOR_KNOB)" presetId="d49c42b4-333c-4e6f-965b-178c8b3e07a6" />
+        </encoder>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="25b8b2f6-85a4-4d67-96bd-6b4523388c84">
+      <active>true</active>
+      <description>Pack Flow Low</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="PackLow" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_KNOB_OVHD_AIRCOND_PACKFLOW_Position)" presetId="5c5482b8-99cd-4b8f-96f1-d4d4a54eafb5" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_KNOB_OVHD_AIRCOND_PACKFLOW_Position)" presetId="2258e446-4a36-4e5f-9d5e-21fa6d31be43" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="04e3b973-8a6f-490a-88c8-be96bc972879">
+      <active>true</active>
+      <description>Pack Flow High</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="PackAuto" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_KNOB_OVHD_AIRCOND_PACKFLOW_Position)" presetId="1d273718-089b-4703-ac27-8bd4f58f137f" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_KNOB_OVHD_AIRCOND_PACKFLOW_Position)" presetId="2258e446-4a36-4e5f-9d5e-21fa6d31be43" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b3fc1364-ac4c-411a-b0b6-2b604717d939">
+      <active>true</active>
+      <description>X Bleed Shut</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="BleedShut" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_KNOB_OVHD_AIRCOND_XBLEED_Position)" presetId="17758354-1ff1-4335-afd3-2bac555ed30a" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_KNOB_OVHD_AIRCOND_XBLEED_Position)" presetId="0599b2d5-5243-42d2-8206-8a1b989a5515" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ed364318-c421-4b3a-b005-5a30e2127330">
+      <active>true</active>
+      <description>X Bleed Open</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="BleedAuto" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_KNOB_OVHD_AIRCOND_XBLEED_Position)" presetId="a6f8c598-255a-457e-b33c-1d93908c18e5" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_KNOB_OVHD_AIRCOND_XBLEED_Position)" presetId="17758354-1ff1-4335-afd3-2bac555ed30a" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="edc7ab8e-864c-4a4a-ae30-d710d9bde5b9">
+      <active>true</active>
+      <description>Pack 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="Pack1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_PACK_1_PB_IS_ON, bool) ! (&gt;L:A32NX_OVHD_COND_PACK_1_PB_IS_ON, bool)" presetId="740e69de-17c5-4711-9cec-258833339722" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="586ce1b2-1d29-46ca-94ee-7488dff52778">
+      <active>true</active>
+      <description>Pack 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="Pack2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_COND_PACK_2_PB_IS_ON, bool) ! (&gt;L:A32NX_OVHD_COND_PACK_2_PB_IS_ON, bool)" presetId="67330a4e-fcc5-4b85-9b22-4caf0c755737" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4cea619b-36e9-4bc5-b61d-951ad23d28d3">
+      <active>true</active>
+      <description>Eng1 Bleed</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="Eng1Bleed" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:ENGINE_BLEED_AIR_SOURCE_TOGGLE) " presetId="0b9e5104-9b22-4f98-bec1-585342fb12a5" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="56f0d2db-a60b-472a-85b4-50f843aeffe3">
+      <active>true</active>
+      <description>Eng2 Bleed</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="Eng2Bleed" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;K:ENGINE_BLEED_AIR_SOURCE_TOGGLE) " presetId="8b1c7a7a-fd0d-4e8f-a2b2-3d650d8ada83" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9b53f49e-5b6e-4e35-8888-e5b4a67a0c1e">
+      <active>true</active>
+      <description>Ram Air</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="RamAir" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_AIRCOND_RAMAIR_TOGGLE_LOCK) ! (&gt;L:A32NX_AIRCOND_RAMAIR_TOGGLE_LOCK)&#xA;(L:A32NX_AIRCOND_RAMAIR_TOGGLE, bool) ! (&gt;L:A32NX_AIRCOND_RAMAIR_TOGGLE, bool)" presetId="162d074c-db02-441c-81d4-b4958fb5918f" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="98e94685-ae61-483f-a126-937ef1f53c36">
+      <active>true</active>
+      <description>APU Bleed</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="APUBleed" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_PNEU_APU_BLEED_PB_IS_ON, bool) ! (&gt;L:A32NX_OVHD_PNEU_APU_BLEED_PB_IS_ON, bool)" presetId="4a41792d-c6ab-44f0-a555-cb9081c2a4a8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="afdd08a0-18a5-4bc8-b0c9-7cf0eb1c2dfd">
+      <active>true</active>
+      <description>Hot Air</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Air Cond/ SN-E462C0A0533E2527" name="HotAir" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_AIRCOND_HOTAIR_TOGGLE, bool) ! (&gt;L:A32NX_AIRCOND_HOTAIR_TOGGLE, bool)" presetId="40172b86-fde8-4f2f-aee3-0126dfc0f4d8" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
