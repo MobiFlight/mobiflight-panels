@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="39141172-cdb8-4cf1-bb86-21a6991d814b">
+      <active>true</active>
+      <description>Annunciator Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="True" expression="150" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2985247f-fbd9-4a5f-a0e5-7f0ecfe230b3">
+      <active>true</active>
+      <description>Eng 1 Fire</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_ENG1,bool) (A:ENG ON FIRE:1, bool) or (L:A32NX_OVHD_INTLT_ANN) 0 == or &#xA;(L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED,bool) &#xA;(L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED,bool) or &#xA;(L:A32NX_ELEC_AC_2_BUS_IS_POWERED,bool) or and " UUID="411b3e8d-4bc3-4d74-a883-2985afed7856" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 0|Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f6ef413f-c2cb-428d-a235-491f068f9361">
+      <active>true</active>
+      <description>APU Fire</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_APU, bool) &#xA;(A:APU ON FIRE DETECTED, bool) or &#xA;(L:A32NX_OVHD_INTLT_ANN) 0 == or &#xA;(L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, bool) &#xA;(L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, bool) or &#xA;(L:A32NX_ELEC_AC_1_BUS_IS_POWERED, bool) or and " UUID="cc8a3f9c-3cf3-4cc5-8526-b92b623f9f53" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 2|Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="df7a8af9-c556-4459-a8f0-92f79f4308ff">
+      <active>true</active>
+      <description>Eng 2 Fire</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_ENG2, bool) (A:ENG ON FIRE:2,  bool) or (L:A32NX_OVHD_INTLT_ANN) 0 == or &#xA;(L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, bool) &#xA;(L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, bool) or &#xA;(L:A32NX_ELEC_AC_2_BUS_IS_POWERED, bool) or and " UUID="e46e7756-215d-4a9d-af33-bbdd2b07ea6b" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 4|Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2fc60799-0384-4fe1-91e4-ae385c0e50a8">
+      <active>true</active>
+      <description>Eng 1 Agent 1 Squib</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_ENG1, bool) &#xA;(L:A32NX_FIRE_BUTTON_ENG1) or" UUID="06e18a80-b8c0-4616-997b-1e96eb905586" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a7c0bc52-e255-40d2-ac44-75cbc77c63ca">
+      <active>true</active>
+      <description>Eng 1 Agent 1 Discharge</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_ENG1, bool) &#xA;(L:A32NX_FIRE_ENG1_AGENT1_Discharge) or" UUID="1ef92719-8dcb-4bf9-b5a5-237421f84026" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f3977d16-c355-44dd-a072-b0d718e32d65">
+      <active>true</active>
+      <description>APU Agent Discharge</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_APU, bool) &#xA;(L:A32NX_FIRE_APU_AGENT1_Discharge) or" UUID="9a9d4e69-24e1-4b8a-b92e-7390961ff413" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8083c8b9-527d-461f-95f6-4ee470d32f57">
+      <active>true</active>
+      <description>APU Agent Squib</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_APU, bool) &#xA;(L:A32NX_FIRE_BUTTON_APU, bool) or" UUID="c937ce17-a3f2-47eb-bb18-91b0529e2069" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="345caafc-fbdc-4838-ac52-5a290f1dccb4">
+      <active>true</active>
+      <description>Eng 2 Agent 2 Discharge</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_ENG2, bool) &#xA;(L:A32NX_FIRE_ENG2_AGENT2_Discharge) or" UUID="224057d1-0cc0-4c58-bf65-32a757b9387b" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f8f02137-a832-4b93-9387-f59dc5536af4">
+      <active>true</active>
+      <description>Eng 2 Agent 2 Squib</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_ENG2, bool) &#xA;(L:A32NX_FIRE_BUTTON_ENG2) or" UUID="19806cd2-c69b-468c-9c1c-beca7d61468b" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="91618682-69e2-4aef-bae3-c90bde8963cd">
+      <active>true</active>
+      <description>Eng 2 Agent 1 Discharge</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_ENG2, bool) &#xA;(L:A32NX_FIRE_ENG2_AGENT1_Discharge) or" UUID="ba734e2d-b016-4a7a-b2cf-e6cfc6d127a4" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 12" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f2379552-9265-4956-b55e-5e86fb1eef46">
+      <active>true</active>
+      <description>Eng 2 Agent 1 Squib</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_ENG2, bool) &#xA;(L:A32NX_FIRE_BUTTON_ENG2) or" UUID="669b8a75-12dc-48ef-87d5-2372c78f0400" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 13" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cc7d0dd4-2962-414e-8800-bed48f939a41">
+      <active>true</active>
+      <description>Eng 1 Agent 2 Discharge</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_ENG1, bool) &#xA;(L:A32NX_FIRE_ENG1_AGENT2_Discharge) or" UUID="3c8cb3df-e0ce-4ce5-a1ed-090580ce5caa" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 14" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a812d03c-9003-4b96-ab57-e9b51568cbeb">
+      <active>true</active>
+      <description>Eng 1 Agent 2 Squib</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_FIRE_TEST_ENG1, bool) &#xA;(L:A32NX_FIRE_BUTTON_ENG1) or" UUID="7da43e28-bab3-480d-9324-c6d55d262398" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" shiftRegister="LED Driver" registerOutputPin="Output 15" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cc9e8084-d414-44e2-99c2-86a2d2a8098e">
+      <active>true</active>
+      <description>Backlight Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:86, PERCENT)" UUID="-" />
+        <modifiers>
+          <transformation active="True" expression="$*2.55" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="A320 Fire Panel/ SN-E4625C8403312829" trigger="normal" pin="Backlight Brt" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="3c3d967f-622b-4fb9-8269-ee843f542935">
+      <active>true</active>
+      <description>Eng 1 Agent 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="E1 Agent 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_FIRE_BUTTON_ENG1) if{ 1 (&gt;L:A32NX_FIRE_ENG1_AGENT2_Discharge) }" presetId="9b3b73bf-47c4-456b-a29a-f20a37e74744" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="15c2e691-bd0b-4bff-9d44-3b7be72cb759">
+      <active>true</active>
+      <description>APU Agent</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="APU Agent" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_FIRE_BUTTON_APU) if{ 1 (&gt;L:A32NX_FIRE_APU_AGENT1_Discharge) }" presetId="3afe49ea-75db-432b-bc40-a1164a41de63" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4699cab9-d2ac-4ffe-9103-07a49bddd72c">
+      <active>true</active>
+      <description>APU Fire</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="APU Fire" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_FIRE_BUTTON_APU) ! if{ &#xA;(L:A32NX_FIRE_GUARD_APU) ! (&gt;L:A32NX_FIRE_GUARD_APU) }&#xA;(L:A32NX_FIRE_GUARD_APU) if{ (&gt;L:A32NX_FIRE_BUTTON_APU) ! (&gt;L:A32NX_FIRE_BUTTON_APU) }" presetId="ef58950c-ceb9-4c91-9f01-447f1b5c0817" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f18a697c-7d53-4d42-83c8-e6f43127268e">
+      <active>true</active>
+      <description>APU Test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="APU Test" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_FIRE_TEST_APU) " presetId="3d2b8aa0-e4d2-4591-8863-a329e419259e" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_FIRE_TEST_APU)" presetId="e2cfa97b-ca70-4795-a269-718991b9ac5e" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="adb17442-0c5e-40a5-8946-9f214c93447e">
+      <active>true</active>
+      <description>Eng 2 Agent 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="E2 Agent 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_FIRE_BUTTON_ENG2) if{ 1 (&gt;L:A32NX_FIRE_ENG2_AGENT1_Discharge) }" presetId="59fed8cb-1117-4ac2-ae61-3ff4c939122c" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f5d151e2-2b3a-461b-be80-3b619ddb1006">
+      <active>true</active>
+      <description>Eng 2 Fire</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="Eng 2 Fire" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_FIRE_BUTTON_ENG2) ! if{ &#xA;(L:A32NX_FIRE_GUARD_ENG2) ! (&gt;L:A32NX_FIRE_GUARD_ENG2) }&#xA;(L:A32NX_FIRE_GUARD_ENG2) if{ (L:A32NX_FIRE_BUTTON_ENG2) ! (&gt;L:A32NX_FIRE_BUTTON_ENG2) }" presetId="248cbfd5-1ff3-46a8-9c24-264b5ae7fb5a" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d39c613b-1297-41aa-90d1-1ad8f6579a0d">
+      <active>true</active>
+      <description>Eng 2 Agent 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="E2 Agent 2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_FIRE_BUTTON_ENG2) if{ 1 (&gt;L:A32NX_FIRE_ENG2_AGENT2_Discharge) }" presetId="6b78cb0e-8e9c-4201-844f-2e1af2e3b1b9" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9e8df039-6ff6-47f2-9b99-80ca8aba4f22">
+      <active>true</active>
+      <description>Eng 2 Test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="Eng 2 Test" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_FIRE_TEST_ENG2) " presetId="01cdade4-1d8f-42be-a640-d4b620648adb" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_FIRE_TEST_ENG2)" presetId="cf193574-a400-4191-845f-4fff6dd32645" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c85e5f6a-205e-4cd0-a05a-e326d0becc8a">
+      <active>true</active>
+      <description>Eng 1 Agent 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="E1 Agent 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_FIRE_BUTTON_ENG1) if{ 1 (&gt;L:A32NX_FIRE_ENG1_AGENT1_Discharge) }" presetId="e526b1b2-3186-4853-aabb-7eacf4fc6439" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6b9114e0-52c1-4e74-b918-bbbd6ef2e188">
+      <active>true</active>
+      <description>Eng 1 Test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="Eng 1 Test" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_FIRE_TEST_ENG1) " presetId="c52ea416-e416-4fd5-b84c-05c77cb3d9b6" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_FIRE_TEST_ENG1)" presetId="61369698-8a77-4b57-9154-bfdae06a22c5" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c1c98e6e-2cd0-47de-ab57-77a7bdbb3292">
+      <active>true</active>
+      <description>Eng 1 Fire</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="A320 Fire Panel/ SN-E4625C8403312829" name="Eng 1 Fire" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_FIRE_BUTTON_ENG1) ! if{ &#xA;(L:A32NX_FIRE_GUARD_ENG1) ! (&gt;L:A32NX_FIRE_GUARD_ENG1) }&#xA;(L:A32NX_FIRE_GUARD_ENG1) if{ (L:A32NX_FIRE_BUTTON_ENG1) ! (&gt;L:A32NX_FIRE_BUTTON_ENG1) }" presetId="2229bbc2-0b93-4132-ae85-afa767dbbc4b" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
