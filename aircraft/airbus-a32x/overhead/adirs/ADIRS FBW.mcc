@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="f0a29d31-f9de-4fe3-8944-14698dd62fc2">
+      <active>true</active>
+      <description>Backlight Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:86, PERCENT)" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" pin="Backlight Brt" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8cdf0e02-8219-4cd2-8584-79782fea5fb4">
+      <active>true</active>
+      <description>Annunciator Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="True" expression="200" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2f0c141b-8b44-4775-9f23-2243bfef68a9">
+      <active>true</active>
+      <description>IR1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_IR_1_PB_IS_ON)" UUID="ea0846fc-1111-47c2-a566-a5f9fd596119" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="feed23a4-d026-4545-b2e4-5556e299c474">
+      <active>true</active>
+      <description>IR3 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_IR_3_PB_IS_ON)" UUID="5fc8bffd-99dd-4373-95bb-ff7c1deea7e5" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3c394d88-f67c-4a7b-8649-4391a75ef10b">
+      <active>true</active>
+      <description>IR2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_IR_2_PB_IS_ON)" UUID="f4725f63-e388-4d91-865c-39edabb97f17" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="704266ae-6b25-48fc-b5bb-9a7147334968">
+      <active>true</active>
+      <description>IR1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_IR_1_PB_HAS_FAULT)" UUID="213a2852-585d-4513-b9e4-72bf0dc04d80" />
+        <modifiers>
+          <transformation active="False" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="318109e5-e215-4ab3-bbea-405e905a5906">
+      <active>true</active>
+      <description>IR2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_IR_2_PB_HAS_FAULT)" UUID="bd71fc3f-de91-4f22-9283-7884ceac1ef5" />
+        <modifiers>
+          <transformation active="False" expression="" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="84ef5fed-7a79-40f3-9fca-6f09c1482150">
+      <active>true</active>
+      <description>IR3 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_IR_3_PB_HAS_FAULT)" UUID="7d8d5852-18ec-4172-bfa4-71bae260562c" />
+        <modifiers>
+          <transformation active="False" expression="" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 12" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fd94ac0a-30ad-4e8b-a2b2-3b320586adf9">
+      <active>true</active>
+      <description>ADR1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_ADR_1_PB_HAS_FAULT)" UUID="ae54a269-89e9-46c2-8956-03c4c5db54b8" />
+        <modifiers>
+          <transformation active="False" expression="" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7fbc6f02-f50f-434a-98b9-f9b48a69a834">
+      <active>true</active>
+      <description>ADR1 On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_ADR_1_PB_IS_ON)" UUID="58305cf3-2e2d-4b20-b085-6289f613b1ae" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f8f1d487-78c3-4e64-a4d7-a34c489481c5">
+      <active>true</active>
+      <description>ADR2 On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_ADR_2_PB_IS_ON)" UUID="1aed8bcb-ae39-4d52-b70c-6e0c32be9c8c" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aded5098-ac99-421f-9740-f48a297d2f77">
+      <active>true</active>
+      <description>ADR3 On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_ADR_3_PB_IS_ON)" UUID="110c212e-bfed-44b9-8fa4-2a0d46ac878d" />
+        <modifiers>
+          <transformation active="True" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4b94a875-7ddd-4d25-94bd-4b3677a364c6">
+      <active>true</active>
+      <description>ADR2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_ADR_2_PB_HAS_FAULT)" UUID="ee04908f-24e6-4fd6-8db0-41bb46047497" />
+        <modifiers>
+          <transformation active="False" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e1c32c07-0620-4ab7-ad02-5e7381e30898">
+      <active>true</active>
+      <description>ADR3 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_ADR_2_PB_HAS_FAULT)" UUID="ee04908f-24e6-4fd6-8db0-41bb46047497" />
+        <modifiers>
+          <transformation active="False" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d0d1594f-1c0b-44fb-9ea2-8440845b9864">
+      <active>true</active>
+      <description>On Bat</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ADIRS_ON_BAT_IS_ILLUMINATED)" UUID="2cb89643-712c-4c3d-ab42-cdb6a8ee79f0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="ADIRS/ SN-E4625C8403594225" trigger="normal" shiftRegister="Led Register" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="106e7c39-b959-4179-ba92-c7c2c0cf1391">
+      <active>true</active>
+      <description>IR1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="IR1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_ADIRS_IR_1_PB_IS_ON) ! (&gt;L:A32NX_OVHD_ADIRS_IR_1_PB_IS_ON)" presetId="3bae420c-8b5f-4e35-bb38-830295736e30" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2e983710-9a34-4c6a-b0e8-26f304d9bea3">
+      <active>true</active>
+      <description>IR3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="IR3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_ADIRS_IR_3_PB_IS_ON) ! (&gt;L:A32NX_OVHD_ADIRS_IR_3_PB_IS_ON)" presetId="281832c4-075d-454d-9345-0b11c3fd2235" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="18879b64-0af4-4d1c-9152-70fff8e83651">
+      <active>true</active>
+      <description>IR2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="IR2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_ADIRS_IR_2_PB_IS_ON) ! (&gt;L:A32NX_OVHD_ADIRS_IR_2_PB_IS_ON)" presetId="ee063cb3-b642-4f59-9f83-ff0317addd76" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8a32bd46-e25c-4555-87af-e42e1212b248">
+      <active>true</active>
+      <description>ADR1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="ADR1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_ADIRS_ADR_1_PB_IS_ON) ! (&gt;L:A32NX_OVHD_ADIRS_ADR_1_PB_IS_ON)" presetId="78df1d76-5d34-4280-a2f0-90f8c1e6e56a" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e2d1eb62-833e-4d0c-bbbb-b38724d8fed4">
+      <active>true</active>
+      <description>ADR3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="ADR3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_ADIRS_ADR_3_PB_IS_ON) ! (&gt;L:A32NX_OVHD_ADIRS_ADR_3_PB_IS_ON)" presetId="d36aacdd-8a70-4491-b53e-2b00c8eac9cc" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f75b2fd9-a053-4a96-88cd-a9dc363605da">
+      <active>true</active>
+      <description>ADR2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="ADR2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_ADIRS_ADR_2_PB_IS_ON) ! (&gt;L:A32NX_OVHD_ADIRS_ADR_2_PB_IS_ON)" presetId="0498e772-78ed-4bea-abe0-d8cae2fabccc" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="08100c20-0c7b-419b-abd8-92562d4f0c82">
+      <active>true</active>
+      <description>ADIRS 1 Off Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="1OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_ADIRS_IR_1_MODE_SELECTOR_KNOB)" presetId="b38165c2-8aa7-4351-afc4-b7475fa7782b" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_ADIRS_IR_1_MODE_SELECTOR_KNOB)" presetId="49964182-5e85-4f0b-88e0-eefc5de9352c" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8e49f754-5ed5-4e5e-bb62-6b9a884e32b0">
+      <active>true</active>
+      <description>ADIRS 3 Off Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="3OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_ADIRS_IR_3_MODE_SELECTOR_KNOB)" presetId="238d1227-e73d-45c2-affa-fcb5f032f8af" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_ADIRS_IR_3_MODE_SELECTOR_KNOB)" presetId="2f08a28c-ea54-4b50-89ae-da55f3110670" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bea6e7d4-1803-4cfb-b771-22c12b35717a">
+      <active>true</active>
+      <description>ADIRS 2 Off Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="2OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_ADIRS_IR_2_MODE_SELECTOR_KNOB)" presetId="735ce408-c3a1-4263-ad1c-c55fd6ae0dc7" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_ADIRS_IR_2_MODE_SELECTOR_KNOB)" presetId="86d6fc0a-2794-4d56-8fbb-a046ae7da922" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="650c2e9c-1179-4020-82ea-dd2d0608dc93">
+      <active>true</active>
+      <description>ADIRS 1 Nav ATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="1NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_OVHD_ADIRS_IR_1_MODE_SELECTOR_KNOB)" presetId="de4598b0-da8b-4ff7-ab67-ccb6586b6eb6" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_ADIRS_IR_1_MODE_SELECTOR_KNOB)" presetId="b38165c2-8aa7-4351-afc4-b7475fa7782b" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d13526d2-d92e-4783-a63d-a9e7203ef3f3">
+      <active>true</active>
+      <description>ADIRS 3 Nav ATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="3NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_OVHD_ADIRS_IR_3_MODE_SELECTOR_KNOB)" presetId="3f1c1fb4-0041-4bf0-af28-c117c250081e" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_ADIRS_IR_3_MODE_SELECTOR_KNOB)" presetId="238d1227-e73d-45c2-affa-fcb5f032f8af" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f64f0286-5747-4779-a0af-91b1292a32fa">
+      <active>true</active>
+      <description>ADIRS 2 Nav ATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="ADIRS/ SN-E4625C8403594225" name="2NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_OVHD_ADIRS_IR_2_MODE_SELECTOR_KNOB)" presetId="e70bcd31-56ee-45d4-ac12-2a9948ac5f41" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_ADIRS_IR_2_MODE_SELECTOR_KNOB)" presetId="735ce408-c3a1-4263-ad1c-c55fd6ae0dc7" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
