@@ -29,3 +29,8 @@ fp-info-cache
 *.csv
 
 *.FCBak
+*.FCStd1
+*.fcstd1
+
+# Inkscape backup files (e.g. foo.svg.2021_09_01_11_29_03.0.svg)
+*.svg.*.svg
