@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>A320 Fire Panel</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <Output Name="Annunciator Brt" Pin="22" />
+  <Button Name="E1 Agent 2" Pin="0" />
+  <Button Name="APU Agent" Pin="1" />
+  <Button Name="APU Fire" Pin="2" />
+  <Button Name="APU Test" Pin="3" />
+  <Button Name="E2 Agent 1" Pin="4" />
+  <Button Name="Eng 2 Fire" Pin="5" />
+  <Button Name="E2 Agent 2" Pin="6" />
+  <Button Name="Eng 2 Test" Pin="7" />
+  <Button Name="E1 Agent 1" Pin="9" />
+  <Button Name="Eng 1 Test" Pin="10" />
+  <Button Name="Eng 1 Fire" Pin="11" />
+  <Output Name="Backlight Brt" Pin="12" />
+  <ShiftRegister Name="LED Driver" LatchPin="18" ClockPin="19" DataPin="20" NumModules="2" />
+</Config>

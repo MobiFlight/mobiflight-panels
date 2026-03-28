@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Emer Elec</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <ShiftRegister Name="ShiftRegister" LatchPin="17" ClockPin="18" DataPin="19" NumModules="2" />
+  <Button Name="Fwd" Pin="0" />
+  <Button Name="Aft" Pin="1" />
+  <Button Name="Emer Call" Pin="2" />
+  <Button Name="Mask Man" Pin="3" />
+  <Button Name="NULL" Pin="4" />
+  <Button Name="Crew" Pin="5" />
+  <Button Name="CVR Test" Pin="6" />
+  <Button Name="Ldg Flap 3" Pin="7" />
+  <Button Name="CVR Erase" Pin="8" />
+  <Button Name="Flap Mode" Pin="9" />
+  <Button Name="Gnd Control" Pin="10" />
+  <Button Name="GS Mode" Pin="11" />
+  <Button Name="Man On" Pin="12" />
+  <Button Name="NULL2" Pin="13" />
+  <Button Name="Gen 1" Pin="14" />
+  <Button Name="Emer Gen" Pin="15" />
+  <Output Name="Annunciator Brt" Pin="16" />
+  <Button Name="Sys" Pin="20" />
+  <Button Name="Wiper Off" Pin="21" />
+  <Button Name="Wiper Fast" Pin="22" />
+  <Button Name="Mech" Pin="26" />
+  <Button Name="Rain Rplt" Pin="27" />
+  <Output Name="Backlight Brt" Pin="28" />
+</Config>

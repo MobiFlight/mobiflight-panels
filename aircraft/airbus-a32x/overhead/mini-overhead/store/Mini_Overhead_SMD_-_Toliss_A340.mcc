@@ -1,0 +1,1526 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="8290c85f-e9b0-4ab0-b550-e854ec3e6a5d">
+      <active>true</active>
+      <description>Backlight Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/PanelBrightnessLevel" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$ * 255" />
+        </modifiers>
+        <display type="Output" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="848e5b07-7bc1-4ed7-94e4-7e5fc7b98144">
+      <active>true</active>
+      <description>Annunciator Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Backlight" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="220" />
+        </modifiers>
+        <display type="Output" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="40556edf-03fd-41fc-b426-c4164febd7cc">
+      <active>true</active>
+      <description>Anti Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="AIFault" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="? | ! | # | @ | A" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 12" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="eeb27db0-b743-483c-9d41-76cbd72bd438" placeholder="#" testvalue="1" />
+          <configref active="True" ref="547a820d-4421-4df5-a40e-0c7e811d2af5" placeholder="!" testvalue="1" />
+          <configref active="True" ref="28fe79f4-047f-4793-8b3a-cb45558c38fc" placeholder="?" testvalue="1" />
+          <configref active="True" ref="fb53a81f-42db-48dc-a109-e5edf01b176c" placeholder="@" testvalue="1" />
+          <configref active="True" ref="19535cab-d427-41c7-9d74-6d8ed570d551" placeholder="A" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c3eb7c99-a767-4774-8e94-03c4ffbf8632">
+      <active>true</active>
+      <description>Anti Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="AIOn" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="? | ! | # | @ | A" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 13" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="48751dc2-7d2c-48a0-a984-c8e6beb6cfca" placeholder="#" testvalue="1" />
+          <configref active="True" ref="643fdf6e-c2b7-4824-83f5-153537afa143" placeholder="!" testvalue="1" />
+          <configref active="True" ref="7511f158-e885-4eb9-b2ca-fa120d485bef" placeholder="?" testvalue="1" />
+          <configref active="True" ref="bd737364-48ab-42a1-b816-61b1bf6e28ea" placeholder="@" testvalue="1" />
+          <configref active="True" ref="1b29307e-4277-4887-abff-b0c4a52a5ac9" placeholder="A" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b09759ad-b2fb-4802-bdce-3f8dfb948ed5">
+      <active>true</active>
+      <description>Battery Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BatFault" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="! | # | ?" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9721a4b1-ddab-43dc-b77a-45e88ba79937" placeholder="#" testvalue="1" />
+          <configref active="True" ref="6f43c594-3112-4bad-a33a-2f87b532e3db" placeholder="!" testvalue="1" />
+          <configref active="True" ref="7bfa3ff1-4013-427f-8cef-f9bafa1b0621" placeholder="?" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="8946ac1a-d38d-40db-b2bd-33bc8f414315">
+      <active>true</active>
+      <description>Battery Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BatOff" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="! | # | ?" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="832b32f7-c9fb-45b2-852e-fb9993974363" placeholder="#" testvalue="1" />
+          <configref active="True" ref="62ef1377-81a5-4e4d-8594-dcb0e730b514" placeholder="!" testvalue="1" />
+          <configref active="True" ref="2a29039e-c70e-42d1-903d-6d395f5619a2" placeholder="?" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6cbd5995-48ed-48da-866e-d83245ec36bd">
+      <active>true</active>
+      <description>APU Bleed Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA21[5]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2f6b129b-3aee-44c1-9e44-c8f7e08a910a">
+      <active>true</active>
+      <description>Ext Pwr Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ExtPowerAvail" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="! | #" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="e9ee0809-b9a1-4b07-bd0a-d602a94dd8bd" placeholder="#" testvalue="1" />
+          <configref active="True" ref="06274794-c8c0-4b10-89e4-292c670f6516" placeholder="!" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9904365a-677a-4073-8e66-c1119b63a21f">
+      <active>true</active>
+      <description>Ext Pwr On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ExtPowerOn" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="! | #" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9b2bcfa1-b236-42f6-9e30-894b6eae59f6" placeholder="#" testvalue="1" />
+          <configref active="True" ref="f9cfca7a-28d2-4a2b-a14c-797c747183d5" placeholder="!" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="51e8dcf9-cc1f-4b60-a6ea-431cc2beb9e4">
+      <active>true</active>
+      <description>APU Bleed On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA21[4]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1b08b790-61b7-4d4a-8dd2-5c1bc95f5d88">
+      <active>true</active>
+      <description>APU Start Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA49[3]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="82375353-8509-4048-ae99-ff0837994051">
+      <active>true</active>
+      <description>APU Start On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA49[2]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c12b4e95-feb6-4618-b4b0-d89a03f3396d">
+      <active>true</active>
+      <description>APU Master Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA49[1]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5df8bd0a-bf44-4de4-a123-ae2325612a89">
+      <active>true</active>
+      <description>APU Master On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA49[0]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a96bd40f-aa59-4f6c-a256-13b067b38356">
+      <active>true</active>
+      <description>Fuel Pump Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="FuelFault" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="A | B | C | D | E | F | G | H | I | J | K | L | M | N | @ | ! | # | ?" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="76ba7da1-2515-4e31-b3fb-793a8353983b" placeholder="#" testvalue="1" />
+          <configref active="True" ref="3502b47d-30ce-48a5-807b-9f63ddc8d6b3" placeholder="!" testvalue="1" />
+          <configref active="True" ref="b7e078f4-4855-4857-8b71-056725a1dad3" placeholder="?" testvalue="1" />
+          <configref active="True" ref="b48051bb-2695-47dc-814a-328cfd8f5fef" placeholder="@" testvalue="1" />
+          <configref active="True" ref="368d3d34-8f9d-4532-95c7-970fe35e6862" placeholder="A" testvalue="1" />
+          <configref active="True" ref="7362ebb7-897e-4eaa-9d12-79c4c027b19f" placeholder="B" testvalue="1" />
+          <configref active="True" ref="ec2fc123-ce5a-47a2-b59a-dbad1598db03" placeholder="C" testvalue="1" />
+          <configref active="True" ref="5712d0ff-f5f1-4c1c-8472-fd14c63f986a" placeholder="D" testvalue="1" />
+          <configref active="True" ref="809539b4-9241-4a07-9b3d-ddb07e6868a8" placeholder="E" testvalue="1" />
+          <configref active="True" ref="692c3058-38ef-47f5-b81e-a948957b9da8" placeholder="F" testvalue="1" />
+          <configref active="True" ref="c14624fd-c511-41d3-8dfb-2578e4ef55c8" placeholder="G" testvalue="1" />
+          <configref active="True" ref="b3b250ab-5824-465f-b074-a27ec4e41505" placeholder="H" testvalue="1" />
+          <configref active="True" ref="63468c45-63c1-476d-ae50-2f564a3915f6" placeholder="I" testvalue="1" />
+          <configref active="True" ref="106be582-b5e4-46a9-a7c7-27d1c1c91fa9" placeholder="J" testvalue="1" />
+          <configref active="True" ref="2c3bd760-7d77-40bd-a2ec-328fac2bee3c" placeholder="K" testvalue="1" />
+          <configref active="True" ref="0b3ed35d-44d8-44ec-932f-b2bbb60efd40" placeholder="L" testvalue="1" />
+          <configref active="True" ref="a959c43d-3f1e-4eb7-a3a8-85f8fd1925d4" placeholder="M" testvalue="1" />
+          <configref active="True" ref="ee6163a4-d507-4b84-9f84-666257b1fd04" placeholder="N" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="92bc32f4-8298-44d6-a810-d9c4db608656">
+      <active>true</active>
+      <description>Fuel Pump Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="FuelOff" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="A | B | C | D | E | F | G | H | I | J | K | L | M | N | @ | ! | # | ?" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="14044766-54a2-4296-8573-52ec5fb5b378" placeholder="#" testvalue="1" />
+          <configref active="True" ref="a9bba64d-956c-44ac-9396-033fc535d39b" placeholder="!" testvalue="1" />
+          <configref active="True" ref="f9bce505-c11e-47aa-93f4-e46001c78370" placeholder="?" testvalue="1" />
+          <configref active="True" ref="69ab931a-0fbf-4b3f-af19-5e90f2248468" placeholder="@" testvalue="1" />
+          <configref active="True" ref="c5eeacd9-179a-4c60-a0d7-15dbb250d114" placeholder="A" testvalue="1" />
+          <configref active="True" ref="a7c57812-8ebd-452a-9eb6-2b54162f688c" placeholder="B" testvalue="1" />
+          <configref active="True" ref="bbe52172-4615-4c2e-8f43-52342f0e3e99" placeholder="C" testvalue="1" />
+          <configref active="True" ref="e48fdb19-6aff-41e2-9669-2b26b2f597b1" placeholder="D" testvalue="1" />
+          <configref active="True" ref="1347485c-2746-4245-9c99-fe295d9fc056" placeholder="E" testvalue="1" />
+          <configref active="True" ref="93d7906b-417b-4876-a8db-c344b77dfac1" placeholder="F" testvalue="1" />
+          <configref active="True" ref="f9f1638d-b0ed-4640-8c26-088d688ae29e" placeholder="G" testvalue="1" />
+          <configref active="True" ref="af02e365-dbec-4a37-a01a-6b5fb7f6c29b" placeholder="H" testvalue="1" />
+          <configref active="True" ref="2921864a-5164-4579-9e11-f0b16f478523" placeholder="I" testvalue="1" />
+          <configref active="True" ref="c81156df-2526-4e2f-b6c2-01f9986bd208" placeholder="J" testvalue="1" />
+          <configref active="True" ref="173cb248-44c9-4865-88c1-120b82d609a1" placeholder="K" testvalue="1" />
+          <configref active="True" ref="e3a2d9bc-894f-4447-8ba4-262436bafc8a" placeholder="L" testvalue="1" />
+          <configref active="True" ref="9577b9b2-2cd2-4590-a457-537a92327ed9" placeholder="M" testvalue="1" />
+          <configref active="True" ref="315c95fb-eb99-42d2-a8bd-11fb20b95cc2" placeholder="N" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="fd5750bf-5be9-4141-8e28-ac4ade065bd5">
+      <active>true</active>
+      <description>------------------------------Dataref tracking for multiple switches below------------------------------------------------</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Backlight" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="62ef1377-81a5-4e4d-8594-dcb0e730b514">
+      <active>true</active>
+      <description>Bat 1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA24[9]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="832b32f7-c9fb-45b2-852e-fb9993974363">
+      <active>true</active>
+      <description>Bat 2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA24[11]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2a29039e-c70e-42d1-903d-6d395f5619a2">
+      <active>true</active>
+      <description>APU Bat Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA24[31]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6f43c594-3112-4bad-a33a-2f87b532e3db">
+      <active>true</active>
+      <description>Bat 1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA24[10]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9721a4b1-ddab-43dc-b77a-45e88ba79937">
+      <active>true</active>
+      <description>Bat 2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA24[12]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7bfa3ff1-4013-427f-8cef-f9bafa1b0621">
+      <active>true</active>
+      <description>APU Bat Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA24[32]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="06274794-c8c0-4b10-89e4-292c670f6516">
+      <active>true</active>
+      <description>Ext Pwr B Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA24[7]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e9ee0809-b9a1-4b07-bd0a-d602a94dd8bd">
+      <active>true</active>
+      <description>Ext Pwr A Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA24[30]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f9cfca7a-28d2-4a2b-a14c-797c747183d5">
+      <active>true</active>
+      <description>Ext Pwr B On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA24[6]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9b2bcfa1-b236-42f6-9e30-894b6eae59f6">
+      <active>true</active>
+      <description>Ext Pwr A On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA24[29]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="315c95fb-eb99-42d2-a8bd-11fb20b95cc2">
+      <active>true</active>
+      <description>Fuel Pump 1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[0]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9577b9b2-2cd2-4590-a457-537a92327ed9">
+      <active>true</active>
+      <description>Fuel Pump 2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[2]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e3a2d9bc-894f-4447-8ba4-262436bafc8a">
+      <active>true</active>
+      <description>Fuel Pump 3 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[4]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="173cb248-44c9-4865-88c1-120b82d609a1">
+      <active>true</active>
+      <description>Fuel Pump 4 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[6]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c81156df-2526-4e2f-b6c2-01f9986bd208">
+      <active>true</active>
+      <description>Fuel Pump 5 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[8]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2921864a-5164-4579-9e11-f0b16f478523">
+      <active>true</active>
+      <description>Fuel Pump 6 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[10]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="af02e365-dbec-4a37-a01a-6b5fb7f6c29b">
+      <active>true</active>
+      <description>Fuel Pump 7 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[16]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f9f1638d-b0ed-4640-8c26-088d688ae29e">
+      <active>true</active>
+      <description>Fuel Pump 8 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[18]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="93d7906b-417b-4876-a8db-c344b77dfac1">
+      <active>true</active>
+      <description>Fuel Pump 9 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[30]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1347485c-2746-4245-9c99-fe295d9fc056">
+      <active>true</active>
+      <description>Fuel Pump 10 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[32]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e48fdb19-6aff-41e2-9669-2b26b2f597b1">
+      <active>true</active>
+      <description>Fuel Pump 11 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[20]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bbe52172-4615-4c2e-8f43-52342f0e3e99">
+      <active>true</active>
+      <description>Fuel Pump 12 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[22]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a7c57812-8ebd-452a-9eb6-2b54162f688c">
+      <active>true</active>
+      <description>Fuel Pump 13 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[34]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c5eeacd9-179a-4c60-a0d7-15dbb250d114">
+      <active>true</active>
+      <description>Fuel Pump 14 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[36]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="69ab931a-0fbf-4b3f-af19-5e90f2248468">
+      <active>true</active>
+      <description>Fuel Pump 15 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[38]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f9bce505-c11e-47aa-93f4-e46001c78370">
+      <active>true</active>
+      <description>Fuel Pump 16 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[40]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a9bba64d-956c-44ac-9396-033fc535d39b">
+      <active>true</active>
+      <description>Fuel Pump 17 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[42]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14044766-54a2-4296-8573-52ec5fb5b378">
+      <active>true</active>
+      <description>Fuel Pump 18 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[46]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ee6163a4-d507-4b84-9f84-666257b1fd04">
+      <active>true</active>
+      <description>Fuel Pump 1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[1]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a959c43d-3f1e-4eb7-a3a8-85f8fd1925d4">
+      <active>true</active>
+      <description>Fuel Pump 2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[3]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0b3ed35d-44d8-44ec-932f-b2bbb60efd40">
+      <active>true</active>
+      <description>Fuel Pump 3 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[5]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2c3bd760-7d77-40bd-a2ec-328fac2bee3c">
+      <active>true</active>
+      <description>Fuel Pump 4 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[7]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="106be582-b5e4-46a9-a7c7-27d1c1c91fa9">
+      <active>true</active>
+      <description>Fuel Pump 5 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[9]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="63468c45-63c1-476d-ae50-2f564a3915f6">
+      <active>true</active>
+      <description>Fuel Pump 6 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[11]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b3b250ab-5824-465f-b074-a27ec4e41505">
+      <active>true</active>
+      <description>Fuel Pump 7 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[17]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c14624fd-c511-41d3-8dfb-2578e4ef55c8">
+      <active>true</active>
+      <description>Fuel Pump 8 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[19]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="692c3058-38ef-47f5-b81e-a948957b9da8">
+      <active>true</active>
+      <description>Fuel Pump 9 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[31]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="809539b4-9241-4a07-9b3d-ddb07e6868a8">
+      <active>true</active>
+      <description>Fuel Pump 10 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[33]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5712d0ff-f5f1-4c1c-8472-fd14c63f986a">
+      <active>true</active>
+      <description>Fuel Pump 11 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[21]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ec2fc123-ce5a-47a2-b59a-dbad1598db03">
+      <active>true</active>
+      <description>Fuel Pump 12 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[23]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7362ebb7-897e-4eaa-9d12-79c4c027b19f">
+      <active>true</active>
+      <description>Fuel Pump 13 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[35]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="368d3d34-8f9d-4532-95c7-970fe35e6862">
+      <active>true</active>
+      <description>Fuel Pump 14 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[37]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b48051bb-2695-47dc-814a-328cfd8f5fef">
+      <active>true</active>
+      <description>Fuel Pump 15 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[39]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b7e078f4-4855-4857-8b71-056725a1dad3">
+      <active>true</active>
+      <description>Fuel Pump 16 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[41]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3502b47d-30ce-48a5-807b-9f63ddc8d6b3">
+      <active>true</active>
+      <description>Fuel Pump 17 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[43]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="76ba7da1-2515-4e31-b3fb-793a8353983b">
+      <active>true</active>
+      <description>Fuel Pump 18 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA28[47]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7511f158-e885-4eb9-b2ca-fa120d485bef">
+      <active>true</active>
+      <description>Wing Anti Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA30[0]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="643fdf6e-c2b7-4824-83f5-153537afa143">
+      <active>true</active>
+      <description>Eng 1 Anti Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA30[2]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="48751dc2-7d2c-48a0-a984-c8e6beb6cfca">
+      <active>true</active>
+      <description>Eng 2 Anti Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA30[4]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1b29307e-4277-4887-abff-b0c4a52a5ac9">
+      <active>true</active>
+      <description>Eng 3 Anti Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA30[6]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bd737364-48ab-42a1-b816-61b1bf6e28ea">
+      <active>true</active>
+      <description>Eng 4 Anti Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA30[8]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="28fe79f4-047f-4793-8b3a-cb45558c38fc">
+      <active>true</active>
+      <description>Wing Anti Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA30[1]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="547a820d-4421-4df5-a40e-0c7e811d2af5">
+      <active>true</active>
+      <description>Eng 1 Anti Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA30[3]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eeb27db0-b743-483c-9d41-76cbd72bd438">
+      <active>true</active>
+      <description>Eng 2 Anti Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA30[5]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fb53a81f-42db-48dc-a109-e5edf01b176c">
+      <active>true</active>
+      <description>Eng 3 Anti Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA30[7]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="19535cab-d427-41c7-9d74-6d8ed570d551">
+      <active>true</active>
+      <description>Eng 4 Anti Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="AirbusFBW/OHPLightsATA30[9]" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="591de15d-7ebf-4260-8e34-c14933bba0bf">
+      <active>true</active>
+      <description>Battery 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Battery" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/eleccommands/Bat1Toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bca5cbc0-9852-4e20-b594-1fc27538d3bf">
+      <active>true</active>
+      <description>Battery 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Battery" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/eleccommands/Bat2Toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ee332d17-357a-4d13-8130-6651192011a5">
+      <active>true</active>
+      <description>APU Battery</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Battery" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ElecOHPArray[16]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="983ec1b4-ed04-4fd8-a8e5-ade7542de53b">
+      <active>true</active>
+      <description>Calls All</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Calls" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="AirbusFBW/purser/all" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="58a7eadf-b056-4505-bafe-e6453fc37c57">
+      <active>true</active>
+      <description>APU Master</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="APU Master" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/apucommands/MasterToggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fc38bb7c-d5b6-4c54-a492-f7bc6c64fad7">
+      <active>true</active>
+      <description>Anti Ice Wing</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/antiicecommands/WingToggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a92c7cc9-b6ff-43c2-a5c2-2319c4073f65">
+      <active>true</active>
+      <description>Anti Ice Eng1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/antiicecommands/ENG1Toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f6ee4599-433c-4f03-93c9-06d22792225f">
+      <active>true</active>
+      <description>Anti Ice Eng2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/antiicecommands/ENG2Toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d6025bcd-2e08-4f05-829a-45e71e72050f">
+      <active>true</active>
+      <description>Anti Ice Eng3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/antiicecommands/ENG3Toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="33736524-b72f-4475-896c-9dafef384eb5">
+      <active>true</active>
+      <description>Anti Ice Eng4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/antiicecommands/ENG4Toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bd786d18-195d-4cf1-a909-e42e0f8c63ed">
+      <active>true</active>
+      <description>Ext Pwr A</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Ext Pwr" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/eleccommands/ExtPowAToggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0c6f93de-7790-4f3e-86f4-03a57d71c957">
+      <active>true</active>
+      <description>Ext Pwr B</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Ext Pwr" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/eleccommands/ExtPowBToggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="765ef8e7-20e8-4b31-9e23-54985750275f">
+      <active>true</active>
+      <description>APU Bleed</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="APU Bleed" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/apucommands/BleedToggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8dc82a43-57a1-42ec-9255-440460e2679b">
+      <active>true</active>
+      <description>APU Start</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="APU Start" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/apucommands/StarterToggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="78c32ab4-f4f9-403c-becf-bc89dffc84cc">
+      <active>true</active>
+      <description>Fuel Pump 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/fuelcommands/PumpLWing1Toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d916c8de-f700-4ac6-b766-88cf5e9db2b9">
+      <active>true</active>
+      <description>Fuel Pump 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/fuelcommands/PumpLWing2Toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bcaf5204-0b6f-4882-8ff5-3c0fb9437c42">
+      <active>true</active>
+      <description>Fuel Pump 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/fuelcommands/PumpLCenterToggle" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eb22aa87-7590-48ae-abbf-1ab9bd538f1b">
+      <active>true</active>
+      <description>Fuel Pump 4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/fuelcommands/PumpRCenterToggle" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dbe6f626-950f-4b90-a274-565fa9fd1290">
+      <active>true</active>
+      <description>Fuel Pump 5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/fuelcommands/PumpRWing1Toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5b47e8a4-846d-4e68-a6a9-adf10f262b99">
+      <active>true</active>
+      <description>Fuel Pump 6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="Command" path="toliss_airbus/fuelcommands/PumpRWing2Toggle" expression="$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="10d74230-0975-45fe-9474-bc58c04ff10d">
+      <active>true</active>
+      <description>Fuel Pump 7</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[8]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2bf55ee6-dfde-4c59-82e6-c001c10c517c">
+      <active>true</active>
+      <description>Fuel Pump 8</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[9]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0656e73b-cfc9-4a87-9538-22527539dbb0">
+      <active>true</active>
+      <description>Fuel Pump 9</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[15]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aac2d9ed-eaa2-4935-ada3-11cb737b2528">
+      <active>true</active>
+      <description>Fuel Pump 10</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[16]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="74ec80e5-3a22-4289-a6df-127db57ce02b">
+      <active>true</active>
+      <description>Fuel Pump 11</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[10]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="91499d38-e018-4ba0-9aa6-e7ed622f99c0">
+      <active>true</active>
+      <description>Fuel Pump 12</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[11]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c0fe75ab-fc13-40b4-a244-5958c273b952">
+      <active>true</active>
+      <description>Fuel Pump 13</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[17]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="817ac314-17f0-47cd-8615-64d5c686e81b">
+      <active>true</active>
+      <description>Fuel Pump 14</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[18]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="da24a2b7-8e80-40e4-bb5b-85318bb7e1cc">
+      <active>true</active>
+      <description>Fuel Pump 15</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[19]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3a9bd4ff-0706-4711-9f82-e7df9d6e3526">
+      <active>true</active>
+      <description>Fuel Pump 16</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[20]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9583624f-7f06-40fc-87db-1f7d8f8e9d67">
+      <active>true</active>
+      <description>Fuel Pump 17</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[21]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="647265fd-718f-439d-9566-ef9a06d6694c">
+      <active>true</active>
+      <description>Fuel Pump 18</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/FuelOHPArray[23]" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aacd8317-76a0-4574-92c9-326ef667f753">
+      <active>true</active>
+      <description>Strobe</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Ext Light On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[7]" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[7]" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ec436f58-603e-4a7b-ad7e-0e7f4ff45fb4">
+      <active>true</active>
+      <description>Beacon</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Ext Light Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[0]" expression="0" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[0]" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b533cd36-52db-415b-9dfa-dc35ac85092f">
+      <active>true</active>
+      <description>Nose TO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Nose TO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[3]" expression="2" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[3]" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c62db97f-4f2e-4c29-a9f3-ec723b6852cf">
+      <active>true</active>
+      <description>Nose Taxi</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Nose Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[3]" expression="0" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[3]" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f54c7e7b-e643-4737-937d-16bdb4e430eb">
+      <active>true</active>
+      <description>Land On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Land On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[4]" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[4]" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="db0f1b01-a91a-4f96-9f9d-92c96dff3ef3">
+      <active>true</active>
+      <description>Seatbelts</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Seatbelts On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[11]" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[11]" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0b0accdf-ce2a-4406-97b0-a7f083a985f8">
+      <active>true</active>
+      <description>No Smoking</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Smoking On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[12]" expression="2" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[12]" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7212660c-daeb-4aa5-8305-9273b2615657">
+      <active>true</active>
+      <description>ADIRS 1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ADIRUSwitchArray[0]" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29c4f44d-b04f-4d75-b70d-0a0915df45e6">
+      <active>true</active>
+      <description>ADIRS 2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ADIRUSwitchArray[1]" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="87f80d89-a336-48b7-aa93-a5f56b8b8611">
+      <active>true</active>
+      <description>ADIRS 3 Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ADIRUSwitchArray[2]" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ef3c3abc-aec5-419b-8e19-3d1f6206ec85">
+      <active>true</active>
+      <description>ADIRS 1 Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ADIRUSwitchArray[0]" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f0d12e18-d139-4ca2-9241-fcf82e233539">
+      <active>true</active>
+      <description>ADIRS 2 Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ADIRUSwitchArray[1]" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="489d07ca-1bfe-419e-8e28-962d4ad5c7af">
+      <active>true</active>
+      <description>ADIRS 3 Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ADIRUSwitchArray[2]" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a5a6f0c1-f4c0-4cff-aeef-a5d2284ef920">
+      <active>true</active>
+      <description>ADIRS 1 ATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS ATT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ADIRUSwitchArray[0]" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4c29dfe0-64ce-4ad6-a54d-ca9e288c0355">
+      <active>true</active>
+      <description>ADIRS 2 ATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS ATT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ADIRUSwitchArray[1]" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7eccfedc-56bc-4d5b-b023-16886c8c11d3">
+      <active>true</active>
+      <description>ADIRS 3 ATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS ATT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ADIRUSwitchArray[2]" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b6264b44-b763-4f08-b00b-e49a1be73f21">
+      <active>true</active>
+      <description>Crew Oxygen</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/CrewOxySwitch" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14efa9c9-a432-412f-a3ff-ce000087727f">
+      <active>true</active>
+      <description>Nav Light</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Battery" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/OHPLightSwitches[2]" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

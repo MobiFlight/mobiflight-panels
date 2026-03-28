@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>ADIRS</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <ShiftRegister Name="Led Register" LatchPin="20" ClockPin="21" DataPin="22" NumModules="2" />
+  <Button Name="IR1" Pin="1" />
+  <Output Name="Backlight Brt" Pin="4" />
+  <Button Name="1ATT" Pin="8" />
+  <Button Name="1NAV" Pin="9" />
+  <Button Name="1OFF" Pin="10" />
+  <Button Name="ADR1" Pin="11" />
+  <Button Name="ADR3" Pin="12" />
+  <Button Name="3OFF" Pin="13" />
+  <Button Name="3NAV" Pin="14" />
+  <Button Name="3ATT" Pin="15" />
+  <Output Name="Annunciator Brt" Pin="26" />
+  <Button Name="IR2" Pin="27" />
+  <Button Name="IR3" Pin="28" />
+  <Button Name="ADR2" Pin="16" />
+  <Button Name="2OFF" Pin="17" />
+  <Button Name="2NAV" Pin="18" />
+  <Button Name="2ATT" Pin="19" />
+</Config>

@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="3a493e23-ed6d-4b67-99e9-167a4fa27073">
+      <active>true</active>
+      <description>Mini OVHD - Integral Lighting</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:84, PERCENT)" UUID="0" />
+        <modifiers>
+          <transformation active="True" expression="1" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 16|Output 17|Output 18|Output 19|Output 28|Output 30|Output 31" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bed5c70e-9cf1-4101-a244-2a8619510b8d">
+      <active>true</active>
+      <description>Mini OVHD - Integral Lighting Brightness (Backlight LEDs)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="True" expression="if(@==0, 255, (100-#)/100*255)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Pin" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="1a3bfc4c-12c7-4104-9db6-4a7a058a5e18" placeholder="#" />
+          <configref active="True" ref="c438d5ec-e523-4f80-a06f-7282bc113e23" placeholder="@" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2d6d4930-f311-4289-81cf-095826497eff">
+      <active>true</active>
+      <description>Mini OVHD - Anti Ice - Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5b49a233-7c77-416f-bca2-ec35a1569b1f">
+      <active>true</active>
+      <description>Mini OVHD - Anti Ice - On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:ENG ANTI ICE:1, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ac7cd707-2267-4580-982b-feb95dc3f69d">
+      <active>true</active>
+      <description>Mini OVHD - Battery - Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ELEC_BAT_1_PB_HAS_FAULT, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, Bool) or and 1 and 0 &gt; (A:CIRCUIT GENERAL PANEL ON, Bool) and" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="79360361-053f-4cc6-97a8-7edce23ede26">
+      <active>true</active>
+      <description>Mini OVHD - Battery - Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_ELEC_BAT_1_PB_IS_AUTO, Bool) ! (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_DC_BAT_BUS_IS_POWERED, Bool) and 1 and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d2e88457-8404-49ed-8628-27033f4f8668">
+      <active>true</active>
+      <description>Mini OVHD - External Power - Available</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:EXTERNAL POWER AVAILABLE:1, Bool) (A:EXTERNAL POWER ON:1, Bool) ! and (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and 1 and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8d124371-ff86-4759-9075-8a56c179f8c2">
+      <active>true</active>
+      <description>Mini OVHD - External Power - On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:EXTERNAL POWER AVAILABLE:1, Bool) (A:EXTERNAL POWER ON:1, Bool) and (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_DC_BAT_BUS_IS_POWERED, Bool) and 1 and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2daffb7e-e5e7-4bd6-8910-477036f77d60">
+      <active>true</active>
+      <description>Mini OVHD - Fuel Pumps - Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 0 == 1 and (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7aaa8251-7ad2-482e-8665-28ccd93777ab">
+      <active>true</active>
+      <description>Mini OVHD - Fuel Pumps - Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:FUELSYSTEM PUMP SWITCH:1, Enum) 0 == (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_2_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="338007fc-330e-4ceb-a980-4950b2a35a32">
+      <active>true</active>
+      <description>Mini OVHD - APU Master - Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_APU_MASTER_SW_PB_HAS_FAULT, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, Bool) or and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e3168a78-59d1-4f85-80f8-84f28d14426a">
+      <active>true</active>
+      <description>Mini OVHD - APU Master - On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, Bool) or and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5bd10384-ed41-4ef5-a817-3f3bdf9f49af">
+      <active>true</active>
+      <description>Mini OVHD - APU Start - Available</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_APU_START_PB_IS_AVAILABLE, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, Bool) or and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8127e176-5a70-4e48-af2b-8cc10a37ecb9">
+      <active>true</active>
+      <description>Mini OVHD - APU Start - On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_APU_START_PB_IS_ON, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) (L:A32NX_ELEC_AC_STAT_INV_BUS_IS_POWERED, Bool) or and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fbf17866-29de-4964-9993-4c285f99fa38">
+      <active>true</active>
+      <description>Mini OVHD - APU Bleed - Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_PNEU_APU_BLEED_PB_HAS_FAULT, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 12" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a3e12164-b713-4307-8d6f-af2d094ddf24">
+      <active>true</active>
+      <description>Mini OVHD - APU Bleed - On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_PNEU_APU_BLEED_PB_IS_ON, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" shiftRegister="LightingRegister" registerOutputPin="Output 13" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1a3bfc4c-12c7-4104-9db6-4a7a058a5e18">
+      <active>true</active>
+      <description>Mini OVHD - Integral Lighting Brightness (Raw)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:84, PERCENT)" UUID="0" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b428c03b-8fb2-4ed7-96cf-559264b86454">
+      <active>true</active>
+      <description>Mini OVHD - Annunciator Brightness</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_INTLT_ANN) 2 == if{ 100 } els{ 0 }" UUID="0" />
+        <modifiers>
+          <transformation active="True" expression="250" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Pin" serial="Mini Overhead/ SN-39c-ec0" trigger="normal" pin="Annunciators Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c438d5ec-e523-4f80-a06f-7282bc113e23">
+      <active>true</active>
+      <description>Mini OVHD - ESS Bus is Powered (AC)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_ELEC_AC_ESS_BUS_IS_POWERED, bool)" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="e6a19380-d90d-47ad-aca9-380d5d66211b">
+      <active>true</active>
+      <description>Mini OVHD - Batt Toggle (and Oxy, Emerg Exit)</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="9">
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_ELEC_BAT_1_PB_IS_AUTO, Bool) ! (&gt;L:A32NX_OVHD_ELEC_BAT_1_PB_IS_AUTO) &#xD;&#xA;(L:A32NX_OVHD_ELEC_BAT_2_PB_IS_AUTO, Bool) ! (&gt;L:A32NX_OVHD_ELEC_BAT_2_PB_IS_AUTO)&#xD;&#xA;(L:PUSH_OVHD_OXYGEN_CREW, bool) ! (&gt;L:PUSH_OVHD_OXYGEN_CREW)&#xD;&#xA;(L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_POSITION) 2 == if{ 1 } els{ 2 } (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_EMEREXIT_POSITION)" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="10f608e7-88b7-4515-b07d-147586760a9c">
+      <active>true</active>
+      <description>Mini OVHD - Ext Power</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="10">
+          <onPress type="MSFS2020EventIdInputAction" eventId="OVHD_ELEC_EXT_PWR_TOGGLE" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c415223e-b9be-4c61-a331-93315efbcd7f">
+      <active>true</active>
+      <description>Mini OVHD - ADIRS Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="ADIRS OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_OVHD_ADIRS_IR_1_MODE_SELECTOR_KNOB)&#xD;&#xA;0 (&gt;L:A32NX_OVHD_ADIRS_IR_2_MODE_SELECTOR_KNOB)&#xD;&#xA;0 (&gt;L:A32NX_OVHD_ADIRS_IR_3_MODE_SELECTOR_KNOB)" presetId="-" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4b1c5ec7-2e66-439d-a362-1bde544db425">
+      <active>true</active>
+      <description>Mini OVHD - ADIRS NAV</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="ADIRS OFF" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_OVHD_ADIRS_IR_1_MODE_SELECTOR_KNOB)&#xD;&#xA;1 (&gt;L:A32NX_OVHD_ADIRS_IR_2_MODE_SELECTOR_KNOB)&#xD;&#xA;1 (&gt;L:A32NX_OVHD_ADIRS_IR_3_MODE_SELECTOR_KNOB)" presetId="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="26ec8aa6-abf9-4f18-8038-8891981bb634">
+      <active>true</active>
+      <description>Mini OVHD - ADIRS ATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="ADIRS NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:A32NX_OVHD_ADIRS_IR_1_MODE_SELECTOR_KNOB)&#xD;&#xA;2 (&gt;L:A32NX_OVHD_ADIRS_IR_2_MODE_SELECTOR_KNOB)&#xD;&#xA;2 (&gt;L:A32NX_OVHD_ADIRS_IR_3_MODE_SELECTOR_KNOB)" presetId="0" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0432616e-0aaa-4a5b-bfff-fef7a86a509f">
+      <active>true</active>
+      <description>Mini OVHD - Fuel Toggle</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="11">
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;K:FUELSYSTEM_PUMP_TOGGLE) 2 (&gt;K:FUELSYSTEM_PUMP_TOGGLE) 3  (&gt;K:FUELSYSTEM_PUMP_TOGGLE) 4 (&gt;K:FUELSYSTEM_PUMP_TOGGLE) 5 (&gt;K:FUELSYSTEM_PUMP_TOGGLE) 6 (&gt;K:FUELSYSTEM_PUMP_TOGGLE)" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="07139f63-611c-46fd-bc48-e524796871d7">
+      <active>true</active>
+      <description>Mini OVHD - APU Master</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="12">
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON) ! (&gt;L:A32NX_OVHD_APU_MASTER_SW_PB_IS_ON)" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="00767b61-a6a9-4dc5-95c8-e57f3eb68d7f">
+      <active>true</active>
+      <description>Mini OVHD - APU Start</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="13">
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_APU_START_PB_IS_ON) ! (&gt;L:A32NX_OVHD_APU_START_PB_IS_ON)" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="75cde6ba-2187-4c61-b815-2de713670fdc">
+      <active>true</active>
+      <description>Mini OVHD - APU Bleed</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="14">
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_OVHD_PNEU_APU_BLEED_PB_IS_ON) ! (&gt;L:A32NX_OVHD_PNEU_APU_BLEED_PB_IS_ON)" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="80b461ab-5a4f-47db-aa75-308175d47749">
+      <active>true</active>
+      <description>Mini OVHD - Anti Ice</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="8">
+          <onPress />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="42d697ad-0875-41dd-b3e9-c4730da6b410">
+      <active>true</active>
+      <description>Mini OVHD - All Calls</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="CALLS" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020EventIdInputAction" eventId="PUSH_OVHD_CALLS_ALL_ON" />
+          <onRelease type="MSFS2020EventIdInputAction" eventId="PUSH_OVHD_CALLS_ALL_OFF" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f8805961-4327-4d04-9b3c-e111c3d2e2ea">
+      <active>true</active>
+      <description>Mini OVHD - Seatbelts On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="6">
+          <onPress type="MSFS2020EventIdInputAction" eventId="A32NX_CABIN_SEATBELTS_ALERT_ON" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="21c8ded4-67df-4542-ac3d-c988c4521fa4">
+      <active>true</active>
+      <description>Mini OVHD - Seatbelts Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="5">
+          <onPress type="MSFS2020EventIdInputAction" eventId="A32NX_CABIN_SEATBELTS_ALERT_OFF" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="cf85c035-4819-4111-aa9e-1181517051a4">
+      <active>true</active>
+      <description>Mini OVHD - No Elec Dev Down</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="7">
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="202e60fa-e55a-4228-a6ff-c8f3c12aabdb">
+      <active>true</active>
+      <description>Mini OVHD - No Elec Dev Up</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="NO ELEC DEV ON" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:XMLVAR_SWITCH_OVHD_INTLT_NOSMOKING_Position, number)" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fac2a5e1-d39b-4fc2-a0a6-cf7d2036d07b">
+      <active>true</active>
+      <description>Mini OVHD - Lights Down</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="3">
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:LIGHTING_LANDING_2) 1 (&gt;L:LANDING_2_Retracted) 0 2 r (&gt;K:2:LANDING_LIGHTS_SET)&#xD;&#xA;2 (&gt;L:LIGHTING_LANDING_3) 1 (&gt;L:LANDING_3_Retracted) 0 3 r (&gt;K:2:LANDING_LIGHTS_SET)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_LANDING_2) 0 (&gt;L:LANDING_2_Retracted) 0 2 r (&gt;K:2:LANDING_LIGHTS_SET)&#xD;&#xA;1 (&gt;L:LIGHTING_LANDING_3) 0 (&gt;L:LANDING_3_Retracted) 0 3 r (&gt;K:2:LANDING_LIGHTS_SET)" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2cdbd74b-556b-4862-847e-6f0bc2b7d725">
+      <active>true</active>
+      <description>Mini OVHD - Lights Up</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="4">
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_LANDING_2) 0 (&gt;L:LANDING_2_Retracted) 1 2 r (&gt;K:2:LANDING_LIGHTS_SET)&#xD;&#xA;0 (&gt;L:LIGHTING_LANDING_3) 0 (&gt;L:LANDING_3_Retracted) 1 3 r (&gt;K:2:LANDING_LIGHTS_SET)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_LANDING_2) 0 (&gt;L:LANDING_2_Retracted) 0 2 r (&gt;K:2:LANDING_LIGHTS_SET)&#xD;&#xA;1 (&gt;L:LIGHTING_LANDING_3) 0 (&gt;L:LANDING_3_Retracted) 0 3 r (&gt;K:2:LANDING_LIGHTS_SET)" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bc074027-6a33-4ea1-a0ca-e6ee3547715a">
+      <active>true</active>
+      <description>Mini OVHD - Nose Down</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="1">
+          <onPress type="MSFS2020CustomInputAction" command="0 s0 (&gt;L:LIGHTING_TAXI_2) 2 l0 (&gt;K:2:TAXI_LIGHTS_SET) 3 l0 (&gt;K:2:TAXI_LIGHTS_SET)&#xD;&#xA;2 (&gt;L:LIGHTING_LANDING_1) 0 1 r (&gt;K:2:LANDING_LIGHTS_SET) 0 1 r (&gt;K:2:TAXI_LIGHTS_SET)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 s0 (&gt;L:LIGHTING_TAXI_2) 2 l0 (&gt;K:2:TAXI_LIGHTS_SET) 3 l0 (&gt;K:2:TAXI_LIGHTS_SET)&#xD;&#xA;1 (&gt;L:LIGHTING_LANDING_1) 0 1 r (&gt;K:2:LANDING_LIGHTS_SET) 1 1 r (&gt;K:2:TAXI_LIGHTS_SET)" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ce5101a0-5b2f-4f18-bd06-22a33c95f314">
+      <active>true</active>
+      <description>Mini OVHD - Nose Up</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="2">
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_LANDING_1) 1 1 r (&gt;K:2:LANDING_LIGHTS_SET) 0 1 r (&gt;K:2:TAXI_LIGHTS_SET)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_LANDING_1) 0 1 r (&gt;K:2:LANDING_LIGHTS_SET) 1 1 r (&gt;K:2:TAXI_LIGHTS_SET)" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8e8468a9-4bf3-4e65-9ec6-2c52a4e05583">
+      <active>true</active>
+      <description>Mini OVHD - Ext Lights Down</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="15">
+          <onPress type="MSFS2020CustomInputAction" command="2 (&gt;L:LIGHTING_STROBE_0) 0 (&gt;L:STROBE_0_Auto) 0 0 r (&gt;K:2:STROBES_SET)&#xD;&#xA;0 0 (&gt;K:2:BEACON_LIGHTS_SET)&#xD;&#xA;0 0 (&gt;K:2:NAV_LIGHTS_SET) 0 0 (&gt;K:2:LOGO_LIGHTS_SET)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_STROBE_0) 1 (&gt;L:STROBE_0_Auto) 1 0 r (&gt;K:2:STROBES_SET)&#xD;&#xA;0 1 (&gt;K:2:BEACON_LIGHTS_SET)&#xD;&#xA;0 1 (&gt;K:2:NAV_LIGHTS_SET) 0 1 (&gt;K:2:LOGO_LIGHTS_SET)" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2f494513-773d-4c71-a5c1-38d7d29a8bc0">
+      <active>true</active>
+      <description>Mini OVHD - Ext Lights Up</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="0">
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:LIGHTING_STROBE_0) 0 (&gt;L:STROBE_0_Auto) 1 0 r (&gt;K:2:STROBES_SET)" />
+          <onRelease type="MSFS2020CustomInputAction" command="1 (&gt;L:LIGHTING_STROBE_0) 1 (&gt;L:STROBE_0_Auto) 1 0 r (&gt;K:2:STROBES_SET)" />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e1b1e470-2e36-4caa-800f-16acf605a914">
+      <active>true</active>
+      <description>Mini OVHD - Anti Ice</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.6.0.0, Culture=neutral, PublicKeyToken=null" serial="Mini Overhead/ SN-39c-ec0" name="InputShifter" type="InputShiftRegister" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <inputShiftRegister ExtPin="8">
+          <onPress type="MSFS2020CustomInputAction" command="(&gt;K:ANTI_ICE_TOGGLE_ENG1)&#xD;&#xA;(&gt;K:ANTI_ICE_TOGGLE_ENG2)&#xD;&#xA;(&gt;K:TOGGLE_STRUCTURAL_DEICE)" />
+          <onRelease />
+        </inputShiftRegister>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

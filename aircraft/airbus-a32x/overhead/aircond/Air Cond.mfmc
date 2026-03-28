@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Air Cond</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <ShiftRegister Name="Led Driver" LatchPin="16" ClockPin="17" DataPin="18" NumModules="2" />
+  <Encoder Name="Fwd Cabin" PinLeft="1" PinRight="0" EncoderType="2" />
+  <Encoder Name="Cockpit" PinLeft="3" PinRight="2" EncoderType="2" />
+  <Button Name="PackHigh" Pin="4" />
+  <Button Name="PackAuto" Pin="5" />
+  <Button Name="PackLow" Pin="6" />
+  <Button Name="Pack1" Pin="7" />
+  <Button Name="Eng1Bleed" Pin="8" />
+  <Button Name="RamAir" Pin="9" />
+  <Button Name="APUBleed" Pin="10" />
+  <Button Name="BleedShut" Pin="11" />
+  <Button Name="BleedAuto" Pin="12" />
+  <Button Name="BleedOpen" Pin="13" />
+  <Output Name="Annunciator Brt" Pin="19" />
+  <Output Name="Backlight Brt" Pin="20" />
+  <Button Name="Eng2Bleed" Pin="21" />
+  <Button Name="Pack2" Pin="22" />
+  <Button Name="HotAir" Pin="26" />
+  <Encoder Name="Aft Cabin" PinLeft="28" PinRight="27" EncoderType="2" />
+</Config>

@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="8ed19b7f-ed34-4d0e-8892-950dda889842">
+      <active>true</active>
+      <description>Backlight Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A_OH_LIGHTING_OVD)" UUID="80ba2a0b-8a2e-44d8-9612-ac3552de103e" />
+        <modifiers>
+          <transformation active="True" expression="$*60" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3d287228-6505-4e1f-b7ac-93966fb430a1">
+      <active>true</active>
+      <description>Voltage 1</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:FNX2PLD_bat1)" UUID="9c6c621f-ed38-4570-b42b-de07ed8f9e84" />
+        <modifiers>
+          <transformation active="True" expression="Round($,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" ledAddress="Voltage Display" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="3,4,5" ledDecimalPoints="4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1ea40265-c34c-4b79-af1f-def9a93b587a">
+      <active>true</active>
+      <description>Voltage 2</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:FNX2PLD_bat2)" UUID="4de468e5-9b9c-4381-93e4-26143b48ecec" />
+        <modifiers>
+          <transformation active="True" expression="Round($,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Display Module" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" ledAddress="Voltage Display" ledConnector="1" ledModuleSize="8" ledPadding="False" ledPaddingChar="0" ledDigits="0,1,2" ledDecimalPoints="1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e0c6429e-dc39-4814-9c3a-c465e98d3b53">
+      <active>true</active>
+      <description>Annunciator Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="True" expression="150" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="Output" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" pin="Anunnciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="03fa2b89-a8d6-4f0f-b797-673549061b1c">
+      <active>true</active>
+      <description>Galley Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_GALY_L)" UUID="cd980e27-c1f8-47b3-81fe-2adc71aee31e" />
+        <modifiers>
+          <transformation active="False" expression="if($=1,0,1)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="41cec334-5eaf-409d-9257-29ee06d231e2">
+      <active>true</active>
+      <description>IDG1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_IDG1_U)" UUID="ecc93b23-6282-4016-b735-48c493707a8c" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3d047e68-8877-420e-b13d-17924d6f731c">
+      <active>true</active>
+      <description>IDG2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_IDG2_U)" UUID="1ba64a61-37a4-4d57-8766-a720bd721cab" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 15" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="698d92b9-58a5-4193-ab7d-dba6779868fa">
+      <active>true</active>
+      <description>Gen1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_GEN1_L)" UUID="16e4f387-54ad-4982-9e69-19d342166cba" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3b13820e-f32d-4cc9-954c-9ee6a0707be7">
+      <active>true</active>
+      <description>Gen1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_GEN1_U)" UUID="e05dd2fb-0551-44a4-a363-555a071e24f3" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="73cf16ca-529c-420e-bbf3-1191a2e39637">
+      <active>true</active>
+      <description>Gen2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_GEN2_U)" UUID="a8e63098-65f9-4e0e-84d5-fade23b869dc" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 16" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bd7ae5fc-39e5-46eb-8ab9-011b21c1174a">
+      <active>true</active>
+      <description>Gen2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_GEN2_L)" UUID="9bbcfcb3-ca3d-42be-8460-42eb5531b61f" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 17" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="814c7d79-3b94-40ff-8450-b865dc8aab4d">
+      <active>true</active>
+      <description>APU Gen Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_APU_GENERATOR_L)" UUID="dae5aa58-5ab0-4c27-ad6b-c1175530d6f5" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ca08c025-faa1-4433-89c3-37331145a416">
+      <active>true</active>
+      <description>Bat 1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_BAT1_L)" UUID="d64730b4-4148-47ab-a810-655bba9c1524" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dce0a092-0d46-4ef3-a37e-4c00590f73ee">
+      <active>true</active>
+      <description>Bat1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_BAT1_U)" UUID="be47ee3d-4100-4085-838d-be0362aae413" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7690a81c-b377-49ce-b9c9-ae3c60a07c8c">
+      <active>true</active>
+      <description>Bat 2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_BAT2_L)" UUID="a93519c1-3af6-4098-8434-a5a8f3d1b2a9" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dd18b762-b08a-4b22-b009-309c39e3acf9">
+      <active>true</active>
+      <description>Bat 2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_BAT2_U)" UUID="a95d241e-cfac-42ba-b1b9-705159086fc5" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="812492f8-79e2-4f5c-a558-7d08e541c044">
+      <active>true</active>
+      <description>Ac Ess Alt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_AC_ESS_FEED_L)" UUID="ecafa1b5-3538-4da5-8a1d-450c8ac04673" />
+        <modifiers>
+          <transformation active="True" expression="if(#=1,0,$)" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="ced70a78-997b-4672-a2f8-25dd79341619" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="ced70a78-997b-4672-a2f8-25dd79341619">
+      <active>true</active>
+      <description>Ext Pwr On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_EXT_PWR_L)" UUID="0fdd1453-7f4e-4c05-845e-70b83de69e4e" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 14" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="641823d3-0bc0-4844-b6ed-c60bc8001371">
+      <active>true</active>
+      <description>Ext Pwr Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_EXT_PWR_U)" UUID="2492c18e-ec7a-41de-a0fd-c4c153ec98fb" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 13" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f9f474e2-7352-4721-a862-1b6117b4878c">
+      <active>true</active>
+      <description>Bus Tie Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:I_OH_ELEC_BUSTIE_L)" UUID="8a0daa59-826e-4d1c-839c-3a1df1323cda" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Overhead Elec/ SN-E4629494E745112D" trigger="normal" shiftRegister="LED Register" registerOutputPin="Output 12" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="97ceb252-9c8f-427d-adc6-0625836efb2f">
+      <active>true</active>
+      <description>Galley</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="Galley" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_ELEC_GALY)" presetId="7119e9f3-5bca-41c0-915a-22a49ab65686" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_ELEC_GALY)" presetId="f4b2f9cd-8b1d-4cee-8eb9-8557899986ad" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="43eb4045-81e1-4d80-b694-81ea0eb37c34">
+      <active>true</active>
+      <description>Gen1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="Gen1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_GEN1) ! (&gt;L:S_OH_ELEC_GEN1) 1 (&gt;L:S_OH_ELEC_GEN1_Anim)" presetId="45d3c5f2-b7ad-44f6-b639-ceb32efd58e5" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_GEN1) 0 == if{ 0 (&gt;L:S_OH_ELEC_GEN1_Anim) } (L:S_OH_ELEC_GEN1) 1 == if{ 2 (&gt;L:S_OH_ELEC_GEN1_Anim) }" presetId="9fa726f0-b0e0-4d77-933a-42b4aa6e1fff" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="027cbe45-02fd-47ee-90f7-a0cf82694668">
+      <active>true</active>
+      <description>Gen2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="Gen2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_GEN2) ! (&gt;L:S_OH_ELEC_GEN2) 1 (&gt;L:S_OH_ELEC_GEN2_Anim)" presetId="c486f589-a211-4d9a-90b2-9b3bcb40dbc7" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_GEN2) 0 == if{ 0 (&gt;L:S_OH_ELEC_GEN2_Anim) } (L:S_OH_ELEC_GEN2) 1 == if{ 2 (&gt;L:S_OH_ELEC_GEN2_Anim) }" presetId="fc9d31a5-c484-47c7-8e4e-9b4a7cc6d707" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="04bdccff-a698-4d5d-bb2f-96015f25e08d">
+      <active>true</active>
+      <description>APU Gen</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="APUGen" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_APU_GENERATOR) ! (&gt;L:S_OH_ELEC_APU_GENERATOR) 1 (&gt;L:S_OH_ELEC_APU_GENERATOR_Anim)" presetId="20e11e80-d2ea-414b-a5ab-4c66049b2b68" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_APU_GENERATOR) 0 == if{ 0 (&gt;L:S_OH_ELEC_APU_GENERATOR_Anim) } (L:S_OH_ELEC_APU_GENERATOR) 1 == if{ 2 (&gt;L:S_OH_ELEC_APU_GENERATOR_Anim) }" presetId="9683d8fc-2fc4-4d45-ac05-9ea1e521fd97" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dc11f1e0-287c-42d0-977a-a1144b893bd6">
+      <active>true</active>
+      <description>Bus Tie</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="BusTie" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_ELEC_BUSTIE)" presetId="07879d48-daec-4f5d-a0f4-69f47587b764" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_ELEC_BUSTIE)" presetId="c8aac8fd-9bbc-40e8-897b-a595b353f1bf" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1701caf0-c144-4a7d-93de-14e1e2a264bb">
+      <active>true</active>
+      <description>Bat 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="Bat1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_BAT1) ! (&gt;L:S_OH_ELEC_BAT1) &#xA;1 (&gt;L:S_OH_ELEC_BAT1_Anim)" presetId="45ca696f-c20d-47a3-8375-c90b574fdcc2" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_BAT1) 0 == if{ 0 (&gt;L:S_OH_ELEC_BAT1_Anim) } &#xA;(L:S_OH_ELEC_BAT1) 1 == if{ 2 (&gt;L:S_OH_ELEC_BAT1_Anim) }" presetId="6c6a7cb0-f9fd-4563-a4ca-3a35d1dd8743" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="387a5e64-4bca-4578-8af7-1aff35dd0e8a">
+      <active>true</active>
+      <description>Bat 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="Bat2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_BAT2) ! (&gt;L:S_OH_ELEC_BAT2) &#xA;1 (&gt;L:S_OH_ELEC_BAT2_Anim)" presetId="3fbc60b2-f414-4b3c-9fe5-57dff4411b31" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_BAT2) 0 == if{ 0 (&gt;L:S_OH_ELEC_BAT2_Anim) } &#xA;(L:S_OH_ELEC_BAT2) 1 == if{ 2 (&gt;L:S_OH_ELEC_BAT2_Anim) }" presetId="40494041-783d-4927-85a8-ce2cf20457d9" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c83260cc-022e-4a73-9b48-f9ccf4707e8a">
+      <active>true</active>
+      <description>Acess Feed</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="AcEssFeed" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_ELEC_AC_ESS_FEED)" presetId="0cfff26f-cbc1-40eb-9c92-b1bd38ccb7bb" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_ELEC_AC_ESS_FEED)" presetId="c169af1d-4fde-49a4-8edb-70dad58d054c" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c954200a-a12d-4f8d-81cd-8017bff81ac9">
+      <active>true</active>
+      <description>Ext Pwr</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="ExtPwr" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_EXT_PWR) ++ (&gt;L:S_OH_ELEC_EXT_PWR)" presetId="1a14af76-1444-424f-aec9-8a12cf049c2b" />
+          <onRelease type="MSFS2020CustomInputAction" command="(L:S_OH_ELEC_EXT_PWR) ++ (&gt;L:S_OH_ELEC_EXT_PWR)" presetId="49408969-319d-451b-84c8-04981ea6a5dc" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e8f164fd-be69-410b-88e7-4529e89ded61">
+      <active>true</active>
+      <description>IDG1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="IDG1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_ELEC_IDG1)" presetId="f5c8a663-9f49-4714-b05b-70d0c467eef1" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_ELEC_IDG1)" presetId="4ed962d1-5930-43c5-b8a4-703d1c346cf1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f8ca6bfe-5cbe-4e58-97da-e4eefd517952">
+      <active>true</active>
+      <description>IDG2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Overhead Elec/ SN-E4629494E745112D" name="IDG2" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:S_OH_ELEC_IDG2)" presetId="08ed7dd8-98fd-4031-accb-1713f7cc4d23" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:S_OH_ELEC_IDG2)" presetId="567620d5-90f7-4e88-9ed0-4b3894fe5ca4" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

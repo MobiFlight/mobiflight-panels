@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="0f6406b6-585c-464a-92c3-11aca5c3be61">
+      <active>true</active>
+      <description>Gen 1 Smoke</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ffb09c90-022f-4774-9f0d-e77f2ddec8c0">
+      <active>true</active>
+      <description>Gen 1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aa916fc1-3ce2-4c82-afde-53d0b4bcc054">
+      <active>true</active>
+      <description>Rat Gen Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_OVHD_EMER_ELEC_RAT_AND_EMER_GEN_HAS_FAULT)" UUID="0adbe9e1-a326-4289-a0e1-7df3b3b7ebd7" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c51cc312-4d58-443c-8b34-3bd03a2e999e">
+      <active>true</active>
+      <description>Sys Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="596a8fb7-6b52-4c7d-b7f5-68de0a00c9f8">
+      <active>true</active>
+      <description>Sys Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f18be4ee-7dfb-4512-9c2d-b21a555590d2">
+      <active>true</active>
+      <description>Emer On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_CALLS_EMER_ON)" UUID="1177a0ee-5509-434f-ab42-1741869dad70" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="60bb0bd8-c43d-44b6-9e52-61eb4801b294">
+      <active>true</active>
+      <description>Emer Called</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_CALLS_EMER_ON)" UUID="1177a0ee-5509-434f-ab42-1741869dad70" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="187a194d-ae7e-4961-828f-d4f2dc1fc99a">
+      <active>true</active>
+      <description>Pass Sys On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="LVAR" Value="" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6ff586c5-b1be-45c0-9adf-4726fd93d75f">
+      <active>true</active>
+      <description>Crew Supply Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:PUSH_OVHD_OXYGEN_CREW, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_ESS_SHED_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="25e896b9-4583-4935-89d8-6d81dd8c99a5" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="3e9fe578-be91-40bd-a1be-e4ef0810f294">
+      <active>true</active>
+      <description>Gnd Control On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_RCDR_GROUND_CONTROL_ON, Bool) (L:A32NX_OVHD_INTLT_ANN) 0 == or 1 and (L:A32NX_ELEC_AC_1_BUS_IS_POWERED, Bool) and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="decaba10-395d-4210-98c2-121480b3bd2a" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 12" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9a2e9aa3-7043-42b9-840e-ba71c1bbbb3f">
+      <active>true</active>
+      <description>Ldg Flap 3</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_GPWS_FLAPS3)" UUID="f5e91246-f031-48e1-96eb-36a78b1bbbc5" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 13" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8d113d8e-d5c9-42bd-9189-e05d76a988a1">
+      <active>true</active>
+      <description>Flap Mode Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_GPWS_FLAP_OFF)" UUID="e25ac809-8703-4350-a046-02615e738a96" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 14" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9ab3663a-39bc-4692-9ad6-63d8c6cd71f9">
+      <active>true</active>
+      <description>GS Mode Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A32NX_GPWS_FLAP_OFF)" UUID="e25ac809-8703-4350-a046-02615e738a96" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 15" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fb582119-2462-4c4a-ae37-acf4980c6e3a">
+      <active>true</active>
+      <description>Annunciator Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="" UUID="-" />
+        <modifiers>
+          <transformation active="True" expression="100" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="603556e1-e368-4724-8572-cd9aaed315f8">
+      <active>true</active>
+      <description>Backlight</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:LIGHT POTENTIOMETER:86, PERCENT)" UUID="-" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="Output" serial="Emer Elec/ SN-E462B02353632B2E" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="8e40cc71-daf8-4f5e-a3f8-e4146961e1c7">
+      <active>true</active>
+      <description>Emer Gen Test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Emer Gen" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_EMERELECPWR_EMERTESTLOCK_TOGGLE)" presetId="f1453a23-1b71-4aad-8d98-373116effeea" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6c8cd8dc-689a-4981-be30-97b687b4bb27">
+      <active>true</active>
+      <description>Gen 1 Line</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Gen 1" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_EMERELECPWR_GEN1_TOGGLE)" presetId="48e57134-37db-42b4-9ea8-60e513ae0e4a" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fbc5bf93-cd80-4db6-a880-33af1b92ae1a">
+      <active>true</active>
+      <description>Man On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Man On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_EMERELECPWR_MANONLOCK_TOGGLE)" presetId="796d46fa-66e4-4ffd-aaea-231ecffadb63" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6ace9cba-f13b-4066-ab80-084d795a0623">
+      <active>true</active>
+      <description>Crew Supply</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Crew" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:PUSH_OVHD_OXYGEN_CREW, Bool) ! (&gt;L:PUSH_OVHD_OXYGEN_CREW)" presetId="5f87af52-a1d0-4fe8-baa7-622648a6d135" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="134c9ead-fae1-448b-9351-4dbf421c6a1a">
+      <active>true</active>
+      <description>Call Emer</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Emer Call" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_CALLS_EMER_ON)" presetId="07611881-8c99-4a37-ab00-397836ddb1c9" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a72a7705-6877-4342-9c95-9340482904c4">
+      <active>true</active>
+      <description>Call Mech</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Mech" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:PUSH_OVHD_CALLS_MECH)" presetId="536cfeee-7f6c-4972-bac2-762d793099af" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:PUSH_OVHD_CALLS_MECH)" presetId="526db112-e9ff-4a30-ba37-55503fbecc97" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6f5efbce-65be-4e03-b3c3-8aefc7696b6e">
+      <active>true</active>
+      <description>Call Fwd</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Fwd" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:PUSH_OVHD_CALLS_FWD)" presetId="99adac44-fb26-4736-b1e5-4d97e735660e" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:PUSH_OVHD_CALLS_FWD)" presetId="406e684f-7b2e-4ff3-a4ba-03e1e57a572b" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="edf9c467-736a-4628-a926-5073b58c8bea">
+      <active>true</active>
+      <description>Call Aft</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Aft" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:PUSH_OVHD_CALLS_AFT)" presetId="b1e1f89f-6c96-443e-98ef-d1aeb5fd95dd" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:PUSH_OVHD_CALLS_AFT)" presetId="ec25bf1d-f3d2-49c4-aefd-a623ae967257" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="12ad33d2-ac38-4c5b-81fc-a17ec4127634">
+      <active>true</active>
+      <description>Wiper Fast</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Wiper Fast" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:CIRCUIT SWITCH ON:77,bool) ! if{ 77 (&gt;K:ELECTRICAL_CIRCUIT_TOGGLE) } 100 77 (&gt;K:2:ELECTRICAL_CIRCUIT_POWER_SETTING_SET)" presetId="11f00348-9108-4eb1-a383-6b9e0a513cc3" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:CIRCUIT SWITCH ON:77,bool) ! if{ 77 (&gt;K:ELECTRICAL_CIRCUIT_TOGGLE) } 75 77 (&gt;K:2:ELECTRICAL_CIRCUIT_POWER_SETTING_SET)" presetId="b8710d1f-b1ca-4620-bf09-2233d2330880" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="23f4dda9-2149-48b3-b5bc-f0e8c31c85b6">
+      <active>true</active>
+      <description>Wiper Slow</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Wiper Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(A:CIRCUIT SWITCH ON:77,bool) if{ 77 (&gt;K:ELECTRICAL_CIRCUIT_TOGGLE) }" presetId="24751965-c310-4480-b59b-9a6c085afcd3" />
+          <onRelease type="MSFS2020CustomInputAction" command="(A:CIRCUIT SWITCH ON:77,bool) ! if{ 77 (&gt;K:ELECTRICAL_CIRCUIT_TOGGLE) } 75 77 (&gt;K:2:ELECTRICAL_CIRCUIT_POWER_SETTING_SET)" presetId="b8710d1f-b1ca-4620-bf09-2233d2330880" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="70524e8b-abba-4d84-b98e-3073fbe7ae35">
+      <active>true</active>
+      <description>CVR Test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="CVR Test" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="1 (&gt;L:A32NX_RCDR_TEST)" presetId="5f761775-a836-4ab9-8a71-e6108e9c5708" />
+          <onRelease type="MSFS2020CustomInputAction" command="0 (&gt;L:A32NX_RCDR_TEST)" presetId="cda2e3f2-1d32-4a36-be29-da8c279d443f" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b96762d0-18d9-4ed2-bec6-c2e4783af2f7">
+      <active>true</active>
+      <description>Gnd Ctl</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Gnd Control" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_RCDR_GROUND_CONTROL_ON,bool) ! if{ &#xA;   (A:GENERAL ENG OIL PRESSURE:1, psi) 18 &lt; sp1&#xA;   (A:GENERAL ENG OIL PRESSURE:2, psi) 18 &lt; sp2&#xA;   (L:A32NX_ELEC_DC_ESS_SHED_BUS_IS_POWERED,bool) l1 and l2 and&#xA;   if{ 1 (&gt;L:A32NX_RCDR_GROUND_CONTROL_ON,bool) } } &#xA;els{ 0 (&gt;L:A32NX_RCDR_GROUND_CONTROL_ON,bool) }" presetId="20cbb076-c10e-4eed-a272-c33a9ae2a486" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="48c78680-779b-4528-8e57-7910b69256c2">
+      <active>true</active>
+      <description>Sys</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Sys" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_GPWS_SYS_OFF,bool) ! (&gt;L:A32NX_GPWS_SYS_OFF)" presetId="2b35995d-7637-4c30-8084-ba8622672824" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fc52c364-90b5-4dac-a5ec-9e7fa67744ef">
+      <active>true</active>
+      <description>GS Mode</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="GS Mode" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_GPWS_GS_OFF,bool) ! (&gt;L:A32NX_GPWS_GS_OFF)" presetId="aa506e87-d56f-4698-8756-025e217086c6" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d7c440da-d861-43e4-9c90-822fef34af38">
+      <active>true</active>
+      <description>Flap Mode</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Flap Mode" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_GPWS_FLAP_OFF,bool) ! (&gt;L:A32NX_GPWS_FLAP_OFF)" presetId="2f2d6486-c1f5-4c6e-9259-f471b2397f68" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2a513130-db43-402f-9714-f3fb7687dfb8">
+      <active>true</active>
+      <description>Ldg Flap 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="Emer Elec/ SN-E462B02353632B2E" name="Ldg Flap 3" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="MSFS2020CustomInputAction" command="(L:A32NX_GPWS_FLAPS3,bool) ! (&gt;L:A32NX_GPWS_FLAPS3)" presetId="7139a0ff-57b5-41da-a022-0630b401fea7" />
+          <onRelease />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

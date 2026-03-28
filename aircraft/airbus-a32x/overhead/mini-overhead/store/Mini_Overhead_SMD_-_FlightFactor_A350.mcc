@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="8290c85f-e9b0-4ab0-b550-e854ec3e6a5d">
+      <active>true</active>
+      <description>Backlight Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lights/conLightRotery" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="$ * 255" />
+        </modifiers>
+        <display type="Output" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" pin="Backlight Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="848e5b07-7bc1-4ed7-94e4-7e5fc7b98144">
+      <active>true</active>
+      <description>Annunciator Brt</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Backlight" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="220" />
+        </modifiers>
+        <display type="Output" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" pin="Annunciator Brt" pinBrightness="255" pinPwm="True" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="40556edf-03fd-41fc-b426-c4164febd7cc">
+      <active>true</active>
+      <description>Anti Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="AIFault" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="? | ! | #" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 12" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="eeb27db0-b743-483c-9d41-76cbd72bd438" placeholder="#" testvalue="1" />
+          <configref active="True" ref="547a820d-4421-4df5-a40e-0c7e811d2af5" placeholder="!" testvalue="1" />
+          <configref active="True" ref="28fe79f4-047f-4793-8b3a-cb45558c38fc" placeholder="?" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="c3eb7c99-a767-4774-8e94-03c4ffbf8632">
+      <active>true</active>
+      <description>Anti Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="AIOn" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="? | ! | #" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 13" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="48751dc2-7d2c-48a0-a984-c8e6beb6cfca" placeholder="#" testvalue="1" />
+          <configref active="True" ref="643fdf6e-c2b7-4824-83f5-153537afa143" placeholder="!" testvalue="1" />
+          <configref active="True" ref="7511f158-e885-4eb9-b2ca-fa120d485bef" placeholder="?" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="b09759ad-b2fb-4802-bdce-3f8dfb948ed5">
+      <active>true</active>
+      <description>Battery Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BatFault" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="! | # | ? | @" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 11" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9721a4b1-ddab-43dc-b77a-45e88ba79937" placeholder="#" testvalue="1" />
+          <configref active="True" ref="6f43c594-3112-4bad-a33a-2f87b532e3db" placeholder="!" testvalue="1" />
+          <configref active="True" ref="7bfa3ff1-4013-427f-8cef-f9bafa1b0621" placeholder="?" testvalue="1" />
+          <configref active="True" ref="9ccb0396-348c-42cd-a5b9-9f907b8b080d" placeholder="@" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="8946ac1a-d38d-40db-b2bd-33bc8f414315">
+      <active>true</active>
+      <description>Battery Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="BatOff" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="! | # | ? | @" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 10" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="832b32f7-c9fb-45b2-852e-fb9993974363" placeholder="#" testvalue="1" />
+          <configref active="True" ref="62ef1377-81a5-4e4d-8594-dcb0e730b514" placeholder="!" testvalue="1" />
+          <configref active="True" ref="2a29039e-c70e-42d1-903d-6d395f5619a2" placeholder="?" testvalue="1" />
+          <configref active="True" ref="d29f3a32-4dd0-4556-8a02-5f254a0b5e08" placeholder="@" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2f6b129b-3aee-44c1-9e44-c8f7e08a910a">
+      <active>true</active>
+      <description>Ext Pwr Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ExtPowerAvail" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="! | #" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 9" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="e9ee0809-b9a1-4b07-bd0a-d602a94dd8bd" placeholder="#" testvalue="1" />
+          <configref active="True" ref="06274794-c8c0-4b10-89e4-292c670f6516" placeholder="!" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="9904365a-677a-4073-8e66-c1119b63a21f">
+      <active>true</active>
+      <description>Ext Pwr On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="ExtPowerOn" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="! | #" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 8" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="9b2bcfa1-b236-42f6-9e30-894b6eae59f6" placeholder="#" testvalue="1" />
+          <configref active="True" ref="f9cfca7a-28d2-4a2b-a14c-797c747183d5" placeholder="!" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="6cbd5995-48ed-48da-866e-d83245ec36bd">
+      <active>true</active>
+      <description>APU Bleed Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/188" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 7" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="51e8dcf9-cc1f-4b60-a6ea-431cc2beb9e4">
+      <active>true</active>
+      <description>APU Bleed On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/189" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 6" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="1b08b790-61b7-4d4a-8dd2-5c1bc95f5d88">
+      <active>true</active>
+      <description>APU Start Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/217" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 5" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="82375353-8509-4048-ae99-ff0837994051">
+      <active>true</active>
+      <description>APU Start On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/218" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 4" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c12b4e95-feb6-4618-b4b0-d89a03f3396d">
+      <active>true</active>
+      <description>APU Master Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/215" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 3" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5df8bd0a-bf44-4de4-a123-ae2325612a89">
+      <active>true</active>
+      <description>APU Master On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/216" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 2" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a96bd40f-aa59-4f6c-a256-13b067b38356">
+      <active>true</active>
+      <description>Fuel Pump Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="FuelFault" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="A | B | @ | ? | ! | #" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 1" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="63468c45-63c1-476d-ae50-2f564a3915f6" placeholder="#" testvalue="1" />
+          <configref active="True" ref="106be582-b5e4-46a9-a7c7-27d1c1c91fa9" placeholder="!" testvalue="1" />
+          <configref active="True" ref="2c3bd760-7d77-40bd-a2ec-328fac2bee3c" placeholder="?" testvalue="1" />
+          <configref active="True" ref="0b3ed35d-44d8-44ec-932f-b2bbb60efd40" placeholder="@" testvalue="1" />
+          <configref active="True" ref="a2b3bf77-7144-4805-beb7-91c074888db3" placeholder="A" testvalue="1" />
+          <configref active="True" ref="a959c43d-3f1e-4eb7-a3a8-85f8fd1925d4" placeholder="B" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="92bc32f4-8298-44d6-a810-d9c4db608656">
+      <active>true</active>
+      <description>Fuel Pump Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="FuelOff" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <transformation active="True" expression="A | B | @ | ? | ! | #" />
+        </modifiers>
+        <display type="ShiftRegister" serial="Mini OverheadSMD/ SN-E6626005A754492A" trigger="normal" shiftRegister="ShiftRegister" registerOutputPin="Output 0" />
+        <preconditions />
+        <configrefs>
+          <configref active="True" ref="2921864a-5164-4579-9e11-f0b16f478523" placeholder="#" testvalue="1" />
+          <configref active="True" ref="c81156df-2526-4e2f-b6c2-01f9986bd208" placeholder="!" testvalue="1" />
+          <configref active="True" ref="173cb248-44c9-4865-88c1-120b82d609a1" placeholder="?" testvalue="1" />
+          <configref active="True" ref="e3a2d9bc-894f-4447-8ba4-262436bafc8a" placeholder="@" testvalue="1" />
+          <configref active="True" ref="9577b9b2-2cd2-4590-a457-537a92327ed9" placeholder="A" testvalue="1" />
+          <configref active="True" ref="315c95fb-eb99-42d2-a8bd-11fb20b95cc2" placeholder="B" testvalue="1" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="fd5750bf-5be9-4141-8e28-ac4ade065bd5">
+      <active>true</active>
+      <description>------------------------------Dataref tracking for multiple switches below------------------------------------------------</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="Backlight" varExpression="$" />
+        <test type="Float" value="1" />
+        <modifiers>
+          <comparison active="True" value="" operand="=" ifValue="1" elseValue="0" />
+        </modifiers>
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="62ef1377-81a5-4e4d-8594-dcb0e730b514">
+      <active>true</active>
+      <description>Bat 1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/130" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="832b32f7-c9fb-45b2-852e-fb9993974363">
+      <active>true</active>
+      <description>Bat 2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/136" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2a29039e-c70e-42d1-903d-6d395f5619a2">
+      <active>true</active>
+      <description>Emer Bat 1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/132" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d29f3a32-4dd0-4556-8a02-5f254a0b5e08">
+      <active>true</active>
+      <description>Emer Bat 2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/134" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="6f43c594-3112-4bad-a33a-2f87b532e3db">
+      <active>true</active>
+      <description>Bat 1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/129" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9721a4b1-ddab-43dc-b77a-45e88ba79937">
+      <active>true</active>
+      <description>Bat 2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/135" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7bfa3ff1-4013-427f-8cef-f9bafa1b0621">
+      <active>true</active>
+      <description>Emer Bat 1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/131" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9ccb0396-348c-42cd-a5b9-9f907b8b080d">
+      <active>true</active>
+      <description>Emer Bat 2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/133" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="06274794-c8c0-4b10-89e4-292c670f6516">
+      <active>true</active>
+      <description>Ext Pwr 2 Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/159" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e9ee0809-b9a1-4b07-bd0a-d602a94dd8bd">
+      <active>true</active>
+      <description>Ext Pwr 1 Avail</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/147" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f9cfca7a-28d2-4a2b-a14c-797c747183d5">
+      <active>true</active>
+      <description>Ext Pwr 2 On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/160" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9b2bcfa1-b236-42f6-9e30-894b6eae59f6">
+      <active>true</active>
+      <description>Ext Pwr 1 On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/148" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="315c95fb-eb99-42d2-a8bd-11fb20b95cc2">
+      <active>true</active>
+      <description>Fuel Pump 1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/99" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="9577b9b2-2cd2-4590-a457-537a92327ed9">
+      <active>true</active>
+      <description>Fuel Pump 2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/101" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="e3a2d9bc-894f-4447-8ba4-262436bafc8a">
+      <active>true</active>
+      <description>Fuel Pump 3 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/103" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="173cb248-44c9-4865-88c1-120b82d609a1">
+      <active>true</active>
+      <description>Fuel Pump 4 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/106" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c81156df-2526-4e2f-b6c2-01f9986bd208">
+      <active>true</active>
+      <description>Fuel Pump 5 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/108" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2921864a-5164-4579-9e11-f0b16f478523">
+      <active>true</active>
+      <description>Fuel Pump 6 Off</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/110" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a959c43d-3f1e-4eb7-a3a8-85f8fd1925d4">
+      <active>true</active>
+      <description>Fuel Pump 1 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/98" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a2b3bf77-7144-4805-beb7-91c074888db3">
+      <active>true</active>
+      <description>Fuel Pump 2 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/100" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0b3ed35d-44d8-44ec-932f-b2bbb60efd40">
+      <active>true</active>
+      <description>Fuel Pump 3 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/102" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="2c3bd760-7d77-40bd-a2ec-328fac2bee3c">
+      <active>true</active>
+      <description>Fuel Pump 4 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/105" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="106be582-b5e4-46a9-a7c7-27d1c1c91fa9">
+      <active>true</active>
+      <description>Fuel Pump 5 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/107" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="63468c45-63c1-476d-ae50-2f564a3915f6">
+      <active>true</active>
+      <description>Fuel Pump 6 Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/109" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7511f158-e885-4eb9-b2ca-fa120d485bef">
+      <active>true</active>
+      <description>Wing Anti Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/200" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="643fdf6e-c2b7-4824-83f5-153537afa143">
+      <active>true</active>
+      <description>Eng 1 Anti Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/204" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="48751dc2-7d2c-48a0-a984-c8e6beb6cfca">
+      <active>true</active>
+      <description>Eng 2 Anti Ice On</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/206" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="28fe79f4-047f-4793-8b3a-cb45558c38fc">
+      <active>true</active>
+      <description>Wing Anti Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/199" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="547a820d-4421-4df5-a40e-0c7e811d2af5">
+      <active>true</active>
+      <description>Eng 1 Anti Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/203" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eeb27db0-b743-483c-9d41-76cbd72bd438">
+      <active>true</active>
+      <description>Eng 2 Anti Ice Fault</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="XplaneDataRef" path="1-sim/lamp/206" />
+        <test type="Float" value="1" />
+        <modifiers />
+        <display type="-" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="591de15d-7ebf-4260-8e34-c14933bba0bf">
+      <active>true</active>
+      <description>Battery 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Battery" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/86/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bca5cbc0-9852-4e20-b594-1fc27538d3bf">
+      <active>true</active>
+      <description>Battery 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Battery" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/89/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ee332d17-357a-4d13-8130-6651192011a5">
+      <active>true</active>
+      <description>Emer Bat 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Battery" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/87/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d0ec7b01-6655-4d53-824f-04c81f1fb6e5">
+      <active>true</active>
+      <description>Emer Bat 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Battery" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/88/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="983ec1b4-ed04-4fd8-a8e5-ade7542de53b">
+      <active>true</active>
+      <description>Calls Fwd</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Calls" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/227/button" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="1-sim/227/button" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="fc38bb7c-d5b6-4c54-a492-f7bc6c64fad7">
+      <active>true</active>
+      <description>Anti Ice Wing</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/117/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a92c7cc9-b6ff-43c2-a5c2-2319c4073f65">
+      <active>true</active>
+      <description>Anti Ice Eng1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/119/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f6ee4599-433c-4f03-93c9-06d22792225f">
+      <active>true</active>
+      <description>Anti Ice Eng2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Anti Ice" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/120/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bd786d18-195d-4cf1-a909-e42e0f8c63ed">
+      <active>true</active>
+      <description>Ext Pwr 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Ext Pwr" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/97/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0c6f93de-7790-4f3e-86f4-03a57d71c957">
+      <active>true</active>
+      <description>Ext Pwr 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Ext Pwr" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/104/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="58a7eadf-b056-4505-bafe-e6453fc37c57">
+      <active>true</active>
+      <description>APU Master</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="APU Master" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/125/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="765ef8e7-20e8-4b31-9e23-54985750275f">
+      <active>true</active>
+      <description>APU Bleed</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="APU Bleed" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/111/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="8dc82a43-57a1-42ec-9255-440460e2679b">
+      <active>true</active>
+      <description>APU Start</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="APU Start" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/126/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="78c32ab4-f4f9-403c-becf-bc89dffc84cc">
+      <active>true</active>
+      <description>Fuel Pump 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/68/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="d916c8de-f700-4ac6-b766-88cf5e9db2b9">
+      <active>true</active>
+      <description>Fuel Pump 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/69/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="bcaf5204-0b6f-4882-8ff5-3c0fb9437c42">
+      <active>true</active>
+      <description>Fuel Pump 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/70/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="eb22aa87-7590-48ae-abbf-1ab9bd538f1b">
+      <active>true</active>
+      <description>Fuel Pump 4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/80/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="dbe6f626-950f-4b90-a274-565fa9fd1290">
+      <active>true</active>
+      <description>Fuel Pump 5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/81/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="5b47e8a4-846d-4e68-a6a9-adf10f262b99">
+      <active>true</active>
+      <description>Fuel Pump 6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/82/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="aacd8317-76a0-4574-92c9-326ef667f753">
+      <active>true</active>
+      <description>Strobe</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Ext Light On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/2/switch" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="1-sim/2/switch" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ec436f58-603e-4a7b-ad7e-0e7f4ff45fb4">
+      <active>true</active>
+      <description>Beacon</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Ext Light Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/3/switch" expression="0" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="1-sim/3/switch" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b533cd36-52db-415b-9dfa-dc35ac85092f">
+      <active>true</active>
+      <description>Nose TO</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Nose TO" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/11/switch" expression="0" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="1-sim/11/switch" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="c62db97f-4f2e-4c29-a9f3-ec723b6852cf">
+      <active>true</active>
+      <description>Nose Taxi</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Nose Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/11/switch" expression="2" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="1-sim/11/switch" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f54c7e7b-e643-4737-937d-16bdb4e430eb">
+      <active>true</active>
+      <description>Land On</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Land On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/10/switch" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="1-sim/10/switch" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="db0f1b01-a91a-4f96-9f9d-92c96dff3ef3">
+      <active>true</active>
+      <description>Seatbelts</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Seatbelts On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/12/switch" expression="1" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="1-sim/12/switch" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0b0accdf-ce2a-4406-97b0-a7f083a985f8">
+      <active>true</active>
+      <description>No Smoking</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Smoking On" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/13/switch" expression="2" />
+          <onRelease type="XplaneInputAction" inputType="DataRef" path="1-sim/13/switch" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7212660c-daeb-4aa5-8305-9273b2615657">
+      <active>true</active>
+      <description>ADIRS 1 Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/adirs/1/switch" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="29c4f44d-b04f-4d75-b70d-0a0915df45e6">
+      <active>true</active>
+      <description>ADIRS 2 Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/adirs/2/switch" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="87f80d89-a336-48b7-aa93-a5f56b8b8611">
+      <active>true</active>
+      <description>ADIRS 3 Off</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS Off" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/adirs/3/switch" expression="0" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="ef3c3abc-aec5-419b-8e19-3d1f6206ec85">
+      <active>true</active>
+      <description>ADIRS 1 Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/adirs/1/switch" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="f0d12e18-d139-4ca2-9241-fcf82e233539">
+      <active>true</active>
+      <description>ADIRS 2 Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/adirs/2/switch" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="489d07ca-1bfe-419e-8e28-962d4ad5c7af">
+      <active>true</active>
+      <description>ADIRS 3 Nav</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS NAV" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/adirs/3/switch" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="a5a6f0c1-f4c0-4cff-aeef-a5d2284ef920">
+      <active>true</active>
+      <description>ADIRS 1 ATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS ATT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/adirs/1/switch" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4c29dfe0-64ce-4ad6-a54d-ca9e288c0355">
+      <active>true</active>
+      <description>ADIRS 2 ATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS ATT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="AirbusFBW/ADIRUSwitchArray[1]" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="7eccfedc-56bc-4d5b-b023-16886c8c11d3">
+      <active>true</active>
+      <description>ADIRS 3 ATT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="ADIRS ATT" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/adirs/3/switch" expression="2" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="b6264b44-b763-4f08-b00b-e49a1be73f21">
+      <active>true</active>
+      <description>Crew Oxygen</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Fuel Pump" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/38/button" expression="1-$" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="14efa9c9-a432-412f-a3ff-ce000087727f">
+      <active>true</active>
+      <description>Nav Light</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=10.2.2.1, Culture=neutral, PublicKeyToken=null" serial="Mini OverheadSMD/ SN-E6626005A754492A" name="Battery" type="Button" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="XplaneInputAction" inputType="DataRef" path="1-sim/4/switch" expression="1" />
+        </button>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>

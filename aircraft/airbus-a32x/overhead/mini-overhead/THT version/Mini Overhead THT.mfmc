@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Mini Overhead</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <ShiftRegister Name="LightingRegister" LatchPin="1" ClockPin="0" DataPin="2" NumModules="3" />
+  <Output Name="Annunciators Brt" Pin="3" />
+  <InputShiftRegister Name="InputShifter" LatchPin="4" ClockPin="7" DataPin="8" NumModules="2" />
+  <Button Name="NO ELEC DEV ON" Pin="6" />
+  <Output Name="Backlight Brt" Pin="5" />
+  <Button Name="CALLS" Pin="9" />
+  <Button Name="ADIRS OFF" Pin="21" />
+  <Button Name="ADIRS NAV" Pin="20" />
+  <Button Name="ADIRS ATT" Pin="19" />
+</Config>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Cargo Heat</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <ShiftRegister Name="Output Shift" LatchPin="16" ClockPin="17" DataPin="18" NumModules="2" />
+  <Output Name="Backlight Brt" Pin="0" />
+  <Button Name="Fwd ISL" Pin="1" />
+  <Button Name="Eng1 Start" Pin="2" />
+  <Button Name="Eng2 Start" Pin="3" />
+  <Button Name="Blower" Pin="4" />
+  <Button Name="Extract" Pin="5" />
+  <Button Name="Fwd Disch" Pin="6" />
+  <Encoder Name="Fwd" PinLeft="7" PinRight="8" EncoderType="0" />
+  <Button Name="Fast" Pin="9" />
+  <Button Name="Off" Pin="10" />
+  <Button Name="Rain" Pin="11" />
+  <Button Name="Eng1 N1" Pin="12" />
+  <Button Name="Eng2 N1" Pin="13" />
+  <Button Name="Cab Fans" Pin="14" />
+  <Button Name="Test" Pin="15" />
+  <Output Name="Annunciator Brt" Pin="19" />
+  <Button Name="Aft Disch" Pin="20" />
+  <Encoder Name="Aft" PinLeft="21" PinRight="22" EncoderType="0" />
+  <Button Name="Aft ISL" Pin="26" />
+  <Button Name="Hot Air" Pin="27" />
+</Config>

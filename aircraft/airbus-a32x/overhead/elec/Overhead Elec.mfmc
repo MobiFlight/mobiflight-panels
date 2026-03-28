@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ModuleName>Overhead Elec</ModuleName>
+  <PowerSavingTime>600</PowerSavingTime>
+  <ShiftRegister Name="LED Register" LatchPin="15" ClockPin="16" DataPin="17" NumModules="4" />
+  <Button Name="Galley" Pin="0" />
+  <Button Name="IDG1" Pin="1" />
+  <Button Name="Gen1" Pin="2" />
+  <Output Name="Backlight Brt" Pin="10" />
+  <Button Name="AcEssFeed" Pin="11" />
+  <Button Name="APUGen" Pin="12" />
+  <Button Name="BusTie" Pin="13" />
+  <Output Name="Anunnciator Brt" Pin="14" />
+  <Button Name="ExtPwr" Pin="18" />
+  <LedModule Name="Voltage Display" DinPin="20" ClsPin="19" ClkPin="21" Brightness="15" NumModules="1" />
+  <Button Name="Gen2" Pin="22" />
+  <Button Name="IDG2" Pin="26" />
+  <Button Name="Bat2" Pin="27" />
+  <Button Name="Bat1" Pin="28" />
+</Config>
